@@ -1,0 +1,206 @@
+// 2020/01/25 02:55
+// 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
+// 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
+// By MarsFlyPig
+
+// 根據玩家等級隱藏金錢顯示
+ItemDisplay[CLVL>7  GOLD<50]:
+ItemDisplay[CLVL>14 GOLD<100]:
+ItemDisplay[CLVL>21 GOLD<200]:
+ItemDisplay[CLVL>28 GOLD<300]:
+ItemDisplay[CLVL>35 GOLD<400]:
+ItemDisplay[CLVL>40 GOLD<500]:
+ItemDisplay[CLVL>60 GOLD<1000]:
+ItemDisplay[CLVL>70 GOLD<1500]:
+ItemDisplay[CLVL>80 GOLD<2000]:
+
+// 藥水
+ItemDisplay[hp1 CLVL<15]: %RED%[[%GRAY%HP%RED%]]
+ItemDisplay[hp2 CLVL<15]: %RED%[[%WHITE%HP%RED%]]
+ItemDisplay[mp1 CLVL<15]: %BLUE%[[%GRAY%MP%BLUE%]]
+ItemDisplay[mp2 CLVL<15]: %BLUE%[[%WHITE%MP%BLUE%]]
+ItemDisplay[hp1 OR mp1]:
+
+ItemDisplay[hp2 CLVL<20]: %RED%[[%GRAY%HP%RED%]]
+ItemDisplay[hp3 CLVL<20]: %RED%[[%WHITE%HP%RED%]]
+ItemDisplay[mp2 CLVL<20]: %BLUE%[[%GRAY%MP%BLUE%]]
+ItemDisplay[mp3 CLVL<20]: %BLUE%[[%WHITE%MP%BLUE%]]
+ItemDisplay[hp2 OR mp2]:
+
+ItemDisplay[hp3 CLVL<30]: %RED%[[%GRAY%HP%RED%]]
+ItemDisplay[hp4 CLVL<30]: %RED%[[%WHITE%HP%RED%]]
+ItemDisplay[mp3 CLVL<30]: %BLUE%[[%GRAY%MP%BLUE%]]
+ItemDisplay[mp4 CLVL<30]: %BLUE%[[%WHITE%MP%BLUE%]]
+ItemDisplay[hp3 OR mp3]:
+
+ItemDisplay[hp4 CLVL>70]:
+ItemDisplay[mp4 CLVL>70]:
+
+ItemDisplay[hp4]: %RED%[[%GRAY%HP%RED%]]
+ItemDisplay[hp5]: %RED%[[%WHITE%HP%RED%]]
+ItemDisplay[mp4]: %BLUE%[[%GRAY%MP%BLUE%]]
+ItemDisplay[mp5]: %BLUE%[[%WHITE%MP%BLUE%]]
+
+ItemDisplay[rvs]: %PURPLE%[[%GRAY%HP+MP%PURPLE%]]
+ItemDisplay[rvl]: %PURPLE%[[%WHITE%HP+MP%PURPLE%]]
+
+// 隱藏箭矢跟十字箭
+ItemDisplay[(aq2 OR cq2) (NMAG OR MAG) CLVL>9]:
+
+//沒用的藥水隱藏起來
+ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>9]:
+
+// 隱藏特殊藥水跟鑰匙
+ItemDisplay[vps CLVL>10]:
+ItemDisplay[wms CLVL>10]:
+ItemDisplay[yps CLVL>10]:
+ItemDisplay[key CLVL>10]:
+
+// 捲 書 腐化之珠
+ItemDisplay[tsc]: %BLUE%傳%WHITE%送卷軸
+ItemDisplay[isc]: %GREEN%鑑%WHITE%定卷轴
+ItemDisplay[tbk]: %BLUE%傳%WHITE%送之書
+ItemDisplay[ibk]: %GREEN%鑑%WHITE%定之書
+ItemDisplay[cx5]: %PURPLE%※%WHITE%腐化寶珠%PURPLE%※
+
+// 珠寶
+ItemDisplay[jew]: ◎%NAME%[L%ILVL%]◎
+
+// 寶石
+ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: // 碎裂
+ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf]: // 缺陷
+ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku]: // 一般
+ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 無瑕疵
+ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★★%WHITE%%NAME%%RED%★★%WHITE% // 完美
+
+// 小中大護身符
+ItemDisplay[cm1 OR cm2 OR cm3]: ●%NAME%[L%ILVL%]●
+
+// 符文
+ItemDisplay[r01]: [#01-%NAME%]
+ItemDisplay[r02]: [#02-%NAME%]
+ItemDisplay[r03]: [#03-%NAME%]
+ItemDisplay[r04]: [#04-%NAME%]
+ItemDisplay[r05]: [#05-%NAME%]
+ItemDisplay[r06]: [#06-%NAME%]
+ItemDisplay[r07]: [#07-%NAME%]
+ItemDisplay[r08]: [#08-%NAME%]
+ItemDisplay[r09]: [#09-%NAME%]
+ItemDisplay[r10]: [#10-%NAME%]
+ItemDisplay[r11]: [#11-%NAME%]
+ItemDisplay[r12]: [#12-%NAME%]
+ItemDisplay[r13]: [#13-%NAME%]
+ItemDisplay[r14]: [#14-%NAME%]
+ItemDisplay[r15]: [#15-%NAME%]
+ItemDisplay[r16]: [#16-%NAME%]
+ItemDisplay[r17]: [#17-%NAME%]
+ItemDisplay[r18]: [#18-%NAME%]
+ItemDisplay[r19]: [#19-%NAME%]
+ItemDisplay[r20]: [#20-%NAME%]
+ItemDisplay[r21]: [#21-%NAME%]
+ItemDisplay[r22]: [#22-%NAME%]
+ItemDisplay[r23]: [#23-%NAME%]
+ItemDisplay[r24]: [#24-%NAME%]
+ItemDisplay[r25]: [#25-%NAME%]
+ItemDisplay[r26]: [#26-%NAME%]
+ItemDisplay[r27]: [#27-%NAME%]
+ItemDisplay[r28]: [#28-%NAME%]
+ItemDisplay[r29]: [#29-%NAME%]
+ItemDisplay[r30]: [#30-%NAME%]
+ItemDisplay[r31]: [#31-%NAME%]
+ItemDisplay[r32]: [#32-%NAME%]
+ItemDisplay[r33]: [#33-%NAME%]
+
+// ===>>> 裝備 <<<===
+
+// 刪除所有1洞跟破碎等垃圾
+ItemDisplay[NMAG !RW INF]:
+ItemDisplay[NMAG !RW SOCK=1]:
+//ItemDisplay[(WEAPON OR ARMOR) MAG]: // 不想撿藍裝就刪掉前面的"//"
+
+// 大砍刀 羅佳伯斧 食人魔之斧 3s 直接消失
+ItemDisplay[(bar OR 9b7 OR 7o7) (MAG OR NMAG)]:
+
+// 職業專用裝備
+ItemDisplay[CL1 NORM SOCK=0]: <德>%NAME%【普通】
+ItemDisplay[CL1 NORM SOCK>0]: <德>%NAME%【普通】(%SOCKETS%)
+ItemDisplay[CL1 EXC SOCK=0]: <德>%NAME%【進階】
+ItemDisplay[CL1 EXC SOCK>0]: <德>%NAME%【進階】(%SOCKETS%)
+ItemDisplay[CL1 ELT SOCK=0]: <德>%NAME%【菁英】 
+ItemDisplay[CL1 ELT SOCK>0]: <德>%NAME%【菁英】(%SOCKETS%)
+
+ItemDisplay[CL2 NORM SOCK=0]: <蠻>%NAME%【普通】
+ItemDisplay[CL2 NORM SOCK>0]: <蠻>%NAME%【普通】(%SOCKETS%)
+ItemDisplay[CL2 EXC SOCK=0]: <蠻>%NAME%【進階】
+ItemDisplay[CL2 EXC SOCK>0]: <蠻>%NAME%【進階】(%SOCKETS%)
+ItemDisplay[CL2 ELT SOCK=0]: <蠻>%NAME%【菁英】 
+ItemDisplay[CL2 ELT SOCK>0]: <蠻>%NAME%【菁英】(%SOCKETS%)
+
+ItemDisplay[CL3 NORM SOCK=0]: <聖>%NAME%【普通】
+ItemDisplay[CL3 NORM SOCK>0]: <聖>%NAME%【普通】(%SOCKETS%)
+ItemDisplay[CL3 EXC SOCK=0]: <聖>%NAME%【進階】
+ItemDisplay[CL3 EXC SOCK>0]: <聖>%NAME%【進階】(%SOCKETS%)
+ItemDisplay[CL3 ELT SOCK=0]: <聖>%NAME%【菁英】 
+ItemDisplay[CL3 ELT SOCK>0]: <聖>%NAME%【菁英】(%SOCKETS%)
+
+ItemDisplay[CL4 NORM SOCK=0]: <死>%NAME%【普通】
+ItemDisplay[CL4 NORM SOCK>0]: <死>%NAME%【普通】(%SOCKETS%)
+ItemDisplay[CL4 EXC SOCK=0]: <死>%NAME%【進階】
+ItemDisplay[CL4 EXC SOCK>0]: <死>%NAME%【進階】(%SOCKETS%)
+ItemDisplay[CL4 ELT SOCK=0]: <死>%NAME%【菁英】 
+ItemDisplay[CL4 ELT SOCK>0]: <死>%NAME%【菁英】(%SOCKETS%)
+
+ItemDisplay[CL5 NORM SOCK=0]: <刺>%NAME%【普通】
+ItemDisplay[CL5 NORM SOCK>0]: <刺>%NAME%【普通】(%SOCKETS%)
+ItemDisplay[CL5 EXC SOCK=0]: <刺>%NAME%【進階】
+ItemDisplay[CL5 EXC SOCK>0]: <刺>%NAME%【進階】(%SOCKETS%)
+ItemDisplay[CL5 ELT SOCK=0]: <刺>%NAME%【菁英】 
+ItemDisplay[CL5 ELT SOCK>0]: <刺>%NAME%【菁英】(%SOCKETS%)
+
+ItemDisplay[CL6 NORM SOCK=0]: <法>%NAME%【普通】
+ItemDisplay[CL6 NORM SOCK>0]: <法>%NAME%【普通】(%SOCKETS%)
+ItemDisplay[CL6 EXC SOCK=0]: <法>%NAME%【進階】
+ItemDisplay[CL6 EXC SOCK>0]: <法>%NAME%【進階】(%SOCKETS%)
+ItemDisplay[CL6 ELT SOCK=0]: <法>%NAME%【菁英】 
+ItemDisplay[CL6 ELT SOCK>0]: <法>%NAME%【菁英】(%SOCKETS%)
+
+ItemDisplay[CL7 NORM SOCK=0]: <亞>%NAME%【普通】
+ItemDisplay[CL7 NORM SOCK>0]: <亞>%NAME%【普通】(%SOCKETS%)
+ItemDisplay[CL7 EXC SOCK=0]: <亞>%NAME%【進階】
+ItemDisplay[CL7 EXC SOCK>0]: <亞>%NAME%【進階】(%SOCKETS%)
+ItemDisplay[CL7 ELT SOCK=0]: <亞>%NAME%【菁英】 
+ItemDisplay[CL7 ELT SOCK>0]: <亞>%NAME%【菁英】(%SOCKETS%)
+
+// 水晶劍跟闊劍
+ItemDisplay[crs NMAG SOCK=0 (ILVL>25 AND ILVL <41)]: %NAME%【普通劍】
+ItemDisplay[crs NMAG SOCK=4]: %NAME%【普通劍】(%SOCKETS%)
+ItemDisplay[bsd NMAG SOCK=0 ILVL>25]: %NAME%【普通劍】
+ItemDisplay[bsd NMAG SOCK=4]: %NAME%【普通劍】(%SOCKETS%)
+
+//長柄武器
+ItemDisplay[vou OR 9vo OR 7vo NMAG SOCK=0 ILVL>25]: %NAME%【普通長斧】 // 鉤鐮槍 比爾長刀 巨神之斧
+ItemDisplay[NORM WP8 NMAG SOCK=0 (ILVL>25 AND ILVL <41)]: %NAME%【普通長斧】
+ItemDisplay[NORM WP8 NMAG SOCK=4]: %NAME%【普通長斧】(%SOCKETS%)
+ItemDisplay[EXC WP8 NMAG SOCK=0 (ILVL>25 AND ILVL <41)]: %NAME%【進階長斧】
+ItemDisplay[EXC WP8 NMAG SOCK=4]: %NAME%【進階長斧】(%SOCKETS%)
+ItemDisplay[ELT WP8 NMAG SOCK=0 (ILVL>25 AND ILVL <41)]: %NAME%【菁英長斧】
+ItemDisplay[ELT WP8 NMAG SOCK=4]: %NAME%【菁英長斧】(%SOCKETS%)
+
+//統治者大盾 塔盾 保護盾牌
+ItemDisplay[uit OR uow OR uts NMAG SOCK=0]:  %NAME%【菁英盾】
+ItemDisplay[uit OR uow OR uts NMAG SOCK=4]:  %NAME%【菁英盾】(%SOCKETS%)
+
+// 戒指跟項鍊
+ItemDisplay[rin OR amu]: %NAME%【飾品】 
+
+// 普通
+ItemDisplay[NORM SOCK=0]: %NAME%【普通】
+ItemDisplay[NORM SOCK>0]: %NAME%【普通】(%SOCKETS%)
+
+// 進階
+ItemDisplay[EXC SOCK=0]: %NAME%【進階】
+ItemDisplay[EXC SOCK>0]: %NAME%【進階】(%SOCKETS%)
+
+// 菁英
+ItemDisplay[ELT SOCK=0]: %NAME%【菁英】 
+ItemDisplay[ELT SOCK>0]: %NAME%【菁英】(%SOCKETS%)
