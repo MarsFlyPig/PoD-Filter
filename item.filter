@@ -1,7 +1,36 @@
-// 2020/01/25 02:55
+// 2020/01/25 07:30
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
 // 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
 // By MarsFlyPig
+
+// 特殊物品
+ItemDisplay[pk1]: %NAME%(女伯爵) //恐懼之鑰
+ItemDisplay[pk2]: %NAME%(召喚者) //憎恨之鑰
+ItemDisplay[pk3]: %NAME%(尼拉塞克) //毀滅之鑰
+ItemDisplay[dhn]: %NAME% //暗黑破壞神之角
+ItemDisplay[bey]: %NAME% //巴爾之眼
+ItemDisplay[mbr]: %NAME% //墨菲斯托之腦
+ItemDisplay[toa]: %NAME% //赦免徽章
+ItemDisplay[tes]: %NAME%(A12) //扭曲的苦痛精華
+ItemDisplay[ceh]: %NAME%(A3) //充盈的憎恨精華
+ItemDisplay[bet]: %NAME%(A4) //燃燒的恐懼精華
+ItemDisplay[fed]: %NAME%(A5) //潰爛的毀滅精華
+ItemDisplay[std]: %NAME% //英雄旗幟
+ItemDisplay[cm4]: %NAME% //Grand Charm
+ItemDisplay[ma2]: 『%NAME%』 //T4 Map
+ItemDisplay[ma4]: 『%NAME%』 //T1 Map
+ItemDisplay[ma5]: 『%NAME%』 //T2 Map
+ItemDisplay[ma6]: 『%NAME%』 //T3 Map
+ItemDisplay[cx5]: ※%NAME%※ //腐化寶珠
+ItemDisplay[cx6]: %NAME% //暗黑破壞神的靈魂石
+ItemDisplay[cx7]: %NAME% //混沌之鑰
+ItemDisplay[cx8]: ※%NAME%※ //附魔寶珠
+
+// 捲 書
+ItemDisplay[tsc]: %BLUE%傳%WHITE%送卷軸
+ItemDisplay[isc]: %GREEN%鑑%WHITE%定卷轴
+ItemDisplay[tbk]: %BLUE%傳%WHITE%送之書
+ItemDisplay[ibk]: %GREEN%鑑%WHITE%定之書
 
 // 根據玩家等級隱藏金錢顯示
 ItemDisplay[CLVL>7  GOLD<50]:
@@ -51,17 +80,10 @@ ItemDisplay[(aq2 OR cq2) (NMAG OR MAG) CLVL>9]:
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>9]:
 
 // 隱藏特殊藥水跟鑰匙
-ItemDisplay[vps CLVL>10]:
-ItemDisplay[wms CLVL>10]:
-ItemDisplay[yps CLVL>10]:
-ItemDisplay[key CLVL>10]:
-
-// 捲 書 腐化之珠
-ItemDisplay[tsc]: %BLUE%傳%WHITE%送卷軸
-ItemDisplay[isc]: %GREEN%鑑%WHITE%定卷轴
-ItemDisplay[tbk]: %BLUE%傳%WHITE%送之書
-ItemDisplay[ibk]: %GREEN%鑑%WHITE%定之書
-ItemDisplay[cx5]: %PURPLE%※%WHITE%腐化寶珠%PURPLE%※
+ItemDisplay[vps CLVL>9]:
+ItemDisplay[wms CLVL>9]:
+ItemDisplay[yps CLVL>9]:
+ItemDisplay[key CLVL>9]:
 
 // 珠寶
 ItemDisplay[jew]: ◎%NAME%[L%ILVL%]◎
