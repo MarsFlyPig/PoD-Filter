@@ -1,4 +1,4 @@
-// 2020/01/25 18:00
+// 2020/01/26 01:10
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
 // 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
 // By MarsFlyPig
@@ -17,16 +17,18 @@ ItemDisplay[bet]: %NAME%(A4) //燃燒的恐懼精華
 ItemDisplay[fed]: %NAME%(A5) //潰爛的毀滅精華
 ItemDisplay[std]: %NAME% //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm
-ItemDisplay[ma2]: 『%NAME%』 //T4 Map
 ItemDisplay[ma4]: 『%NAME%』 //T1 Map
 ItemDisplay[ma5]: 『%NAME%』 //T2 Map
 ItemDisplay[ma6]: 『%NAME%』 //T3 Map
-ItemDisplay[cx5]: ※%NAME%※ //腐化寶珠
+ItemDisplay[ma2]: 『%NAME%』 //T4 Map
+ItemDisplay[leg]: ※%NAME%※ //維特之腳
+ItemDisplay[cx5]: ※%NAME%%WHITE%※ //腐化寶珠
 ItemDisplay[cx6]: %NAME% //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %NAME% //混沌之鑰
-ItemDisplay[cx8]: ※%NAME%※ //附魔寶珠
+ItemDisplay[cx8]: ※%NAME%%WHITE%※ //附魔寶珠
 
 // 捲 書
+ItemDisplay[(tsc OR isc) CLVL>29]: //30等後不顯示傳送鑑定卷軸
 ItemDisplay[tsc]: %BLUE%傳%WHITE%送卷軸
 ItemDisplay[isc]: %GREEN%鑑%WHITE%定卷轴
 ItemDisplay[tbk]: %BLUE%傳%WHITE%送之書
@@ -44,34 +46,34 @@ ItemDisplay[CLVL>70 GOLD<1500]:
 ItemDisplay[CLVL>80 GOLD<2000]:
 
 // 藥水
-ItemDisplay[hp1 CLVL<15]: %RED%[[%GRAY%HP%RED%]]
-ItemDisplay[hp2 CLVL<15]: %RED%[[%WHITE%HP%RED%]]
-ItemDisplay[mp1 CLVL<15]: %BLUE%[[%GRAY%MP%BLUE%]]
-ItemDisplay[mp2 CLVL<15]: %BLUE%[[%WHITE%MP%BLUE%]]
+ItemDisplay[hp1 CLVL<15]: %RED%[[%GRAY%HP%RED%]]%WHITE%
+ItemDisplay[hp2 CLVL<15]: %RED%[[%WHITE%HP%RED%]]%WHITE%
+ItemDisplay[mp1 CLVL<15]: %BLUE%[[%GRAY%MP%BLUE%]]%WHITE%
+ItemDisplay[mp2 CLVL<15]: %BLUE%[[%WHITE%MP%BLUE%]]%WHITE%
 ItemDisplay[hp1 OR mp1]:
 
-ItemDisplay[hp2 CLVL<25]: %RED%[[%GRAY%HP%RED%]]
-ItemDisplay[hp3 CLVL<25]: %RED%[[%WHITE%HP%RED%]]
-ItemDisplay[mp2 CLVL<25]: %BLUE%[[%GRAY%MP%BLUE%]]
-ItemDisplay[mp3 CLVL<25]: %BLUE%[[%WHITE%MP%BLUE%]]
+ItemDisplay[hp2 CLVL<25]: %RED%[[%GRAY%HP%RED%]]%WHITE%
+ItemDisplay[hp3 CLVL<25]: %RED%[[%WHITE%HP%RED%]]%WHITE%
+ItemDisplay[mp2 CLVL<25]: %BLUE%[[%GRAY%MP%BLUE%]]%WHITE%
+ItemDisplay[mp3 CLVL<25]: %BLUE%[[%WHITE%MP%BLUE%]]%WHITE%
 ItemDisplay[hp2 OR mp2]:
 
-ItemDisplay[hp3 CLVL<40]: %RED%[[%GRAY%HP%RED%]]
-ItemDisplay[hp4 CLVL<40]: %RED%[[%WHITE%HP%RED%]]
-ItemDisplay[mp3 CLVL<40]: %BLUE%[[%GRAY%MP%BLUE%]]
-ItemDisplay[mp4 CLVL<40]: %BLUE%[[%WHITE%MP%BLUE%]]
+ItemDisplay[hp3 CLVL<40]: %RED%[[%GRAY%HP%RED%]]%WHITE%
+ItemDisplay[hp4 CLVL<40]: %RED%[[%WHITE%HP%RED%]]%WHITE%
+ItemDisplay[mp3 CLVL<40]: %BLUE%[[%GRAY%MP%BLUE%]]%WHITE%
+ItemDisplay[mp4 CLVL<40]: %BLUE%[[%WHITE%MP%BLUE%]]%WHITE%
 ItemDisplay[hp3 OR mp3]:
 
 ItemDisplay[hp4 CLVL>70]:
 ItemDisplay[mp4 CLVL>70]:
 
-ItemDisplay[hp4]: %RED%[[%GRAY%HP%RED%]]
-ItemDisplay[hp5]: %RED%[[%WHITE%HP%RED%]]
-ItemDisplay[mp4]: %BLUE%[[%GRAY%MP%BLUE%]]
-ItemDisplay[mp5]: %BLUE%[[%WHITE%MP%BLUE%]]
+ItemDisplay[hp4]: %RED%[[%GRAY%HP%RED%]]%WHITE%
+ItemDisplay[hp5]: %RED%[[%WHITE%HP%RED%]]%WHITE%
+ItemDisplay[mp4]: %BLUE%[[%GRAY%MP%BLUE%]]%WHITE%
+ItemDisplay[mp5]: %BLUE%[[%WHITE%MP%BLUE%]]%WHITE%
 
-ItemDisplay[rvs]: %PURPLE%[[%GRAY%HP+MP%PURPLE%]]
-ItemDisplay[rvl]: %PURPLE%[[%WHITE%HP+MP%PURPLE%]]
+ItemDisplay[rvs]: %PURPLE%[[%GRAY%HP+MP%PURPLE%]]%WHITE%
+ItemDisplay[rvl]: %PURPLE%[[%WHITE%HP+MP%PURPLE%]]%WHITE%
 
 // 10等後沒用的藥水隱藏起來
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>9]:
@@ -139,7 +141,7 @@ ItemDisplay[bsd NMAG SOCK=0 ILVL>25]: %NAME%【普通劍】
 ItemDisplay[bsd NMAG SOCK=4]: %NAME%【普通劍】(%SOCKETS%)
 
 // 大砍刀 羅佳伯斧 食人魔之斧 3s 直接消失
-ItemDisplay[(bar OR 9b7 OR 7o7) NMAG INF]:
+ItemDisplay[(bar OR 9b7 OR 7o7) (MAG OR NMAG)]:
 
 //長柄武器
 ItemDisplay[vou OR 9vo OR 7vo NMAG SOCK=0 ILVL>25]: %NAME%【普通長斧】 // 鉤鐮槍 比爾長刀 巨神之斧
@@ -159,13 +161,14 @@ ItemDisplay[uit OR uow OR uts NMAG SOCK=4]:  %NAME%【菁英盾】(%SOCKETS%)
 // 刪除垃圾
 ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
 ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
-ItemDisplay[NMAG EQ7]: // 刪除白色頭冠
+ItemDisplay[NMAG SOCK=2 !RW CLVL>29]: // 30等後刪除白色2s裝備
+ItemDisplay[NMAG EQ7 SOCK<2]: // 刪除白色頭冠
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>9]: // 10等後刪除白色 手套 鞋子 腰帶 箭矢 十字箭
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG SOCK=0 CLVL>29]: // 30等後刪除0s普通白裝
+ItemDisplay[(WEAPON OR ARMOR) NORM NMAG SOCK=0 CLVL>24]: // 25等後刪除0s普通白裝
 ItemDisplay[(WEAPON OR ARMOR) EXC NMAG SOCK=0 CLVL>49]: // 50等後刪除0s進階白裝
-ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠項鍊戒指外普通藍裝
+ItemDisplay[(aq2 OR cq2) MAG CLVL>24]: // 25等後刪除箭矢十字箭藍裝
+ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2) !EQ7 NORM MAG CLVL>24]: // 25等後刪除頭冠項鍊戒指外普通藍裝
 ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠項鍊戒指以外所有藍裝
-
 
 // 職業專用裝備
 ItemDisplay[CL1 NORM SOCK=0]: <德>%NAME%【普通】
@@ -217,8 +220,9 @@ ItemDisplay[CL7 EXC SOCK>0]: <亞>%NAME%【進階】(%SOCKETS%)
 ItemDisplay[CL7 ELT SOCK=0]: <亞>%NAME%【菁英】 
 ItemDisplay[CL7 ELT SOCK>0]: <亞>%NAME%【菁英】(%SOCKETS%)
 
-// 戒指跟項鍊
-ItemDisplay[rin OR amu]: %NAME%【飾品】 
+// 戒指 項鍊 箭矢 十字箭
+ItemDisplay[rin OR amu]: %NAME%【飾品】[L%ILVL%] //戒指 項鍊
+ItemDisplay[aq2 OR cq2]: %NAME%【箭袋】//箭矢 十字箭
 
 // 普通
 ItemDisplay[NORM SOCK=0]: %NAME%【普通】
