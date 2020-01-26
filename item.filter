@@ -160,7 +160,7 @@ ItemDisplay[uit OR uow OR uts NMAG SOCK=4]:  %NAME%【菁英盾】(%SOCKETS%)
 // 刪除垃圾
 ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
 ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
-ItemDisplay[NMAG SOCK=2 !RW CLVL>29]: // 30等後刪除2s白色裝備
+ItemDisplay[NMAG WEAPON SOCK=2 !RW CLVL>29]: // 30等後刪除2s白色武器
 ItemDisplay[NMAG EQ7 SOCK<2]: // 刪除0s1s白色頭冠
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>9]: // 10等後刪除白色 手套 鞋子 腰帶 箭矢 十字箭
 ItemDisplay[(WEAPON OR ARMOR) !CL3 NORM NMAG SOCK=0 CLVL>24]: // 25等後刪除0s普通白裝(聖騎盾除外)
