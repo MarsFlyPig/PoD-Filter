@@ -1,4 +1,4 @@
-// 2020/01/27 04:30
+// 2020/01/27 06:45
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
 // 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
 // By MarsFlyPig
@@ -22,7 +22,7 @@ ItemDisplay[ma5]: 『%NAME%』 //T2 Map
 ItemDisplay[ma6]: 『%NAME%』 //T3 Map
 ItemDisplay[ma2]: 『%NAME%』 //T4 Map
 ItemDisplay[leg]: ※%NAME%※ //維特之腳
-ItemDisplay[cx5]: ※%NAME%%WHITE% (OoC)※ //腐化寶珠
+ItemDisplay[cx5]: ※%NAME%%WHITE% (ooc)※ //腐化寶珠
 ItemDisplay[cx6]: %NAME% //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %NAME% //混沌之鑰
 ItemDisplay[cx8]: ※%NAME%%WHITE%※ //附魔寶珠
