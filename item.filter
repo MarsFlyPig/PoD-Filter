@@ -1,4 +1,4 @@
-// 2020/01/29 02:30
+// 2020/01/29 02:45
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -137,7 +137,7 @@ ItemDisplay[r33]: [##33-%NAME%##]
 ItemDisplay[(uh9 OR usk) NMAG SOCK=3]: %NAME%【菁英】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
 
 // 盾牌
-ItemDisplay[uit DEF>144 NMAG SOCK=0]: %NAME%【菁英】(%SOCKETS%) //145防以上統治者大盾0s
+ItemDisplay[uit DEF>144 NMAG SOCK=0]: %NAME%【菁英】 //145防以上統治者大盾0s
 ItemDisplay[uit NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
