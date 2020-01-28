@@ -137,19 +137,20 @@ ItemDisplay[r33]: [##33-%NAME%##]
 ItemDisplay[(uh9 OR usk) NMAG SOCK=3]: %NAME%【菁英】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
 
 // 盾牌
-ItemDisplay[uit DEF>144 NMAG SOCK=0]: %NAME%【菁英】 //145防以上0s統治者大盾
+ItemDisplay[uit DEF>144 NMAG SOCK=0]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
 ItemDisplay[uit NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
-ItemDisplay[xtp DEF>254 NMAG SOCK=3]: %NAME%【菁英】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
+ItemDisplay[xtp DEF>254 NMAG SOCK=3]: %NAME%(255防↑)【菁英】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
 ItemDisplay[(utp OR uui OR uea) NMAG SOCK=3]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
 ItemDisplay[(utp OR uar) NMAG SOCK=]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、神聖盔甲4 - 剛毅
 ItemDisplay[(utp OR uui OR uea) NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮4 - 榮耀之鏈
-ItemDisplay[EQ2 DEF>540 NMAG SOCK>2]: %NAME%【菁英】(%SOCKETS%) //540防以上34 - 強制/石塊
+ItemDisplay[EQ2 !ETH DEF>549 NMAG SOCK>2]: %NAME%(550防↑)【菁英】(%SOCKETS%) //550防以上34 - 強制/石塊
+ItemDisplay[EQ2 ETH DEF>699 NMAG SOCK>2]: %NAME%(700防↑)【菁英】(%SOCKETS%) //700防以上(無)34 - 強制/石塊
 
 // 武器-劍
 ItemDisplay[crs NMAG SOCK=3]: %NAME%【普通】(%SOCKETS%) //水晶劍3 - 新月
-ItemDisplay[crs NMAG SOCK=4]: %NAME%【普通】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
+ItemDisplay[crs NMAG !ETH SOCK=4]: %NAME%【普通】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
 ItemDisplay[crs NMAG SOCK=5]: %NAME%【普通】(%SOCKETS%) //水晶劍5 - 戰爭召喚
 ItemDisplay[7cr NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //幻化之刃4 - 熱情
 ItemDisplay[7cr NMAG SOCK=5]: %NAME%【菁英】(%SOCKETS%) //幻化之刃5 - 悔恨
@@ -183,7 +184,6 @@ ItemDisplay[(6cb OR 6s7) NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //巨弓、
 ItemDisplay[(6l7 OR 6lw) NMAG SOCK=6]: %NAME%【菁英】(%SOCKETS%) //十字軍之弓、九頭蛇弓6 - 死亡呼吸
 
 // 職業
-ItemDisplay[(amb OR amc) NMAG TABSK0=3 SOCK=0]: <亞>%NAME%【菁英】//女族長之弓、大院長之弓(+3技)
 ItemDisplay[(amb OR amc) NMAG TABSK0=3 SOCK=4]: <亞>%NAME%【菁英】(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
 ItemDisplay[CL3 ELT NMAG RES>39 SOCK=0]: <聖>%NAME%【菁英】 //聖騎盾(40抗以上)
 ItemDisplay[CL3 ELT NMAG RES>39 SOCK=3]: <聖>%NAME%【菁英】(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
@@ -191,8 +191,8 @@ ItemDisplay[CL3 ELT NMAG RES>39 SOCK=4]: <聖>%NAME%【菁英】(%SOCKETS%) //�
 
 // ===>>> 其他 <<<===
 
-ItemDisplay[bsd NMAG SOCK=4 CLVL<40]: %NAME%【普通】(%SOCKETS%) //40等前顯示 4s闊劍
-ItemDisplay[NORM WP8 NMAG SOCK=4 CLVL<40]: %NAME%【普通】(%SOCKETS%) //40等前顯示 4s長斧
+ItemDisplay[(crs OR bsd) NMAG (SOCK=0 OR SOCK=4) CLVL<50]: %NAME%【普通】(%SOCKETS%) //50等前顯示 0s4s水晶劍 闊劍
+ItemDisplay[NORM WP8 NMAG SOCK=4 CLVL<50]: %NAME%【普通】(%SOCKETS%) //50等前顯示 4s長斧
 
 ItemDisplay[EQ2 ELT NMAG]: $%PRICE%$盔甲 // 缺錢用 顯示菁英盔甲賣錢
 
