@@ -1,4 +1,4 @@
-// 2020/01/29 03:00
+// 2020/01/29 03:30
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -141,10 +141,10 @@ ItemDisplay[uit DEF>144 NMAG SOCK=0]: %NAME%(145防↑)【菁英】 //145防以�
 ItemDisplay[uit NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
-ItemDisplay[xtp DEF>254 NMAG SOCK=3]: %NAME%(255防↑)【菁英】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
-ItemDisplay[(utp OR uui OR uea) NMAG SOCK=3]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
-ItemDisplay[(utp OR uar) NMAG SOCK=]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、神聖盔甲4 - 剛毅
-ItemDisplay[(utp OR uui OR uea) NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮4 - 榮耀之鏈
+ItemDisplay[xtp DEF>254 !ETH NMAG SOCK=3]: %NAME%(255防↑)【菁英】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
+ItemDisplay[(utp OR uui OR uea) !ETH NMAG SOCK=3]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
+ItemDisplay[(utp OR uar) !ETH NMAG SOCK=]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、神聖盔甲4 - 剛毅
+ItemDisplay[(utp OR uui OR uea) !ETH NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮4 - 榮耀之鏈
 ItemDisplay[EQ2 !ETH DEF>549 NMAG SOCK>2]: %NAME%(550防↑)【菁英】(%SOCKETS%) //550防以上34 - 強制/石塊
 ItemDisplay[EQ2 ETH DEF>699 NMAG SOCK>2]: %NAME%(700防↑)【菁英】(%SOCKETS%) //700防以上(無)34 - 強制/石塊
 
@@ -206,7 +206,7 @@ ItemDisplay[NMAG WEAPON SOCK=2 !RW CLVL>29]: // 30等後刪除2s白色武器
 
 ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29]: // 30等後刪除普通白裝
 ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
-ItemDisplay[(WEAPON OR ARMOR) ELT !CL1 !CL2 !CL3 !CL5 NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
+ItemDisplay[(WEAPON OR ARMOR) ELT !CL1 !CL2 !CL5 NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
 
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 ItemDisplay[(rin OR amu) MAG CLVL>39]: // 40等後刪除項鍊戒指藍裝
