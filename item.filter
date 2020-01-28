@@ -1,4 +1,4 @@
-// 2020/01/29 03:30
+// 2020/01/29 05:40
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -143,7 +143,7 @@ ItemDisplay[uit NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //統治者大盾4 -
 // 盔甲
 ItemDisplay[xtp DEF>254 !ETH NMAG SOCK=3]: %NAME%(255防↑)【菁英】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
 ItemDisplay[(utp OR uui OR uea) !ETH NMAG SOCK=3]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
-ItemDisplay[(utp OR uar) !ETH NMAG SOCK=]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、神聖盔甲4 - 剛毅
+ItemDisplay[(utp OR uar) !ETH NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、神聖盔甲4 - 剛毅
 ItemDisplay[(utp OR uui OR uea) !ETH NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮4 - 榮耀之鏈
 ItemDisplay[EQ2 !ETH DEF>549 NMAG SOCK>2]: %NAME%(550防↑)【菁英】(%SOCKETS%) //550防以上34 - 強制/石塊
 ItemDisplay[EQ2 ETH DEF>699 NMAG SOCK>2]: %NAME%(700防↑)【菁英】(%SOCKETS%) //700防以上(無)34 - 強制/石塊
