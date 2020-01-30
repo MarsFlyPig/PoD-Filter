@@ -1,4 +1,4 @@
-// 2020/01/29 05:40
+// 2020/01/30 10:30
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -191,7 +191,7 @@ ItemDisplay[CL3 ELT NMAG RES>39 SOCK=4]: <聖>%NAME%【菁英】(%SOCKETS%) //�
 
 // ===>>> 其他 <<<===
 
-ItemDisplay[(crs OR bsd) NMAG (SOCK=0 OR SOCK=4) CLVL<50]: %NAME%【普通】(%SOCKETS%) //50等前顯示 0s4s水晶劍 闊劍
+ItemDisplay[(crs OR bsd) NMAG (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<50]: %NAME%【普通】(%SOCKETS%) //50等前顯示 0s4s水晶劍 闊劍
 ItemDisplay[NORM WP8 NMAG SOCK=4 CLVL<50]: %NAME%【普通】(%SOCKETS%) //50等前顯示 4s長斧
 
 ItemDisplay[EQ2 ELT NMAG]: $%PRICE%$盔甲 // 缺錢用 顯示菁英盔甲賣錢
