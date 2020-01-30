@@ -149,7 +149,7 @@ ItemDisplay[EQ2 !ETH DEF>549 NMAG SOCK>2]: %NAME%(550防↑)【菁英】(%SOCKET
 ItemDisplay[EQ2 ETH DEF>699 NMAG SOCK>2]: %NAME%(700防↑)【菁英】(%SOCKETS%) //700防以上(無)34 - 強制/石塊
 
 // 武器-劍
-ItemDisplay[crs NMAG SOCK=3]: %NAME%【普通】(%SOCKETS%) //水晶劍3 - 新月
+ItemDisplay[crs NMAG !INF SOCK=3]: %NAME%【普通】(%SOCKETS%) //水晶劍3 - 新月
 ItemDisplay[crs NMAG !ETH SOCK=4]: %NAME%【普通】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
 ItemDisplay[crs NMAG SOCK=5]: %NAME%【普通】(%SOCKETS%) //水晶劍5 - 戰爭召喚
 ItemDisplay[7cr NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //幻化之刃4 - 熱情
@@ -183,18 +183,20 @@ ItemDisplay[7gm ETH NMAG SOCK=6]: %NAME%【菁英】(%SOCKETS%) //雷鎚(無)6 -
 ItemDisplay[(6cb OR 6s7) NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //巨弓、鑽石弓4 - 信心
 ItemDisplay[(6l7 OR 6lw) NMAG SOCK=6]: %NAME%【菁英】(%SOCKETS%) //十字軍之弓、九頭蛇弓6 - 死亡呼吸
 
-// 職業
+// 特殊基底
 ItemDisplay[(amb OR amc) NMAG TABSK0=3 SOCK=4]: <亞>%NAME%【菁英】(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
-ItemDisplay[CL3 ELT NMAG RES>39 SOCK=0]: <聖>%NAME%【菁英】 //聖騎盾(40抗以上)
-ItemDisplay[CL3 ELT NMAG RES>39 SOCK=3]: <聖>%NAME%【菁英】(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
-ItemDisplay[CL3 ELT NMAG RES>39 SOCK=4]: <聖>%NAME%【菁英】(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神/流亡
+ItemDisplay[CL3 !ELT NMAG RES>39 SOCK=0]: <聖>%NAME%【菁英】 //聖騎盾(40抗以上)
+ItemDisplay[CL3 !ELT NMAG RES>39 SOCK=3]: <聖>%NAME%【菁英】(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 NMAG RES>39 SOCK=4]: <聖>%NAME%【菁英】(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神/流亡
+ItemDisplay[CL3 !ELT NMAG SK84=3 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【特殊】(%SOCKETS%) // +3骨矛
+
 
 // ===>>> 其他 <<<===
 
-ItemDisplay[(crs OR bsd) NMAG (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<50]: %NAME%【普通】(%SOCKETS%) //50等前顯示 0s4s水晶劍 闊劍
+ItemDisplay[(crs OR bsd) NMAG !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<50]: %NAME%【普通】(%SOCKETS%) //50等前顯示 0s4s水晶劍 闊劍
 ItemDisplay[NORM WP8 NMAG SOCK=4 CLVL<50]: %NAME%【普通】(%SOCKETS%) //50等前顯示 4s長斧
 
-ItemDisplay[EQ2 ELT NMAG]: $%PRICE%$盔甲 // 缺錢用 顯示菁英盔甲賣錢
+ItemDisplay[EQ2 NMAG]: $%PRICE%$盔甲 // 缺錢用 顯示菁英盔甲賣錢
 
 // ===>>> 裝備 <<<===
 
