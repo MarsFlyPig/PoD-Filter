@@ -1,4 +1,4 @@
-// 2020/01/31 11:20
+// 2020/01/31 16:10
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -138,7 +138,7 @@ ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //
 
 // 盾牌
 ItemDisplay[uit DEF>144 !ETH NMAG !RW SOCK=0]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
-ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神/鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
+ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
 ItemDisplay[xtp DEF>254 !ETH NMAG !RW SOCK=3]: %NAME%(255防↑)【謎團】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
@@ -152,28 +152,28 @@ ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=4]: %NAME%(700防↑)【石塊】(%SOC
 
 // 武器-劍
 ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月】(%SOCKETS%) //水晶劍3 - 新月
-ItemDisplay[crs NMAG !RW !ETH SOCK=4]: %NAME%【精神/思考之聲】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
+ItemDisplay[crs NMAG !RW !ETH SOCK=4]: %NAME%【精神│思考之聲】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
 ItemDisplay[crs NMAG !RW SOCK=5]: %NAME%【戰爭召喚】(%SOCKETS%) //水晶劍5 - 戰爭召喚
 ItemDisplay[7cr NMAG !RW SOCK=4]: %NAME%【熱情】(%SOCKETS%) //幻化之刃4 - 熱情
 ItemDisplay[7cr NMAG !RW SOCK=5]: %NAME%【悔恨】(%SOCKETS%) //幻化之刃5 - 悔恨
 ItemDisplay[7cr NMAG !RW SOCK=6]: %NAME%【最後希望】(%SOCKETS%) //幻化之刃6 - 最後希望
 ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=4]: %NAME%【誓約】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)4 - 誓約
-ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=5]: %NAME%【永恒/死神】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)5 - 永恒/死神
+ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=5]: %NAME%【永恒│死神】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)5 - 永恒/死神
 ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)6 - 死亡呼吸
 
 // 武器-斧
-ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸/悔恨】(%SOCKETS%) //狂戰士斧5 - 野獸/悔恨
+ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸│悔恨】(%SOCKETS%) //狂戰士斧5 - 野獸/悔恨
 ItemDisplay[7wa !ETH NMAG !RW SOCK=6]: %NAME%【最後希望】(%SOCKETS%) //狂戰士斧6 - 最後希望
 ItemDisplay[7wa ETH NMAG !RW SOCK=4]: %NAME%【誓约】(%SOCKETS%) //狂戰士斧(無)4 - 誓约
-ItemDisplay[7wa ETH NMAG !RW SOCK=5]: %NAME%【永恒/死神】(%SOCKETS%) //狂戰士斧(無)5 - 永恒/死神
+ItemDisplay[7wa ETH NMAG !RW SOCK=5]: %NAME%【永恒│死神】(%SOCKETS%) //狂戰士斧(無)5 - 永恒/死神
 ItemDisplay[7wa ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //狂戰士斧(無)6 - 死亡呼吸
 ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】(%SOCKETS%) //巨戰斧5 - 末日
 
 // 武器-長斧
 ItemDisplay[scy ETH NMAG !RW SOCK=4]: %NAME%【無限】(%SOCKETS%) //鐮刀(無)4 - 無限
-ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4 CLVL<86]: %NAME%【眼光/無限/驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4 CLVL<86]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5 CLVL<86]: %NAME%【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從
-ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=4]: %NAME%【眼光/無限/驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)4 - 眼光/無限/驕傲
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)4 - 眼光/無限/驕傲
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=5]: %NAME%【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)5 - 遵從
 
 // 武器-棍棒
@@ -189,12 +189,15 @@ ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) /
 ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
 
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=0]: <聖>%NAME%【菁英】 //聖騎盾(40抗以上)
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂/夢境/飛龍】(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂│夢境│飛龍】(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神
 ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【流亡】(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
 
-ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛/白骨裝甲-屍體爆炸-號召】 // +3骨矛84 白骨裝甲68 屍體爆炸74 號召79
-ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆/白骨裝甲-屍體爆炸-號召】 // +3褻瀆83 白骨裝甲68 屍體爆炸74 號召79
+
+ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛│白骨裝甲-屍體爆炸-號召】 // +3骨矛84 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆│白骨裝甲-屍體爆炸-號召】 // +3褻瀆83 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛】 // +3骨矛84
+ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆】 // +3褻瀆83
 
 // ===>>> 其他 <<<===
 
