@@ -1,4 +1,4 @@
-// 2020/01/31 22:20
+// 2020/01/31 22:25
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -186,22 +186,22 @@ ItemDisplay[(6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】(%SOCKETS%) //巨�
 ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓6 - 死亡呼吸
 
 // 德魯伊
-ItemDisplay[CL1 !ETH NMAG !RW SK250>2 !SOCK=1]: %RED%%NAME%【+3暴風】
-ItemDisplay[CL1 !ETH NMAG !RW SK245>2 !SOCK=1]: %RED%%NAME%【+3龍捲風】
-ItemDisplay[CL1 !ETH NMAG !RW SK244>2 !SOCK=1]: %RED%%NAME%【+3火山】
-ItemDisplay[CL1 !ETH NMAG !RW SK229>2 !SOCK=1]: %RED%%NAME%【+3熔漿巨岩】
-ItemDisplay[CL1 !ETH NMAG !RW SK238>2 !SOCK=1]: %RED%%NAME%【+3狂犬病】
-ItemDisplay[CL1 !ETH NMAG !RW SK243>2 !SOCK=1]: %RED%%NAME%【+3震波】
-ItemDisplay[CL1 !ETH NMAG !RW SK239>2 !SOCK=1]: %RED%%NAME%【+3焰爪】
-ItemDisplay[CL1 !ETH NMAG !RW SK221>2 !SOCK=1]: %RED%%NAME%【+3烏鴉】
-ItemDisplay[CL1 !ETH NMAG !RW SK247>2 !SOCK=1]: %RED%%NAME%【+3召喚灰熊】
+ItemDisplay[CL1 !ETH NMAG !RW SK250>2 !SOCK=1]: %RED%<德>%NAME%【+3暴風】
+ItemDisplay[CL1 !ETH NMAG !RW SK245>2 !SOCK=1]: %RED%<德>%NAME%【+3龍捲風】
+ItemDisplay[CL1 !ETH NMAG !RW SK244>2 !SOCK=1]: %RED%<德>%NAME%【+3火山】
+ItemDisplay[CL1 !ETH NMAG !RW SK229>2 !SOCK=1]: %RED%<德>%NAME%【+3熔漿巨岩】
+ItemDisplay[CL1 !ETH NMAG !RW SK238>2 !SOCK=1]: %RED%<德>%NAME%【+3狂犬病】
+ItemDisplay[CL1 !ETH NMAG !RW SK243>2 !SOCK=1]: %RED%<德>%NAME%【+3震波】
+ItemDisplay[CL1 !ETH NMAG !RW SK239>2 !SOCK=1]: %RED%<德>%NAME%【+3焰爪】
+ItemDisplay[CL1 !ETH NMAG !RW SK221>2 !SOCK=1]: %RED%<德>%NAME%【+3烏鴉】
+ItemDisplay[CL1 !ETH NMAG !RW SK247>2 !SOCK=1]: %RED%<德>%NAME%【+3召喚灰熊】
 
 // 野蠻人
-ItemDisplay[CL2 !ETH NMAG !RW SK138>2 !SOCK=1]: %RED%%NAME%【+3大叫】
-ItemDisplay[CL2 !ETH NMAG !RW SK149>2 !SOCK=1]: %RED%%NAME%【+3戰鬥體制】
-ItemDisplay[CL2 !ETH NMAG !RW SK154>2 !SOCK=1]: %RED%%NAME%【+3戰鬥狂嗥】
-ItemDisplay[CL2 !ETH NMAG !RW SK142>2 !SOCK=1]: %RED%%NAME%【+3找尋物品】
-ItemDisplay[CL2 !ETH NMAG !RW SK150>2 !SOCK=1]: %RED%%NAME%【+3殘酷嚇阻】
+ItemDisplay[CL2 !ETH NMAG !RW SK138>2 !SOCK=1]: %RED%<蠻>%NAME%【+3大叫】
+ItemDisplay[CL2 !ETH NMAG !RW SK149>2 !SOCK=1]: %RED%<蠻>%NAME%【+3戰鬥體制】
+ItemDisplay[CL2 !ETH NMAG !RW SK154>2 !SOCK=1]: %RED%<蠻>%NAME%【+3戰鬥狂嗥】
+ItemDisplay[CL2 !ETH NMAG !RW SK142>2 !SOCK=1]: %RED%<蠻>%NAME%【+3找尋物品】
+ItemDisplay[CL2 !ETH NMAG !RW SK150>2 !SOCK=1]: %RED%<蠻>%NAME%【+3殘酷嚇阻】
 
 // 聖騎士
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=0]: <聖>%NAME%【菁英】 //聖騎盾(40抗以上)
@@ -216,21 +216,21 @@ ItemDisplay[WP12 !ETH NMAG !RW SK84>2 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨�
 ItemDisplay[WP12 !ETH NMAG !RW SK83>2 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆】 // +3褻瀆83
 
 // 刺客
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK278>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【寒霜刀雨│+3毒牙】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK275>0) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【寒霜刀雨│+1飛龍在天】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK267>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【寒霜刀雨│+3能量消解】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK262>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【寒霜刀雨│+3火焰復甦】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK271>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【寒霜刀雨│+3雷光守衛】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK276>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【寒霜刀雨│+3亡者守衛】
-ItemDisplay[CL5 NMAG !RW SK261>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【+3電能守衛】
-ItemDisplay[CL5 NMAG !RW SK262>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【+3火焰復甦】
-ItemDisplay[CL5 NMAG !RW SK271>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【+3火焰復甦】
-ItemDisplay[CL5 NMAG !RW SK272>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【+3復甦獄火】
-ItemDisplay[CL5 NMAG !RW SK274>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【+3寒冰刃】
-ItemDisplay[CL5 NMAG !RW SK275>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【+3飛龍在天】
-ItemDisplay[CL5 NMAG !RW SK276>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【+3亡者守衛】
-ItemDisplay[CL5 NMAG !RW SK277>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【+3刀刃之盾】
-ItemDisplay[CL5 NMAG !RW SK278>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%%NAME%【+3毒牙】
+ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK278>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3毒牙】
+ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK275>0) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+1飛龍在天】
+ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK267>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3能量消解】
+ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK262>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3火焰復甦】
+ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK271>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3雷光守衛】
+ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK276>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3亡者守衛】
+ItemDisplay[CL5 NMAG !RW SK261>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3電能守衛】
+ItemDisplay[CL5 NMAG !RW SK262>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3火焰復甦】
+ItemDisplay[CL5 NMAG !RW SK271>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3火焰復甦】
+ItemDisplay[CL5 NMAG !RW SK272>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3復甦獄火】
+ItemDisplay[CL5 NMAG !RW SK274>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3寒冰刃】
+ItemDisplay[CL5 NMAG !RW SK275>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3飛龍在天】
+ItemDisplay[CL5 NMAG !RW SK276>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3亡者守衛】
+ItemDisplay[CL5 NMAG !RW SK277>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3刀刃之盾】
+ItemDisplay[CL5 NMAG !RW SK278>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3毒牙】
 
 // 亞馬遜
 ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
