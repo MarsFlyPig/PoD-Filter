@@ -1,4 +1,4 @@
-// 2020/01/31 22:25
+// 2020/02/01 03:20
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -252,7 +252,7 @@ ItemDisplay[NMAG WEAPON SOCK=2 !RW CLVL>29]: // 30等後刪除2s白色武器
 
 ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29]: // 30等後刪除普通白裝
 ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
-ItemDisplay[(WEAPON OR ARMOR) ELT !CL1 !CL2 !CL5 NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
+ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
 
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 ItemDisplay[(rin OR amu) MAG CLVL>49]: // 50等後刪除項鍊戒指藍裝
