@@ -1,4 +1,4 @@
-// 2020/01/30 23:50
+// 2020/01/31 11:20
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -134,71 +134,74 @@ ItemDisplay[r33]: [###33-%NAME%###]
 // ===>>> 裝備(要特別顯示/隱藏優先寫在這) <<<===
 
 // 頭盔
-ItemDisplay[(uh9 OR usk) !ETH NMAG SOCK=3]: %NAME%【菁英】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
+ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
 
 // 盾牌
-ItemDisplay[uit DEF>144 !ETH NMAG SOCK=0]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
-ItemDisplay[uit !ETH NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
+ItemDisplay[uit DEF>144 !ETH NMAG !RW SOCK=0]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
+ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神/鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
-ItemDisplay[xtp DEF>254 !ETH NMAG SOCK=3]: %NAME%(255防↑)【菁英】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
-ItemDisplay[(utp OR uui OR uea) !ETH NMAG SOCK=3]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
-ItemDisplay[(utp OR uar) !ETH NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、神聖盔甲4 - 剛毅
-ItemDisplay[(utp OR uui OR uea) !ETH NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮4 - 榮耀之鏈
-ItemDisplay[EQ2 !ETH DEF>549 NMAG SOCK>2]: %NAME%(550防↑)【菁英】(%SOCKETS%) //550防以上34 - 強制/石塊
-ItemDisplay[EQ2 ETH DEF>699 NMAG SOCK>2]: %NAME%(700防↑)【菁英】(%SOCKETS%) //700防以上(無)34 - 強制/石塊
+ItemDisplay[xtp DEF>254 !ETH NMAG !RW SOCK=3]: %NAME%(255防↑)【謎團】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
+ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
+ItemDisplay[(utp OR uar) !ETH NMAG !RW SOCK=4]: %NAME%【剛毅】(%SOCKETS%) //執政官鎧甲、神聖盔甲4 - 剛毅
+ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=4]: %NAME%【榮耀之鏈】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮4 - 榮耀之鏈
+ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%(550防↑)【強制】(%SOCKETS%) //550防以上34 - 強制/石塊
+ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%(550防↑)【石塊】(%SOCKETS%) //550防以上34 - 強制/石塊
+ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=3]: %NAME%(700防↑)【強制】(%SOCKETS%) //700防以上(無)34 - 強制/石塊
+ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=4]: %NAME%(700防↑)【石塊】(%SOCKETS%) //700防以上(無)34 - 強制/石塊
 
 // 武器-劍
-ItemDisplay[crs NMAG !INF SOCK=3]: %NAME%【普通】(%SOCKETS%) //水晶劍3 - 新月
-ItemDisplay[crs NMAG !ETH SOCK=4]: %NAME%【普通】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
-ItemDisplay[crs NMAG SOCK=5]: %NAME%【普通】(%SOCKETS%) //水晶劍5 - 戰爭召喚
-ItemDisplay[7cr NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //幻化之刃4 - 熱情
-ItemDisplay[7cr NMAG SOCK=5]: %NAME%【菁英】(%SOCKETS%) //幻化之刃5 - 悔恨
-ItemDisplay[7cr NMAG SOCK=6]: %NAME%【菁英】(%SOCKETS%) //幻化之刃6 - 最後希望
-ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)4 - 誓約
-ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG SOCK=5]: %NAME%【菁英】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)5 - 永恒/死神
-ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG SOCK=6]: %NAME%【菁英】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)6 - 死亡呼吸
+ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月】(%SOCKETS%) //水晶劍3 - 新月
+ItemDisplay[crs NMAG !RW !ETH SOCK=4]: %NAME%【精神/思考之聲】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
+ItemDisplay[crs NMAG !RW SOCK=5]: %NAME%【戰爭召喚】(%SOCKETS%) //水晶劍5 - 戰爭召喚
+ItemDisplay[7cr NMAG !RW SOCK=4]: %NAME%【熱情】(%SOCKETS%) //幻化之刃4 - 熱情
+ItemDisplay[7cr NMAG !RW SOCK=5]: %NAME%【悔恨】(%SOCKETS%) //幻化之刃5 - 悔恨
+ItemDisplay[7cr NMAG !RW SOCK=6]: %NAME%【最後希望】(%SOCKETS%) //幻化之刃6 - 最後希望
+ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=4]: %NAME%【誓約】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)4 - 誓約
+ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=5]: %NAME%【永恒/死神】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)5 - 永恒/死神
+ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)6 - 死亡呼吸
 
 // 武器-斧
-ItemDisplay[7wa !ETH NMAG SOCK=5]: %NAME%【菁英】(%SOCKETS%) //狂戰士斧5 - 野獸/悔恨
-ItemDisplay[7wa !ETH NMAG SOCK=6]: %NAME%【菁英】(%SOCKETS%) //狂戰士斧6 - 最後希望
-ItemDisplay[7wa ETH NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //狂戰士斧(無)4 - 誓约
-ItemDisplay[7wa ETH NMAG SOCK=5]: %NAME%【菁英】(%SOCKETS%) //狂戰士斧(無)5 - 永恒/死神
-ItemDisplay[7wa ETH NMAG SOCK=6]: %NAME%【菁英】(%SOCKETS%) //狂戰士斧(無)6 - 死亡呼吸
-ItemDisplay[wax NMAG SOCK=5]: %NAME%【普通】(%SOCKETS%) //巨戰斧5 - 末日
+ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸/悔恨】(%SOCKETS%) //狂戰士斧5 - 野獸/悔恨
+ItemDisplay[7wa !ETH NMAG !RW SOCK=6]: %NAME%【最後希望】(%SOCKETS%) //狂戰士斧6 - 最後希望
+ItemDisplay[7wa ETH NMAG !RW SOCK=4]: %NAME%【誓约】(%SOCKETS%) //狂戰士斧(無)4 - 誓约
+ItemDisplay[7wa ETH NMAG !RW SOCK=5]: %NAME%【永恒/死神】(%SOCKETS%) //狂戰士斧(無)5 - 永恒/死神
+ItemDisplay[7wa ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //狂戰士斧(無)6 - 死亡呼吸
+ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】(%SOCKETS%) //巨戰斧5 - 末日
 
 // 武器-長斧
-ItemDisplay[scy ETH NMAG SOCK=4]: %NAME%【普通】(%SOCKETS%) //鐮刀(無)4 - 無限
-ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG SOCK=4 CLVL<86]: %NAME%【菁英】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
-ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG SOCK=5 CLVL<86]: %NAME%【菁英】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從
-ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)4 - 眼光/無限/驕傲
-ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG SOCK=5]: %NAME%【菁英】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)5 - 遵從
+ItemDisplay[scy ETH NMAG !RW SOCK=4]: %NAME%【無限】(%SOCKETS%) //鐮刀(無)4 - 無限
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4 CLVL<86]: %NAME%【眼光/無限/驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5 CLVL<86]: %NAME%【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=4]: %NAME%【眼光/無限/驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)4 - 眼光/無限/驕傲
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=5]: %NAME%【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)5 - 遵從
 
 // 武器-棍棒
-ItemDisplay[fla NMAG SOCK=4]: %NAME%【普通】(%SOCKETS%) //連枷4 - 橡樹之心
-ItemDisplay[7fl NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //天罰之錘4 - 橡樹之心
-ItemDisplay[7gm ETH NMAG SOCK=6]: %NAME%【菁英】(%SOCKETS%) //雷鎚(無)6 - 死亡呼吸
+ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //連枷4 - 橡樹之心
+ItemDisplay[7fl NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //天罰之錘4 - 橡樹之心
+ItemDisplay[7gm ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //雷鎚(無)6 - 死亡呼吸
 
 // 武器-弓
-ItemDisplay[(6cb OR 6s7) NMAG SOCK=4]: %NAME%【菁英】(%SOCKETS%) //巨弓、鑽石弓4 - 信心
-ItemDisplay[(6l7 OR 6lw) NMAG SOCK=6]: %NAME%【菁英】(%SOCKETS%) //十字軍之弓、九頭蛇弓6 - 死亡呼吸
+ItemDisplay[(6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】(%SOCKETS%) //巨弓、鑽石弓4 - 信心
+ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓6 - 死亡呼吸
 
 // 特殊基底
-ItemDisplay[(amb OR amc) NMAG TABSK0=3 SOCK=4]: <亞>%NAME%【菁英】(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
+ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
 
-ItemDisplay[CL3 ELT !ETH NMAG RES>39 SOCK=0]: <聖>%NAME%【菁英】 //聖騎盾(40抗以上)
-ItemDisplay[CL3 ELT !ETH NMAG RES>39 SOCK=3]: <聖>%NAME%【菁英】(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
-ItemDisplay[CL3 ELT NMAG RES>39 SOCK=4]: <聖>%NAME%【菁英】(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神/流亡(無)
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=0]: <聖>%NAME%【菁英】 //聖騎盾(40抗以上)
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂/夢境/飛龍】(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神
+ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【流亡】(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
 
 ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛/白骨裝甲-屍體爆炸-號召】 // +3骨矛84 白骨裝甲68 屍體爆炸74 號召79
 ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆/白骨裝甲-屍體爆炸-號召】 // +3褻瀆83 白骨裝甲68 屍體爆炸74 號召79
 
 // ===>>> 其他 <<<===
 
-ItemDisplay[(crs OR bsd) NMAG !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<40]: %NAME%【精神-劍】(%SOCKETS%) //40等前顯示 0s4s水晶劍 闊劍
-ItemDisplay[NORM WP8 NMAG SOCK=4 CLVL<40]: %NAME%【眼光-長斧】(%SOCKETS%) //40等前顯示 4s長斧
+ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<40]: %NAME%【精神-劍】(%SOCKETS%) //40等前顯示 0s4s水晶劍 闊劍
+ItemDisplay[NORM WP8 NMAG !RW SOCK=4 CLVL<40]: %NAME%【眼光-長斧】(%SOCKETS%) //40等前顯示 4s長斧
 
-ItemDisplay[EQ2 ELT NMAG]: $%PRICE%$ // 缺錢用 顯示菁英盔甲賣錢
+ItemDisplay[EQ2 ELT NMAG !RW]: $%PRICE%$ // 缺錢用 顯示菁英盔甲賣錢
 
 // ===>>> 裝備 <<<===
 
