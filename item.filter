@@ -1,4 +1,4 @@
-// 2020/02/02 00:50
+// 2020/02/02 02:40
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -210,10 +210,10 @@ ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】(%SOCKE
 ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【流亡】(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
 
 // 死靈
-ItemDisplay[WP12 !ETH NMAG !RW SK84>2 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛│白骨裝甲-屍體爆炸-號召】 // +3骨矛84 白骨裝甲68 屍體爆炸74 號召79
-ItemDisplay[WP12 !ETH NMAG !RW SK83>2 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆│白骨裝甲-屍體爆炸-號召】 // +3褻瀆83 白骨裝甲68 屍體爆炸74 號召79
-ItemDisplay[WP12 !ETH NMAG !RW SK84>2 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛】 // +3骨矛84
-ItemDisplay[WP12 !ETH NMAG !RW SK83>2 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆】 // +3褻瀆83
+ItemDisplay[WP12 !ETH !wnd !ywn !9wn NMAG !RW SK84>2 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛│白骨裝甲-屍體爆炸-號召】 // +3骨矛84 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH !wnd !ywn !9wn NMAG !RW SK83>2 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆│白骨裝甲-屍體爆炸-號召】 // +3褻瀆83 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH !wnd !ywn !9wn NMAG !RW SK84>2 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛】 // +3骨矛84
+ItemDisplay[WP12 !ETH !wnd !ywn !9wn NMAG !RW SK83>2 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆】 // +3褻瀆83
 
 // 刺客
 ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK278>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3毒牙】
