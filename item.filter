@@ -1,4 +1,4 @@
-// 2020/02/02 02:40
+// 2020/02/02 03:05
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -204,16 +204,16 @@ ItemDisplay[CL2 !ETH NMAG !RW SK142>2 !SOCK=1]: %RED%<蠻>%NAME%【+3找尋物�
 ItemDisplay[CL2 !ETH NMAG !RW SK150>2 !SOCK=1]: %RED%<蠻>%NAME%【+3殘酷嚇阻】
 
 // 聖騎士
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=0]: <聖>%NAME%【菁英】 //聖騎盾(40抗以上)
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂│夢境│飛龍】(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神
-ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【流亡】(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=0]: <聖>%NAME%【菁英】(40抗↑) //聖騎盾(40抗以上)
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂│夢境│飛龍】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神
+ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【流亡】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
 
 // 死靈
-ItemDisplay[WP12 !ETH !wnd !ywn !9wn NMAG !RW SK84>2 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛│白骨裝甲-屍體爆炸-號召】 // +3骨矛84 白骨裝甲68 屍體爆炸74 號召79
-ItemDisplay[WP12 !ETH !wnd !ywn !9wn NMAG !RW SK83>2 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆│白骨裝甲-屍體爆炸-號召】 // +3褻瀆83 白骨裝甲68 屍體爆炸74 號召79
-ItemDisplay[WP12 !ETH !wnd !ywn !9wn NMAG !RW SK84>2 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3骨矛】 // +3骨矛84
-ItemDisplay[WP12 !ETH !wnd !ywn !9wn NMAG !RW SK83>2 (SOCK=0 OR SOCK=2)]: %RED%%NAME%【+3褻瀆】 // +3褻瀆83
+ItemDisplay[WP12 !ETH NMAG !RW SK84>2 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %RED%%NAME%【+3骨矛│白骨裝甲-屍體爆炸-號召】 // +3骨矛84 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH NMAG !RW SK83>2 (SK68>1 OR SK74>1 OR SK79>1) (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %RED%%NAME%【+3褻瀆│白骨裝甲-屍體爆炸-號召】 // +3褻瀆83 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH NMAG !RW SK84>2 (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %RED%%NAME%【+3骨矛】 // +3骨矛84
+ItemDisplay[WP12 !ETH NMAG !RW SK83>2 (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %RED%%NAME%【+3褻瀆】 // +3褻瀆83
 
 // 刺客
 ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK278>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3毒牙】
@@ -233,7 +233,7 @@ ItemDisplay[CL5 NMAG !RW SK277>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%
 ItemDisplay[CL5 NMAG !RW SK278>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3毒牙】
 
 // 亞馬遜
-ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
+ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3技)(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
 
 // ===>>> 其他 <<<===
 
