@@ -1,4 +1,4 @@
-// 2020/02/02 04:35
+// 2020/02/02 19:00
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -216,29 +216,29 @@ ItemDisplay[WP12 !ETH NMAG !RW SK84>2 (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %RED%%
 ItemDisplay[WP12 !ETH NMAG !RW SK83>2 (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %RED%%NAME%【+3褻瀆】 // +3褻瀆83
 
 // 刺客
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK278>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3毒牙】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK275>0) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+1飛龍在天】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK267>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3能量消解】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK262>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3火焰復甦】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK271>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3雷光守衛】
-ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK276>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3亡者守衛】
-ItemDisplay[CL5 NMAG !RW SK261>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3電能守衛】
-ItemDisplay[CL5 NMAG !RW SK262>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3火焰復甦】
-ItemDisplay[CL5 NMAG !RW SK271>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3火焰復甦】
-ItemDisplay[CL5 NMAG !RW SK272>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3復甦獄火】
-ItemDisplay[CL5 NMAG !RW SK274>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3寒冰刃】
-ItemDisplay[CL5 NMAG !RW SK275>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3飛龍在天】
-ItemDisplay[CL5 NMAG !RW SK276>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3亡者守衛】
-ItemDisplay[CL5 NMAG !RW SK277>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3刀刃之盾】
-ItemDisplay[CL5 NMAG !RW SK278>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3毒牙】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK279>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3毒牙】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK276>0) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+1飛龍在天】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK268>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3能量消解】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK263>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3火焰復甦】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK272>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3雷光守衛】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK277>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3亡者守衛】
+ItemDisplay[CL5 NMAG !RW SK262>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3電能守衛】
+ItemDisplay[CL5 NMAG !RW SK263>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3火焰復甦】
+ItemDisplay[CL5 NMAG !RW SK272>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3火焰復甦】
+ItemDisplay[CL5 NMAG !RW SK273>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3復甦獄火】
+ItemDisplay[CL5 NMAG !RW SK275>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3寒霜刀雨】
+ItemDisplay[CL5 NMAG !RW SK276>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3飛龍在天】
+ItemDisplay[CL5 NMAG !RW SK277>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3亡者守衛】
+ItemDisplay[CL5 NMAG !RW SK278>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3刀刃之盾】
+ItemDisplay[CL5 NMAG !RW SK279>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3毒牙】
 
 // 亞馬遜
 ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3技)(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
 
 // ===>>> 其他 <<<===
 
-ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<40]: %NAME%【精神-劍】(%SOCKETS%) //40等前顯示 0s4s水晶劍 闊劍
-ItemDisplay[NORM WP8 NMAG !RW SOCK=4 CLVL<40]: %NAME%【眼光-長斧】(%SOCKETS%) //40等前顯示 4s長斧
+ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%) //50等前顯示 0s4s水晶劍 闊劍
+ItemDisplay[NORM WP8 NMAG !RW SOCK=4 CLVL<50]: %NAME%【眼光-長斧】(%SOCKETS%) //50等前顯示 4s長斧
 
 ItemDisplay[EQ2 ELT NMAG !RW]: $%PRICE%$ // 缺錢用 顯示菁英盔甲賣錢
 
@@ -255,8 +255,8 @@ ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>69]: // 70等後刪除菁英白�
 
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 //ItemDisplay[(rin OR amu) MAG CLVL>49]: // 50等後刪除項鍊戒指藍裝(關閉)
-ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠項鍊戒指外普通藍裝
-ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠項鍊戒指以外所有藍裝
+ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠項鍊戒指外普通藍裝
+ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠項鍊戒指以外所有藍裝
 
 // 職業專用裝備
 ItemDisplay[CL1 NORM SOCK=0]: <德>%NAME%【普通】
