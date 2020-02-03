@@ -33,7 +33,7 @@ ItemDisplay[cx8]: ※%NAME%%WHITE%※ //附魔寶珠
 // 捲 書
 ItemDisplay[(tsc OR isc) CLVL>29]: //30等後不顯示傳送鑑定卷軸
 ItemDisplay[tsc]: %BLUE%傳%WHITE%送卷軸
-ItemDisplay[isc]: %GREEN%鑑%WHITE%定卷轴
+ItemDisplay[isc]: %GREEN%鑑%WHITE%定卷軸
 ItemDisplay[tbk]: 傳送之書
 ItemDisplay[ibk]: 鑑定之書
 
