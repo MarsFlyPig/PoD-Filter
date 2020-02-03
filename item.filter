@@ -1,4 +1,4 @@
-// 2020/02/03 08:20
+// 2020/02/03 23:00
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -14,16 +14,16 @@ ItemDisplay[dhn]: %NAME% //暗黑破壞神之角
 ItemDisplay[bey]: %NAME% //巴爾之眼
 ItemDisplay[mbr]: %NAME% //墨菲斯托之腦
 ItemDisplay[toa]: %NAME% //赦免徽章
-ItemDisplay[tes]: %NAME% (A12) //扭曲的苦痛精華
+ItemDisplay[tes]: %NAME% (A1.A2) //扭曲的苦痛精華
 ItemDisplay[ceh]: %NAME% (A3) //充盈的憎恨精華
 ItemDisplay[bet]: %NAME% (A4) //燃燒的恐懼精華
 ItemDisplay[fed]: %NAME% (A5) //潰爛的毀滅精華
 ItemDisplay[std]: %NAME% //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
-ItemDisplay[ma4]: 『%NAME%(Relic)』 //T1 Relic
-ItemDisplay[ma5]: 『%NAME%(Relic)』 //T2 Relic
-ItemDisplay[ma6]: 『%NAME%(Relic)』 //T3 Relic
-ItemDisplay[ma2]: 『%NAME%(Relic)』 //T4 Relic
+ItemDisplay[ma4]: 『%NAME% (Relic)』 //T1 Relic
+ItemDisplay[ma5]: 『%NAME% (Relic)』 //T2 Relic
+ItemDisplay[ma6]: 『%NAME% (Relic)』 //T3 Relic
+ItemDisplay[ma2]: 『%NAME% (Relic)』 //T4 Relic
 ItemDisplay[leg]: ※%NAME%※ //維特之腳
 ItemDisplay[cx5]: ※%NAME%%WHITE% (ooc)※ //腐化寶珠
 ItemDisplay[cx6]: %NAME% //暗黑破壞神的靈魂石
@@ -170,6 +170,7 @@ ItemDisplay[7wa ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //狂�
 ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】(%SOCKETS%) //巨戰斧5 - 末日
 
 // 武器-長斧
+ItemDisplay[7s8 ETH NMAG !RW SOCK=0]: %NAME%【菁英】(無形) //銳利之斧(無) - 可拼打孔
 ItemDisplay[scy ETH NMAG !RW SOCK=4]: %NAME%【無限】(%SOCKETS%) //鐮刀(無)4 - 無限
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4 CLVL<86]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5 CLVL<86]: %NAME%【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從
@@ -237,8 +238,8 @@ ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3�
 
 // ===>>> 其他 <<<===
 
-ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%) //50等前顯示 0s4s水晶劍 闊劍
-ItemDisplay[NORM WP8 NMAG !RW SOCK=4 CLVL<50]: %NAME%【眼光-長斧】(%SOCKETS%) //50等前顯示 4s長斧
+ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<70]: %NAME%【精神-劍】(%SOCKETS%) //70等前顯示 0s4s水晶劍 闊劍
+ItemDisplay[NORM WP8 NMAG !RW SOCK=4 CLVL<70]: %NAME%【眼光-長斧】(%SOCKETS%) //70等前顯示 4s長斧
 
 ItemDisplay[EQ2 ELT NMAG !RW]: $%PRICE%$ // 缺錢用 顯示菁英盔甲賣錢
 
@@ -254,7 +255,6 @@ ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>49]: // 50等後刪除進階白�
 ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>69]: // 70等後刪除菁英白裝
 
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
-//ItemDisplay[(rin OR amu) MAG CLVL>49]: // 50等後刪除項鍊戒指藍裝(關閉)
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠項鍊戒指外普通藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠項鍊戒指以外所有藍裝
 
