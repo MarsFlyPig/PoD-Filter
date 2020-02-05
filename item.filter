@@ -257,9 +257,9 @@ ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3�
 // ===>>> 其他 <<<===
 
 // 手工基底
-ItemDisplay[(vgl OR xvg OR uvg) MAG ID ILVL>79]: %NAME%%ORANGE%【壓碎:那夫(4)+紅寶+珠寶】%BLUE%[L%ILVL%] // 重手套/鯊皮手套/吸血鬼骸骨手套
-ItemDisplay[(mgl OR xmg OR umg) MAG ID ILVL>79]: %NAME%%ORANGE%【擊退:歐特(9)+藍寶+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套/重型手鐲/吸血鬼手套
-ItemDisplay[(lgl OR xlg OR ulg) MAG ID ILVL>79]: %NAME%%ORANGE%【回魔:歐特(9)+紫寶+珠寶】%BLUE%[L%ILVL%] // 皮手套/魔皮手套/荊棘連指手套
+ItemDisplay[(vgl OR xvg OR uvg) MAG ILVL>79]: %NAME%%ORANGE%【壓碎:那夫(4)+紅寶+珠寶】%BLUE%[L%ILVL%] // 重手套/鯊皮手套/吸血鬼骸骨手套
+ItemDisplay[(mgl OR xmg OR umg) MAG ILVL>79]: %NAME%%ORANGE%【擊退:歐特(9)+藍寶+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套/重型手鐲/吸血鬼手套
+ItemDisplay[(lgl OR xlg OR ulg) MAG ILVL>79]: %NAME%%ORANGE%【回魔:歐特(9)+紫寶+珠寶】%BLUE%[L%ILVL%] // 皮手套/魔皮手套/荊棘連指手套
 ItemDisplay[amu MAG ID ILVL>89]: %NAME%%ORANGE%【施法:拉爾(8)+紫寶+珠寶】%BLUE%[L%ILVL%] // 藍項練
 ItemDisplay[rin MAG ID ILVL>79]: %NAME%%ORANGE%【偷命:索爾(12)+紅寶+珠寶】%BLUE%[L%ILVL%] // 藍戒指
 
