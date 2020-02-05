@@ -1,10 +1,13 @@
-// 2020/02/05 18:15
+// 2020/02/05 18:35
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
 // 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
 
 //===================================
+
+// 任務物品
+ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
 
 // 特殊物品
 ItemDisplay[pk1]: %NAME%(女伯爵) //恐懼之鑰
