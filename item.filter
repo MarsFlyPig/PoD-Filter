@@ -1,4 +1,4 @@
-// 2020/02/06 02:20
+// 2020/02/06 06:20
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -260,8 +260,6 @@ ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3�
 ItemDisplay[(vgl OR xvg OR uvg) MAG ILVL>79]: %NAME%%ORANGE%【壓碎:那夫(4)+紅寶+珠寶】%BLUE%[L%ILVL%] // 重手套/鯊皮手套/吸血鬼骸骨手套
 ItemDisplay[(mgl OR xmg OR umg) MAG ILVL>79]: %NAME%%ORANGE%【擊退:歐特(9)+藍寶+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套/重型手鐲/吸血鬼手套
 ItemDisplay[(lgl OR xlg OR ulg) MAG ILVL>79]: %NAME%%ORANGE%【回魔:歐特(9)+紫寶+珠寶】%BLUE%[L%ILVL%] // 皮手套/魔皮手套/荊棘連指手套
-ItemDisplay[amu MAG ID ILVL>89]: %NAME%%ORANGE%【施法:拉爾(8)+紫寶+珠寶】%BLUE%[L%ILVL%] // 藍項練
-ItemDisplay[rin MAG ID ILVL>79]: %NAME%%ORANGE%【偷命:索爾(12)+紅寶+珠寶】%BLUE%[L%ILVL%] // 藍戒指
 
 ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<70]: %NAME%【精神-劍】(%SOCKETS%) //70等前顯示 0s4s水晶劍 闊劍
 ItemDisplay[NORM WP8 NMAG !RW SOCK=4 CLVL<70]: %NAME%【眼光-長斧】(%SOCKETS%) //70等前顯示 4s長斧
