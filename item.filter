@@ -1,4 +1,4 @@
-// 2020/02/06 06:20
+// 2020/02/06 12:20
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -140,9 +140,9 @@ ItemDisplay[r33]: [######33-%NAME%######]
 ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
 
 // 盾牌
-ItemDisplay[ush !ETH NMAG !RW SOCK=3]: %NAME%【聖堂│夢境】(%SOCKETS%) //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
+ItemDisplay[ush !ETH NMAG !RW SOCK=3]: %NAME%【聖堂|夢境】(%SOCKETS%) //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
 ItemDisplay[uit DEF>144 !ETH NMAG !RW SOCK=0]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
-ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
+ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神|鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
 ItemDisplay[xtp DEF>249 !ETH NMAG !RW SOCK=3]: %NAME%(250防↑)【謎團】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
@@ -151,40 +151,42 @@ ItemDisplay[(utp OR uar) !ETH NMAG !RW SOCK=4]: %NAME%【剛毅】(%SOCKETS%) //
 ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=4]: %NAME%【榮耀之鏈】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮4 - 榮耀之鏈
 ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%(550防↑)【強制】(%SOCKETS%) //550防以上3 - 強制
 ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%(550防↑)【石塊】(%SOCKETS%) //550防以上4 - 石塊
-ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=3]: %NAME%(700防↑)【強制】(%SOCKETS%) //700防以上(無)3 - 強制
-ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=4]: %NAME%(700防↑)【石塊】(%SOCKETS%) //700防以上(無)4 - 石塊
+ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=3]: @%NAME%@(700防↑)【強制】(%SOCKETS%) //700防以上(無)3 - 強制
+ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=4]: @%NAME%@(700防↑)【石塊】(%SOCKETS%) //700防以上(無)4 - 石塊
 
 // 武器-劍
 ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月】(%SOCKETS%) //水晶劍3 - 新月
-ItemDisplay[crs NMAG !RW !ETH SOCK=4]: %NAME%【精神│思考之聲】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
+ItemDisplay[crs NMAG !RW !ETH SOCK=4]: %NAME%【精神|思考之聲】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
 ItemDisplay[crs NMAG !RW SOCK=5]: %NAME%【戰爭召喚】(%SOCKETS%) //水晶劍5 - 戰爭召喚
 ItemDisplay[7cr NMAG !RW SOCK=4]: %NAME%【熱情】(%SOCKETS%) //幻化之刃4 - 熱情
 ItemDisplay[7cr NMAG !RW SOCK=5]: %NAME%【悔恨】(%SOCKETS%) //幻化之刃5 - 悔恨
 ItemDisplay[7cr NMAG !RW SOCK=6]: %NAME%【最後希望】(%SOCKETS%) //幻化之刃6 - 最後希望
 ItemDisplay[(7gd OR 7gs OR 7cm) NMAG !RW SOCK=3]: %NAME%【執法者】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍3 - 執法者
-ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=4]: %NAME%【誓約】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)4 - 誓約
-ItemDisplay[7gd ETH NMAG !RW SOCK=5]: %NAME%【永恒│死神】(%SOCKETS%) //巨神之刃(無)5 - 永恒/死神
-ItemDisplay[7gd ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //巨神之刃(無)6 - 死亡呼吸
+ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=4]: @%NAME%@【誓約】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)4 - 誓約
+ItemDisplay[7gd ETH NMAG !RW SOCK=5]: @%NAME%@【永恒|死神】(%SOCKETS%) //巨神之刃(無)5 - 永恒/死神
+ItemDisplay[7gd ETH NMAG !RW SOCK=6]: @%NAME%@【死亡呼吸】(%SOCKETS%) //巨神之刃(無)6 - 死亡呼吸
 
 // 武器-斧
 ItemDisplay[7wa !ETH NMAG !RW SOCK=4]: %NAME%【熱情】(%SOCKETS%) //狂戰士斧4 - 熱情
-ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸│悔恨】(%SOCKETS%) //狂戰士斧5 - 野獸/悔恨
+ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸|悔恨】(%SOCKETS%) //狂戰士斧5 - 野獸/悔恨
 ItemDisplay[7wa !ETH NMAG !RW SOCK=6]: %NAME%【最後希望】(%SOCKETS%) //狂戰士斧6 - 最後希望
-ItemDisplay[7wa ETH NMAG !RW SOCK=4]: %NAME%【誓约】(%SOCKETS%) //狂戰士斧(無)4 - 誓约
-ItemDisplay[7wa ETH NMAG !RW SOCK=5]: %NAME%【永恒│死神】(%SOCKETS%) //狂戰士斧(無)5 - 永恒/死神
-ItemDisplay[7wa ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //狂戰士斧(無)6 - 死亡呼吸
+ItemDisplay[7wa ETH NMAG !RW SOCK=4]: @%NAME%@【誓约】(%SOCKETS%) //狂戰士斧(無)4 - 誓约
+ItemDisplay[7wa ETH NMAG !RW SOCK=5]: @%NAME%@【永恒|死神】(%SOCKETS%) //狂戰士斧(無)5 - 永恒/死神
+ItemDisplay[7wa ETH NMAG !RW SOCK=6]: @%NAME%@【死亡呼吸】(%SOCKETS%) //狂戰士斧(無)6 - 死亡呼吸
 ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】(%SOCKETS%) //巨戰斧5 - 末日
 
 // 武器-長斧
-ItemDisplay[7s8 ETH NMAG !RW SOCK=0]: %NAME%【可拼打孔】 //銳利之斧(無) - 可拼打孔
-ItemDisplay[scy ETH NMAG !RW SOCK=4]: %NAME%【無限】(%SOCKETS%) //鐮刀(無)4 - 無限
-ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
+ItemDisplay[7s8 ETH NMAG !RW SOCK=0]: @%NAME%@【可拼打孔】 //銳利之斧(無) - 可拼打孔
+ItemDisplay[scy ETH NMAG !RW SOCK=4]: @%NAME%@【無限】(%SOCKETS%) //鐮刀(無)4 - 無限
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=4]: @%NAME%@【眼光|無限|驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)4 - 眼光/無限/驕傲
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=5]: @%NAME%@【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)5 - 遵從
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4]: %NAME%【眼光|無限|驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5]: %NAME%【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從
 
 // 武器-棍棒
 ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //連枷4 - 橡樹之心
 ItemDisplay[7fl NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //天罰之錘4 - 橡樹之心
-ItemDisplay[7gm ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //雷鎚(無)6 - 死亡呼吸
+ItemDisplay[7gm ETH NMAG !RW SOCK=6]: @%NAME%@【死亡呼吸】(%SOCKETS%) //雷鎚(無)6 - 死亡呼吸
 
 // 武器-弓
 ItemDisplay[(6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】(%SOCKETS%) //巨弓、鑽石弓4 - 信心
@@ -208,26 +210,28 @@ ItemDisplay[CL2 !ETH NMAG !RW SK154>2 !SOCK=1 ILVL>25]: %RED%<蠻>%NAME%【+3戰
 ItemDisplay[CL2 !ETH NMAG !RW SK142>2 !SOCK=1 ILVL>25]: %RED%<蠻>%NAME%【+3找尋物品】
 ItemDisplay[CL2 !ETH NMAG !RW SK150>2 !SOCK=1 ILVL>25]: %RED%<蠻>%NAME%【+3殘酷嚇阻】
 ItemDisplay[WEAPON !RW TABSK34>2]: %RED%<<<%NAME%【+3吶喊武器】>>>
+ItemDisplay[CL2 TABSK34>2 SK149>2]: %RED%<<<%NAME%【+6戰鬥體制】>>>
+ItemDisplay[CL2 CLSK4>1 SK149>2]: %RED%<<<%NAME%【+5戰鬥體制】>>>
 
 // 聖騎士
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=0]: <聖>%NAME%【菁英】(40抗↑) //聖騎盾(40抗以上)
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂│夢境│飛龍】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂|夢境|飛龍】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神
-ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【流亡】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
+ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>@%NAME%@【流亡】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
 
 // 死靈
-ItemDisplay[WP12 !ETH NMAG !RW SK84>2 (SK68>1 OR SK74>1 OR SK79>1) !SOCK=1 !wnd !ywn !9wn]: %RED%%NAME%【+3骨矛│白骨裝甲-屍體爆炸-號召】 // 骨矛84 白骨裝甲68 屍體爆炸74 號召79
-ItemDisplay[WP12 !ETH NMAG !RW SK83>2 (SK68>1 OR SK74>1 OR SK79>1) !SOCK=1 !wnd !ywn !9wn]: %RED%%NAME%【+3褻瀆│白骨裝甲-屍體爆炸-號召】 // 褻瀆83 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH NMAG !RW SK84>2 (SK68>1 OR SK74>1 OR SK79>1) !SOCK=1 !wnd !ywn !9wn]: %RED%%NAME%【+3骨矛|白骨裝甲-屍體爆炸-號召】 // 骨矛84 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH NMAG !RW SK83>2 (SK68>1 OR SK74>1 OR SK79>1) !SOCK=1 !wnd !ywn !9wn]: %RED%%NAME%【+3褻瀆|白骨裝甲-屍體爆炸-號召】 // 褻瀆83 白骨裝甲68 屍體爆炸74 號召79
 ItemDisplay[WP12 !ETH NMAG !RW SK84>2 !SOCK=1 !wnd !ywn !9wn]: %RED%%NAME%【+3骨矛】
 ItemDisplay[WP12 !ETH NMAG !RW SK83>2 !SOCK=1 !wnd !ywn !9wn]: %RED%%NAME%【+3褻瀆】
 
 // 刺客
-ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK263>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3火焰復甦】
-ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK268>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3能量消解】
-ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK272>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3雷光守衛】
-ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK276>0) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│飛龍在天】
-ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK277>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3亡者守衛】
-ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK279>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨│+3毒牙】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK263>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨|+3火焰復甦】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK268>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨|+3能量消解】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK272>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨|+3雷光守衛】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK276>0) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨|飛龍在天】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK277>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨|+3亡者守衛】
+ItemDisplay[CL5 NMAG !RW (SK275>0 AND SK279>2) (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【寒霜刀雨|+3毒牙】
 ItemDisplay[CL5 NMAG !RW SK262>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3電能守衛】
 ItemDisplay[CL5 NMAG !RW SK263>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3火焰復甦】
 ItemDisplay[CL5 NMAG !RW SK272>2 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %RED%<刺>%NAME%【+3火焰復甦】
@@ -285,6 +289,12 @@ ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
 
 // 職業專用裝備
+ItemDisplay[CL1 NORM ETH SOCK=0]: <德>@%NAME%@【普通】
+ItemDisplay[CL1 NORM ETH SOCK>0]: <德>@%NAME%@【普通】(%SOCKETS%)
+ItemDisplay[CL1 EXC ETH SOCK=0]: <德>@%NAME%@【進階】
+ItemDisplay[CL1 EXC ETH SOCK>0]: <德>@%NAME%@【進階】(%SOCKETS%)
+ItemDisplay[CL1 ELT ETH SOCK=0]: <德>@%NAME%@【菁英】 
+ItemDisplay[CL1 ELT ETH SOCK>0]: <德>@%NAME%@【菁英】(%SOCKETS%)
 ItemDisplay[CL1 NORM SOCK=0]: <德>%NAME%【普通】
 ItemDisplay[CL1 NORM SOCK>0]: <德>%NAME%【普通】(%SOCKETS%)
 ItemDisplay[CL1 EXC SOCK=0]: <德>%NAME%【進階】
@@ -292,6 +302,12 @@ ItemDisplay[CL1 EXC SOCK>0]: <德>%NAME%【進階】(%SOCKETS%)
 ItemDisplay[CL1 ELT SOCK=0]: <德>%NAME%【菁英】 
 ItemDisplay[CL1 ELT SOCK>0]: <德>%NAME%【菁英】(%SOCKETS%)
 
+ItemDisplay[CL2 NORM ETH SOCK=0]: <蠻>@%NAME%@【普通】
+ItemDisplay[CL2 NORM ETH SOCK>0]: <蠻>@%NAME%@【普通】(%SOCKETS%)
+ItemDisplay[CL2 EXC ETH SOCK=0]: <蠻>@%NAME%@【進階】
+ItemDisplay[CL2 EXC ETH SOCK>0]: <蠻>@%NAME%@【進階】(%SOCKETS%)
+ItemDisplay[CL2 ELT ETH SOCK=0]: <蠻>@%NAME%@【菁英】 
+ItemDisplay[CL2 ELT ETH SOCK>0]: <蠻>@%NAME%@【菁英】(%SOCKETS%)
 ItemDisplay[CL2 NORM SOCK=0]: <蠻>%NAME%【普通】
 ItemDisplay[CL2 NORM SOCK>0]: <蠻>%NAME%【普通】(%SOCKETS%)
 ItemDisplay[CL2 EXC SOCK=0]: <蠻>%NAME%【進階】
@@ -299,6 +315,12 @@ ItemDisplay[CL2 EXC SOCK>0]: <蠻>%NAME%【進階】(%SOCKETS%)
 ItemDisplay[CL2 ELT SOCK=0]: <蠻>%NAME%【菁英】 
 ItemDisplay[CL2 ELT SOCK>0]: <蠻>%NAME%【菁英】(%SOCKETS%)
 
+ItemDisplay[CL3 NORM ETH SOCK=0]: <聖>@%NAME%@【普通】
+ItemDisplay[CL3 NORM ETH SOCK>0]: <聖>@%NAME%@【普通】(%SOCKETS%)
+ItemDisplay[CL3 EXC ETH SOCK=0]: <聖>@%NAME%@【進階】
+ItemDisplay[CL3 EXC ETH SOCK>0]: <聖>@%NAME%@【進階】(%SOCKETS%)
+ItemDisplay[CL3 ELT ETH SOCK=0]: <聖>@%NAME%@【菁英】 
+ItemDisplay[CL3 ELT ETH SOCK>0]: <聖>@%NAME%@【菁英】(%SOCKETS%)
 ItemDisplay[CL3 NORM SOCK=0]: <聖>%NAME%【普通】
 ItemDisplay[CL3 NORM SOCK>0]: <聖>%NAME%【普通】(%SOCKETS%)
 ItemDisplay[CL3 EXC SOCK=0]: <聖>%NAME%【進階】
@@ -306,6 +328,12 @@ ItemDisplay[CL3 EXC SOCK>0]: <聖>%NAME%【進階】(%SOCKETS%)
 ItemDisplay[CL3 ELT SOCK=0]: <聖>%NAME%【菁英】 
 ItemDisplay[CL3 ELT SOCK>0]: <聖>%NAME%【菁英】(%SOCKETS%)
 
+ItemDisplay[CL4 NORM ETH SOCK=0]: <死>@%NAME%@【普通】
+ItemDisplay[CL4 NORM ETH SOCK>0]: <死>@%NAME%@【普通】(%SOCKETS%)
+ItemDisplay[CL4 EXC ETH SOCK=0]: <死>@%NAME%@【進階】
+ItemDisplay[CL4 EXC ETH SOCK>0]: <死>@%NAME%@【進階】(%SOCKETS%)
+ItemDisplay[CL4 ELT ETH SOCK=0]: <死>@%NAME%@【菁英】 
+ItemDisplay[CL4 ELT ETH SOCK>0]: <死>@%NAME%@【菁英】(%SOCKETS%)
 ItemDisplay[CL4 NORM SOCK=0]: <死>%NAME%【普通】
 ItemDisplay[CL4 NORM SOCK>0]: <死>%NAME%【普通】(%SOCKETS%)
 ItemDisplay[CL4 EXC SOCK=0]: <死>%NAME%【進階】
@@ -313,6 +341,12 @@ ItemDisplay[CL4 EXC SOCK>0]: <死>%NAME%【進階】(%SOCKETS%)
 ItemDisplay[CL4 ELT SOCK=0]: <死>%NAME%【菁英】 
 ItemDisplay[CL4 ELT SOCK>0]: <死>%NAME%【菁英】(%SOCKETS%)
 
+ItemDisplay[CL5 NORM ETH SOCK=0]: <刺>@%NAME%@【普通】
+ItemDisplay[CL5 NORM ETH SOCK>0]: <刺>@%NAME%@【普通】(%SOCKETS%)
+ItemDisplay[CL5 EXC ETH SOCK=0]: <刺>@%NAME%@【進階】
+ItemDisplay[CL5 EXC ETH SOCK>0]: <刺>@%NAME%@【進階】(%SOCKETS%)
+ItemDisplay[CL5 ELT ETH SOCK=0]: <刺>@%NAME%@【菁英】 
+ItemDisplay[CL5 ELT ETH SOCK>0]: <刺>@%NAME%@【菁英】(%SOCKETS%)
 ItemDisplay[CL5 NORM SOCK=0]: <刺>%NAME%【普通】
 ItemDisplay[CL5 NORM SOCK>0]: <刺>%NAME%【普通】(%SOCKETS%)
 ItemDisplay[CL5 EXC SOCK=0]: <刺>%NAME%【進階】
@@ -320,6 +354,12 @@ ItemDisplay[CL5 EXC SOCK>0]: <刺>%NAME%【進階】(%SOCKETS%)
 ItemDisplay[CL5 ELT SOCK=0]: <刺>%NAME%【菁英】 
 ItemDisplay[CL5 ELT SOCK>0]: <刺>%NAME%【菁英】(%SOCKETS%)
 
+ItemDisplay[CL6 NORM ETH SOCK=0]: <法>@%NAME%@【普通】
+ItemDisplay[CL6 NORM ETH SOCK>0]: <法>@%NAME%@【普通】(%SOCKETS%)
+ItemDisplay[CL6 EXC ETH SOCK=0]: <法>@%NAME%@【進階】
+ItemDisplay[CL6 EXC ETH SOCK>0]: <法>@%NAME%@【進階】(%SOCKETS%)
+ItemDisplay[CL6 ELT ETH SOCK=0]: <法>@%NAME%@【菁英】 
+ItemDisplay[CL6 ELT ETH SOCK>0]: <法>@%NAME%@【菁英】(%SOCKETS%)
 ItemDisplay[CL6 NORM SOCK=0]: <法>%NAME%【普通】
 ItemDisplay[CL6 NORM SOCK>0]: <法>%NAME%【普通】(%SOCKETS%)
 ItemDisplay[CL6 EXC SOCK=0]: <法>%NAME%【進階】
@@ -327,6 +367,12 @@ ItemDisplay[CL6 EXC SOCK>0]: <法>%NAME%【進階】(%SOCKETS%)
 ItemDisplay[CL6 ELT SOCK=0]: <法>%NAME%【菁英】 
 ItemDisplay[CL6 ELT SOCK>0]: <法>%NAME%【菁英】(%SOCKETS%)
 
+ItemDisplay[CL7 NORM ETH SOCK=0]: <亞>@%NAME%@【普通】
+ItemDisplay[CL7 NORM ETH SOCK>0]: <亞>@%NAME%@【普通】(%SOCKETS%)
+ItemDisplay[CL7 EXC ETH SOCK=0]: <亞>@%NAME%@【進階】
+ItemDisplay[CL7 EXC ETH SOCK>0]: <亞>@%NAME%@【進階】(%SOCKETS%)
+ItemDisplay[CL7 ELT ETH SOCK=0]: <亞>@%NAME%@【菁英】 
+ItemDisplay[CL7 ELT ETH SOCK>0]: <亞>@%NAME%@【菁英】(%SOCKETS%)
 ItemDisplay[CL7 NORM SOCK=0]: <亞>%NAME%【普通】
 ItemDisplay[CL7 NORM SOCK>0]: <亞>%NAME%【普通】(%SOCKETS%)
 ItemDisplay[CL7 EXC SOCK=0]: <亞>%NAME%【進階】
@@ -338,14 +384,16 @@ ItemDisplay[CL7 ELT SOCK>0]: <亞>%NAME%【菁英】(%SOCKETS%)
 ItemDisplay[rin OR amu]: %NAME%【飾品】[L%ILVL%] //戒指 項鍊
 ItemDisplay[aq2 OR cq2]: %NAME%【箭袋】//箭矢 十字箭
 
-// 普通
+// 普通 進階 菁英
+ItemDisplay[NORM ETH SOCK=0]: @%NAME%@【普通】
+ItemDisplay[NORM ETH SOCK>0]: @%NAME%@【普通】(%SOCKETS%)
+ItemDisplay[EXC ETH SOCK=0]: @%NAME%@【進階】
+ItemDisplay[EXC ETH SOCK>0]: @%NAME%@【進階】(%SOCKETS%)
+ItemDisplay[ELT ETH SOCK=0]: @%NAME%@【菁英】 
+ItemDisplay[ELT ETH SOCK>0]: @%NAME%@【菁英】(%SOCKETS%)
 ItemDisplay[NORM SOCK=0]: %NAME%【普通】
 ItemDisplay[NORM SOCK>0]: %NAME%【普通】(%SOCKETS%)
-
-// 進階
 ItemDisplay[EXC SOCK=0]: %NAME%【進階】
 ItemDisplay[EXC SOCK>0]: %NAME%【進階】(%SOCKETS%)
-
-// 菁英
 ItemDisplay[ELT SOCK=0]: %NAME%【菁英】 
 ItemDisplay[ELT SOCK>0]: %NAME%【菁英】(%SOCKETS%)
