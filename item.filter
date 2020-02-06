@@ -1,4 +1,4 @@
-// 2020/02/06 13:40
+// 2020/02/06 14:45
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -209,7 +209,7 @@ ItemDisplay[CL2 !ETH NMAG !RW SK149>2 !SOCK=1 ILVL>25]: %RED%<蠻>%NAME%【+3戰
 ItemDisplay[CL2 !ETH NMAG !RW SK154>2 !SOCK=1 ILVL>25]: %RED%<蠻>%NAME%【+3戰鬥狂嗥】
 ItemDisplay[CL2 !ETH NMAG !RW SK142>2 !SOCK=1 ILVL>25]: %RED%<蠻>%NAME%【+3找尋物品】
 ItemDisplay[CL2 !ETH NMAG !RW SK150>2 !SOCK=1 ILVL>25]: %RED%<蠻>%NAME%【+3殘酷嚇阻】
-ItemDisplay[WEAPON !RW TABSK34>2]: %RED%<<<%NAME%【+3吶喊武器】>>>
+ItemDisplay[WEAPON !RW TABSK34>2]: %RED%<<<%NAME%【+3戰嚎武器】>>>
 ItemDisplay[CL2 TABSK34>2 SK149>2]: %RED%<<<%NAME%【+6戰鬥體制】>>>
 ItemDisplay[CL2 CLSK4>1 SK149>2]: %RED%<<<%NAME%【+5戰鬥體制】>>>
 
