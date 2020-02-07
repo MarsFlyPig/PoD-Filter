@@ -1,4 +1,4 @@
-// 2020/02/07 18:00
+// 2020/02/08 02:10
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -144,8 +144,11 @@ ItemDisplay[ush !ETH NMAG !RW SOCK=3]: %NAME%【聖堂│夢境】(%SOCKETS%) //
 ItemDisplay[uit DEF>144 !ETH NMAG !RW SOCK=0]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
+
 // 盔甲
-ItemDisplay[xtp DEF>249 !ETH NMAG !RW SOCK=3]: %NAME%(250防↑)【謎團】(%SOCKETS%) //255防以上法師鎧甲3 - 謎團
+ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=0 SUP ED>10]: ◎%NAME%(750防↑)【拼打孔】 //11~15%ED無形高防
+ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=0]: ◎%NAME%(700防↑)【拼打孔】 //無形高防
+ItemDisplay[xtp DEF>249 !ETH NMAG !RW SOCK=3]: %NAME%(250防↑)【謎團】(%SOCKETS%) //250防以上法師鎧甲3 - 謎團
 ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
 ItemDisplay[(utp OR uar) !ETH NMAG !RW SOCK=4]: %NAME%【剛毅】(%SOCKETS%) //執政官鎧甲、神聖盔甲4 - 剛毅
 ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=4]: %NAME%【榮耀之鏈】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮4 - 榮耀之鏈
