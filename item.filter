@@ -1,4 +1,4 @@
-// 2020/02/06 15:10
+// 2020/02/07 18:00
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -167,6 +167,7 @@ ItemDisplay[7gd ETH NMAG !RW SOCK=5]: ◎%NAME%【永恒│死神】(%SOCKETS%) 
 ItemDisplay[7gd ETH NMAG !RW SOCK=6]: ◎%NAME%【死亡呼吸】(%SOCKETS%) //巨神之刃(無)6 - 死亡呼吸
 
 // 武器-斧
+ItemDisplay[7wa ETH NMAG SOCK=0]: ◎%NAME%【拼打孔】 //狂戰士斧(無) - 拼打孔
 ItemDisplay[7wa !ETH NMAG !RW SOCK=4]: %NAME%【熱情】(%SOCKETS%) //狂戰士斧4 - 熱情
 ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸│悔恨】(%SOCKETS%) //狂戰士斧5 - 野獸/悔恨
 ItemDisplay[7wa !ETH NMAG !RW SOCK=6]: %NAME%【最後希望】(%SOCKETS%) //狂戰士斧6 - 最後希望
@@ -176,7 +177,7 @@ ItemDisplay[7wa ETH NMAG !RW SOCK=6]: ◎%NAME%【死亡呼吸】(%SOCKETS%) //�
 ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】(%SOCKETS%) //巨戰斧5 - 末日
 
 // 武器-長斧
-ItemDisplay[7s8 ETH NMAG !RW SOCK=0]: ◎%NAME%【可拼打孔】 //銳利之斧(無) - 可拼打孔
+ItemDisplay[7s8 ETH NMAG SOCK=0]: ◎%NAME%【拼打孔】 //銳利之斧(無) - 拼打孔
 ItemDisplay[scy ETH NMAG !RW SOCK=4]: ◎%NAME%【無限】(%SOCKETS%) //鐮刀(無)4 - 無限
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=4]: ◎%NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)4 - 眼光/無限/驕傲
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=5]: ◎%NAME%【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)5 - 遵從
