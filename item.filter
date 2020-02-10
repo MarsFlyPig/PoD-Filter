@@ -1,4 +1,4 @@
-// 2020/02/08 05:30
+// 2020/02/10 09:00
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -267,12 +267,14 @@ ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3�
 // ===>>> 其他 <<<===
 
 // 手工基底
-ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【壓碎:那夫4+紅+珠寶】%BLUE%[L%ILVL%] // 重手套/鯊皮手套/吸血鬼骸骨手套
-ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【擊退:歐特9+藍+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套/重型手鐲/吸血鬼手套
-ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【回魔:歐特9+紫+珠寶】%BLUE%[L%ILVL%] // 皮手套/魔皮手套/荊棘連指手套
+ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【壓碎:那夫4+紅+珠寶】%BLUE%[L%ILVL%] // 重手套、鯊皮手套、吸血鬼骸骨手套
+ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【擊退:歐特9+藍+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套、重型手鐲、吸血鬼手套
+ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【回魔:歐特9+紫+珠寶】%BLUE%[L%ILVL%] // 皮手套、魔皮手套、荊棘連指手套
 
-ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<70]: %NAME%【精神-劍】(%SOCKETS%) //70等前顯示 0s4s水晶劍 闊劍
+ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<70]: %NAME%【精神-劍】(%SOCKETS%) //70等前顯示 0s4s水晶劍、闊劍
 ItemDisplay[NORM WP8 NMAG !RW SOCK=4 CLVL<70]: %NAME%【眼光-長斧】(%SOCKETS%) //70等前顯示 4s長斧
+
+ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】(%SOCKETS%) //巨戰權杖、神屬權杖-5897
 
 ItemDisplay[EQ2 ELT NMAG !RW]: $%PRICE%$ // 缺錢用 顯示菁英盔甲賣錢
 
