@@ -1,4 +1,4 @@
-// 2020/02/18 15:50
+// 2020/02/18 18:00
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -10,12 +10,12 @@
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
 
 // 特殊物品
-ItemDisplay[pk1]: ※%NAME%※(女伯爵) //恐懼之鑰
-ItemDisplay[pk2]: ※%NAME%※(召喚者) //憎恨之鑰
-ItemDisplay[pk3]: ※%NAME%※(尼拉塞克) //毀滅之鑰
-ItemDisplay[dhn]: ※%NAME%※ //暗黑破壞神之角
-ItemDisplay[bey]: ※%NAME%※ //巴爾之眼
-ItemDisplay[mbr]: ※%NAME%※ //墨菲斯托之腦
+ItemDisplay[pk1]: %WHITE%※%DGREEN%%NAME%%WHITE%※(女伯爵) //恐懼之鑰
+ItemDisplay[pk2]: %WHITE%※%DGREEN%%NAME%%WHITE%※(召喚者) //憎恨之鑰
+ItemDisplay[pk3]: %WHITE%※%DGREEN%%NAME%%WHITE%※(尼拉塞克) //毀滅之鑰
+ItemDisplay[dhn]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //暗黑破壞神之角
+ItemDisplay[bey]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //巴爾之眼
+ItemDisplay[mbr]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //墨菲斯托之腦
 ItemDisplay[toa]: %NAME% //赦免徽章
 ItemDisplay[tes]: %NAME% (A1.A2) //扭曲的苦痛精華
 ItemDisplay[ceh]: %NAME% (A3) //充盈的憎恨精華
@@ -27,11 +27,11 @@ ItemDisplay[ma4]: 『%NAME%(Relic)』 //T1 Relic
 ItemDisplay[ma5]: 『%NAME%(Relic)』 //T2 Relic
 ItemDisplay[ma6]: 『%NAME%(Relic)』 //T3 Relic
 ItemDisplay[ma2]: 『%NAME%(Relic)』 //T4 Relic
-ItemDisplay[leg]: ※%NAME%※ //維特之腳
+ItemDisplay[leg]: %WHITE%※%NAME%※ //維特之腳
 ItemDisplay[cx5]: ※%NAME%%WHITE%(ooc)※ //腐化寶珠
-ItemDisplay[cx6]: ※%NAME%※ //暗黑破壞神的靈魂石
-ItemDisplay[cx7]: ※%NAME%※ //混沌之鑰
-ItemDisplay[cx8]: ※%NAME%%WHITE%※ //附魔寶珠
+ItemDisplay[cx6]: %WHITE%※%DGREEN%%NAME%WHITE%%※ //暗黑破壞神的靈魂石
+ItemDisplay[cx7]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //混沌之鑰
+ItemDisplay[cx8]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //附魔寶珠
 
 // 捲 書
 ItemDisplay[(tsc OR isc) CLVL>29]: //30等後不顯示傳送鑑定卷軸
