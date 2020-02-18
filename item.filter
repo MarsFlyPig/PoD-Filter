@@ -1,4 +1,4 @@
-// 2020/02/13 17:50
+// 2020/02/18 15:50
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -10,12 +10,12 @@
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
 
 // 特殊物品
-ItemDisplay[pk1]: %NAME%(女伯爵) //恐懼之鑰
-ItemDisplay[pk2]: %NAME%(召喚者) //憎恨之鑰
-ItemDisplay[pk3]: %NAME%(尼拉塞克) //毀滅之鑰
-ItemDisplay[dhn]: %NAME% //暗黑破壞神之角
-ItemDisplay[bey]: %NAME% //巴爾之眼
-ItemDisplay[mbr]: %NAME% //墨菲斯托之腦
+ItemDisplay[pk1]: ※%NAME%※(女伯爵) //恐懼之鑰
+ItemDisplay[pk2]: ※%NAME%※(召喚者) //憎恨之鑰
+ItemDisplay[pk3]: ※%NAME%※(尼拉塞克) //毀滅之鑰
+ItemDisplay[dhn]: ※%NAME%※ //暗黑破壞神之角
+ItemDisplay[bey]: ※%NAME%※ //巴爾之眼
+ItemDisplay[mbr]: ※%NAME%※ //墨菲斯托之腦
 ItemDisplay[toa]: %NAME% //赦免徽章
 ItemDisplay[tes]: %NAME% (A1.A2) //扭曲的苦痛精華
 ItemDisplay[ceh]: %NAME% (A3) //充盈的憎恨精華
@@ -29,8 +29,8 @@ ItemDisplay[ma6]: 『%NAME%(Relic)』 //T3 Relic
 ItemDisplay[ma2]: 『%NAME%(Relic)』 //T4 Relic
 ItemDisplay[leg]: ※%NAME%※ //維特之腳
 ItemDisplay[cx5]: ※%NAME%%WHITE%(ooc)※ //腐化寶珠
-ItemDisplay[cx6]: %NAME% //暗黑破壞神的靈魂石
-ItemDisplay[cx7]: %NAME% //混沌之鑰
+ItemDisplay[cx6]: ※%NAME%※ //暗黑破壞神的靈魂石
+ItemDisplay[cx7]: ※%NAME%※ //混沌之鑰
 ItemDisplay[cx8]: ※%NAME%%WHITE%※ //附魔寶珠
 
 // 捲 書
@@ -263,7 +263,6 @@ ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK271>2 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME
 ItemDisplay[CL5 NMAG !RW (SK274>0 AND SK276>2 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3亡者守衛】%WHITE%
 ---
 ItemDisplay[CL5 NMAG !RW SK274>2 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3寒霜刀雨】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK275>2 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3飛龍在天】%GRAY%(%SOCKETS%)
 ItemDisplay[CL5 NMAG !RW SK253>2 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈戰鎚】%GRAY%(%SOCKETS%)
 ItemDisplay[CL5 NMAG !RW SK273>2 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈爆震】%GRAY%(%SOCKETS%)
 ItemDisplay[CL5 NMAG !RW SK278>2 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3毒牙】%GRAY%(%SOCKETS%)
@@ -274,7 +273,6 @@ ItemDisplay[CL5 NMAG !RW SK272>2 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3�
 ItemDisplay[CL5 NMAG !RW SK276>2 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3亡者守衛】%GRAY%(%SOCKETS%)
 ItemDisplay[CL5 NMAG !RW SK277>2 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3刀刃之盾】%GRAY%(%SOCKETS%)
 ItemDisplay[CL5 NMAG !RW SK274>2 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3寒霜刀雨】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK275>2 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3飛龍在天】%WHITE%
 ItemDisplay[CL5 NMAG !RW SK253>2 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈戰鎚】%WHITE%
 ItemDisplay[CL5 NMAG !RW SK273>2 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈爆震】%WHITE%
 ItemDisplay[CL5 NMAG !RW SK278>2 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3毒牙】%WHITE%
@@ -319,8 +317,8 @@ ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【壓碎:那�
 ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【擊退:歐特9+藍+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套、重型手鐲、吸血鬼手套
 ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【回魔:歐特9+紫+珠寶】%BLUE%[L%ILVL%] // 皮手套、魔皮手套、荊棘連指手套
 
-ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<70]: %NAME%【精神-劍】(%SOCKETS%) //70等前顯示 0s4s水晶劍、闊劍
-ItemDisplay[WP8 NMAG !RW SOCK=4 CLVL<70]: %NAME%【眼光-長斧】(%SOCKETS%) //70等前顯示 4s長斧
+ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%) //50等前顯示 0s4s水晶劍、闊劍
+ItemDisplay[WP8 NMAG !RW SOCK=4 CLVL<50]: %NAME%【眼光-長斧】(%SOCKETS%) //50等前顯示 4s長斧
 
 ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】(%SOCKETS%) //巨戰權杖、神屬權杖-5897
 
