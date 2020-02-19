@@ -1,4 +1,4 @@
-// 2020/02/20 01:00
+// 2020/02/20 01:15
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -116,25 +116,25 @@ ItemDisplay[r11]: [#11-%NAME%]
 ItemDisplay[r12]: [#12-%NAME%]
 ItemDisplay[r13]: [#13-%NAME%]
 ItemDisplay[r14]: [#14-%NAME%]
-ItemDisplay[r15]: [#15-%NAME%]
+ItemDisplay[r15]: [###15-%NAME%###]
 ItemDisplay[r16]: [#16-%NAME%]
 ItemDisplay[r17]: [#17-%NAME%]
 ItemDisplay[r18]: [#18-%NAME%]
 ItemDisplay[r19]: [#19-%NAME%]
-ItemDisplay[r20]: [#20-%NAME%]
-ItemDisplay[r21]: [#21-%NAME%]
-ItemDisplay[r22]: [#22-%NAME%]
-ItemDisplay[r23]: [#23-%NAME%]
-ItemDisplay[r24]: [#24-%NAME%]
-ItemDisplay[r25]: [#25-%NAME%]
-ItemDisplay[r26]: [%PURPLE%#########%ORANGE%26-%NAME%%PURPLE%#########%ORANGE%]
-ItemDisplay[r27]: [%PURPLE%#########%ORANGE%27-%NAME%%PURPLE%#########%ORANGE%]
-ItemDisplay[r28]: [%PURPLE%#########%ORANGE%28-%NAME%%PURPLE%#########%ORANGE%]
-ItemDisplay[r29]: [%PURPLE%#########%ORANGE%29-%NAME%%PURPLE%#########%ORANGE%]
-ItemDisplay[r30]: [%PURPLE%#########%ORANGE%30-%NAME%%PURPLE%#########%ORANGE%]
-ItemDisplay[r31]: [%PURPLE%#########%ORANGE%31-%NAME%%PURPLE%#########%ORANGE%]
-ItemDisplay[r32]: [%PURPLE%#########%ORANGE%32-%NAME%%PURPLE%#########%ORANGE%]
-ItemDisplay[r33]: [%PURPLE%#########%ORANGE%33-%NAME%%PURPLE%#########%ORANGE%]
+ItemDisplay[r20]: [######20-%NAME%######]
+ItemDisplay[r21]: [######21-%NAME%######]
+ItemDisplay[r22]: [######22-%NAME%######]
+ItemDisplay[r23]: [######23-%NAME%######]
+ItemDisplay[r24]: [######24-%NAME%######]
+ItemDisplay[r25]: [######25-%NAME%######]
+ItemDisplay[r26]: [%PURPLE%#########################%ORANGE%26-%NAME%%PURPLE%#########################%ORANGE%]
+ItemDisplay[r27]: [%PURPLE%#########################%ORANGE%27-%NAME%%PURPLE%#########################%ORANGE%]
+ItemDisplay[r28]: [%PURPLE%#########################%ORANGE%28-%NAME%%PURPLE%#########################%ORANGE%]
+ItemDisplay[r29]: [%PURPLE%#########################%ORANGE%29-%NAME%%PURPLE%#########################%ORANGE%]
+ItemDisplay[r30]: [%PURPLE%#########################%ORANGE%30-%NAME%%PURPLE%#########################%ORANGE%]
+ItemDisplay[r31]: [%PURPLE%#########################%ORANGE%31-%NAME%%PURPLE%#########################%ORANGE%]
+ItemDisplay[r32]: [%PURPLE%#########################%ORANGE%32-%NAME%%PURPLE%#########################%ORANGE%]
+ItemDisplay[r33]: [%PURPLE%#########################%ORANGE%33-%NAME%%PURPLE%#########################%ORANGE%]
 
 // ===>>> 裝備(要特別顯示/隱藏優先寫在這) <<<===
 
