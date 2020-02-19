@@ -1,4 +1,4 @@
-// 2020/02/18 18:00
+// 2020/02/20 01:00
 // 版本: #18
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -127,14 +127,14 @@ ItemDisplay[r22]: [#22-%NAME%]
 ItemDisplay[r23]: [#23-%NAME%]
 ItemDisplay[r24]: [#24-%NAME%]
 ItemDisplay[r25]: [#25-%NAME%]
-ItemDisplay[r26]: [######26-%NAME%######]
-ItemDisplay[r27]: [######27-%NAME%######]
-ItemDisplay[r28]: [######28-%NAME%######]
-ItemDisplay[r29]: [######29-%NAME%######]
-ItemDisplay[r30]: [######30-%NAME%######]
-ItemDisplay[r31]: [######31-%NAME%######]
-ItemDisplay[r32]: [######32-%NAME%######]
-ItemDisplay[r33]: [######33-%NAME%######]
+ItemDisplay[r26]: [%PURPLE%######%ORANGE%26-%NAME%%PURPLE%######%ORANGE%]
+ItemDisplay[r27]: [%PURPLE%######%ORANGE%27-%NAME%%PURPLE%######%ORANGE%]
+ItemDisplay[r28]: [%PURPLE%######%ORANGE%28-%NAME%%PURPLE%######%ORANGE%]
+ItemDisplay[r29]: [%PURPLE%######%ORANGE%29-%NAME%%PURPLE%######%ORANGE%]
+ItemDisplay[r30]: [%PURPLE%######%ORANGE%30-%NAME%%PURPLE%######%ORANGE%]
+ItemDisplay[r31]: [%PURPLE%######%ORANGE%31-%NAME%%PURPLE%######%ORANGE%]
+ItemDisplay[r32]: [%PURPLE%######%ORANGE%32-%NAME%%PURPLE%######%ORANGE%]
+ItemDisplay[r33]: [%PURPLE%######%ORANGE%33-%NAME%%PURPLE%######%ORANGE%]
 
 // ===>>> 裝備(要特別顯示/隱藏優先寫在這) <<<===
 
@@ -147,21 +147,24 @@ ItemDisplay[uit DEF>144 !ETH NMAG !RW SOCK=0]: %NAME%(145防↑)【菁英】 //1
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
-ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=0 SUP ED>12]: ◎%NAME%(750防↑)【拼打孔】 //13~15%ED無形高防
-ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=0]: ◎%NAME%(700防↑)【拼打孔】 //無形高防
-ItemDisplay[xtp DEF>249 !ETH NMAG !RW SOCK=0]: %NAME%(250防↑)【進階】 //250防以上法師鎧甲
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=11]: %NAME%【11%ED】 //11%ED
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=12]: %NAME%【12%ED】 //12%ED
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=13]: %NAME%【13%ED】 //13%ED
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=14]: %NAME%【14%ED】 //14%ED
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=15]: %NAME%【15%ED】 //15%ED
+ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=0]: ◎%NAME%(750防↑)【打4孔】 //無形高防
+ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%(260防↑)【打3孔】 //250防以上法師鎧甲
 ItemDisplay[xtp DEF>249 !ETH NMAG !RW SOCK=3]: %NAME%(250防↑)【謎團】(%SOCKETS%) //250防以上法師鎧甲3 - 謎團
 ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
-ItemDisplay[(utp OR uar) !ETH NMAG !RW SOCK=4]: %NAME%【剛毅】(%SOCKETS%) //執政官鎧甲、神聖盔甲4 - 剛毅
-ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=4]: %NAME%【榮耀之鏈】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮4 - 榮耀之鏈
+ItemDisplay[(utp OR uar OR uui OR uea) !ETH NMAG !RW SOCK=4]: %NAME%【剛毅│榮耀之鏈】(%SOCKETS%) //執政官鎧甲、神聖盔甲、灰幕壽衣、古龍皮4 - 剛毅/榮耀之鏈
 ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%(550防↑)【強制】(%SOCKETS%) //550防以上3 - 強制
 ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%(550防↑)【石塊│剛毅】(%SOCKETS%) //550防以上4 - 石塊/剛毅
-ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=3]: ◎%NAME%(700防↑)【強制】(%SOCKETS%) //700防以上(無)3 - 強制
-ItemDisplay[EQ2 ETH DEF>699 NMAG !RW SOCK=4]: ◎%NAME%(700防↑)【石塊│剛毅】(%SOCKETS%) //700防以上(無)4 - 石塊/剛毅
+ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=3]: ◎%NAME%(750防↑)【強制】(%SOCKETS%) //700防以上(無)3 - 強制
+ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=4]: ◎%NAME%(750防↑)【石塊│剛毅】(%SOCKETS%) //700防以上(無)4 - 石塊/剛毅
 
 // 武器-劍
 ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月】(%SOCKETS%) //水晶劍3 - 新月
-ItemDisplay[crs NMAG !RW !ETH SOCK=4]: %NAME%【精神│思考之聲】(%SOCKETS%) //水晶劍4 - 精神/思考之聲
+ItemDisplay[crs NMAG !RW !ETH SOCK=4]: %NAME%【精神】(%SOCKETS%) //水晶劍4 - 精神
 ItemDisplay[crs NMAG !RW SOCK=5]: %NAME%【戰爭召喚】(%SOCKETS%) //水晶劍5 - 戰爭召喚
 ItemDisplay[7cr NMAG !RW SOCK=4]: %NAME%【熱情】(%SOCKETS%) //幻化之刃4 - 熱情
 ItemDisplay[7cr NMAG !RW SOCK=5]: %NAME%【悔恨】(%SOCKETS%) //幻化之刃5 - 悔恨
@@ -185,17 +188,17 @@ ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】(%SOCKETS%) //巨戰斧5 - �
 ItemDisplay[7s8 ETH NMAG SOCK=0]: ◎%NAME%【拼打孔】 //銳利之斧(無) - 拼打孔
 ItemDisplay[scy ETH NMAG !RW SOCK=4]: ◎%NAME%【無限】(%SOCKETS%) //鐮刀(無)4 - 無限
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=4]: ◎%NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)4 - 眼光/無限/驕傲
-ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=5]: ◎%NAME%【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)5 - 遵從
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=5]: ◎%NAME%【遵從│末日】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)5 - 遵從/末日
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
-ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5]: %NAME%【遵從】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從
+ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5]: %NAME%【遵從│末日】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從/末日
 
 // 武器-棍棒
 ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //連枷4 - 橡樹之心
 ItemDisplay[7gm ETH NMAG !RW SOCK=6]: ◎%NAME%【死亡呼吸】(%SOCKETS%) //雷鎚(無)6 - 死亡呼吸
 
 // 武器-弓
-ItemDisplay[(6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】(%SOCKETS%) //巨弓、鑽石弓4 - 信心
-ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓6 - 死亡呼吸
+ItemDisplay[(6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%【信心】(%SOCKETS%) //巨弓、鑽石弓(10%ED以上)4 - 信心
+ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%【死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓(10%ED以上)6 - 死亡呼吸
 
 // 德魯伊
 ItemDisplay[CL1 !ETH NMAG !RW SK250>2 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3暴風】%GRAY%(%SOCKETS%)
