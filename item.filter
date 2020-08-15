@@ -1,4 +1,4 @@
-// 2020/08/16 12:10
+// 2020/08/16 12:50
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -192,8 +192,8 @@ ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5]: %NAME%【遵從�
 ItemDisplay[7br NMAG !RW SOCK=4]: ◎%NAME%【無限】(%SOCKETS%) //刺人槍(無)4 - 無限
 ItemDisplay[(7tr OR 7br OR 7st) ETH NMAG !RW SOCK=4]: ◎%NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛(無)4 - 眼光/無限/驕傲
 ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: ◎%NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛(無)5 - 遵從/末日
-ItemDisplay[(7tr OR 7br OR 7st) ETH NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛(無)4 - 眼光/無限/驕傲
-ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: %NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛(無)5 - 遵從/末日
+ItemDisplay[(7tr OR 7br OR 7st) ETH NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛4 - 眼光/無限/驕傲
+ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: %NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛5 - 遵從/末日
 
 // 武器-棍棒
 ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //連枷4 - 橡樹之心
