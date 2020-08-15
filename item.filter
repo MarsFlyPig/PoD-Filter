@@ -1,5 +1,5 @@
-// 2020/02/23 11:40
-// 版本: #18
+// 2020/08/16 12:10
+// 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
 // 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
@@ -23,10 +23,7 @@ ItemDisplay[bet]: %NAME% (A4) //燃燒的恐懼精華
 ItemDisplay[fed]: %NAME% (A5) //潰爛的毀滅精華
 ItemDisplay[std]: %NAME% //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
-ItemDisplay[ma4]: 『%NAME%(Relic)』 //T1 Relic
-ItemDisplay[ma5]: 『%NAME%(Relic)』 //T2 Relic
-ItemDisplay[ma6]: 『%NAME%(Relic)』 //T3 Relic
-ItemDisplay[ma2]: 『%NAME%(Relic)』 //T4 Relic
+ItemDisplay[ma2 OR ma3 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9 OR ma10 OR ma11]: 『%NAME%(Relic)』 //遺物地圖
 ItemDisplay[leg]: %WHITE%※%NAME%※ //維特之腳
 ItemDisplay[cx5]: ※%NAME%%WHITE%(ooc)※ //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※%DGREEN%%NAME%WHITE%%※ //暗黑破壞神的靈魂石
@@ -121,12 +118,12 @@ ItemDisplay[r16]: [#16-%NAME%]
 ItemDisplay[r17]: [#17-%NAME%]
 ItemDisplay[r18]: [#18-%NAME%]
 ItemDisplay[r19]: [#19-%NAME%]
-ItemDisplay[r20]: [#####20-%NAME%#####]
-ItemDisplay[r21]: [#####21-%NAME%#####]
-ItemDisplay[r22]: [#####22-%NAME%#####]
-ItemDisplay[r23]: [#####23-%NAME%#####]
-ItemDisplay[r24]: [#####24-%NAME%#####]
-ItemDisplay[r25]: [#####25-%NAME%#####]
+ItemDisplay[r20]: [#######20-%NAME%#######]
+ItemDisplay[r21]: [#######21-%NAME%#######]
+ItemDisplay[r22]: [#######22-%NAME%#######]
+ItemDisplay[r23]: [#######23-%NAME%#######]
+ItemDisplay[r24]: [#######24-%NAME%#######]
+ItemDisplay[r25]: [#######25-%NAME%#######]
 ItemDisplay[r26]: [%PURPLE%#########################%ORANGE%26-%NAME%%PURPLE%#########################%ORANGE%]
 ItemDisplay[r27]: [%PURPLE%#########################%ORANGE%27-%NAME%%PURPLE%#########################%ORANGE%]
 ItemDisplay[r28]: [%PURPLE%#########################%ORANGE%28-%NAME%%PURPLE%#########################%ORANGE%]
@@ -190,6 +187,13 @@ ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=4]: ◎%NAME%【
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=5]: ◎%NAME%【遵從│末日】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)5 - 遵從/末日
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5]: %NAME%【遵從│末日】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從/末日
+
+// 武器-長槍
+ItemDisplay[7br NMAG !RW SOCK=4]: ◎%NAME%【無限】(%SOCKETS%) //刺人槍(無)4 - 無限
+ItemDisplay[(7tr OR 7br OR 7st) ETH NMAG !RW SOCK=4]: ◎%NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛(無)4 - 眼光/無限/驕傲
+ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: ◎%NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛(無)5 - 遵從/末日
+ItemDisplay[(7tr OR 7br OR 7st) ETH NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛(無)4 - 眼光/無限/驕傲
+ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: %NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛(無)5 - 遵從/末日
 
 // 武器-棍棒
 ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //連枷4 - 橡樹之心
@@ -313,6 +317,7 @@ ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【回魔:歐�
 
 ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%) //50等前顯示 0s4s水晶劍、闊劍
 ItemDisplay[WP8 NMAG !RW SOCK=4 CLVL<50]: %NAME%【眼光-長斧】(%SOCKETS%) //50等前顯示 4s長斧
+ItemDisplay[WP7 NMAG !RW SOCK=4 CLVL<50]: %NAME%【眼光-長槍】(%SOCKETS%) //50等前顯示 4s長斧
 
 ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】(%SOCKETS%) //巨戰權杖、神屬權杖-5897
 
