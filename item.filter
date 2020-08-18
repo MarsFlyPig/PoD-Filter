@@ -1,4 +1,4 @@
-// 2020/08/18 17:40
+// 2020/08/19 05:20
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -10,12 +10,12 @@
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
 
 // 特殊物品
-ItemDisplay[pk1]: %WHITE%※%DGREEN%%NAME%%WHITE%※(女伯爵) //恐懼之鑰
-ItemDisplay[pk2]: %WHITE%※%DGREEN%%NAME%%WHITE%※(召喚者) //憎恨之鑰
-ItemDisplay[pk3]: %WHITE%※%DGREEN%%NAME%%WHITE%※(尼拉塞克) //毀滅之鑰
-ItemDisplay[dhn]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //暗黑破壞神之角
-ItemDisplay[bey]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //巴爾之眼
-ItemDisplay[mbr]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //墨菲斯托之腦
+ItemDisplay[pk1]: %WHITE%※※%ORANGE%%NAME% (女伯爵)%WHITE%※※ //恐懼之鑰
+ItemDisplay[pk2]: %WHITE%※※%ORANGE%%NAME% (召喚者)%WHITE%※※ //憎恨之鑰
+ItemDisplay[pk3]: %WHITE%※※%ORANGE%%NAME% (尼拉塞克)%WHITE%※※ //毀滅之鑰
+ItemDisplay[dhn]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //暗黑破壞神之角
+ItemDisplay[bey]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //巴爾之眼
+ItemDisplay[mbr]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //墨菲斯托之腦
 ItemDisplay[toa]: %NAME% //赦免徽章
 ItemDisplay[tes]: %NAME% (A1.A2) //扭曲的苦痛精華
 ItemDisplay[ceh]: %NAME% (A3) //充盈的憎恨精華
@@ -23,12 +23,32 @@ ItemDisplay[bet]: %NAME% (A4) //燃燒的恐懼精華
 ItemDisplay[fed]: %NAME% (A5) //潰爛的毀滅精華
 ItemDisplay[std]: %NAME% //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
-ItemDisplay[ma2 OR ma3 OR ma4 OR ma5 OR ma6 OR ma7 OR ma8 OR ma9 OR ma10 OR ma11]: 『%NAME%』(Relic) //遺物地圖
 ItemDisplay[leg]: %WHITE%※%NAME%※ //維特之腳
-ItemDisplay[cx5]: ※%NAME%%WHITE%(ooc)※ //腐化寶珠
-ItemDisplay[cx6]: %WHITE%※%DGREEN%%NAME%WHITE%%※ //暗黑破壞神的靈魂石
-ItemDisplay[cx7]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //混沌之鑰
-ItemDisplay[cx8]: %WHITE%※%DGREEN%%NAME%%WHITE%※ //附魔寶珠
+ItemDisplay[cx5]: ※%NAME% (ooc)%WHITE%※ //腐化寶珠
+ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME%WHITE%%※※ //暗黑破壞神的靈魂石
+ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //混沌之鑰
+ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
+
+// 遺物地圖
+ItemDisplay[ma1]: ◆◆%NAME% //寒霜洞穴 (Icy Cavern)
+ItemDisplay[ma2]: ◆◆%NAME% //
+ItemDisplay[ma3]: ◆◆%NAME% //
+ItemDisplay[ma4]: ◆◆%NAME% //
+ItemDisplay[ma5]: ◆◆%NAME% //寒風高原 (Frigid Plateau)
+ItemDisplay[ma6]: ◆◆%NAME% //
+ItemDisplay[ma7]: ◆◆%NAME% //
+ItemDisplay[ma8]: ◆◆%NAME% //
+ItemDisplay[ma9]: ◆◆%NAME% //
+ItemDisplay[ma10]: ◆◆%NAME% //
+ItemDisplay[maz]: ◆◆%NAME%◆◆ //地獄審判
+//蜃景荒漠 (Forgotten Desert)
+//遺棄之地 (Abandoned Precinct)
+//褻瀆教堂 (Desecrated Temple)
+//崩壞堡壘 (Ruined Citadel)
+//焚燒森林 (Burnt Forest)
+//發霉地穴 (Musty Crypt)
+//昏暗酒窖 (Dim Cellar)
+//悅心農場 (Pleasant Pasture)
 
 // 捲 書
 ItemDisplay[(tsc OR isc) CLVL>29]: //30等後不顯示傳送鑑定卷軸
@@ -315,12 +335,16 @@ ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【壓碎:那�
 ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【擊退:歐特9+藍+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套、重型手鐲、吸血鬼手套
 ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【回魔:歐特9+紫+珠寶】%BLUE%[L%ILVL%] // 皮手套、魔皮手套、荊棘連指手套
 
-ItemDisplay[(crs OR bsd) NMAG !RW !INF (SOCK=0 OR SOCK=4) ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%) //50等前顯示 0s4s水晶劍、闊劍
-ItemDisplay[WP8 NMAG !RW SOCK=4 CLVL<50]: %NAME%【眼光-長斧】(%SOCKETS%) //50等前顯示 4s長斧
-ItemDisplay[WP7 NMAG !RW SOCK=4 CLVL<50]: %NAME%【眼光-長槍】(%SOCKETS%) //50等前顯示 4s長斧
+// 過度
+ItemDisplay[crs NMAG !RW !INF SOCK=0 ILVL>25 ILVL<41 CLVL<60]: %NAME%【精神-劍】//60等前顯示 0s水晶劍
+ItemDisplay[bsd NMAG !RW !INF SOCK=0 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】//50等前顯示 0s闊劍
+ItemDisplay[bsd NMAG !RW !INF SOCK=4 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%)//50等前顯示 4s闊劍
+ItemDisplay[WP8 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長斧】(%SOCKETS%) //60等前顯示 4s長斧
+ItemDisplay[WP7 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長槍】(%SOCKETS%) //60等前顯示 4s長槍
 
 ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】(%SOCKETS%) //巨戰權杖、神屬權杖-5897
 
+// 缺錢
 ItemDisplay[EQ2 ELT NMAG !RW]: $%PRICE%$ // 缺錢用 顯示菁英盔甲賣錢
 
 // ===>>> 裝備 <<<===
@@ -335,7 +359,7 @@ ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>39]: // 40等後刪除普通白
 ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>49 SOCK<2]: // 50等後刪除0~1s進階白裝
 ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
 ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>69 SOCK<2]: // 70等後刪除0~1s菁英白裝
-ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
+ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>84]: // 85等後刪除菁英白裝
 
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
