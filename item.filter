@@ -1,4 +1,4 @@
-// 2020/08/18 03:20
+// 2020/08/18 17:40
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -245,10 +245,10 @@ ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】(40抗�
 ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>◎%NAME%【流亡】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
 
 // 死靈
-ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SK68>1 OR SK74>1 OR SK79>1 OR SK83>1) SOCK>1 !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛│白骨裝甲-屍體爆炸-號召-褻瀆】%GRAY%(%SOCKETS%) // 骨矛84 白骨裝甲68 屍體爆炸74 號召79 褻瀆83
-ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SK68>1 OR SK74>1 OR SK79>1) SOCK>1 !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆│白骨裝甲-屍體爆炸-號召】%GRAY%(%SOCKETS%) // 褻瀆83 白骨裝甲68 屍體爆炸74 號召79
-ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SK68>1 OR SK74>1 OR SK79>1 OR SK83>1) SOCK=0 !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛│白骨裝甲-屍體爆炸-號召-褻瀆】%WHITE%// 骨矛84 白骨裝甲68 屍體爆炸74 號召79 褻瀆83
-ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SK68>1 OR SK74>1 OR SK79>1) SOCK=0 !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆│白骨裝甲-屍體爆炸-號召】%WHITE%// 褻瀆83 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SK68>0 OR SK74>0 OR SK79>0 OR SK83>0) SOCK>1 !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛│白骨裝甲-屍體爆炸-號召-褻瀆】%GRAY%(%SOCKETS%) // 骨矛84 白骨裝甲68 屍體爆炸74 號召79 褻瀆83
+ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SK68>0 OR SK74>0 OR SK79>0) SOCK>1 !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆│白骨裝甲-屍體爆炸-號召】%GRAY%(%SOCKETS%) // 褻瀆83 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SK68>0 OR SK74>0 OR SK79>0 OR SK83>0) SOCK=0 !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛│白骨裝甲-屍體爆炸-號召-褻瀆】%WHITE%// 骨矛84 白骨裝甲68 屍體爆炸74 號召79 褻瀆83
+ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SK68>0 OR SK74>0 OR SK79>0) SOCK=0 !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆│白骨裝甲-屍體爆炸-號召】%WHITE%// 褻瀆83 白骨裝甲68 屍體爆炸74 號召79
 ItemDisplay[WP12 !ETH NMAG !RW SK84=3 SOCK>1 !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛】%GRAY%(%SOCKETS%)
 ItemDisplay[WP12 !ETH NMAG !RW SK83=3 SOCK>1 !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆】%GRAY%(%SOCKETS%)
 ItemDisplay[WP12 !ETH NMAG !RW SK84=3 SOCK=0 !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛】%WHITE%
