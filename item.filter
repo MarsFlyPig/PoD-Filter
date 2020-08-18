@@ -90,8 +90,8 @@ ItemDisplay[hp5]: %RED%[[%WHITE%HP%RED%]]%WHITE%
 ItemDisplay[mp4]: %BLUE%[[%GRAY%MP%BLUE%]]%WHITE%
 ItemDisplay[mp5]: %BLUE%[[%WHITE%MP%BLUE%]]%WHITE%
 
-ItemDisplay[rvs CLVL<70]: %PURPLE%[[%GRAY%HP+MP%PURPLE%]]%WHITE%
-ItemDisplay[rvl]: %PURPLE%[[%WHITE%HP+MP%PURPLE%]]%WHITE%
+ItemDisplay[rvs CLVL<70]: %PURPLE%[[%GRAY%H+M%PURPLE%]]%WHITE%
+ItemDisplay[rvl]: %PURPLE%[[%WHITE%H+M%PURPLE%]]%WHITE%
 ItemDisplay[rvs CLVL>69]:
 
 // 10等後沒用的藥水隱藏起來
