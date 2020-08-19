@@ -1,4 +1,4 @@
-// 2020/08/20 01:45
+// 2020/08/20 07:15
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -303,28 +303,28 @@ ItemDisplay[CL5 NMAG !RW SK276=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3�
 ItemDisplay[CL5 NMAG !RW SK277=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3刀刃之盾】%WHITE%
 
 // 法師
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK56=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3隕石】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK62=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3九頭海蛇】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK61=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3支配火焰】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK59=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3暴風雪】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK64=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3冰封球】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK65=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3支配冰冷】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK58=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3能量護盾】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK49=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3雷霆浪湧】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK53=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3連鎖閃電】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK57=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3雷雲風暴】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK63=3 (LIFE>40 OR MANA>60) SOCK>2]: <法>%NAME%%RED%【+3支配閃電】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK56=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3隕石】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK62=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3九頭海蛇】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK61=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3支配火焰】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK59=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3暴風雪】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK64=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3冰封球】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK65=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3支配冰冷】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK58=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3能量護盾】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK49=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3雷霆浪湧】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK53=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3連鎖閃電】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK57=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3雷雲風暴】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK63=3 (LIFE>40 OR MANA>60) SOCK=0]: <法>%NAME%%RED%【+3支配閃電】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK56=3 SOCK>2]: <法>%NAME%%RED%【+3隕石】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK62=3 SOCK>2]: <法>%NAME%%RED%【+3九頭海蛇】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK61=3 SOCK>2]: <法>%NAME%%RED%【+3支配火焰】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK59=3 SOCK>2]: <法>%NAME%%RED%【+3暴風雪】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK64=3 SOCK>2]: <法>%NAME%%RED%【+3冰封球】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK65=3 SOCK>2]: <法>%NAME%%RED%【+3支配冰冷】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK58=3 SOCK>2]: <法>%NAME%%RED%【+3能量護盾】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK49=3 SOCK>2]: <法>%NAME%%RED%【+3雷霆浪湧】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK53=3 SOCK>2]: <法>%NAME%%RED%【+3連鎖閃電】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK57=3 SOCK>2]: <法>%NAME%%RED%【+3雷雲風暴】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK63=3 SOCK>2]: <法>%NAME%%RED%【+3支配閃電】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK56=3 SOCK=0]: <法>%NAME%%RED%【+3隕石】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK62=3 SOCK=0]: <法>%NAME%%RED%【+3九頭海蛇】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK61=3 SOCK=0]: <法>%NAME%%RED%【+3支配火焰】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK59=3 SOCK=0]: <法>%NAME%%RED%【+3暴風雪】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK64=3 SOCK=0]: <法>%NAME%%RED%【+3冰封球】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK65=3 SOCK=0]: <法>%NAME%%RED%【+3支配冰冷】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK58=3 SOCK=0]: <法>%NAME%%RED%【+3能量護盾】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK49=3 SOCK=0]: <法>%NAME%%RED%【+3雷霆浪湧】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK53=3 SOCK=0]: <法>%NAME%%RED%【+3連鎖閃電】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK57=3 SOCK=0]: <法>%NAME%%RED%【+3雷雲風暴】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK63=3 SOCK=0]: <法>%NAME%%RED%【+3支配閃電】%WHITE%
 
 // 亞馬遜
 ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3技)(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
@@ -332,9 +332,9 @@ ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3�
 // ===>>> 其他 <<<===
 
 // 手工基底
-ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【壓碎:那夫4+紅+珠寶】%BLUE%[L%ILVL%] // 重手套、鯊皮手套、吸血鬼骸骨手套
-ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【擊退:歐特9+藍+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套、重型手鐲、吸血鬼手套
-ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【回魔:歐特9+紫+珠寶】%BLUE%[L%ILVL%] // 皮手套、魔皮手套、荊棘連指手套
+ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【壓碎:4那夫+紅+珠寶】%BLUE%[L%ILVL%] // 重手套、鯊皮手套、吸血鬼骸骨手套
+ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【擊退:9歐特+藍+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套、重型手鐲、吸血鬼手套
+ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【回魔:9歐特+紫+珠寶】%BLUE%[L%ILVL%] // 皮手套、魔皮手套、荊棘連指手套
 
 // 過度
 ItemDisplay[crs NMAG !RW !INF SOCK=0 ILVL>25 ILVL<41 CLVL<60]: %NAME%【精神-劍】//60等前顯示 0s水晶劍
