@@ -1,4 +1,4 @@
-// 2020/08/20 07:15
+// 2020/08/20 08:00
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -65,33 +65,33 @@ ItemDisplay[CLVL>24 GOLD<250]:
 ItemDisplay[CLVL<25 GOLD<100]:
 
 // 藥水
-ItemDisplay[hp1 CLVL<14]: %RED%[[%GRAY%HP%RED%]]%WHITE%
-ItemDisplay[hp2 CLVL<14]: %RED%[[%WHITE%HP%RED%]]%WHITE%
-ItemDisplay[mp1 CLVL<14]: %BLUE%[[%GRAY%MP%BLUE%]]%WHITE%
-ItemDisplay[mp2 CLVL<14]: %BLUE%[[%WHITE%MP%BLUE%]]%WHITE%
+ItemDisplay[hp1 CLVL<14]: %RED%[%GRAY%H%RED%]%WHITE%
+ItemDisplay[hp2 CLVL<14]: %RED%[%WHITE%H%RED%]%WHITE%
+ItemDisplay[mp1 CLVL<14]: %BLUE%[%GRAY%M%BLUE%]%WHITE%
+ItemDisplay[mp2 CLVL<14]: %BLUE%[%WHITE%M%BLUE%]%WHITE%
 ItemDisplay[hp1 OR mp1]:
 
-ItemDisplay[hp2 CLVL<24]: %RED%[[%GRAY%HP%RED%]]%WHITE%
-ItemDisplay[hp3 CLVL<24]: %RED%[[%WHITE%HP%RED%]]%WHITE%
-ItemDisplay[mp2 CLVL<24]: %BLUE%[[%GRAY%MP%BLUE%]]%WHITE%
-ItemDisplay[mp3 CLVL<24]: %BLUE%[[%WHITE%MP%BLUE%]]%WHITE%
+ItemDisplay[hp2 CLVL<24]: %RED%[%GRAY%H%RED%]%WHITE%
+ItemDisplay[hp3 CLVL<24]: %RED%[%WHITE%H%RED%]%WHITE%
+ItemDisplay[mp2 CLVL<24]: %BLUE%[%GRAY%M%BLUE%]%WHITE%
+ItemDisplay[mp3 CLVL<24]: %BLUE%[%WHITE%M%BLUE%]%WHITE%
 ItemDisplay[hp2 OR mp2]:
 
-ItemDisplay[hp3 CLVL<39]: %RED%[[%GRAY%HP%RED%]]%WHITE%
-ItemDisplay[hp4 CLVL<39]: %RED%[[%WHITE%HP%RED%]]%WHITE%
-ItemDisplay[mp3 CLVL<39]: %BLUE%[[%GRAY%MP%BLUE%]]%WHITE%
-ItemDisplay[mp4 CLVL<39]: %BLUE%[[%WHITE%MP%BLUE%]]%WHITE%
+ItemDisplay[hp3 CLVL<39]: %RED%[%GRAY%H%RED%]%WHITE%
+ItemDisplay[hp4 CLVL<39]: %RED%[%WHITE%H%RED%]%WHITE%
+ItemDisplay[mp3 CLVL<39]: %BLUE%[%GRAY%M%BLUE%]%WHITE%
+ItemDisplay[mp4 CLVL<39]: %BLUE%[%WHITE%M%BLUE%]%WHITE%
 ItemDisplay[hp3 OR mp3]:
 
 ItemDisplay[(hp4 OR mp4) CLVL>59]:
 
-ItemDisplay[hp4]: %RED%[[%GRAY%HP%RED%]]%WHITE%
-ItemDisplay[hp5]: %RED%[[%WHITE%HP%RED%]]%WHITE%
-ItemDisplay[mp4]: %BLUE%[[%GRAY%MP%BLUE%]]%WHITE%
-ItemDisplay[mp5]: %BLUE%[[%WHITE%MP%BLUE%]]%WHITE%
+ItemDisplay[hp4]: %RED%[%GRAY%H%RED%]%WHITE%
+ItemDisplay[hp5]: %RED%[%WHITE%H%RED%]%WHITE%
+ItemDisplay[mp4]: %BLUE%[%GRAY%M%BLUE%]%WHITE%
+ItemDisplay[mp5]: %BLUE%[%WHITE%M%BLUE%]%WHITE%
 
-ItemDisplay[rvs CLVL<70]: %PURPLE%[[%GRAY%H+M%PURPLE%]]%WHITE%
-ItemDisplay[rvl]: %PURPLE%[[%WHITE%H+M%PURPLE%]]%WHITE%
+ItemDisplay[rvs CLVL<70]: %RED%[%BLUE%[%GRAY%H+M%BLUE%]%RED%]%WHITE%
+ItemDisplay[rvl]: %RED%[%BLUE%[%WHITE%H+M%BLUE%]%RED%]%WHITE%
 ItemDisplay[rvs CLVL>69]:
 
 // 10等後沒用的藥水隱藏起來
