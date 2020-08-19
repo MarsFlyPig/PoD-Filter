@@ -1,4 +1,4 @@
-// 2020/08/19 05:20
+// 2020/08/19 12:30
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -160,6 +160,7 @@ ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //
 // 盾牌
 ItemDisplay[ush !ETH NMAG !RW SOCK=3]: %NAME%【聖堂│夢境】(%SOCKETS%) //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
 ItemDisplay[uit DEF>144 !ETH NMAG !RW SOCK=0]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
+ItemDisplay[uit !ETH NMAG !RW SOCK=0]: %NAME%【菁英】 //0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
@@ -169,7 +170,7 @@ ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=13]: %NAME%【13%ED】 //13%ED
 ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=14]: %NAME%【14%ED】 //14%ED
 ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=15]: %NAME%【15%ED】 //15%ED
 ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=0]: ◎%NAME%(750防↑)【打4孔】 //無形高防
-ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%(260防↑)【打3孔】 //250防以上法師鎧甲
+ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%(260防↑)【打3孔】 //260防以上法師鎧甲
 ItemDisplay[xtp DEF>249 !ETH NMAG !RW SOCK=3]: %NAME%(250防↑)【謎團】(%SOCKETS%) //250防以上法師鎧甲3 - 謎團
 ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
 ItemDisplay[(utp OR uar OR uui OR uea) !ETH NMAG !RW SOCK=4]: %NAME%【剛毅│榮耀之鏈】(%SOCKETS%) //執政官鎧甲、神聖盔甲、灰幕壽衣、古龍皮4 - 剛毅/榮耀之鏈
@@ -359,7 +360,7 @@ ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>39]: // 40等後刪除普通白
 ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>49 SOCK<2]: // 50等後刪除0~1s進階白裝
 ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
 ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>69 SOCK<2]: // 70等後刪除0~1s菁英白裝
-ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>84]: // 85等後刪除菁英白裝
+ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
 
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
