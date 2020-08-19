@@ -1,4 +1,4 @@
-// 2020/08/20 01:40
+// 2020/08/20 01:45
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -30,16 +30,16 @@ ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //混沌之鑰
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖
-ItemDisplay[ma1]: ◆◆%NAME% //寒霜洞穴 (Icy Cavern)
-ItemDisplay[ma2]: ◆◆%NAME% //
-ItemDisplay[ma3]: ◆◆%NAME% //
-ItemDisplay[ma4]: ◆◆%NAME% //
-ItemDisplay[ma5]: ◆◆%NAME% //凜冬高原 (Frigid Plateau)
-ItemDisplay[ma6]: ◆◆%NAME% //
-ItemDisplay[ma7]: ◆◆%NAME% //
-ItemDisplay[ma8]: ◆◆%NAME% //
-ItemDisplay[ma9]: ◆◆%NAME% //
-ItemDisplay[ma10]: ◆◆%NAME% //
+ItemDisplay[ma1]: ◆%NAME%◆ //寒霜洞穴 (Icy Cavern)
+ItemDisplay[ma2]: ◆%NAME%◆ //
+ItemDisplay[ma3]: ◆%NAME%◆ //
+ItemDisplay[ma4]: %NAME%◆ //
+ItemDisplay[ma5]: ◆%NAME%◆ //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6]: ◆%NAME%◆ //
+ItemDisplay[ma7]: ◆%NAME%◆ //
+ItemDisplay[ma8]: ◆%NAME%◆ //
+ItemDisplay[ma9]: ◆%NAME%◆ //
+ItemDisplay[ma10]: ◆%NAME%◆ //
 ItemDisplay[maz]: ◆◆%NAME%◆◆ //地獄審判
 //蜃景荒漠 (Forgotten Desert)
 //遺棄之地 (Abandoned Precinct)
