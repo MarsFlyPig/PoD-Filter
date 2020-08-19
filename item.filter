@@ -160,7 +160,7 @@ ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //
 // 盾牌
 ItemDisplay[ush !ETH NMAG !RW SOCK=3]: %NAME%【聖堂│夢境】(%SOCKETS%) //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
 ItemDisplay[uit DEF>144 !ETH NMAG !RW SOCK=0]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
-ItemDisplay[uit !ETH NMAG !RW SOCK=0]: %NAME%【打4孔-精神】 //0s統治者大盾
+ItemDisplay[uit !ETH NMAG !RW SOCK=0]: %NAME%【打4孔】 //0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
