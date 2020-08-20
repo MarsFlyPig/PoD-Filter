@@ -1,4 +1,4 @@
-// 2020/08/20 08:00
+// 2020/08/21 01:30
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -114,6 +114,7 @@ ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★%WHITE%%NAME
 ItemDisplay[jew]: ●●%NAME% [L%ILVL%]●●
 
 // 小中大護身符
+ItemDisplay[(cm1 OR cm2 OR cm3) UNI]: 《%NAME%【暗金】》
 ItemDisplay[cm1]: 《%NAME% [L%ILVL%]》
 ItemDisplay[cm2]: 《《%NAME% [L%ILVL%]》》
 ItemDisplay[cm3]: 《《《%NAME% [L%ILVL%]》》》
@@ -171,7 +172,7 @@ ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=14]: %NAME%【14%ED】 //14%ED
 ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=15]: %NAME%【15%ED】 //15%ED
 ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=0]: ◎%NAME%(750防↑)【打4孔】 //無形高防
 ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%(260防↑)【打3孔】 //260防以上法師鎧甲
-ItemDisplay[xtp DEF>249 !ETH NMAG !RW SOCK=3]: %NAME%(250防↑)【謎團】(%SOCKETS%) //250防以上法師鎧甲3 - 謎團
+ItemDisplay[xtp DEF>254 !ETH NMAG !RW SOCK=3]: %NAME%(255防↑)【謎團】(%SOCKETS%) //250防以上法師鎧甲3 - 謎團
 ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
 ItemDisplay[(utp OR uar OR uui OR uea) !ETH NMAG !RW SOCK=4]: %NAME%【剛毅│榮耀之鏈】(%SOCKETS%) //執政官鎧甲、神聖盔甲、灰幕壽衣、古龍皮4 - 剛毅/榮耀之鏈
 ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%(550防↑)【強制】(%SOCKETS%) //550防以上3 - 強制
@@ -346,7 +347,9 @@ ItemDisplay[WP7 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長槍】(%SOCKETS%) /
 ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】(%SOCKETS%) //巨戰權杖、神屬權杖-5897
 
 // 缺錢
-ItemDisplay[EQ2 ELT NMAG !RW]: $%PRICE%$ // 缺錢用 顯示菁英盔甲賣錢
+ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW]: $%PRICE%$ // 顯示菁英盔甲賣錢
+ItemDisplay[CL6 MAG !RW ILVL>50]: $$$$ // 顯示法師寶珠賣錢
+ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 
 // ===>>> 裝備 <<<===
 
@@ -355,11 +358,10 @@ ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
 ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
 
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29 SOCK<2]: // 30等後刪除0~1s普通白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>39]: // 40等後刪除普通白裝
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>49 SOCK<2]: // 50等後刪除0~1s進階白裝
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
-ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>69 SOCK<2]: // 70等後刪除0~1s菁英白裝
+ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s普通白裝
+ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>49]: // 50等後刪除普通白裝
+ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59 SOCK=0]: // 60等後刪除0s進階白裝
+ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>69]: // 70等後刪除進階白裝
 ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
 
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
