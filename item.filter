@@ -348,6 +348,8 @@ ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】
 
 // 缺錢
 ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW]: $%PRICE%$ // 顯示菁英盔甲賣錢
+ItemDisplay[CL6 MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示法師寶珠賣錢
+ItemDisplay[WP12 MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示死靈魔杖賣錢
 ItemDisplay[CL6 MAG !RW ILVL>50]: $$$$ // 顯示法師寶珠賣錢
 ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 
