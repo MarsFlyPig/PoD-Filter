@@ -1,4 +1,4 @@
-// 2020/08/21 06:50
+// 2020/08/21 20:50
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -16,7 +16,7 @@ ItemDisplay[pk3]: %WHITE%※※%ORANGE%%NAME% (尼拉塞克)%WHITE%※※ //毀�
 ItemDisplay[dhn]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //暗黑破壞神之角
 ItemDisplay[bey]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //巴爾之眼
 ItemDisplay[mbr]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //墨菲斯托之腦
-ItemDisplay[toa]: %NAME% //赦免徽章
+ItemDisplay[toa]: ※%NAME%※ //赦免徽章
 ItemDisplay[tes]: %NAME% (A1.A2) //扭曲的苦痛精華
 ItemDisplay[ceh]: %NAME% (A3) //充盈的憎恨精華
 ItemDisplay[bet]: %NAME% (A4) //燃燒的恐懼精華
@@ -175,10 +175,10 @@ ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%(260防↑)【打3孔】 //
 ItemDisplay[xtp DEF>254 !ETH NMAG !RW SOCK=3]: %NAME%(255防↑)【謎團】(%SOCKETS%) //250防以上法師鎧甲3 - 謎團
 ItemDisplay[(utp OR uui OR uea) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】(%SOCKETS%) //執政官鎧甲、灰幕壽衣、古龍皮3 - 謎團
 ItemDisplay[(utp OR uar OR uui OR uea) !ETH NMAG !RW SOCK=4]: %NAME%【剛毅│榮耀之鏈】(%SOCKETS%) //執政官鎧甲、神聖盔甲、灰幕壽衣、古龍皮4 - 剛毅/榮耀之鏈
-ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%(550防↑)【強制】(%SOCKETS%) //550防以上3 - 強制
-ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%(550防↑)【石塊│剛毅】(%SOCKETS%) //550防以上4 - 石塊/剛毅
 ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=3]: ◎%NAME%(750防↑)【強制】(%SOCKETS%) //700防以上(無)3 - 強制
 ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=4]: ◎%NAME%(750防↑)【石塊│剛毅】(%SOCKETS%) //700防以上(無)4 - 石塊/剛毅
+ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%(550防↑)【強制】(%SOCKETS%) //550防以上3 - 強制
+ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%(550防↑)【石塊│剛毅】(%SOCKETS%) //550防以上4 - 石塊/剛毅
 
 // 武器-劍
 ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月】(%SOCKETS%) //水晶劍3 - 新月
@@ -192,6 +192,7 @@ ItemDisplay[(7gd OR 7gs OR 7cm) NMAG !RW SOCK=3]: %NAME%【執法者】(%SOCKETS
 ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=4]: ◎%NAME%【誓約】(%SOCKETS%) //巨神之刃、炎魔之刃、高地之劍(無)4 - 誓約
 ItemDisplay[7gd ETH NMAG !RW SOCK=5]: ◎%NAME%【永恒│死神】(%SOCKETS%) //巨神之刃(無)5 - 永恒/死神
 ItemDisplay[7gd ETH NMAG !RW SOCK=6]: ◎%NAME%【死亡呼吸】(%SOCKETS%) //巨神之刃(無)6 - 死亡呼吸
+ItemDisplay[7gd NMAG !RW SOCK=6]: %NAME%【寂靜】(%SOCKETS%) //巨神之刃6 - 寂靜
 
 // 武器-斧
 ItemDisplay[7wa ETH NMAG SOCK=0]: ◎%NAME%【拼打孔】 //狂戰士斧(無) - 拼打孔
@@ -208,15 +209,19 @@ ItemDisplay[7s8 ETH NMAG SOCK=0]: ◎%NAME%【拼打孔】 //銳利之斧(無) -
 ItemDisplay[scy ETH NMAG !RW SOCK=4]: ◎%NAME%【無限】(%SOCKETS%) //鐮刀(無)4 - 無限
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=4]: ◎%NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)4 - 眼光/無限/驕傲
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ETH NMAG !RW SOCK=5]: ◎%NAME%【遵從│末日】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧(無)5 - 遵從/末日
+ItemDisplay[(7h7 OR 7wc) ETH NMAG !RW SOCK=6]: ◎%NAME%【寂靜】(%SOCKETS%) //巨長斧、鮫尾巨斧6 - 寂靜
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5]: %NAME%【遵從│末日】(%SOCKETS%) //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從/末日
+ItemDisplay[(7h7 OR 7wc) NMAG !RW SOCK=6]: %NAME%【寂靜】(%SOCKETS%) //巨長斧、鮫尾巨斧6 - 寂靜
 
 // 武器-長槍
 ItemDisplay[7br NMAG !RW SOCK=4]: ◎%NAME%【無限】(%SOCKETS%) //刺人槍(無)4 - 無限
 ItemDisplay[(7tr OR 7br OR 7st) ETH NMAG !RW SOCK=4]: ◎%NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛(無)4 - 眼光/無限/驕傲
-ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: ◎%NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛(無)5 - 遵從/末日
-ItemDisplay[(7tr OR 7br OR 7st) ETH NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛4 - 眼光/無限/驕傲
+ItemDisplay[(7br OR 7st) ETH NMAG !RW SOCK=5]: ◎%NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛(無)5 - 遵從/末日
+ItemDisplay[7st ETH NMAG !RW SOCK=6]: %NAME%【寂靜】(%SOCKETS%) //鬼魂之矛6 - 寂靜
+ItemDisplay[(7tr OR 7br OR 7st) NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛4 - 眼光/無限/驕傲
 ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: %NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛5 - 遵從/末日
+ItemDisplay[7st NMAG !RW SOCK=6]: %NAME%【寂靜】(%SOCKETS%) //鬼魂之矛6 - 寂靜
 
 // 武器-棍棒
 ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //連枷4 - 橡樹之心
@@ -224,7 +229,7 @@ ItemDisplay[7gm ETH NMAG !RW SOCK=6]: ◎%NAME%【死亡呼吸】(%SOCKETS%) //�
 
 // 武器-弓
 ItemDisplay[(6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%【信心】(%SOCKETS%) //巨弓、鑽石弓(10%ED以上)4 - 信心
-ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%【死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓(10%ED以上)6 - 死亡呼吸
+ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%【寂靜│死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓(10%ED以上)6 - 寂靜/死亡呼吸
 
 // 德魯伊
 ItemDisplay[CL1 !ETH NMAG !RW SK250=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3暴風】%GRAY%(%SOCKETS%)
