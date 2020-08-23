@@ -1,4 +1,4 @@
-// 2020/08/21 20:50
+// 2020/08/23 10:30
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -51,7 +51,7 @@ ItemDisplay[maz]: ◆◆%NAME%◆◆ //地獄審判
 //悅心農場 (Pleasant Pasture)
 
 // 捲 書
-ItemDisplay[(tsc OR isc) CLVL>29]: //30等後不顯示傳送鑑定卷軸
+ItemDisplay[(tsc OR isc) CLVL>19]: //20等後不顯示傳送鑑定卷軸
 ItemDisplay[tsc]: %BLUE%傳%WHITE%送卷軸
 ItemDisplay[isc]: %GREEN%鑑%WHITE%定卷軸
 ItemDisplay[tbk]: 傳送之書
@@ -366,10 +366,10 @@ ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
 ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
 
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s普通白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>49]: // 50等後刪除普通白裝
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59 SOCK=0]: // 60等後刪除0s進階白裝
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>69]: // 70等後刪除進階白裝
+ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0]: // 20等後刪除0s普通白裝
+ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29]: // 30等後刪除普通白裝
+ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s進階白裝
+ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
 ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
 
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
