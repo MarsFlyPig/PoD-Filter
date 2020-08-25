@@ -1,4 +1,4 @@
-// 2020/08/25 10:50
+// 2020/08/25 12:30
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -33,7 +33,7 @@ ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖
 ItemDisplay[ma1]: ◆%NAME%◆<T1> //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2]: ◆%NAME%◆ //
+ItemDisplay[ma2]: ◆%NAME%◆<T3> //蜃景荒漠 (Forgotten Desert)
 ItemDisplay[ma3]: ◆%NAME%◆ //
 ItemDisplay[ma4]: ◆%NAME%◆<T2> //褻瀆教堂 (Desecrated Temple)
 ItemDisplay[ma5]: ◆%NAME%◆<T1> //凜冬高原 (Frigid Plateau)
@@ -43,7 +43,7 @@ ItemDisplay[ma8]: ◆%NAME%◆<T2> //發霉地穴 (Musty Crypt)
 ItemDisplay[ma9]: ◆%NAME%◆ //
 ItemDisplay[ma10]: ◆%NAME%◆ //
 ItemDisplay[maz]: ◆◆%NAME%◆◆ //地獄審判
-//蜃景荒漠 (Forgotten Desert)
+
 //遺棄之地 (Abandoned Precinct)
 //崩壞堡壘 (Ruined Citadel)
 //焚燒森林 (Burnt Forest)
