@@ -1,4 +1,4 @@
-// 2020/08/25 15:20
+// 2020/08/25 21:50
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -111,13 +111,16 @@ ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME
 ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美
 
 // 珠寶
+ItemDisplay[jew UNI]: ●%NAME%【暗金】●
 ItemDisplay[jew]: ●%NAME% [L%ILVL%]●
 
 // 小中大護身符
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI]: 《%NAME%【暗金】》
+ItemDisplay[cm3 ILVL>89]: 《《《%NAME% %ORANGE%[L%ILVL%]%BLUE%》》》
 ItemDisplay[cm1]: 《%NAME% [L%ILVL%]》
 ItemDisplay[cm2]: 《《%NAME% [L%ILVL%]》》
 ItemDisplay[cm3]: 《《《%NAME% [L%ILVL%]》》》
+
 
 // 符文
 ItemDisplay[r01]: [#01-%NAME%]
