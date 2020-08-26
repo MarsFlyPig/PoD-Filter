@@ -1,4 +1,4 @@
-// 2020/08/25 21:50
+// 2020/08/26 14:50
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -6,7 +6,7 @@
 
 //===================================
 
-// ItemDisplay[]: %NAME% [%CODE%] // 查看代碼用
+// ItemDisplay[]: %NAME% [%CODE%][L%ILVL%] // 查看代碼用
 
 // 任務物品
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
@@ -38,31 +38,29 @@ ItemDisplay[ma3]: ◆%NAME%◆ //
 ItemDisplay[ma4]: ◆%NAME%◆<T2> //褻瀆教堂 (Desecrated Temple)
 ItemDisplay[ma5]: ◆%NAME%◆<T1> //凜冬高原 (Frigid Plateau)
 ItemDisplay[ma6]: ◆%NAME%◆ //
-ItemDisplay[ma7]: ◆%NAME%◆ //
+ItemDisplay[ma7]: ◆%NAME%◆<T3> //焚燒森林 (Burnt Forest)
 ItemDisplay[ma8]: ◆%NAME%◆<T2> //發霉地穴 (Musty Crypt)
 ItemDisplay[ma9]: ◆%NAME%◆ //
 ItemDisplay[ma10]: ◆%NAME%◆ //
 ItemDisplay[maz]: ◆◆%NAME%◆◆ //地獄審判
-
 //遺棄之地 (Abandoned Precinct)
 //崩壞堡壘 (Ruined Citadel)
-//焚燒森林 (Burnt Forest)
 //昏暗酒窖 (Dim Cellar)
 //悅心農場 (Pleasant Pasture)
 
 // 捲 書
 ItemDisplay[(tsc OR isc) CLVL>19]: //20等後不顯示傳送鑑定卷軸
-ItemDisplay[tsc]: %BLUE%傳%WHITE%送卷軸
-ItemDisplay[isc]: %GREEN%鑑%WHITE%定卷軸
+ItemDisplay[tsc]: %BLUE%傳送%WHITE%卷軸
+ItemDisplay[isc]: %GREEN%鑑定%WHITE%卷軸
 ItemDisplay[tbk]: %WHITE%傳送之書
 ItemDisplay[ibk]: %WHITE%鑑定之書
 
 // 根據玩家等級隱藏金錢顯示
-ItemDisplay[CLVL>79 GOLD<4000]:
-ItemDisplay[CLVL>59 GOLD<2500]:
-ItemDisplay[CLVL>44 GOLD<750]:
-ItemDisplay[CLVL>24 GOLD<250]:
-ItemDisplay[CLVL<25 GOLD<100]:
+ItemDisplay[CLVL>79 GOLD<4000]: //80等後不顯示4000元以下
+ItemDisplay[CLVL>59 GOLD<2500]: //60等後不顯示2500元以下
+ItemDisplay[CLVL>44 GOLD<1000]: //45等後不顯示1000元以下
+ItemDisplay[CLVL>24 GOLD<250]: //25等後不顯示250元以下
+ItemDisplay[GOLD<100]: //不顯示100元以下
 
 // 藥水
 ItemDisplay[hp1 CLVL<14]: %RED%[%GRAY%H%RED%]%WHITE%
@@ -120,7 +118,6 @@ ItemDisplay[cm3 ILVL>89]: 《《《%NAME% %ORANGE%[L%ILVL%]%BLUE%》》》
 ItemDisplay[cm1]: 《%NAME% [L%ILVL%]》
 ItemDisplay[cm2]: 《《%NAME% [L%ILVL%]》》
 ItemDisplay[cm3]: 《《《%NAME% [L%ILVL%]》》》
-
 
 // 符文
 ItemDisplay[r01]: [#01-%NAME%]
@@ -259,12 +256,10 @@ ItemDisplay[CL2 !ETH NMAG !RW SK138=3 SOCK>1 ILVL>25]: <蠻>%NAME%%RED%【+3大�
 ItemDisplay[CL2 !ETH NMAG !RW SK149=3 SOCK>1 ILVL>25]: <蠻>%NAME%%RED%【+3戰鬥體制】%GRAY%(%SOCKETS%)
 ItemDisplay[CL2 !ETH NMAG !RW SK154=3 SOCK>1 ILVL>25]: <蠻>%NAME%%RED%【+3戰鬥狂嗥】%GRAY%(%SOCKETS%)
 ItemDisplay[CL2 !ETH NMAG !RW SK142=3 SOCK>1 ILVL>25]: <蠻>%NAME%%RED%【+3找尋物品】%GRAY%(%SOCKETS%)
-ItemDisplay[CL2 !ETH NMAG !RW SK150=3 SOCK>1 ILVL>25]: <蠻>%NAME%%RED%【+3殘酷嚇阻】%GRAY%(%SOCKETS%)
 ItemDisplay[CL2 !ETH NMAG !RW SK138=3 SOCK=0 ILVL>25]: <蠻>%NAME%%RED%【+3大叫】%WHITE%
 ItemDisplay[CL2 !ETH NMAG !RW SK149=3 SOCK=0 ILVL>25]: <蠻>%NAME%%RED%【+3戰鬥體制】%WHITE%
 ItemDisplay[CL2 !ETH NMAG !RW SK154=3 SOCK=0 ILVL>25]: <蠻>%NAME%%RED%【+3戰鬥狂嗥】%WHITE%
 ItemDisplay[CL2 !ETH NMAG !RW SK142=3 SOCK=0 ILVL>25]: <蠻>%NAME%%RED%【+3找尋物品】%WHITE%
-ItemDisplay[CL2 !ETH NMAG !RW SK150=3 SOCK=0 ILVL>25]: <蠻>%NAME%%RED%【+3殘酷嚇阻】%WHITE%
 ItemDisplay[WEAPON !RW TABSK34>2]: %RED%<<<%NAME%【+3戰嚎武器】>>>
 ItemDisplay[CL2 TABSK34>2 SK149>2]: %RED%<<<%NAME%【+6戰鬥體制】>>>
 ItemDisplay[CL2 CLSK4>1 SK149>2]: %RED%<<<%NAME%【+5戰鬥體制】>>>
