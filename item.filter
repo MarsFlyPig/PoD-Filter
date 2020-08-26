@@ -1,4 +1,4 @@
-// 2020/08/26 14:50
+// 2020/08/27 01:10
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -333,6 +333,7 @@ ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK63=3 SOCK=0]: <法>%NAME%%RED%【+3�
 
 // 亞馬遜
 ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3技)(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
+ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0]: <亞>%NAME%【信心】(+3技)【拚4孔】 //女族長之弓、大院長之弓(+3技) - 信心
 
 // ===>>> 其他 <<<===
 
