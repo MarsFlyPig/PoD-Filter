@@ -1,4 +1,4 @@
-// 2020/08/27 03:40
+// 2020/08/27 10:00
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -102,11 +102,14 @@ ItemDisplay[yps CLVL>9]:
 ItemDisplay[key CLVL>9]:
 
 // 寶石
-ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: // 碎裂
-ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf]: // 缺陷
-ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku]: // 一般
-ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 無瑕疵
 ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美
+ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 無瑕疵
+ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) CLVL<16]: %NAME% // 一般
+ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf) CLVL<16]: %NAME% // 缺陷
+ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc) CLVL<16]: %NAME% // 碎裂
+ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku]: // 一般
+ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf]: // 缺陷
+ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: // 碎裂
 
 // 珠寶
 ItemDisplay[jew UNI]: ●%NAME%【暗金】●
@@ -343,16 +346,16 @@ ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【擊退:9歐�
 ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【回魔:9歐特+紫+珠寶】%BLUE%[L%ILVL%] // 皮手套、魔皮手套、荊棘連指手套
 
 // 過度
-ItemDisplay[crs NMAG !RW !INF SOCK=0 ILVL>25 ILVL<41 CLVL<60]: %NAME%【精神-劍】//60等前顯示 0s水晶劍
-ItemDisplay[bsd NMAG !RW !INF SOCK=0 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】//50等前顯示 0s闊劍
-ItemDisplay[bsd NMAG !RW !INF SOCK=4 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%)//50等前顯示 4s闊劍
+ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 CLVL<60]: %NAME%【精神-劍】//60等前顯示 0s水晶劍
+ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】//50等前顯示 0s闊劍
+ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=4 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%)//50等前顯示 4s闊劍
 ItemDisplay[WP8 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長斧】(%SOCKETS%) //60等前顯示 4s長斧
 ItemDisplay[WP7 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長槍】(%SOCKETS%) //60等前顯示 4s長槍
 
 ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】(%SOCKETS%) //巨戰權杖、神屬權杖-5897
 
 // 缺錢
-ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW]: $%PRICE%$ // 顯示菁英盔甲賣錢
+ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW !uea]: $%PRICE%$ // 顯示菁英盔甲賣錢
 ItemDisplay[CL6 MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示法師寶珠賣錢
 ItemDisplay[WP12 MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示死靈魔杖賣錢
 ItemDisplay[CL6 MAG !RW ILVL>50]: $$$$ // 顯示法師寶珠賣錢
@@ -363,6 +366,7 @@ ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 // 刪除垃圾
 ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
 ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
+ItemDisplay[NMAG WP5]: // 刪除白色投擲武器
 
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
 ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0]: // 20等後刪除0s普通白裝
