@@ -1,4 +1,4 @@
-// 2020/08/27 10:00
+// 2020/08/27 23:10
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -163,16 +163,16 @@ ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //
 
 // 盾牌
 ItemDisplay[ush !ETH NMAG !RW SOCK=3]: %NAME%【聖堂│夢境】(%SOCKETS%) //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
-ItemDisplay[uit DEF>144 !ETH NMAG !RW SOCK=0]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
+ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%(145防↑)【菁英】 //145防以上0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=0]: %NAME%【打4孔】 //0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】(%SOCKETS%) //統治者大盾4 - 精神/鳳凰
 
 // 盔甲
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=11]: %NAME%【11%ED】 //11%ED
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=12]: %NAME%【12%ED】 //12%ED
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=13]: %NAME%【13%ED】 //13%ED
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=14]: %NAME%【14%ED】 //14%ED
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=15]: %NAME%【15%ED】 //15%ED
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=11]: %NAME%(11%ED)【菁英】 //11%ED
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=12]: %NAME%(12%ED)【菁英】 //12%ED
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=13]: %NAME%(13%ED)【菁英】 //13%ED
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=14]: %NAME%(14%ED)【菁英】 //14%ED
+ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=15]: %NAME%(15%ED)【菁英】 //15%ED
 ItemDisplay[EQ2 ETH DEF>749 NMAG !RW SOCK=0]: ◎%NAME%(750防↑)【打4孔】 //無形高防
 ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%(260防↑)【打3孔】 //260防以上法師鎧甲
 ItemDisplay[xtp DEF>254 !ETH NMAG !RW SOCK=3]: %NAME%(255防↑)【謎團】(%SOCKETS%) //250防以上法師鎧甲3 - 謎團
@@ -231,8 +231,10 @@ ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //連枷4 
 ItemDisplay[7gm ETH NMAG !RW SOCK=6]: ◎%NAME%【死亡呼吸】(%SOCKETS%) //雷鎚(無)6 - 死亡呼吸
 
 // 武器-弓
-ItemDisplay[(6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%【信心】(%SOCKETS%) //巨弓、鑽石弓(10%ED以上)4 - 信心
-ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%【寂靜│死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓(10%ED以上)6 - 寂靜/死亡呼吸
+ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%(11%ED↑)【信心】(%SOCKETS%) //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 信心
+ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%(11%ED↑)【寂靜│死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
+ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】(%SOCKETS%) //刀鋒弓、巨弓、鑽石弓4 - 信心
+ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6]: %NAME%【寂靜│死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓6 - 寂靜/死亡呼吸
 
 // 德魯伊
 ItemDisplay[CL1 !ETH NMAG !RW SK250=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3暴風】%GRAY%(%SOCKETS%)
@@ -366,8 +368,8 @@ ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 // 刪除垃圾
 ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
 ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
-ItemDisplay[NMAG WP5]: // 刪除白色投擲武器
 
+ItemDisplay[NMAG (WP4 OR WP5 OR WP10 OR WP11) CLVL>9]: // 10等後刪除白色匕首、投擲武器、十字弓、長杖
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
 ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0]: // 20等後刪除0s普通白裝
 ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29]: // 30等後刪除普通白裝
