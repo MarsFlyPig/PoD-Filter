@@ -1,4 +1,4 @@
-// 2020/08/28 10:40
+// 2020/08/29 14:35
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -304,10 +304,10 @@ ItemDisplay[CL2 TABSK34>2 SK149>2]: %RED%<<<%NAME%【+6戰鬥體制】>>>
 ItemDisplay[CL2 CLSK4>1 SK149>2]: %RED%<<<%NAME%【+5戰鬥體制】>>>
 
 // 聖騎士
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=0]: <聖>%NAME%【菁英】(40抗↑) //聖騎盾(40抗以上)
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂│夢境│飛龍】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神
-ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>◎%NAME%【流亡】(40抗↑)(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=0]: <聖>%NAME%【菁英】%RED%(40抗↑)%WHITE% //聖騎盾(40抗以上)
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂│夢境│飛龍】%RED%(40抗↑)%GRAY%(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】%RED%(40抗↑)%GRAY%(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神
+ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: <聖>◎%NAME%【流亡】%RED%(40抗↑)%GRAY%(%SOCKETS%) //聖騎盾(40抗以上)4(無) - 流亡
 
 // 死靈
 ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SK68>0 OR SK74>0 OR SK79>0 OR SK83>0) SOCK>1 !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛│白骨裝甲-屍體爆炸-號召-褻瀆】%GRAY%(%SOCKETS%) // 骨矛84 白骨裝甲68 屍體爆炸74 號召79 褻瀆83
@@ -371,8 +371,8 @@ ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK57=3 SOCK=0]: <法>%NAME%%RED%【+3�
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK63=3 SOCK=0]: <法>%NAME%%RED%【+3支配閃電】%WHITE%
 
 // 亞馬遜
-ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】(+3技)(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
-ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0]: <亞>%NAME%【信心】(+3技)【拚4孔】 //女族長之弓、大院長之弓(+3技) - 信心
+ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: <亞>%NAME%【信心】%RED%(+3技)%GRAY%(%SOCKETS%) //女族長之弓、大院長之弓(+3技)4 - 信心
+ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0 !SUP]: <亞>%NAME%【信心】%RED%(+3技)%WHITE%【拚4孔】 //女族長之弓、大院長之弓(+3技) - 信心
 
 // ===>>> 其他 <<<===
 
