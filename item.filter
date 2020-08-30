@@ -1,4 +1,4 @@
-// 2020/08/30 03:30
+// 2020/08/31 01:20
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -27,8 +27,8 @@ ItemDisplay[std]: %NAME% //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 ItemDisplay[leg]: %WHITE%※%NAME%※ //維特之腳
 ItemDisplay[cx5]: ※%NAME% (ooc)%WHITE%※ //腐化寶珠
-ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME%WHITE%%※※ //暗黑破壞神的靈魂石
-ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //混沌之鑰
+ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)WHITE%%※※ //暗黑破壞神的靈魂石
+ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之鑰
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖(Relic)
