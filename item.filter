@@ -1,4 +1,4 @@
-// 2020/08/31 01:20
+// 2020/08/31 01:45
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -32,14 +32,14 @@ ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之�
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖(Relic)
-ItemDisplay[ma1]: ◆%NAME%◆<T1> //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2]: ◆%NAME%◆<T3> //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma1]: ◆%NAME%<T1-Lv86>◆ //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2]: ◆%NAME%<T3-Lv88>◆ //蜃景荒漠 (Forgotten Desert)
 ItemDisplay[ma3]: ◆%NAME%◆ //
-ItemDisplay[ma4]: ◆%NAME%◆<T2> //褻瀆教堂 (Desecrated Temple)
-ItemDisplay[ma5]: ◆%NAME%◆<T1> //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma4]: ◆%NAME%<T2-Lv87>◆ //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5]: ◆%NAME%<T1-Lv86>◆ //凜冬高原 (Frigid Plateau)
 ItemDisplay[ma6]: ◆%NAME%◆ //
-ItemDisplay[ma7]: ◆%NAME%◆<T3> //焚燒森林 (Burnt Forest)
-ItemDisplay[ma8]: ◆%NAME%◆<T2> //發霉地穴 (Musty Crypt)
+ItemDisplay[ma7]: ◆%NAME%<T3-Lv88>◆ //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8]: ◆%NAME%<T2-Lv87>◆ //發霉地穴 (Musty Crypt)
 ItemDisplay[ma9]: ◆%NAME%◆ //
 ItemDisplay[ma10]: ◆%NAME%◆ //
 ItemDisplay[maz]: ◆◆%NAME%◆◆ //地獄審判
