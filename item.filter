@@ -1,4 +1,4 @@
-// 2020/08/31 01:45
+// 2020/08/31 12:30
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -32,21 +32,27 @@ ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之�
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖(Relic)
-ItemDisplay[ma1]: ◆%NAME%<T1-Lv86>◆ //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2]: ◆%NAME%<T3-Lv88>◆ //蜃景荒漠 (Forgotten Desert)
-ItemDisplay[ma3]: ◆%NAME%◆ //
-ItemDisplay[ma4]: ◆%NAME%<T2-Lv87>◆ //褻瀆教堂 (Desecrated Temple)
-ItemDisplay[ma5]: ◆%NAME%<T1-Lv86>◆ //凜冬高原 (Frigid Plateau)
-ItemDisplay[ma6]: ◆%NAME%◆ //
-ItemDisplay[ma7]: ◆%NAME%<T3-Lv88>◆ //焚燒森林 (Burnt Forest)
-ItemDisplay[ma8]: ◆%NAME%<T2-Lv87>◆ //發霉地穴 (Musty Crypt)
-ItemDisplay[ma9]: ◆%NAME%◆ //
-ItemDisplay[ma10]: ◆%NAME%◆ //
-ItemDisplay[maz]: ◆◆%NAME%◆◆ //地獄審判
-//遺棄之地 (Abandoned Precinct)
-//崩壞堡壘 (Ruined Citadel)
-//昏暗酒窖 (Dim Cellar)
-//悅心農場 (Pleasant Pasture)
+ItemDisplay[ma1 !ID]: 『寒霜洞窟』<T1-Lv86＊> %GRAY%(未鑑定)%YELLOW% //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2 !ID]: 『蜃景荒漠』<T3-Lv88＊> %GRAY%(未鑑定)%YELLOW% //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma3 !ID]: 『遺棄之地』<T?-Lv??> %GRAY%(未鑑定)%YELLOW% //遺棄之地 (Abandoned Precinct)
+ItemDisplay[ma4 !ID]: 『褻瀆教堂』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5 !ID]: 『凜冬高原』<T1-Lv86＊> %GRAY%(未鑑定)%YELLOW% //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6 !ID]: 『崩壞堡壘』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% //崩壞堡壘 (Ruined Citadel)
+ItemDisplay[ma7 !ID]: 『焚燒森林』<T3-Lv88＊> %GRAY%(未鑑定)%YELLOW% //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8 !ID]: 『發霉地穴』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //發霉地穴 (Musty Crypt)
+ItemDisplay[ma9 !ID]: 『昏暗地窖』<T2-Lv87＊> %GRAY%(未鑑定)%YELLOW% //昏暗地窖 (Dim Cellar)
+ItemDisplay[ma10 !ID]: 『悅心農場』<T0-Lv??> %GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture)
+ItemDisplay[ma1]: 『寒霜洞窟』<T1-Lv86＊> //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2]: 『蜃景荒漠』<T3-Lv88＊> //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma3]: 『遺棄之地』<T?-Lv??> //遺棄之地 (Abandoned Precinct)
+ItemDisplay[ma4]: 『褻瀆教堂』<T2-Lv87> //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5]: 『凜冬高原』<T1-Lv86＊> //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6]: 『崩壞堡壘』<T3-Lv88> //崩壞堡壘 (Ruined Citadel)
+ItemDisplay[ma7]: 『焚燒森林』<T3-Lv88＊> //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8]: 『發霉地穴』<T2-Lv87> //發霉地穴 (Musty Crypt)
+ItemDisplay[ma9]: 『昏暗地窖』<T2-Lv87＊> //昏暗地窖 (Dim Cellar)
+ItemDisplay[ma10]: 『悅心農場』<T0-Lv??> //悅心農場 (Pleasant Pasture)
+ItemDisplay[maz]: 『%NAME%』//地獄審判
 
 // 捲 書
 ItemDisplay[(tsc OR isc) CLVL>19]: //20等後不顯示傳送鑑定卷軸
