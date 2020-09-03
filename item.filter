@@ -1,4 +1,4 @@
-// 2020/09/02 10:00
+// 2020/09/03 12:20
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -397,7 +397,7 @@ ItemDisplay[WP7 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長槍】(%SOCKETS%) /
 ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】(%SOCKETS%) //巨戰權杖、神屬權杖-5897
 
 // 缺錢
-ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW !uea]: $%PRICE%$ // 顯示菁英盔甲賣錢
+ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW !uea !uui]: $%PRICE%$ // 顯示菁英盔甲賣錢
 ItemDisplay[CL6 MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示法師寶珠賣錢
 ItemDisplay[WP12 MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示死靈魔杖賣錢
 ItemDisplay[CL6 MAG !RW ILVL>50]: $$$$ // 顯示法師寶珠賣錢
