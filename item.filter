@@ -1,4 +1,4 @@
-// 2020/09/04 09:30
+// 2020/09/04 10:00
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -18,7 +18,7 @@ ItemDisplay[pk3]: %WHITE%※※%ORANGE%%NAME% (尼拉塞克)%WHITE%※※ //毀�
 ItemDisplay[dhn]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //暗黑破壞神之角
 ItemDisplay[bey]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //巴爾之眼
 ItemDisplay[mbr]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //墨菲斯托之腦
-ItemDisplay[toa]: ※%NAME%※ //赦免徽章
+ItemDisplay[toa]: %NAME% //赦免徽章
 ItemDisplay[tes]: %NAME% (A1.A2) //扭曲的苦痛精華
 ItemDisplay[ceh]: %NAME% (A3) //充盈的憎恨精華
 ItemDisplay[bet]: %NAME% (A4) //燃燒的恐懼精華
@@ -27,7 +27,7 @@ ItemDisplay[std]: %NAME% //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 ItemDisplay[leg]: %WHITE%※%NAME%※ //維特之腳
 ItemDisplay[cx5]: ※%NAME% (ooc)%WHITE%※ //腐化寶珠
-ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)WHITE%%※※ //暗黑破壞神的靈魂石
+ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※ //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之鑰
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
@@ -111,9 +111,9 @@ ItemDisplay[key CLVL>9]:
 // 寶石
 ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美
 ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 無瑕疵
-ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) CLVL<16]: %NAME% // 一般
-ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf) CLVL<16]: %NAME% // 缺陷
-ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc) CLVL<16]: %NAME% // 碎裂
+ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) CLVL<16]: ★%NAME%★ // 一般
+ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf) CLVL<16]: ★%NAME%★ // 缺陷
+ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc) CLVL<16]: ★%NAME%★ // 碎裂
 ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku]: // 一般
 ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf]: // 缺陷
 ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: // 碎裂
@@ -123,8 +123,11 @@ ItemDisplay[jew UNI]: ●%NAME%【暗金】●
 ItemDisplay[jew]: ●%NAME% [L%ILVL%]●
 
 // 小中大護身符
+ItemDisplay[cm1 UNI ID]: 《毀滅 Annihilus【暗金】》
+ItemDisplay[cm2 UNI ID]: 《地獄火炬 Hellfire Torch【暗金】》
+ItemDisplay[cm3 UNI ID]: 《基德的運氣 Gheed's Fortune【暗金】》
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI]: 《%NAME%【暗金】》
-ItemDisplay[cm3 ILVL>89]: 《《《%NAME% %ORANGE%[L%ILVL%]%BLUE%》》》
+ItemDisplay[cm3 ILVL>90]: 《《《%NAME% %ORANGE%[L%ILVL%]%BLUE%》》》 // 91LV 技能+45命
 ItemDisplay[cm1]: 《%NAME% [L%ILVL%]》
 ItemDisplay[cm2]: 《《%NAME% [L%ILVL%]》》
 ItemDisplay[cm3]: 《《《%NAME% [L%ILVL%]》》》
@@ -517,7 +520,7 @@ ItemDisplay[CL7 ELT SOCK>0]: <亞>%NAME%【菁英】(%SOCKETS%)
 // 戒指 項鍊 箭矢 十字箭
 ItemDisplay[(rin OR amu) SET]: %NAME%【套裝】[L%ILVL%] //戒指 項鍊
 ItemDisplay[(rin OR amu) UNI]: %NAME%【暗金】[L%ILVL%] //戒指 項鍊
-ItemDisplay[(rin OR amu) ILVL>89]: %NAME%【飾品】%ORANGE%[L%ILVL%] //戒指 項鍊
+ItemDisplay[(rin OR amu) ILVL>89]: %NAME%【飾品】%ORANGE%[L%ILVL%] //戒指 項鍊 90LV
 ItemDisplay[rin OR amu]: %NAME%【飾品】[L%ILVL%] //戒指 項鍊
 ItemDisplay[aq2 OR cq2]: %NAME%【箭袋】//箭矢 十字箭
 
