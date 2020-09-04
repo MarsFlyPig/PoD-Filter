@@ -1,4 +1,4 @@
-// 2020/09/03 12:20
+// 2020/09/04 09:30
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -62,6 +62,7 @@ ItemDisplay[tbk]: %WHITE%傳送之書
 ItemDisplay[ibk]: %WHITE%鑑定之書
 
 // 根據玩家等級隱藏金錢顯示
+ItemDisplay[CLVL>89 GOLD<8000]: //90等後不顯示8000元以下
 ItemDisplay[CLVL>79 GOLD<4000]: //80等後不顯示4000元以下
 ItemDisplay[CLVL>59 GOLD<2500]: //60等後不顯示2500元以下
 ItemDisplay[CLVL>44 GOLD<1000]: //45等後不顯示1000元以下
@@ -516,6 +517,7 @@ ItemDisplay[CL7 ELT SOCK>0]: <亞>%NAME%【菁英】(%SOCKETS%)
 // 戒指 項鍊 箭矢 十字箭
 ItemDisplay[(rin OR amu) SET]: %NAME%【套裝】[L%ILVL%] //戒指 項鍊
 ItemDisplay[(rin OR amu) UNI]: %NAME%【暗金】[L%ILVL%] //戒指 項鍊
+ItemDisplay[(rin OR amu) ILVL>89]: %NAME%【飾品】%ORANGE%[L%ILVL%] //戒指 項鍊
 ItemDisplay[rin OR amu]: %NAME%【飾品】[L%ILVL%] //戒指 項鍊
 ItemDisplay[aq2 OR cq2]: %NAME%【箭袋】//箭矢 十字箭
 
