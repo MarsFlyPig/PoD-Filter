@@ -1,4 +1,4 @@
-// 2020/09/06 16:10
+// 2020/09/06 10:20
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -6,7 +6,7 @@
 
 //===================================
 
-// ItemDisplay[]: %NAME% [%CODE%][L%ILVL%] // 查看代碼用
+// ItemDisplay[]: [L%ILVL%]%NAME% [%CODE%] // 查看代碼用
 
 // 任務物品
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
@@ -120,17 +120,17 @@ ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: // 碎裂
 
 // 珠寶
 ItemDisplay[jew UNI]: ●%NAME%【暗金】●
-ItemDisplay[jew]: ●%NAME% [L%ILVL%]●
+ItemDisplay[jew]: ●[L%ILVL%]%NAME%●
 
 // 小中大護身符
 ItemDisplay[cm1 UNI ID]: 《毀滅 Annihilus【暗金】》
 ItemDisplay[cm2 UNI ID]: 《地獄火炬 Hellfire Torch【暗金】》
 ItemDisplay[cm3 UNI ID]: 《基德的運氣 Gheed's Fortune【暗金】》
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI]: 《%NAME%【暗金】》
-ItemDisplay[cm3 ILVL>90]: 《《《%NAME% %ORANGE%[L%ILVL%]%BLUE%》》》 // 91LV 技能+45命
-ItemDisplay[cm1]: 《%NAME% [L%ILVL%]》
-ItemDisplay[cm2]: 《《%NAME% [L%ILVL%]》》
-ItemDisplay[cm3]: 《《《%NAME% [L%ILVL%]》》》
+ItemDisplay[cm3 ILVL>90]: 《《《%ORANGE%[L%ILVL%]%BLUE%%NAME%》》》 // 91LV 技能+45命
+ItemDisplay[cm1]: 《[L%ILVL%]%NAME%》
+ItemDisplay[cm2]: 《《[L%ILVL%]%NAME%》》
+ItemDisplay[cm3]: 《《《[L%ILVL%]%NAME%》》》
 
 // 符文
 ItemDisplay[r01]: [#01-%NAME%]
@@ -170,6 +170,16 @@ ItemDisplay[r33]: [%PURPLE%#########################%ORANGE%33-%NAME%%PURPLE%###
 
 // 頭盔
 ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
+
+// 頭冠
+ItemDisplay[EQ7 MAG ETH SOCK=0 ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%◎%NAME%【頭冠】
+ItemDisplay[EQ7 MAG ETH SOCK>0 ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%◎%NAME%【頭冠】(%SOCKETS%)
+ItemDisplay[EQ7 RARE ETH SOCK=0 ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%◎%NAME%【頭冠】
+ItemDisplay[EQ7 RARE ETH SOCK>0 ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%◎%NAME%【頭冠】(%SOCKETS%)
+ItemDisplay[EQ7 MAG SOCK=0 ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【頭冠】
+ItemDisplay[EQ7 MAG SOCK>0 ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【頭冠】(%SOCKETS%)
+ItemDisplay[EQ7 RARE SOCK=0 ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【頭冠】
+ItemDisplay[EQ7 RARE SOCK>0 ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【頭冠】(%SOCKETS%)
 
 // 盾牌
 ItemDisplay[ush !ETH NMAG !RW SOCK=3]: %NAME%【聖堂│夢境】(%SOCKETS%) //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
@@ -386,9 +396,9 @@ ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0 !SUP]: <亞>%NAME%%RED%(+3技)
 // ===>>> 其他 <<<===
 
 // 手工基底
-ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【壓碎:4那夫+紅+珠寶】%BLUE%[L%ILVL%] // 重手套、鯊皮手套、吸血鬼骸骨手套
-ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【擊退:9歐特+藍+珠寶】%BLUE%[L%ILVL%] // 鎖鍊手套、重型手鐲、吸血鬼手套
-ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: %NAME%%ORANGE%【回魔:9歐特+紫+珠寶】%BLUE%[L%ILVL%] // 皮手套、魔皮手套、荊棘連指手套
+ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【壓碎:4那夫+紅+珠寶】 // 重手套、鯊皮手套、吸血鬼骸骨手套
+ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【擊退:9歐特+藍+珠寶】 // 鎖鍊手套、重型手鐲、吸血鬼手套
+ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【回魔:9歐特+紫+珠寶】 // 皮手套、魔皮手套、荊棘連指手套
 
 // 過度
 ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 CLVL<60]: %NAME%【精神-劍】//60等前顯示 0s水晶劍
@@ -517,11 +527,13 @@ ItemDisplay[CL7 ELT SOCK=0]: <亞>%NAME%【菁英】
 ItemDisplay[CL7 ELT SOCK>0]: <亞>%NAME%【菁英】(%SOCKETS%)
 
 // 戒指 項鍊 箭矢 十字箭
-ItemDisplay[(rin OR amu) SET]: %NAME%【套裝】[L%ILVL%] //戒指 項鍊
-ItemDisplay[(rin OR amu) UNI]: %NAME%【暗金】[L%ILVL%] //戒指 項鍊
-ItemDisplay[amu ILVL>89]: %NAME%【飾品】%ORANGE%[L%ILVL%] //項鍊 90LV +2技能
-ItemDisplay[rin OR amu]: %NAME%【飾品】[L%ILVL%] //戒指 項鍊
+ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】 //戒指 項鍊
+ItemDisplay[(rin OR amu) UNI]: [L%ILVL%]%NAME%【暗金】 //戒指 項鍊
+ItemDisplay[amu MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【飾品】 //項鍊 90LV +2技能
+ItemDisplay[amu RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【飾品】 //項鍊 90LV +2技能
+ItemDisplay[rin OR amu]: [L%ILVL%]%NAME%【飾品】 //戒指 項鍊
 ItemDisplay[aq2 OR cq2]: %NAME%【箭袋】//箭矢 十字箭
+
 
 // 普通 進階 菁英
 ItemDisplay[NORM ETH SOCK=0]: ◎%NAME%【普通】
