@@ -1,4 +1,4 @@
-// 2020/09/07 12;20
+// 2020/09/07 16:30
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -32,25 +32,25 @@ ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之�
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖(Relic)
-ItemDisplay[ma1 !ID]: 『寒霜洞窟』<T1-Lv86＊> %GRAY%(未鑑定)%YELLOW% //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2 !ID]: 『蜃景荒漠』<T3-Lv88＊> %GRAY%(未鑑定)%YELLOW% //蜃景荒漠 (Forgotten Desert)
-ItemDisplay[ma3 !ID]: 『遺棄之地』<T?-Lv??> %GRAY%(未鑑定)%YELLOW% //遺棄之地 (Abandoned Precinct)
-ItemDisplay[ma4 !ID]: 『褻瀆教堂』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //褻瀆教堂 (Desecrated Temple)
-ItemDisplay[ma5 !ID]: 『凜冬高原』<T1-Lv86＊> %GRAY%(未鑑定)%YELLOW% //凜冬高原 (Frigid Plateau)
-ItemDisplay[ma6 !ID]: 『崩壞堡壘』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% //崩壞堡壘 (Ruined Citadel)
-ItemDisplay[ma7 !ID]: 『焚燒森林』<T3-Lv88＊> %GRAY%(未鑑定)%YELLOW% //焚燒森林 (Burnt Forest)
-ItemDisplay[ma8 !ID]: 『發霉地穴』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //發霉地穴 (Musty Crypt)
-ItemDisplay[ma9 !ID]: 『昏暗地窖』<T2-Lv87＊> %GRAY%(未鑑定)%YELLOW% //昏暗地窖 (Dim Cellar)
+ItemDisplay[ma1 !ID]: 『%NAME%』<T1-Lv86＊> %GRAY%(未鑑定)%YELLOW% //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2 !ID]: 『%NAME%』<T3-Lv88＊> %GRAY%(未鑑定)%YELLOW% //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma3 !ID]: 『%NAME%』<T?-Lv??> %GRAY%(未鑑定)%YELLOW% //遺棄之地 (Abandoned Precinct)
+ItemDisplay[ma4 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5 !ID]: 『%NAME%』<T1-Lv86＊> %GRAY%(未鑑定)%YELLOW% //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6 !ID]: 『%NAME%』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% //崩壞堡壘 (Ruined Citadel)
+ItemDisplay[ma7 !ID]: 『%NAME%』<T3-Lv88＊> %GRAY%(未鑑定)%YELLOW% //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //發霉地穴 (Musty Crypt)
+ItemDisplay[ma9 !ID]: 『%NAME%』<T2-Lv87＊> %GRAY%(未鑑定)%YELLOW% //昏暗地窖 (Dim Cellar)
 ItemDisplay[ma10 !ID]: 『%NAME%』<T0-Lv??> %GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture)
-ItemDisplay[ma1]: 『寒霜洞窟』<T1-Lv86＊> //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2]: 『蜃景荒漠』<T3-Lv88＊> //蜃景荒漠 (Forgotten Desert)
-ItemDisplay[ma3]: 『遺棄之地』<T?-Lv??> //遺棄之地 (Abandoned Precinct)
-ItemDisplay[ma4]: 『褻瀆教堂』<T2-Lv87> //褻瀆教堂 (Desecrated Temple)
-ItemDisplay[ma5]: 『凜冬高原』<T1-Lv86＊> //凜冬高原 (Frigid Plateau)
-ItemDisplay[ma6]: 『崩壞堡壘』<T3-Lv88> //崩壞堡壘 (Ruined Citadel)
-ItemDisplay[ma7]: 『焚燒森林』<T3-Lv88＊> //焚燒森林 (Burnt Forest)
-ItemDisplay[ma8]: 『發霉地穴』<T2-Lv87> //發霉地穴 (Musty Crypt)
-ItemDisplay[ma9]: 『昏暗地窖』<T2-Lv87＊> //昏暗地窖 (Dim Cellar)
+ItemDisplay[ma1]: 『%NAME%』<T1-Lv86＊> //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2]: 『%NAME%』<T3-Lv88＊> //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma3]: 『%NAME%』<T?-Lv??> //遺棄之地 (Abandoned Precinct)
+ItemDisplay[ma4]: 『%NAME%』<T2-Lv87> //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5]: 『%NAME%』<T1-Lv86＊> //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6]: 『%NAME%』<T3-Lv88> //崩壞堡壘 (Ruined Citadel)
+ItemDisplay[ma7]: 『%NAME%』<T3-Lv88＊> //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8]: 『%NAME%』<T2-Lv87> //發霉地穴 (Musty Crypt)
+ItemDisplay[ma9]: 『%NAME%』<T2-Lv87＊> //昏暗地窖 (Dim Cellar)
 ItemDisplay[ma10]: 『%NAME%』<T0-Lv??> //悅心農場 (Pleasant Pasture)
 ItemDisplay[maz]: 『%NAME%』//地獄審判
 
@@ -288,7 +288,6 @@ ItemDisplay[7gm ETH NMAG !RW SOCK=6]: ◎%NAME%【死亡呼吸】(%SOCKETS%) //�
 ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【信心】(%SOCKETS%) //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 信心
 ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【寂靜│死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
 ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】(%SOCKETS%) //刀鋒弓、巨弓、鑽石弓4 - 信心
-// ItemDisplay[WP9 NMAG !RW SOCK=4]: %NAME%【和諧】(%SOCKETS%) 
 
 // 德魯伊
 ItemDisplay[CL1 !ETH NMAG !RW SK250=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3暴風】%GRAY%(%SOCKETS%)
