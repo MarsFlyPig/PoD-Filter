@@ -1,4 +1,4 @@
-// 2020/09/06 10:20
+// 2020/09/07 12;20
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -6,7 +6,7 @@
 
 //===================================
 
-// ItemDisplay[]: [L%ILVL%]%NAME% [%CODE%] // 查看代碼用
+// ItemDisplay[]: [L%ILVL%]%NAME%<$%PRICE%$>[%CODE%] // 查看代碼用
 
 // 任務物品
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
@@ -41,7 +41,7 @@ ItemDisplay[ma6 !ID]: 『崩壞堡壘』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% //�
 ItemDisplay[ma7 !ID]: 『焚燒森林』<T3-Lv88＊> %GRAY%(未鑑定)%YELLOW% //焚燒森林 (Burnt Forest)
 ItemDisplay[ma8 !ID]: 『發霉地穴』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //發霉地穴 (Musty Crypt)
 ItemDisplay[ma9 !ID]: 『昏暗地窖』<T2-Lv87＊> %GRAY%(未鑑定)%YELLOW% //昏暗地窖 (Dim Cellar)
-ItemDisplay[ma10 !ID]: 『悅心農場』<T0-Lv??> %GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture)
+ItemDisplay[ma10 !ID]: 『%NAME%』<T0-Lv??> %GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture)
 ItemDisplay[ma1]: 『寒霜洞窟』<T1-Lv86＊> //寒霜洞窟 (Icy Cavern)
 ItemDisplay[ma2]: 『蜃景荒漠』<T3-Lv88＊> //蜃景荒漠 (Forgotten Desert)
 ItemDisplay[ma3]: 『遺棄之地』<T?-Lv??> //遺棄之地 (Abandoned Precinct)
@@ -51,7 +51,7 @@ ItemDisplay[ma6]: 『崩壞堡壘』<T3-Lv88> //崩壞堡壘 (Ruined Citadel)
 ItemDisplay[ma7]: 『焚燒森林』<T3-Lv88＊> //焚燒森林 (Burnt Forest)
 ItemDisplay[ma8]: 『發霉地穴』<T2-Lv87> //發霉地穴 (Musty Crypt)
 ItemDisplay[ma9]: 『昏暗地窖』<T2-Lv87＊> //昏暗地窖 (Dim Cellar)
-ItemDisplay[ma10]: 『悅心農場』<T0-Lv??> //悅心農場 (Pleasant Pasture)
+ItemDisplay[ma10]: 『%NAME%』<T0-Lv??> //悅心農場 (Pleasant Pasture)
 ItemDisplay[maz]: 『%NAME%』//地獄審判
 
 // 捲 書
@@ -288,6 +288,7 @@ ItemDisplay[7gm ETH NMAG !RW SOCK=6]: ◎%NAME%【死亡呼吸】(%SOCKETS%) //�
 ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【信心】(%SOCKETS%) //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 信心
 ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【寂靜│死亡呼吸】(%SOCKETS%) //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
 ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】(%SOCKETS%) //刀鋒弓、巨弓、鑽石弓4 - 信心
+// ItemDisplay[WP9 NMAG !RW SOCK=4]: %NAME%【和諧】(%SOCKETS%) 
 
 // 德魯伊
 ItemDisplay[CL1 !ETH NMAG !RW SK250=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3暴風】%GRAY%(%SOCKETS%)
