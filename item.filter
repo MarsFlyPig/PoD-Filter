@@ -1,4 +1,4 @@
-// 2020/09/11 10:30
+// 2020/09/11 23:30
 // 版本: #19 Zincite(紅鋅礦)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -294,6 +294,7 @@ ItemDisplay[CL1 !ETH NMAG !RW SK250=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3暴�
 ItemDisplay[CL1 !ETH NMAG !RW SK245=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3龍捲風】%GRAY%(%SOCKETS%)
 ItemDisplay[CL1 !ETH NMAG !RW SK244=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3火山】%GRAY%(%SOCKETS%)
 ItemDisplay[CL1 !ETH NMAG !RW SK229=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3熔漿巨岩】%GRAY%(%SOCKETS%)
+ItemDisplay[CL1 !ETH NMAG !RW SK250=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3毀天滅地】%GRAY%(%SOCKETS%)
 ItemDisplay[CL1 !ETH NMAG !RW SK238=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3狂犬病】%GRAY%(%SOCKETS%)
 ItemDisplay[CL1 !ETH NMAG !RW SK243=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3震波】%GRAY%(%SOCKETS%)
 ItemDisplay[CL1 !ETH NMAG !RW SK239=3 SOCK>1 ILVL>25]: <德>%NAME%%RED%【+3焰爪】%GRAY%(%SOCKETS%)
@@ -303,6 +304,7 @@ ItemDisplay[CL1 !ETH NMAG !RW SK250=3 SOCK=0 ILVL>25]: <德>%NAME%%RED%【+3暴�
 ItemDisplay[CL1 !ETH NMAG !RW SK245=3 SOCK=0 ILVL>25]: <德>%NAME%%RED%【+3龍捲風】%WHITE%
 ItemDisplay[CL1 !ETH NMAG !RW SK244=3 SOCK=0 ILVL>25]: <德>%NAME%%RED%【+3火山】%WHITE%
 ItemDisplay[CL1 !ETH NMAG !RW SK229=3 SOCK=0 ILVL>25]: <德>%NAME%%RED%【+3熔漿巨岩】%WHITE%
+ItemDisplay[CL1 !ETH NMAG !RW SK250=3 SOCK=0 ILVL>25]: <德>%NAME%%RED%【+3毀天滅地】%WHITE%
 ItemDisplay[CL1 !ETH NMAG !RW SK238=3 SOCK=0 ILVL>25]: <德>%NAME%%RED%【+3狂犬病】%WHITE%
 ItemDisplay[CL1 !ETH NMAG !RW SK243=3 SOCK=0 ILVL>25]: <德>%NAME%%RED%【+3震波】%WHITE%
 ItemDisplay[CL1 !ETH NMAG !RW SK239=3 SOCK=0 ILVL>25]: <德>%NAME%%RED%【+3焰爪】%WHITE%
