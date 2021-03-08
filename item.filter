@@ -1037,9 +1037,9 @@ ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 // 普通 進階 菁英
 ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
-ItemDisplay[NORM (!rin OR !amu)]: %NAME%【普通】%CONTINUE%
-ItemDisplay[EXC (!rin OR !amu)]: %NAME%【進階】%CONTINUE%
-ItemDisplay[ELT (!rin OR !amu)]: %NAME%【菁英】%CONTINUE%
+ItemDisplay[NORM !rin !amu]: %NAME%【普通】%CONTINUE%
+ItemDisplay[EXC !rin !amu]: %NAME%【進階】%CONTINUE%
+ItemDisplay[ELT !rin !amu]: %NAME%【菁英】%CONTINUE%
 
 ItemDisplay[CL1]: <德>%NAME%%CONTINUE%
 ItemDisplay[CL2]: <蠻>%NAME%%CONTINUE%
