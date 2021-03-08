@@ -1,4 +1,4 @@
-// 2020/03/09 02:20
+// 2020/03/09 02:40
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -662,6 +662,8 @@ ItemDisplay[fed]: 潰爛的毀滅精華%CONTINUE%
 ItemDisplay[aq2]: 箭矢%CONTINUE%
 ItemDisplay[cq2]: 十字弓彈%CONTINUE%
 
+
+
 // 任務物品
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
 
@@ -695,7 +697,7 @@ ItemDisplay[ma6 !ID]: 『%NAME%』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% //崩壞�
 ItemDisplay[ma7 !ID]: 『%NAME%』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% //焚燒森林 (Burnt Forest)
 ItemDisplay[ma8 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //發霉地穴 (Musty Crypt)
 ItemDisplay[ma9 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //昏暗地窖 (Dim Cellar)
-ItemDisplay[ma10 !ID]: 『%NAME%』<T0-Lv86> %GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture) BUG無法顯示
+// ItemDisplay[ma10 !ID]: 『%NAME%』<T0-Lv86> %GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture) BUG無法顯示
 ItemDisplay[ma1]: 『%NAME%』<T1-Lv86> //寒霜洞窟 (Icy Cavern)
 ItemDisplay[ma2]: 『%NAME%』<T3-Lv88> //蜃景荒漠 (Forgotten Desert)
 ItemDisplay[ma3]: 『%NAME%』<T?-Lv??> //遺棄之地 (Abandoned Precinct)
@@ -787,7 +789,6 @@ ItemDisplay[cm3]: 《《《[L%ILVL%]%NAME%》》》
 ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [#%RUNENUM%-%NAME%#] %MAP%
 ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: [#####%RUNENUM%-%NAME%#####] %MAP%
 ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: [%PURPLE%##########%RUNENUM%-%ORANGE%%NAME%%PURPLE%##########%ORANGE%] %MAP%
-
 
 // 頭盔
 ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
@@ -962,31 +963,31 @@ ItemDisplay[WP12 !ETH NMAG !RW SK84=3 SOCK=0 !wnd !ywn !9wn]: %NAME%%RED%【+3�
 ItemDisplay[WP12 !ETH NMAG !RW SK83=3 SOCK=0 !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆】%WHITE%
 
 // 刺客
-ItemDisplay[CL5 NMAG !RW SK274>0 SK275>0 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│飛龍在天】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK274>0 SK278=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3毒牙】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK274>0 SK277=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3刀刃之盾】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK274>0 SK275>0 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│飛龍在天】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK274>0 SK278=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3毒牙】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK274>0 SK277=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3刀刃之盾】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK274>0 SK275>0 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│飛龍在天】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK274>0 SK278=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3毒牙】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK274>0 SK277=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3刀刃之盾】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK274>0 SK275>0 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│飛龍在天】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK274>0 SK278=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3毒牙】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK274>0 SK277=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3刀刃之盾】%WHITE%
 ---
-ItemDisplay[CL5 NMAG !RW SK253=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈戰鎚】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK273=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈爆震】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK278=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3毒牙】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK261=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3電能守衛】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK262=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3火焰復甦】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK271=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3雷光守衛】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK272=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3復甦獄火】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK276=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3亡者守衛】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK277=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3刀刃之盾】%GRAY%(%SOCKETS%)
-ItemDisplay[CL5 NMAG !RW SK253=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈戰鎚】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK273=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈爆震】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK278=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3毒牙】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK261=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3電能守衛】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK262=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3火焰復甦】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK271=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3雷光守衛】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK272=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3復甦獄火】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK276=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3亡者守衛】%WHITE%
-ItemDisplay[CL5 NMAG !RW SK277=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3刀刃之盾】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK253=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈戰鎚】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK273=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈爆震】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK278=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3毒牙】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK261=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3電能守衛】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK262=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3火焰復甦】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK271=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3雷光守衛】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK272=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3復甦獄火】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK276=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3亡者守衛】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK277=3 SOCK>2 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3刀刃之盾】%GRAY%(%SOCKETS%)
+// ItemDisplay[CL5 NMAG !RW SK253=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈戰鎚】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK273=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3心靈爆震】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK278=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3毒牙】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK261=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3電能守衛】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK262=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3火焰復甦】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK271=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3雷光守衛】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK272=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3復甦獄火】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK276=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3亡者守衛】%WHITE%
+// ItemDisplay[CL5 NMAG !RW SK277=3 SOCK=0 !9cs !7xf !7cs]: <刺>%NAME%%RED%【+3刀刃之盾】%WHITE%
 
 // 法師
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK56=3 SOCK>2]: <法>%NAME%%RED%【+3隕石】%GRAY%(%SOCKETS%)
@@ -1027,8 +1028,8 @@ ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【回
 ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 CLVL<60]: %NAME%【精神-劍】//60等前顯示 0s水晶劍
 ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】//50等前顯示 0s闊劍
 ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=4 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%)//50等前顯示 4s闊劍
-ItemDisplay[WP8 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長斧】(%SOCKETS%) //60等前顯示 4s長斧
-ItemDisplay[WP7 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長槍】(%SOCKETS%) //60等前顯示 4s長槍
+ItemDisplay[WP8 NMAG !RW SOCK=4]: %NAME%【眼光-長斧】(%SOCKETS%) //60等前顯示 4s長斧
+ItemDisplay[WP7 NMAG !RW SOCK=4]: %NAME%【眼光-長槍】(%SOCKETS%) //60等前顯示 4s長槍
 
 ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】(%SOCKETS%) //巨戰權杖、神屬權杖-5897
 
@@ -1072,11 +1073,11 @@ ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
 ItemDisplay[NMAG (WP4 OR WP5 OR WP10 OR WP11) CLVL>9]: // 10等後刪除白色匕首、投擲武器、十字弓、長杖
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
 
-// ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s進階白裝
-// ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
-// ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
-// ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0 !leg]: // 20等後刪除0s普通白裝
-// ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29 !leg]: // 30等後刪除普通白裝
+ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s進階白裝
+ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
+ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
+ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0 !leg]: // 20等後刪除0s普通白裝
+ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29 !leg]: // 30等後刪除普通白裝
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
