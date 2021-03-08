@@ -1,4 +1,4 @@
-// 2020/03/09 00:10
+// 2020/03/09 00:15
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -1037,9 +1037,9 @@ ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 // 普通 進階 菁英
 ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
-ItemDisplay[NORM]: %NAME%【普通】%CONTINUE%
-ItemDisplay[EXC]: %NAME%【進階】%CONTINUE%
-ItemDisplay[ELT]: %NAME%【菁英】%CONTINUE%
+ItemDisplay[NORM (!rin OR !amu)]: %NAME%【普通】%CONTINUE%
+ItemDisplay[EXC (!rin OR !amu)]: %NAME%【進階】%CONTINUE%
+ItemDisplay[ELT (!rin OR !amu)]: %NAME%【菁英】%CONTINUE%
 
 ItemDisplay[CL1]: <德>%NAME%%CONTINUE%
 ItemDisplay[CL2]: <蠻>%NAME%%CONTINUE%
