@@ -1,4 +1,4 @@
-// 2020/03/09 00:15
+// 2020/03/09 02:20
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -654,6 +654,13 @@ ItemDisplay[cx5]: 腐化寶珠%CONTINUE%
 ItemDisplay[cx6]: 暗黑破壞神的靈魂石%CONTINUE%
 ItemDisplay[cx7]: 混沌之鑰%CONTINUE%
 ItemDisplay[cx8]: 附魔寶珠%CONTINUE%
+ItemDisplay[toa]: 赦免徽章%CONTINUE%
+ItemDisplay[tes]: 扭曲的苦痛精華%CONTINUE%
+ItemDisplay[ceh]: 充盈的憎恨精華%CONTINUE%
+ItemDisplay[bet]: 燃燒的恐懼精華%CONTINUE%
+ItemDisplay[fed]: 潰爛的毀滅精華%CONTINUE%
+ItemDisplay[aq2]: 箭矢%CONTINUE%
+ItemDisplay[cq2]: 十字弓彈%CONTINUE%
 
 // 任務物品
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
@@ -777,9 +784,9 @@ ItemDisplay[cm2]: 《《[L%ILVL%]%NAME%》》
 ItemDisplay[cm3]: 《《《[L%ILVL%]%NAME%》》》
 
 // 符文
-ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [#%NAME%#] %MAP%
-ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: [#####%NAME%#####] %MAP%
-ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: [%PURPLE%##########%ORANGE%%NAME%%PURPLE%##########%ORANGE%] %MAP%
+ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [#%RUNENUM%-%NAME%#] %MAP%
+ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: [#####%RUNENUM%-%NAME%#####] %MAP%
+ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: [%PURPLE%##########%RUNENUM%-%ORANGE%%NAME%%PURPLE%##########%ORANGE%] %MAP%
 
 
 // 頭盔
@@ -1037,7 +1044,8 @@ ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 // 普通 進階 菁英
 ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
-ItemDisplay[NORM !rin !amu]: %NAME%【普通】%CONTINUE%
+ItemDisplay[!ID]: %NAME%(未鑑定)%CONTINUE%
+ItemDisplay[NORM !rin !amu !aq2 !cq2 !aqv !cqv]: %NAME%【普通】%CONTINUE%
 ItemDisplay[EXC !rin !amu]: %NAME%【進階】%CONTINUE%
 ItemDisplay[ELT !rin !amu]: %NAME%【菁英】%CONTINUE%
 
@@ -1055,7 +1063,7 @@ ItemDisplay[(rin OR amu) UNI]: [L%ILVL%]%NAME%【暗金】 //戒指 項鍊
 ItemDisplay[amu MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【飾品】 //項鍊 90LV +2技能
 ItemDisplay[amu RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【飾品】 //項鍊 90LV +2技能
 ItemDisplay[rin OR amu]: [L%ILVL%]%NAME%【飾品】 //戒指 項鍊
-ItemDisplay[aq2 OR cq2]: %NAME%【箭袋】//箭矢 十字箭
+ItemDisplay[aq2 OR cq2 OR aqv OR cqv]: %NAME%【箭袋】//箭矢 十字箭
 
 // 刪除垃圾
 ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
@@ -1064,11 +1072,11 @@ ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
 ItemDisplay[NMAG (WP4 OR WP5 OR WP10 OR WP11) CLVL>9]: // 10等後刪除白色匕首、投擲武器、十字弓、長杖
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
 
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s進階白裝
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
-ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0 !leg]: // 20等後刪除0s普通白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29 !leg]: // 30等後刪除普通白裝
+// ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s進階白裝
+// ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
+// ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
+// ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0 !leg]: // 20等後刪除0s普通白裝
+// ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29 !leg]: // 30等後刪除普通白裝
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
