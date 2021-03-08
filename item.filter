@@ -1,5 +1,5 @@
-// 2020/09/11 23:30
-// 版本: #19 Zincite(紅鋅礦)
+// 2020/03/08 23:00
+// 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
 // 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
@@ -7,6 +7,654 @@
 //===================================
 
 // ItemDisplay[]: [L%ILVL%]%NAME%<$%PRICE%$>[%CODE%] // 查看代碼用
+// ItemDisplay[CHSK150>0]: 這是一把聚氣武器 // 查看代碼用
+
+ItemDisplay[cap]: 帽子%CONTINUE%
+ItemDisplay[skp]: 骷髏帽%CONTINUE%
+ItemDisplay[hlm]: 頭盔%CONTINUE%
+ItemDisplay[fhl]: 高級頭盔%CONTINUE%
+ItemDisplay[ghm]: 卓越頭盔%CONTINUE%
+ItemDisplay[crn]: 皇冠%CONTINUE%
+ItemDisplay[msk]: 面具%CONTINUE%
+ItemDisplay[qui]: 布甲%CONTINUE%
+ItemDisplay[lea]: 皮甲%CONTINUE%
+ItemDisplay[hla]: 硬皮甲%CONTINUE%
+ItemDisplay[stu]: 鑲嵌甲%CONTINUE%
+ItemDisplay[rng]: 鎖環甲%CONTINUE%
+ItemDisplay[scl]: 鱗甲%CONTINUE%
+ItemDisplay[chn]: 鎖子甲%CONTINUE%
+ItemDisplay[brs]: 胸甲%CONTINUE%
+ItemDisplay[spl]: 板甲%CONTINUE%
+ItemDisplay[plt]: 鎧甲%CONTINUE%
+ItemDisplay[fld]: 實戰鎧甲%CONTINUE%
+ItemDisplay[gth]: 哥德戰甲%CONTINUE%
+ItemDisplay[ful]: 高級戰甲%CONTINUE%
+ItemDisplay[aar]: 古代裝甲%CONTINUE%
+ItemDisplay[ltp]: 輕型裝甲%CONTINUE%
+ItemDisplay[buc]: 圓盾%CONTINUE%
+ItemDisplay[sml]: 小盾牌%CONTINUE%
+ItemDisplay[lrg]: 大盾牌%CONTINUE%
+ItemDisplay[kit]: 輕盾%CONTINUE%
+ItemDisplay[tow]: 塔盾%CONTINUE%
+ItemDisplay[gts]: 哥德盾牌%CONTINUE%
+ItemDisplay[lgl]: 皮手套%CONTINUE%
+ItemDisplay[vgl]: 重手套%CONTINUE%
+ItemDisplay[mgl]: 鎖鍊手套%CONTINUE%
+ItemDisplay[tgl]: 輕型鐵手套%CONTINUE%
+ItemDisplay[hgl]: 鐵手套%CONTINUE%
+ItemDisplay[lbt]: 皮靴%CONTINUE%
+ItemDisplay[vbt]: 重靴%CONTINUE%
+ItemDisplay[mbt]: 鎖鍊靴%CONTINUE%
+ItemDisplay[tbt]: 輕型金屬靴%CONTINUE%
+ItemDisplay[hbt]: 護脛%CONTINUE%
+ItemDisplay[lbl]: 飾帶%CONTINUE%
+ItemDisplay[vbl]: 輕扣帶%CONTINUE%
+ItemDisplay[mbl]: 扣帶%CONTINUE%
+ItemDisplay[tbl]: 重扣帶%CONTINUE%
+ItemDisplay[hbl]: 金屬扣帶%CONTINUE%
+ItemDisplay[bhm]: 白骨頭盔%CONTINUE%
+ItemDisplay[bsh]: 白骨盾牌%CONTINUE%
+ItemDisplay[spk]: 尖刺盾牌%CONTINUE%
+ItemDisplay[hax]: 手斧%CONTINUE%
+ItemDisplay[axe]: 斧%CONTINUE%
+ItemDisplay[2ax]: 雙刃斧%CONTINUE%
+ItemDisplay[mpi]: 軍用鍬%CONTINUE%
+ItemDisplay[wax]: 巨戰斧%CONTINUE%
+ItemDisplay[lax]: 巨斧%CONTINUE%
+ItemDisplay[bax]: 闊斧%CONTINUE%
+ItemDisplay[btx]: 戰鬥斧%CONTINUE%
+ItemDisplay[gax]: 卓越之斧%CONTINUE%
+ItemDisplay[gix]: 大斧%CONTINUE%
+ItemDisplay[wnd]: 法杖%CONTINUE%
+ItemDisplay[ywn]: 紫杉之杖%CONTINUE%
+ItemDisplay[bwn]: 骨杖%CONTINUE%
+ItemDisplay[gwn]: 殘酷之杖%CONTINUE%
+ItemDisplay[clb]: 木棒%CONTINUE%
+ItemDisplay[scp]: 權杖%CONTINUE%
+ItemDisplay[gsc]: 雄偉權杖%CONTINUE%
+ItemDisplay[wsp]: 巨戰權杖%CONTINUE%
+ItemDisplay[spc]: 狼牙棒%CONTINUE%
+ItemDisplay[mac]: 釘頭錘%CONTINUE%
+ItemDisplay[mst]: 流星鎚%CONTINUE%
+ItemDisplay[fla]: 連枷%CONTINUE%
+ItemDisplay[whm]: 巨戰鐵鎚%CONTINUE%
+ItemDisplay[mau]: 大木棍%CONTINUE%
+ItemDisplay[gma]: 卓越巨棍%CONTINUE%
+ItemDisplay[ssd]: 短劍%CONTINUE%
+ItemDisplay[scm]: 彎刀%CONTINUE%
+ItemDisplay[sbr]: 軍刀%CONTINUE%
+ItemDisplay[flc]: 彎形大刀%CONTINUE%
+ItemDisplay[crs]: 水晶劍%CONTINUE%
+ItemDisplay[bsd]: 闊劍%CONTINUE%
+ItemDisplay[lsd]: 長劍%CONTINUE%
+ItemDisplay[wsd]: 巨戰之劍%CONTINUE%
+ItemDisplay[2hs]: 雙手劍%CONTINUE%
+ItemDisplay[clm]: 雙刃大刀%CONTINUE%
+ItemDisplay[gis]: 大劍%CONTINUE%
+ItemDisplay[bsw]: 巨劍%CONTINUE%
+ItemDisplay[flb]: 雙手飾劍%CONTINUE%
+ItemDisplay[gsd]: 卓越之劍%CONTINUE%
+ItemDisplay[dgr]: 匕首%CONTINUE%
+ItemDisplay[dir]: 長匕首%CONTINUE%
+ItemDisplay[kri]: 波形刀%CONTINUE%
+ItemDisplay[bld]: 短刀%CONTINUE%
+ItemDisplay[tkf]: 飛刀%CONTINUE%
+ItemDisplay[tax]: 飛斧%CONTINUE%
+ItemDisplay[bkf]: 平衡小刀%CONTINUE%
+ItemDisplay[bal]: 平衡斧%CONTINUE%
+ItemDisplay[jav]: 標槍%CONTINUE%
+ItemDisplay[pil]: 短鏢槍%CONTINUE%
+ItemDisplay[ssp]: 短矛%CONTINUE%
+ItemDisplay[glv]: 大長刀%CONTINUE%
+ItemDisplay[tsp]: 飛矛%CONTINUE%
+ItemDisplay[spr]: 長矛%CONTINUE%
+ItemDisplay[tri]: 三叉戟%CONTINUE%
+ItemDisplay[brn]: 叉%CONTINUE%
+ItemDisplay[spt]: 大戰戟%CONTINUE%
+ItemDisplay[pik]: 矛%CONTINUE%
+ItemDisplay[bar]: 大砍刀%CONTINUE%
+ItemDisplay[vou]: 鉤鐮槍%CONTINUE%
+ItemDisplay[scy]: 鐮刀%CONTINUE%
+ItemDisplay[pax]: 長柄戰斧%CONTINUE%
+ItemDisplay[hal]: 長戟%CONTINUE%
+ItemDisplay[wsc]: 巨戰鐮刀%CONTINUE%
+ItemDisplay[sst]: 短棍%CONTINUE%
+ItemDisplay[lst]: 長棍%CONTINUE%
+ItemDisplay[cst]: 多節棍%CONTINUE%
+ItemDisplay[bst]: 戰鬥法杖%CONTINUE%
+ItemDisplay[wst]: 巨戰法杖%CONTINUE%
+ItemDisplay[sbw]: 短弓%CONTINUE%
+ItemDisplay[hbw]: 獵弓%CONTINUE%
+ItemDisplay[lbw]: 長弓%CONTINUE%
+ItemDisplay[cbw]: 組合弓%CONTINUE%
+ItemDisplay[sbb]: 短戰鬥弓%CONTINUE%
+ItemDisplay[lbb]: 長戰鬥弓%CONTINUE%
+ItemDisplay[swb]: 短巨戰弓%CONTINUE%
+ItemDisplay[lwb]: 長巨戰弓%CONTINUE%
+ItemDisplay[lxb]: 輕十字弓%CONTINUE%
+ItemDisplay[mxb]: 十字弓%CONTINUE%
+ItemDisplay[hxb]: 重十字弓%CONTINUE%
+ItemDisplay[rxb]: 連射十字弓%CONTINUE%
+ItemDisplay[xpk]: 倒刺護盾%CONTINUE%
+ItemDisplay[xsh]: 冷酷之盾%CONTINUE%
+ItemDisplay[xh9]: 殘酷頭盔%CONTINUE%
+ItemDisplay[zhb]: 巨戰腰帶%CONTINUE%
+ItemDisplay[ztb]: 戰場腰帶%CONTINUE%
+ItemDisplay[zmb]: 織網腰帶%CONTINUE%
+ItemDisplay[zvb]: 鯊皮腰帶%CONTINUE%
+ItemDisplay[zlb]: 魔皮勳帶%CONTINUE%
+ItemDisplay[xhb]: 巨戰之靴%CONTINUE%
+ItemDisplay[xtb]: 戰場之靴%CONTINUE%
+ItemDisplay[xmb]: 織網之靴%CONTINUE%
+ItemDisplay[xvb]: 鯊皮之靴%CONTINUE%
+ItemDisplay[xlb]: 魔皮靴%CONTINUE%
+ItemDisplay[xhg]: 巨戰手套%CONTINUE%
+ItemDisplay[xtg]: 戰場手套%CONTINUE%
+ItemDisplay[xmg]: 重型手鐲%CONTINUE%
+ItemDisplay[xvg]: 鯊魚皮套%CONTINUE%
+ItemDisplay[xlg]: 魔皮手套%CONTINUE%
+ItemDisplay[xts]: 古代之盾%CONTINUE%
+ItemDisplay[xow]: 大盾%CONTINUE%
+ItemDisplay[xit]: 龍盾%CONTINUE%
+ItemDisplay[xrg]: 鱗盾%CONTINUE%
+ItemDisplay[xml]: 圓型盾%CONTINUE%
+ItemDisplay[xuc]: 防禦盾%CONTINUE%
+ItemDisplay[xtp]: 法師鎧甲%CONTINUE%
+ItemDisplay[xar]: 華麗戰甲%CONTINUE%
+ItemDisplay[xul]: 混沌戰甲%CONTINUE%
+ItemDisplay[xth]: 凸紋戰甲%CONTINUE%
+ItemDisplay[xld]: 鯊齒戰甲%CONTINUE%
+ItemDisplay[xlt]: 聖堂武士外袍%CONTINUE%
+ItemDisplay[xpl]: 羅瑟戰甲%CONTINUE%
+ItemDisplay[xrs]: 護胸甲%CONTINUE%
+ItemDisplay[xhn]: 織網戰甲%CONTINUE%
+ItemDisplay[xcl]: 提格萊特戰甲%CONTINUE%
+ItemDisplay[xng]: 連扣戰甲%CONTINUE%
+ItemDisplay[xtu]: 攀繞戰甲%CONTINUE%
+ItemDisplay[xla]: 魔皮戰甲%CONTINUE%
+ItemDisplay[xea]: 海蛇皮甲%CONTINUE%
+ItemDisplay[xui]: 鬼魂戰甲%CONTINUE%
+ItemDisplay[xsk]: 死亡面具%CONTINUE%
+ItemDisplay[xrn]: 巨皇冠%CONTINUE%
+ItemDisplay[xhm]: 帶翼頭盔%CONTINUE%
+ItemDisplay[xhl]: 輕鋼盔%CONTINUE%
+ItemDisplay[xlm]: 無頰頭盔%CONTINUE%
+ItemDisplay[xkp]: 輕便頭盔%CONTINUE%
+ItemDisplay[xap]: 戰帽%CONTINUE%
+ItemDisplay[8rx]: 巧工弩%CONTINUE%
+ItemDisplay[8hx]: 弩弓%CONTINUE%
+ItemDisplay[8mx]: 攻城十字弓%CONTINUE%
+ItemDisplay[8lx]: 石弓%CONTINUE%
+ItemDisplay[8lw]: 哥德弓%CONTINUE%
+ItemDisplay[8sw]: 符文之弓%CONTINUE%
+ItemDisplay[8l8]: 長攻城弓%CONTINUE%
+ItemDisplay[8s8]: 短攻城弓%CONTINUE%
+ItemDisplay[8cb]: 雙弓%CONTINUE%
+ItemDisplay[8lb]: 杉木弓%CONTINUE%
+ItemDisplay[8hb]: 剃刀之弓%CONTINUE%
+ItemDisplay[8sb]: 鋒銳之弓%CONTINUE%
+ItemDisplay[8ws]: 符文之棍%CONTINUE%
+ItemDisplay[8bs]: 哥德之棍%CONTINUE%
+ItemDisplay[8cs]: 杉木之棍%CONTINUE%
+ItemDisplay[8ls]: 六尺棍%CONTINUE%
+ItemDisplay[8ss]: 喬木棒%CONTINUE%
+ItemDisplay[9wc]: 殘酷鐮刀%CONTINUE%
+ItemDisplay[9h9]: 雙鋒戰戟%CONTINUE%
+ItemDisplay[9pa]: 戰戟%CONTINUE%
+ItemDisplay[9s8]: 戰鬥鐮刀%CONTINUE%
+ItemDisplay[9vo]: 比爾長刀%CONTINUE%
+ItemDisplay[9b7]: 羅佳柏斧%CONTINUE%
+ItemDisplay[9p9]: 長槍%CONTINUE%
+ItemDisplay[9st]: 三叉長槍%CONTINUE%
+ItemDisplay[9br]: 巨戰之叉%CONTINUE%
+ItemDisplay[9tr]: 魔鬼之叉%CONTINUE%
+ItemDisplay[9sr]: 巨戰長矛%CONTINUE%
+ItemDisplay[9ts]: 魚叉%CONTINUE%
+ItemDisplay[9gl]: 闊針長矛%CONTINUE%
+ItemDisplay[9s9]: 銳矛%CONTINUE%
+ItemDisplay[9pi]: 卓越標槍%CONTINUE%
+ItemDisplay[9ja]: 巨戰標槍%CONTINUE%
+ItemDisplay[9b8]: 短戰戟%CONTINUE%
+ItemDisplay[9bk]: 巨戰飛鏢%CONTINUE%
+ItemDisplay[9ta]: 法蘭飛斧%CONTINUE%
+ItemDisplay[9tk]: 戰鬥飛鏢%CONTINUE%
+ItemDisplay[9bl]: 尖刃短刀%CONTINUE%
+ItemDisplay[9kr]: 強波刀%CONTINUE%
+ItemDisplay[9di]: 詩歌匕首%CONTINUE%
+ItemDisplay[9dg]: 銳匕%CONTINUE%
+ItemDisplay[9gd]: 死刑之劍%CONTINUE%
+ItemDisplay[9fb]: 瑞韓德之劍%CONTINUE%
+ItemDisplay[9gs]: 長牙劍%CONTINUE%
+ItemDisplay[9cm]: 雙刃鐮%CONTINUE%
+ItemDisplay[92h]: 斬鐵劍%CONTINUE%
+ItemDisplay[9wd]: 古代之劍%CONTINUE%
+ItemDisplay[9ls]: 符文劍%CONTINUE%
+ItemDisplay[9bs]: 戰鬥劍%CONTINUE%
+ItemDisplay[9cr]: 空間之刃%CONTINUE%
+ItemDisplay[9fc]: 圓月彎刀%CONTINUE%
+ItemDisplay[9sb]: 虛偽之刃%CONTINUE%
+ItemDisplay[9sm]: 微彎劍%CONTINUE%
+ItemDisplay[9ss]: 羅馬短劍%CONTINUE%
+ItemDisplay[9gm]: 戰槌%CONTINUE%
+ItemDisplay[9m9]: 巨戰木棍%CONTINUE%
+ItemDisplay[9wh]: 戰鬥鐵鎚%CONTINUE%
+ItemDisplay[9fl]: 鐵皮鞭%CONTINUE%
+ItemDisplay[9mt]: 鋸齒流星鎚%CONTINUE%
+ItemDisplay[9ma]: 凸緣釘頭錘%CONTINUE%
+ItemDisplay[9sp]: 倒鉤鎚%CONTINUE%
+ItemDisplay[9ws]: 神屬權杖%CONTINUE%
+ItemDisplay[9qs]: 聖水噴杖%CONTINUE%
+ItemDisplay[9sc]: 符文權杖%CONTINUE%
+ItemDisplay[9cl]: 棍棒%CONTINUE%
+ItemDisplay[9gw]: 墓地之杖%CONTINUE%
+ItemDisplay[9bw]: 古墓之杖%CONTINUE%
+ItemDisplay[9yw]: 淨化之杖%CONTINUE%
+ItemDisplay[9wn]: 燒焦之杖%CONTINUE%
+ItemDisplay[9gi]: 古代之斧%CONTINUE%
+ItemDisplay[9ga]: 哥德之斧%CONTINUE%
+ItemDisplay[9bt]: 戰鬥斧%CONTINUE%
+ItemDisplay[9ba]: 鉤斧%CONTINUE%
+ItemDisplay[9la]: 軍斧%CONTINUE%
+ItemDisplay[9wa]: 納卡%CONTINUE%
+ItemDisplay[9mp]: 喙鉗%CONTINUE%
+ItemDisplay[92a]: 強化雙斧%CONTINUE%
+ItemDisplay[9ax]: 切肉斧%CONTINUE%
+ItemDisplay[9ha]: 小斧%CONTINUE%
+ItemDisplay[9b9]: 哥德劍%CONTINUE%
+ItemDisplay[gpl]: 勒頸瓦斯藥劑%CONTINUE%
+ItemDisplay[opl]: 猛爆性藥劑%CONTINUE%
+ItemDisplay[gpm]: 窒息瓦斯藥劑%CONTINUE%
+ItemDisplay[opm]: 爆炸藥劑%CONTINUE%
+ItemDisplay[gps]: 惡臭瓦斯藥劑%CONTINUE%
+ItemDisplay[ops]: 油%CONTINUE%
+ItemDisplay[gid]: inn	吉得賓台座%CONTINUE%
+ItemDisplay[g33]: 吉得賓 Decoy Gidbinn%CONTINUE%
+ItemDisplay[d33]: 吉得賓誘餌%CONTINUE%
+ItemDisplay[leg]: 維特之腳 Wirt's Leg%CONTINUE%
+ItemDisplay[hdm]: 赫拉迪克.馬勒斯 Horadric Malus%CONTINUE%
+ItemDisplay[hfh]: 地獄熔爐鐵鎚 Hell Forge Hammer%CONTINUE%
+ItemDisplay[hst]: 赫拉迪克之杖 Horadric Staff%CONTINUE%
+ItemDisplay[msf]: 赫拉迪克之杖的軸%CONTINUE%
+ItemDisplay[elx]: 靈藥%CONTINUE%
+ItemDisplay[tbk]: 傳送之書%CONTINUE%
+ItemDisplay[tsc]: 傳送卷軸%CONTINUE%
+ItemDisplay[ibk]: 鑑定之書%CONTINUE%
+ItemDisplay[isc]: 鑑定卷軸%CONTINUE%
+ItemDisplay[vps]: 體力藥劑%CONTINUE%
+ItemDisplay[yps]: 解毒藥劑%CONTINUE%
+ItemDisplay[rvs]: 回復活力藥劑%CONTINUE%
+ItemDisplay[rvl]: 全面回復活力藥劑%CONTINUE%
+ItemDisplay[wms]: 融解藥劑 Thawing Potion%CONTINUE%
+ItemDisplay[amu]: 項鍊%CONTINUE%
+ItemDisplay[vip]: 赫拉迪克之杖頂端%CONTINUE%
+ItemDisplay[rin]: 戒指%CONTINUE%
+ItemDisplay[gld]: 黃金%CONTINUE%
+ItemDisplay[bks]: 艾尼弗斯卷軸 Scroll of Inifuss%CONTINUE%
+ItemDisplay[bkd]: 石塚之鑰 Key to the Cairn Stones%CONTINUE%
+ItemDisplay[aqv]: 箭矢%CONTINUE%
+ItemDisplay[tch]: 火焰%CONTINUE%
+ItemDisplay[cqv]: 十字弓彈%CONTINUE%
+ItemDisplay[key]: 鑰匙%CONTINUE%
+ItemDisplay[luv]: 黑塔之鑰%CONTINUE%
+ItemDisplay[xyz]: 生命藥劑 Potion of Life%CONTINUE%
+ItemDisplay[j34]: 玉製小人 A Jade Figurine%CONTINUE%
+ItemDisplay[g34]: 黃金鳥 The Golden Bird%CONTINUE%
+ItemDisplay[bbb]: 藍.依森之書 Lam Esen's Tome%CONTINUE%
+ItemDisplay[box]: 赫拉迪克方塊%CONTINUE%
+ItemDisplay[tr1]: 赫拉迪克卷軸 Horadric Scroll%CONTINUE%
+ItemDisplay[mss]: 墨菲斯托的靈魂之石 Mephisto's Soulstone%CONTINUE%
+ItemDisplay[ass]: 技能之書 Book of Skill%CONTINUE%
+ItemDisplay[ear]: 耳%CONTINUE%
+ItemDisplay[gcv]: 碎裂的紫寶石%CONTINUE%
+ItemDisplay[gfv]: 裂開的紫寶石%CONTINUE%
+ItemDisplay[gsv]: 紫寶石%CONTINUE%
+ItemDisplay[gzv]: 無瑕疵的紫寶石%CONTINUE%
+ItemDisplay[gpv]: 完美的紫寶石%CONTINUE%
+ItemDisplay[gcy]: 碎裂的黃寶石%CONTINUE%
+ItemDisplay[gfy]: 裂開的黃寶石%CONTINUE%
+ItemDisplay[gsy]: 黃寶石%CONTINUE%
+ItemDisplay[gly]: 無瑕疵的黃寶石%CONTINUE%
+ItemDisplay[gpy]: 完美的黃寶石%CONTINUE%
+ItemDisplay[gcb]: 碎裂的藍寶石%CONTINUE%
+ItemDisplay[gfb]: 裂開的藍寶石%CONTINUE%
+ItemDisplay[gsb]: 藍寶石%CONTINUE%
+ItemDisplay[glb]: 無瑕疵的藍寶石%CONTINUE%
+ItemDisplay[gpb]: 完美的藍寶石%CONTINUE%
+ItemDisplay[gcg]: 碎裂的綠寶石%CONTINUE%
+ItemDisplay[gfg]: 裂開的綠寶石%CONTINUE%
+ItemDisplay[glg]: 無瑕疵的綠寶石%CONTINUE%
+ItemDisplay[gsg]: 綠寶石%CONTINUE%
+ItemDisplay[gpg]: 完美的綠寶石%CONTINUE%
+ItemDisplay[gcr]: 碎裂的紅寶石%CONTINUE%
+ItemDisplay[gfr]: 裂開的紅寶石%CONTINUE%
+ItemDisplay[gsr]: 紅寶石%CONTINUE%
+ItemDisplay[glr]: 無瑕疵的紅寶石%CONTINUE%
+ItemDisplay[gpr]: 完美的紅寶石%CONTINUE%
+ItemDisplay[gcw]: 碎裂的鑽石%CONTINUE%
+ItemDisplay[gfw]: 裂開的鑽石%CONTINUE%
+ItemDisplay[gsw]: 鑽石%CONTINUE%
+ItemDisplay[glw]: 無瑕疵的鑽石%CONTINUE%
+ItemDisplay[gpw]: 完美的鑽石%CONTINUE%
+ItemDisplay[hp1]: 輕微治療藥劑%CONTINUE%
+ItemDisplay[hp2]: 輕型治療藥劑%CONTINUE%
+ItemDisplay[hp3]: 治療藥劑%CONTINUE%
+ItemDisplay[hp4]: 強力藥劑%CONTINUE%
+ItemDisplay[hp5]: 超級治療藥劑%CONTINUE%
+ItemDisplay[mp1]: 輕微法力藥劑%CONTINUE%
+ItemDisplay[mp2]: 輕型法力藥劑%CONTINUE%
+ItemDisplay[mp3]: 法力藥劑%CONTINUE%
+ItemDisplay[mp4]: 強力法力藥劑%CONTINUE%
+ItemDisplay[mp5]: 超級法力藥劑%CONTINUE%
+ItemDisplay[hrb]: 葯草%CONTINUE%
+ItemDisplay[skc]: 碎裂的骷髏%CONTINUE%
+ItemDisplay[skf]: 裂開的骷髏%CONTINUE%
+ItemDisplay[sku]: 骷髏%CONTINUE%
+ItemDisplay[skl]: 無瑕疵的骷髏%CONTINUE%
+ItemDisplay[skz]: 完美的骷髏%CONTINUE%
+ItemDisplay[ktr]: 拳劍%CONTINUE%
+ItemDisplay[wrb]: 腕刃%CONTINUE%
+ItemDisplay[ces]: 腰刀%CONTINUE%
+ItemDisplay[clw]: 爪%CONTINUE%
+ItemDisplay[btl]: 刃爪%CONTINUE%
+ItemDisplay[skr]: 剪咬刃%CONTINUE%
+ItemDisplay[9ar]: 格鬥刃%CONTINUE%
+ItemDisplay[9wb]: 腕刺%CONTINUE%
+ItemDisplay[9xf]: 格鬥爪%CONTINUE%
+ItemDisplay[9cs]: 手鐮%CONTINUE%
+ItemDisplay[9lw]: 巨爪%CONTINUE%
+ItemDisplay[9tw]: 巨鷹爪%CONTINUE%
+ItemDisplay[9qr]: 格鬥剪%CONTINUE%
+ItemDisplay[7ar]: 近身刃%CONTINUE%
+ItemDisplay[7wb]: 腕劍%CONTINUE%
+ItemDisplay[7xf]: 戰拳%CONTINUE%
+ItemDisplay[7cs]: 鬥腰刀%CONTINUE%
+ItemDisplay[7lw]: 猛禽爪%CONTINUE%
+ItemDisplay[7tw]: 符紋爪%CONTINUE%
+ItemDisplay[7qr]: 近身剪%CONTINUE%
+ItemDisplay[7ha]: 戰鉞 %CONTINUE%
+ItemDisplay[7ax]: 彎月斧%CONTINUE%
+ItemDisplay[72a]: 雙頭斧%CONTINUE%
+ItemDisplay[7mp]: 戰刺%CONTINUE%
+ItemDisplay[7wa]: 狂戰士斧%CONTINUE%
+ItemDisplay[7la]: 猛禽斧%CONTINUE%
+ItemDisplay[7ba]: 銀刃斧%CONTINUE%
+ItemDisplay[7bt]: 斬首斧%CONTINUE%
+ItemDisplay[7ga]: 豪傑斧%CONTINUE%
+ItemDisplay[7gi]: 榮光之斧%CONTINUE%
+ItemDisplay[7wn]: 洗鍊法杖%CONTINUE%
+ItemDisplay[7yw]: 鬼魂法杖%CONTINUE%
+ItemDisplay[7bw]: 巫妖法杖%CONTINUE%
+ItemDisplay[7gw]: 破隱法杖%CONTINUE%
+ItemDisplay[7cl]: 戰儀杖%CONTINUE%
+ItemDisplay[7sc]: 強威權杖%CONTINUE%
+ItemDisplay[7qs]: 熾天使法杖%CONTINUE%
+ItemDisplay[7ws]: 神使之杖%CONTINUE%
+ItemDisplay[7sp]: 暴君之棒%CONTINUE%
+ItemDisplay[7ma]: 強化釘頭錘%CONTINUE%
+ItemDisplay[7mt]: 惡魔流星錘%CONTINUE%
+ItemDisplay[7fl]: 天罰之錘%CONTINUE%
+ItemDisplay[7wh]: 傳說之鎚%CONTINUE%
+ItemDisplay[7m7]: 食人魔之錘%CONTINUE%
+ItemDisplay[7gm]: 雷錘%CONTINUE%
+ItemDisplay[7ss]: 短劍%CONTINUE%
+ItemDisplay[7sm]: 土耳其劍%CONTINUE%
+ItemDisplay[7sb]: 優雅之劍%CONTINUE%
+ItemDisplay[7fc]: 九頭蛇刃%CONTINUE%
+ItemDisplay[7cr]: 幻化之刃%CONTINUE%
+ItemDisplay[7bs]: 征服之劍%CONTINUE%
+ItemDisplay[7ls]: 神秘之劍%CONTINUE%
+ItemDisplay[7wd]: 秘儀之劍%CONTINUE%
+ItemDisplay[72h]: 傳說之劍%CONTINUE%
+ItemDisplay[7cm]: 高地之劍%CONTINUE%
+ItemDisplay[7gs]: 炎魔之刃%CONTINUE%
+ItemDisplay[7b7]: 冠軍之劍%CONTINUE%
+ItemDisplay[7fb]: 巨神之劍%CONTINUE%
+ItemDisplay[7gd]: 巨神之刃%CONTINUE%
+ItemDisplay[7dg]: 骸骨小刀%CONTINUE%
+ItemDisplay[7di]: 秘銀小刀%CONTINUE%
+ItemDisplay[7kr]: 齒緣小刀%CONTINUE%
+ItemDisplay[7bl]: 傳說尖刺%CONTINUE%
+ItemDisplay[7tk]: 飛刀%CONTINUE%
+ItemDisplay[7ta]: 飛斧%CONTINUE%
+ItemDisplay[7bk]: 翼刀%CONTINUE%
+ItemDisplay[7b8]: 翼斧%CONTINUE%
+ItemDisplay[7ja]: 亥伯龍之槍%CONTINUE%
+ItemDisplay[7pi]: 冥河標槍%CONTINUE%
+ItemDisplay[7s7]: 炎魔長矛%CONTINUE%
+ItemDisplay[7gl]: 鬼魂尖槍%CONTINUE%
+ItemDisplay[7ts]: 翼魚叉%CONTINUE%
+ItemDisplay[7sr]: 亥伯龍之矛%CONTINUE%
+ItemDisplay[7tr]: 冥河之槍%CONTINUE%
+ItemDisplay[7br]: 刺人槍%CONTINUE%
+ItemDisplay[7st]: 鬼魂之矛%CONTINUE%
+ItemDisplay[7p7]: 戰槍%CONTINUE%
+ItemDisplay[7o7]: 食人魔之斧%CONTINUE%
+ItemDisplay[7vo]: 巨神之斧%CONTINUE%
+ItemDisplay[7s8]: 銳利之斧%CONTINUE%
+ItemDisplay[7pa]: 神秘之斧%CONTINUE%
+ItemDisplay[7h7]: 巨長斧%CONTINUE%
+ItemDisplay[7wc]: 鮫尾巨斧%CONTINUE%
+ItemDisplay[6ss]: 手杖%CONTINUE%
+ItemDisplay[6ls]: 鐘乳石之杖%CONTINUE%
+ItemDisplay[6cs]: 長老之杖%CONTINUE%
+ItemDisplay[6bs]: 樹皮之杖%CONTINUE%
+ItemDisplay[6ws]: 執政官之杖%CONTINUE%
+ItemDisplay[6sb]: 蜘蛛弓%CONTINUE%
+ItemDisplay[6hb]: 刀鋒弓%CONTINUE%
+ItemDisplay[6lb]: 陰影弓%CONTINUE%
+ItemDisplay[6cb]: 巨弓%CONTINUE%
+ItemDisplay[6s7]: 鑽石弓%CONTINUE%
+ItemDisplay[6l7]: 十字軍之弓%CONTINUE%
+ItemDisplay[6sw]: 庇護之弓%CONTINUE%
+ItemDisplay[6lw]: 九頭蛇弓%CONTINUE%
+ItemDisplay[6lx]: 彈丸弓%CONTINUE%
+ItemDisplay[6mx]: 蛇魔女十字弓%CONTINUE%
+ItemDisplay[6hx]: 巨神十字弓%CONTINUE%
+ItemDisplay[6rx]: 惡魔十字弓%CONTINUE%
+ItemDisplay[ob1]: 鷹之法珠%CONTINUE%
+ItemDisplay[ob2]: 神聖天球%CONTINUE%
+ItemDisplay[ob3]: 攏煙之球%CONTINUE%
+ItemDisplay[ob4]: 握扣法珠%CONTINUE%
+ItemDisplay[as1]: 纏布%CONTINUE%
+ItemDisplay[as2]: 手指虎%CONTINUE%
+ItemDisplay[as3]: 拳刃%CONTINUE%
+ItemDisplay[as4]: 展戟刃%CONTINUE%
+ItemDisplay[as5]: 勾%CONTINUE%
+ItemDisplay[as6]: 鑽%CONTINUE%
+ItemDisplay[as7]: 爪%CONTINUE%
+ItemDisplay[am1]: 男性之弓%CONTINUE%
+ItemDisplay[am2]: 反射之弓%CONTINUE%
+ItemDisplay[am3]: 女士之矛%CONTINUE%
+ItemDisplay[am4]: 女士長矛%CONTINUE%
+ItemDisplay[am5]: 女士鏢槍%CONTINUE%
+ItemDisplay[ob6]: 靈光法珠%CONTINUE%
+ItemDisplay[ob7]: 水晶天球%CONTINUE%
+ItemDisplay[ob8]: 雲霧之球%CONTINUE%
+ItemDisplay[ob9]: 閃耀之球%CONTINUE%
+ItemDisplay[oba]: 渦流水晶%CONTINUE%
+ItemDisplay[am6]: 灰木之弓%CONTINUE%
+ItemDisplay[am7]: 祭典之弓%CONTINUE%
+ItemDisplay[am8]: 祭典之矛%CONTINUE%
+ItemDisplay[am9]: 祭典之長矛%CONTINUE%
+ItemDisplay[ama]: 祭典之鏢槍%CONTINUE%
+ItemDisplay[obb]: 天堂之石%CONTINUE%
+ItemDisplay[obc]: 怪異之球%CONTINUE%
+ItemDisplay[obd]: 惡魔之心%CONTINUE%
+ItemDisplay[obe]: 漩渦球%CONTINUE%
+ItemDisplay[obf]: 次元碎片%CONTINUE%
+ItemDisplay[amb]: 女族長之弓%CONTINUE%
+ItemDisplay[amc]: 大院長之弓%CONTINUE%
+ItemDisplay[amd]: 女族長之矛%CONTINUE%
+ItemDisplay[ame]: 女族長之長矛%CONTINUE%
+ItemDisplay[amf]: 女族長之鏢槍%CONTINUE%
+ItemDisplay[dr4]: 獵鷹面具%CONTINUE%
+ItemDisplay[dr2]: 飛鷹頭盔%CONTINUE%
+ItemDisplay[dr3]: 鹿角%CONTINUE%
+ItemDisplay[dr1]: 狼頭%CONTINUE%
+ItemDisplay[dr5]: 靈魂狼頭面具%CONTINUE%
+ItemDisplay[ba1]: 顎骨帽%CONTINUE%
+ItemDisplay[ba2]: 尖牙盔%CONTINUE%
+ItemDisplay[ba3]: 角盔%CONTINUE%
+ItemDisplay[ba4]: 突擊盔%CONTINUE%
+ItemDisplay[ba5]: 復仇者之盔%CONTINUE%
+ItemDisplay[pa1]: 小盾%CONTINUE%
+ItemDisplay[pa2]: 輕圓盾%CONTINUE%
+ItemDisplay[pa3]: 紋章盾%CONTINUE%
+ItemDisplay[pa4]: 艾文之盾%CONTINUE%
+ItemDisplay[pa5]: 皇冠之盾%CONTINUE%
+ItemDisplay[ne1]: 防腐之首%CONTINUE%
+ItemDisplay[ne2]: 僵屍之首%CONTINUE%
+ItemDisplay[ne3]: 揭露者之首%CONTINUE%
+ItemDisplay[ne4]: 石像鬼之首%CONTINUE%
+ItemDisplay[ne5]: 惡魔之首%CONTINUE%
+ItemDisplay[ci0]: 頭飾%CONTINUE%
+ItemDisplay[ci1]: 寶冠%CONTINUE%
+ItemDisplay[ci2]: 三重冠%CONTINUE%
+ItemDisplay[ci3]: 權冠%CONTINUE%
+ItemDisplay[uap]: 軍帽%CONTINUE%
+ItemDisplay[ukp]: 九頭蛇頭蓋骨圓帽%CONTINUE%
+ItemDisplay[ulm]: 活動頭盔%CONTINUE%
+ItemDisplay[uhl]: 巨貝頭盔%CONTINUE%
+ItemDisplay[uhm]: 螺旋頭盔%CONTINUE%
+ItemDisplay[urn]: 頭冠%CONTINUE%
+ItemDisplay[usk]: 惡魔頭蓋骨面具%CONTINUE%
+ItemDisplay[uui]: 灰暮壽衣%CONTINUE%
+ItemDisplay[uea]: 古龍皮%CONTINUE%
+ItemDisplay[ula]: 聖甲蟲殼皮甲%CONTINUE%
+ItemDisplay[utu]: 線羊毛皮甲%CONTINUE%
+ItemDisplay[ung]: 鑽石鎖子甲%CONTINUE%
+ItemDisplay[ucl]: 甲殼鎧鱗甲%CONTINUE%
+ItemDisplay[uhn]: 骸骨鏈甲%CONTINUE%
+ItemDisplay[urs]: 巨型鱗鎧胸甲%CONTINUE%
+ItemDisplay[upl]: 炎魔皮板甲%CONTINUE%
+ItemDisplay[ult]: 地獄鍛甲%CONTINUE%
+ItemDisplay[uld]: 海妖殼甲%CONTINUE%
+ItemDisplay[uth]: 漆甲%CONTINUE%
+ItemDisplay[uul]: 陰影鎧甲%CONTINUE%
+ItemDisplay[uar]: 神聖盔甲%CONTINUE%
+ItemDisplay[utp]: 執政官鎧甲%CONTINUE%
+ItemDisplay[uuc]: 防寒圓盾%CONTINUE%
+ItemDisplay[uml]: 月精靈護盾%CONTINUE%
+ItemDisplay[urg]: 亥伯龍盾%CONTINUE%
+ItemDisplay[uit]: 統治者大盾%CONTINUE%
+ItemDisplay[uow]: 重塔盾%CONTINUE%
+ItemDisplay[uts]: 保護盾牌%CONTINUE%
+ItemDisplay[ulg]: 荊棘連指手套%CONTINUE%
+ItemDisplay[uvg]: 吸血鬼骸骨手套%CONTINUE%
+ItemDisplay[umg]: 吸血鬼手套%CONTINUE%
+ItemDisplay[utg]: 十字軍鐵手套%CONTINUE%
+ItemDisplay[uhg]: 食人魔鐵手套%CONTINUE%
+ItemDisplay[ulb]: 飛龍皮靴%CONTINUE%
+ItemDisplay[uvb]: 聖甲蟲殼靴%CONTINUE%
+ItemDisplay[umb]: 骸骨靴%CONTINUE%
+ItemDisplay[utb]: 鏡化靴%CONTINUE%
+ItemDisplay[uhb]: 極速靴%CONTINUE%
+ItemDisplay[ulc]: 蛛網腰帶%CONTINUE%
+ItemDisplay[uvc]: 吸血鬼燎牙腰帶%CONTINUE%
+ItemDisplay[umc]: 秘銀腰帶%CONTINUE%
+ItemDisplay[utc]: 洞穴巨魔腰帶%CONTINUE%
+ItemDisplay[uhc]: 巨神腰帶%CONTINUE%
+ItemDisplay[uh9]: 骸骨面罩%CONTINUE%
+ItemDisplay[ush]: 洞穴巨魔巢穴骨盾%CONTINUE%
+ItemDisplay[upk]: 刀刃刺盾%CONTINUE%
+ItemDisplay[dr9]: 神聖羽毛頭帶%CONTINUE%
+ItemDisplay[dr7]: 獅鷲獸頭帶%CONTINUE%
+ItemDisplay[dr8]: 獵人的偽裝%CONTINUE%
+ItemDisplay[dr6]: 阿爾發頭盔%CONTINUE%
+ItemDisplay[dra]: 圖騰面具狼盔%CONTINUE%
+ItemDisplay[ba6]: 顎骨面甲%CONTINUE%
+ItemDisplay[ba7]: 獅頭尖盔%CONTINUE%
+ItemDisplay[ba8]: 狂怒面具刺盔%CONTINUE%
+ItemDisplay[ba9]: 蠻族頭盔%CONTINUE%
+ItemDisplay[baa]: 殺手防護面甲%CONTINUE%
+ItemDisplay[pa6]: 亞克南圓盾%CONTINUE%
+ItemDisplay[pa7]: 亞克南輕圓盾%CONTINUE%
+ItemDisplay[pa8]: 防護者盾牌%CONTINUE%
+ItemDisplay[pa9]: 飾金盾牌%CONTINUE%
+ItemDisplay[paa]: 皇家盾牌%CONTINUE%
+ItemDisplay[ne6]: 木乃伊印記%CONTINUE%
+ItemDisplay[ne7]: 物神印記%CONTINUE%
+ItemDisplay[ne8]: 司事印記%CONTINUE%
+ItemDisplay[ne9]: 領唱者印記%CONTINUE%
+ItemDisplay[nea]: 祭司印記%CONTINUE%
+ItemDisplay[dre]: 天空之靈%CONTINUE%
+ItemDisplay[drc]: 太陽之靈%CONTINUE%
+ItemDisplay[drd]: 大地之靈%CONTINUE%
+ItemDisplay[drb]: 血腥之靈%CONTINUE%
+ItemDisplay[drf]: 幽夢之靈%CONTINUE%
+ItemDisplay[bab]: 屠殺頭盔%CONTINUE%
+ItemDisplay[bac]: 暴怒面甲%CONTINUE%
+ItemDisplay[bad]: 毀滅者頭盔%CONTINUE%
+ItemDisplay[bae]: 征服者皇冠面甲%CONTINUE%
+ItemDisplay[baf]: 守護者皇冠面甲%CONTINUE%
+ItemDisplay[pab]: 神聖小盾%CONTINUE%
+ItemDisplay[pac]: 神聖輕圓盾%CONTINUE%
+ItemDisplay[pae]: 撒卡蘭姆盾牌%CONTINUE%
+ItemDisplay[paf]: 旋風盾%CONTINUE%
+ItemDisplay[neb]: 隨侍之骨%CONTINUE%
+ItemDisplay[nec]: 地獄爪牙之骨%CONTINUE%
+ItemDisplay[ned]: 監視者之骨%CONTINUE%
+ItemDisplay[nee]: 女妖之骨%CONTINUE%
+ItemDisplay[nef]: 血王之骨%CONTINUE%
+ItemDisplay[jew]: 珠寶%CONTINUE%
+ItemDisplay[hrb]: 藥草%CONTINUE%
+ItemDisplay[cm1]: 小護身符 %CONTINUE%
+ItemDisplay[cm2]: 中護身符%CONTINUE%
+ItemDisplay[cm3]: 大護身符%CONTINUE%
+ItemDisplay[ice]: 馬拉之藥 Malah's Potion%CONTINUE%
+ItemDisplay[r33]: 33-薩德 Zod%CONTINUE%
+ItemDisplay[r32]: 32-查姆 Cham%CONTINUE%
+ItemDisplay[r31]: 31-喬 Jah%CONTINUE%
+ItemDisplay[r30]: 30-貝 Ber%CONTINUE%
+ItemDisplay[r29]: 29-瑟 Sur%CONTINUE%
+ItemDisplay[r28]: 28-羅 Lo%CONTINUE%
+ItemDisplay[r27]: 27-歐姆 Ohm%CONTINUE%
+ItemDisplay[r26]: 26-伐克斯 Vex%CONTINUE%
+ItemDisplay[r25]: 25-古爾 Gul%CONTINUE%
+ItemDisplay[r24]: 24-伊司特 Ist%CONTINUE%
+ItemDisplay[r23]: 23-馬爾 Mal%CONTINUE%
+ItemDisplay[r22]: 22-烏姆 Um%CONTINUE%
+ItemDisplay[r21]: 21-普爾 Pul%CONTINUE%
+ItemDisplay[r20]: 20-藍姆 Lem%CONTINUE%
+ItemDisplay[r19]: 19-法爾 Fal%CONTINUE%
+ItemDisplay[r18]: 18-科 Ko%CONTINUE%
+ItemDisplay[r17]: 17-盧姆 Lum%CONTINUE%
+ItemDisplay[r16]: 16-破 Io%CONTINUE%
+ItemDisplay[r15]: 15-海爾 Hel%CONTINUE%
+ItemDisplay[r14]: 14-多爾 Dol%CONTINUE%
+ItemDisplay[r13]: 13-夏 Shael%CONTINUE%
+ItemDisplay[r12]: 12-索爾 Sol%CONTINUE%
+ItemDisplay[r11]: 11-安姆 Amn%CONTINUE%
+ItemDisplay[r10]: 10-書爾 Thul%CONTINUE%
+ItemDisplay[r09]: 09-歐特 Ort%CONTINUE%
+ItemDisplay[r08]: 08-拉爾 Ral%CONTINUE%
+ItemDisplay[r07]: 07-塔爾 Tal%CONTINUE%
+ItemDisplay[r06]: 06-伊司 Ith%CONTINUE%
+ItemDisplay[r05]: 05-愛斯 Eth%CONTINUE%
+ItemDisplay[r04]: 04-那夫 Nef%CONTINUE%
+ItemDisplay[r03]: 03-特爾 Tir%CONTINUE%
+ItemDisplay[r02]: 02-艾德 Eld%CONTINUE%
+ItemDisplay[r01]: 01-艾爾 El%CONTINUE%
+ItemDisplay[ma1]: 寒霜洞窟%CONTINUE%
+ItemDisplay[ma2]: 蜃景荒漠%CONTINUE%
+ItemDisplay[ma3]: 遺棄之地%CONTINUE%
+ItemDisplay[ma4]: 褻瀆教堂%CONTINUE%
+ItemDisplay[ma5]: 凜冬高原%CONTINUE%
+ItemDisplay[ma6]: 崩壞堡壘%CONTINUE%
+ItemDisplay[ma7]: 焚燒森林%CONTINUE%
+ItemDisplay[ma8]: 發霉地穴%CONTINUE%
+ItemDisplay[ma9]: 昏暗地窖%CONTINUE%
+ItemDisplay[pk1]: 恐懼之鑰 Key of Terror%CONTINUE%
+ItemDisplay[pk2]: 憎恨之鑰 Key of Hate%CONTINUE%
+ItemDisplay[pk3]: 毀滅之鑰 Key of Destruction%CONTINUE%
+ItemDisplay[dhn]: 暗黑破壞神之角 Diablo's Horn%CONTINUE%
+ItemDisplay[bey]: 巴爾之眼 Baal's Eye%CONTINUE%
+ItemDisplay[mbr]: 墨菲斯托之腦 Mephisto's Brain%CONTINUE%
+ItemDisplay[std]: 英雄旗幟 Standard of Heroes%CONTINUE%
+ItemDisplay[cx5]: 腐化寶珠%CONTINUE%
+ItemDisplay[cx6]: 暗黑破壞神的靈魂石%CONTINUE%
+ItemDisplay[cx7]: 混沌之鑰%CONTINUE%
+ItemDisplay[cx8]: 附魔寶珠%CONTINUE%
 
 // 任務物品
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
@@ -56,8 +704,8 @@ ItemDisplay[maz]: 『%NAME%』//地獄審判
 
 // 捲 書
 ItemDisplay[(tsc OR isc) CLVL>19]: //20等後不顯示傳送鑑定卷軸
-ItemDisplay[tsc]: %BLUE%傳送%WHITE%卷軸
-ItemDisplay[isc]: %GREEN%鑑定%WHITE%卷軸
+ItemDisplay[tsc CLVL<20]: %BLUE%傳送%WHITE%卷軸
+ItemDisplay[isc CLVL<20]: %GREEN%鑑定%WHITE%卷軸
 ItemDisplay[tbk]: %GOLD%傳送之書
 ItemDisplay[ibk]: %GOLD%鑑定之書
 
@@ -103,10 +751,7 @@ ItemDisplay[rvs CLVL>69]:
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>9]:
 
 // 10等後隱藏特殊藥水跟鑰匙
-ItemDisplay[vps CLVL>9]:
-ItemDisplay[wms CLVL>9]:
-ItemDisplay[yps CLVL>9]:
-ItemDisplay[key CLVL>9]:
+ItemDisplay[(vps OR wms OR yps OR key) CLVL>9]:
 
 // 寶石
 ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美
@@ -133,39 +778,9 @@ ItemDisplay[cm2]: 《《[L%ILVL%]%NAME%》》
 ItemDisplay[cm3]: 《《《[L%ILVL%]%NAME%》》》
 
 // 符文
-ItemDisplay[r01]: [#01-%NAME%]
-ItemDisplay[r02]: [#02-%NAME%]
-ItemDisplay[r03]: [#03-%NAME%]
-ItemDisplay[r04]: [#04-%NAME%]
-ItemDisplay[r05]: [#05-%NAME%]
-ItemDisplay[r06]: [#06-%NAME%]
-ItemDisplay[r07]: [#07-%NAME%]
-ItemDisplay[r08]: [#08-%NAME%]
-ItemDisplay[r09]: [#09-%NAME%]
-ItemDisplay[r10]: [#10-%NAME%]
-ItemDisplay[r11]: [#11-%NAME%]
-ItemDisplay[r12]: [#12-%NAME%]
-ItemDisplay[r13]: [#13-%NAME%]
-ItemDisplay[r14]: [#14-%NAME%]
-ItemDisplay[r15]: [##15-%NAME%##]
-ItemDisplay[r16]: [#16-%NAME%]
-ItemDisplay[r17]: [#17-%NAME%]
-ItemDisplay[r18]: [#18-%NAME%]
-ItemDisplay[r19]: [#19-%NAME%]
-ItemDisplay[r20]: [#######20-%NAME%#######]
-ItemDisplay[r21]: [#######21-%NAME%#######]
-ItemDisplay[r22]: [#######22-%NAME%#######]
-ItemDisplay[r23]: [#######23-%NAME%#######]
-ItemDisplay[r24]: [#######24-%NAME%#######]
-ItemDisplay[r25]: [#######25-%NAME%#######]
-ItemDisplay[r26]: [%PURPLE%#########################%ORANGE%26-%NAME%%PURPLE%#########################%ORANGE%]
-ItemDisplay[r27]: [%PURPLE%#########################%ORANGE%27-%NAME%%PURPLE%#########################%ORANGE%]
-ItemDisplay[r28]: [%PURPLE%#########################%ORANGE%28-%NAME%%PURPLE%#########################%ORANGE%]
-ItemDisplay[r29]: [%PURPLE%#########################%ORANGE%29-%NAME%%PURPLE%#########################%ORANGE%]
-ItemDisplay[r30]: [%PURPLE%#########################%ORANGE%30-%NAME%%PURPLE%#########################%ORANGE%]
-ItemDisplay[r31]: [%PURPLE%#########################%ORANGE%31-%NAME%%PURPLE%#########################%ORANGE%]
-ItemDisplay[r32]: [%PURPLE%#########################%ORANGE%32-%NAME%%PURPLE%#########################%ORANGE%]
-ItemDisplay[r33]: [%PURPLE%#########################%ORANGE%33-%NAME%%PURPLE%#########################%ORANGE%]
+ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [#%NAME%#] %MAP%
+ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: [#####%NAME%#####] %MAP%
+ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: [%PURPLE%##########%ORANGE%%NAME%%PURPLE%##########%ORANGE%] %MAP%
 
 
 // 頭盔
@@ -436,97 +1051,20 @@ ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
 
-// 職業專用裝備
-ItemDisplay[CL1 NORM ETH SOCK=0]: <德>◎%NAME%【普通】
-ItemDisplay[CL1 NORM ETH SOCK>0]: <德>◎%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL1 EXC ETH SOCK=0]: <德>◎%NAME%【進階】
-ItemDisplay[CL1 EXC ETH SOCK>0]: <德>◎%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL1 ELT ETH SOCK=0]: <德>◎%NAME%【菁英】 
-ItemDisplay[CL1 ELT ETH SOCK>0]: <德>◎%NAME%【菁英】(%SOCKETS%)
-ItemDisplay[CL1 NORM SOCK=0]: <德>%NAME%【普通】
-ItemDisplay[CL1 NORM SOCK>0]: <德>%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL1 EXC SOCK=0]: <德>%NAME%【進階】
-ItemDisplay[CL1 EXC SOCK>0]: <德>%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL1 ELT SOCK=0]: <德>%NAME%【菁英】 
-ItemDisplay[CL1 ELT SOCK>0]: <德>%NAME%【菁英】(%SOCKETS%)
+// 普通 進階 菁英
+ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
+ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
+ItemDisplay[NORM]: %NAME%【普通】%CONTINUE%
+ItemDisplay[EXC]: %NAME%【進階】%CONTINUE%
+ItemDisplay[ELT]: %NAME%【菁英】%CONTINUE%
 
-ItemDisplay[CL2 NORM ETH SOCK=0]: <蠻>◎%NAME%【普通】
-ItemDisplay[CL2 NORM ETH SOCK>0]: <蠻>◎%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL2 EXC ETH SOCK=0]: <蠻>◎%NAME%【進階】
-ItemDisplay[CL2 EXC ETH SOCK>0]: <蠻>◎%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL2 ELT ETH SOCK=0]: <蠻>◎%NAME%【菁英】 
-ItemDisplay[CL2 ELT ETH SOCK>0]: <蠻>◎%NAME%【菁英】(%SOCKETS%)
-ItemDisplay[CL2 NORM SOCK=0]: <蠻>%NAME%【普通】
-ItemDisplay[CL2 NORM SOCK>0]: <蠻>%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL2 EXC SOCK=0]: <蠻>%NAME%【進階】
-ItemDisplay[CL2 EXC SOCK>0]: <蠻>%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL2 ELT SOCK=0]: <蠻>%NAME%【菁英】 
-ItemDisplay[CL2 ELT SOCK>0]: <蠻>%NAME%【菁英】(%SOCKETS%)
-
-ItemDisplay[CL3 NORM ETH SOCK=0]: <聖>◎%NAME%【普通】
-ItemDisplay[CL3 NORM ETH SOCK>0]: <聖>◎%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL3 EXC ETH SOCK=0]: <聖>◎%NAME%【進階】
-ItemDisplay[CL3 EXC ETH SOCK>0]: <聖>◎%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL3 ELT ETH SOCK=0]: <聖>◎%NAME%【菁英】 
-ItemDisplay[CL3 ELT ETH SOCK>0]: <聖>◎%NAME%【菁英】(%SOCKETS%)
-ItemDisplay[CL3 NORM SOCK=0]: <聖>%NAME%【普通】
-ItemDisplay[CL3 NORM SOCK>0]: <聖>%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL3 EXC SOCK=0]: <聖>%NAME%【進階】
-ItemDisplay[CL3 EXC SOCK>0]: <聖>%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL3 ELT SOCK=0]: <聖>%NAME%【菁英】 
-ItemDisplay[CL3 ELT SOCK>0]: <聖>%NAME%【菁英】(%SOCKETS%)
-
-ItemDisplay[CL4 NORM ETH SOCK=0]: <死>◎%NAME%【普通】
-ItemDisplay[CL4 NORM ETH SOCK>0]: <死>◎%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL4 EXC ETH SOCK=0]: <死>◎%NAME%【進階】
-ItemDisplay[CL4 EXC ETH SOCK>0]: <死>◎%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL4 ELT ETH SOCK=0]: <死>◎%NAME%【菁英】 
-ItemDisplay[CL4 ELT ETH SOCK>0]: <死>◎%NAME%【菁英】(%SOCKETS%)
-ItemDisplay[CL4 NORM SOCK=0]: <死>%NAME%【普通】
-ItemDisplay[CL4 NORM SOCK>0]: <死>%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL4 EXC SOCK=0]: <死>%NAME%【進階】
-ItemDisplay[CL4 EXC SOCK>0]: <死>%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL4 ELT SOCK=0]: <死>%NAME%【菁英】 
-ItemDisplay[CL4 ELT SOCK>0]: <死>%NAME%【菁英】(%SOCKETS%)
-
-ItemDisplay[CL5 NORM ETH SOCK=0]: <刺>◎%NAME%【普通】
-ItemDisplay[CL5 NORM ETH SOCK>0]: <刺>◎%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL5 EXC ETH SOCK=0]: <刺>◎%NAME%【進階】
-ItemDisplay[CL5 EXC ETH SOCK>0]: <刺>◎%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL5 ELT ETH SOCK=0]: <刺>◎%NAME%【菁英】 
-ItemDisplay[CL5 ELT ETH SOCK>0]: <刺>◎%NAME%【菁英】(%SOCKETS%)
-ItemDisplay[CL5 NORM SOCK=0]: <刺>%NAME%【普通】
-ItemDisplay[CL5 NORM SOCK>0]: <刺>%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL5 EXC SOCK=0]: <刺>%NAME%【進階】
-ItemDisplay[CL5 EXC SOCK>0]: <刺>%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL5 ELT SOCK=0]: <刺>%NAME%【菁英】 
-ItemDisplay[CL5 ELT SOCK>0]: <刺>%NAME%【菁英】(%SOCKETS%)
-
-ItemDisplay[CL6 NORM ETH SOCK=0]: <法>◎%NAME%【普通】
-ItemDisplay[CL6 NORM ETH SOCK>0]: <法>◎%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL6 EXC ETH SOCK=0]: <法>◎%NAME%【進階】
-ItemDisplay[CL6 EXC ETH SOCK>0]: <法>◎%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL6 ELT ETH SOCK=0]: <法>◎%NAME%【菁英】 
-ItemDisplay[CL6 ELT ETH SOCK>0]: <法>◎%NAME%【菁英】(%SOCKETS%)
-ItemDisplay[CL6 NORM SOCK=0]: <法>%NAME%【普通】
-ItemDisplay[CL6 NORM SOCK>0]: <法>%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL6 EXC SOCK=0]: <法>%NAME%【進階】
-ItemDisplay[CL6 EXC SOCK>0]: <法>%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL6 ELT SOCK=0]: <法>%NAME%【菁英】 
-ItemDisplay[CL6 ELT SOCK>0]: <法>%NAME%【菁英】(%SOCKETS%)
-
-ItemDisplay[CL7 NORM ETH SOCK=0]: <亞>◎%NAME%【普通】
-ItemDisplay[CL7 NORM ETH SOCK>0]: <亞>◎%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL7 EXC ETH SOCK=0]: <亞>◎%NAME%【進階】
-ItemDisplay[CL7 EXC ETH SOCK>0]: <亞>◎%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL7 ELT ETH SOCK=0]: <亞>◎%NAME%【菁英】 
-ItemDisplay[CL7 ELT ETH SOCK>0]: <亞>◎%NAME%【菁英】(%SOCKETS%)
-ItemDisplay[CL7 NORM SOCK=0]: <亞>%NAME%【普通】
-ItemDisplay[CL7 NORM SOCK>0]: <亞>%NAME%【普通】(%SOCKETS%)
-ItemDisplay[CL7 EXC SOCK=0]: <亞>%NAME%【進階】
-ItemDisplay[CL7 EXC SOCK>0]: <亞>%NAME%【進階】(%SOCKETS%)
-ItemDisplay[CL7 ELT SOCK=0]: <亞>%NAME%【菁英】 
-ItemDisplay[CL7 ELT SOCK>0]: <亞>%NAME%【菁英】(%SOCKETS%)
+ItemDisplay[CL1]: <德>%NAME%%CONTINUE%
+ItemDisplay[CL2]: <蠻>%NAME%%CONTINUE%
+ItemDisplay[CL3]: <聖>%NAME%%CONTINUE%
+ItemDisplay[CL4]: <死>%NAME%%CONTINUE%
+ItemDisplay[CL5]: <刺>%NAME%%CONTINUE%
+ItemDisplay[CL6]: <法>%NAME%%CONTINUE%
+ItemDisplay[CL7]: <亞>%NAME%%CONTINUE%
 
 // 戒指 項鍊 箭矢 十字箭
 ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】 //戒指 項鍊
@@ -535,17 +1073,3 @@ ItemDisplay[amu MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【飾品】 //項鍊
 ItemDisplay[amu RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【飾品】 //項鍊 90LV +2技能
 ItemDisplay[rin OR amu]: [L%ILVL%]%NAME%【飾品】 //戒指 項鍊
 ItemDisplay[aq2 OR cq2]: %NAME%【箭袋】//箭矢 十字箭
-
-// 普通 進階 菁英
-ItemDisplay[NORM ETH SOCK=0]: ◎%NAME%【普通】
-ItemDisplay[NORM ETH SOCK>0]: ◎%NAME%【普通】(%SOCKETS%)
-ItemDisplay[EXC ETH SOCK=0]: ◎%NAME%【進階】
-ItemDisplay[EXC ETH SOCK>0]: ◎%NAME%【進階】(%SOCKETS%)
-ItemDisplay[ELT ETH SOCK=0]: ◎%NAME%【菁英】 
-ItemDisplay[ELT ETH SOCK>0]: ◎%NAME%【菁英】(%SOCKETS%)
-ItemDisplay[NORM SOCK=0]: %NAME%【普通】
-ItemDisplay[NORM SOCK>0]: %NAME%【普通】(%SOCKETS%)
-ItemDisplay[EXC SOCK=0]: %NAME%【進階】
-ItemDisplay[EXC SOCK>0]: %NAME%【進階】(%SOCKETS%)
-ItemDisplay[ELT SOCK=0]: %NAME%【菁英】 
-ItemDisplay[ELT SOCK>0]: %NAME%【菁英】(%SOCKETS%)
