@@ -1,4 +1,4 @@
-// 2020/03/09 02:40
+// 2020/03/09 02:55
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -682,21 +682,21 @@ ItemDisplay[fed]: %NAME% (A5) //潰爛的毀滅精華
 ItemDisplay[std]: %NAME% //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 ItemDisplay[leg]: %WHITE%※%NAME%※ //維特之腳
-ItemDisplay[cx5]: ※%NAME% (ooc)%WHITE%※ //腐化寶珠
+ItemDisplay[cx5]: ※%NAME% (ooc)%WHITE%※ %MAP% //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※ //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之鑰
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖(Relic)
-ItemDisplay[ma1 !ID]: 『%NAME%』<T1-Lv86> %GRAY%(未鑑定)%YELLOW% //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2 !ID]: 『%NAME%』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% //蜃景荒漠 (Forgotten Desert)
-ItemDisplay[ma3 !ID]: 『%NAME%』<T?-Lv??> %GRAY%(未鑑定)%YELLOW% //遺棄之地 (Abandoned Precinct)
-ItemDisplay[ma4 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //褻瀆教堂 (Desecrated Temple)
-ItemDisplay[ma5 !ID]: 『%NAME%』<T1-Lv86> %GRAY%(未鑑定)%YELLOW% //凜冬高原 (Frigid Plateau)
-ItemDisplay[ma6 !ID]: 『%NAME%』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% //崩壞堡壘 (Ruined Citadel)
-ItemDisplay[ma7 !ID]: 『%NAME%』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% //焚燒森林 (Burnt Forest)
-ItemDisplay[ma8 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //發霉地穴 (Musty Crypt)
-ItemDisplay[ma9 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% //昏暗地窖 (Dim Cellar)
+ItemDisplay[ma1 !ID]: 『%NAME%』<T1-Lv86> %GRAY%(未鑑定)%YELLOW% %MAP% //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2 !ID]: 『%NAME%』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% %MAP% //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma3 !ID]: 『%NAME%』<T?-Lv??> %GRAY%(未鑑定)%YELLOW% %MAP% //遺棄之地 (Abandoned Precinct)
+ItemDisplay[ma4 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% %MAP% //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5 !ID]: 『%NAME%』<T1-Lv86> %GRAY%(未鑑定)%YELLOW% %MAP% //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6 !ID]: 『%NAME%』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% %MAP% //崩壞堡壘 (Ruined Citadel)
+ItemDisplay[ma7 !ID]: 『%NAME%』<T3-Lv88> %GRAY%(未鑑定)%YELLOW% %MAP% //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% %MAP% //發霉地穴 (Musty Crypt)
+ItemDisplay[ma9 !ID]: 『%NAME%』<T2-Lv87> %GRAY%(未鑑定)%YELLOW% %MAP% //昏暗地窖 (Dim Cellar)
 // ItemDisplay[ma10 !ID]: 『%NAME%』<T0-Lv86> %GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture) BUG無法顯示
 ItemDisplay[ma1]: 『%NAME%』<T1-Lv86> //寒霜洞窟 (Icy Cavern)
 ItemDisplay[ma2]: 『%NAME%』<T3-Lv88> //蜃景荒漠 (Forgotten Desert)
