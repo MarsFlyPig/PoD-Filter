@@ -1,4 +1,4 @@
-// 2020/03/08 23:00
+// 2020/03/09 00:10
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -1034,22 +1034,6 @@ ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 
 // ===>>> 裝備 <<<===
 
-// 刪除垃圾
-ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
-ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
-
-ItemDisplay[NMAG (WP4 OR WP5 OR WP10 OR WP11) CLVL>9]: // 10等後刪除白色匕首、投擲武器、十字弓、長杖
-ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0]: // 20等後刪除0s普通白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29]: // 30等後刪除普通白裝
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s進階白裝
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
-ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
-
-ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
-ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
-ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
-
 // 普通 進階 菁英
 ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
@@ -1072,3 +1056,19 @@ ItemDisplay[amu MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【飾品】 //項鍊
 ItemDisplay[amu RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【飾品】 //項鍊 90LV +2技能
 ItemDisplay[rin OR amu]: [L%ILVL%]%NAME%【飾品】 //戒指 項鍊
 ItemDisplay[aq2 OR cq2]: %NAME%【箭袋】//箭矢 十字箭
+
+// 刪除垃圾
+ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
+ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
+
+ItemDisplay[NMAG (WP4 OR WP5 OR WP10 OR WP11) CLVL>9]: // 10等後刪除白色匕首、投擲武器、十字弓、長杖
+ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
+
+ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s進階白裝
+ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
+ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
+ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0 !leg]: // 20等後刪除0s普通白裝
+ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29 !leg]: // 30等後刪除普通白裝
+ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
+ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
+ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
