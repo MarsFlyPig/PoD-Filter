@@ -7,6 +7,7 @@
 //===================================
 
 // ItemDisplay[]: [L%ILVL%]%NAME%<$%PRICE%$>[%CODE%] // 查看代碼用
+// ItemDisplay[CHSK150>0]: 這是一把聚氣武器 // 查看代碼用
 
 // 任務物品
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
@@ -108,12 +109,12 @@ ItemDisplay[(vps OR wms OR yps OR key) CLVL>9]:
 // 寶石
 ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美
 ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 無瑕疵
-ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku)]: ★%NAME%★ // 一般
-ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf)]: ★%NAME%★ // 缺陷
-ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc)]: ★%NAME%★ // 碎裂
-//ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku]: // 一般
-//ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf]: // 缺陷
-//ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: // 碎裂
+ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku)]: ★%NAME%★%CONTINUE% // 一般
+ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf)]: ★%NAME%★%CONTINUE% // 缺陷
+ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc)]: ★%NAME%★%CONTINUE% // 碎裂
+ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku CLVL>16]: // 一般
+ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf CLVL>16]: // 缺陷
+ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc CLVL>16]: // 碎裂
 
 // 珠寶
 ItemDisplay[jew UNI]: ●%NAME%【暗金】●
@@ -130,9 +131,9 @@ ItemDisplay[cm2]: 《《[L%ILVL%]%NAME%》》
 ItemDisplay[cm3]: 《《《[L%ILVL%]%NAME%》》》
 
 // 符文
-ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [##%NAME%##]%NOTIFY-Orange%
-ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: %NL%[#####%NAME%#####]%NL%%NOTIFY-Orange%
-ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%[%PURPLE%#####%ORANGE%%NAME%%PURPLE%#####%ORANGE%]%NL%%NOTIFY-Orange%
+ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [##%RUNENUM%-%NAME%##]%NOTIFY-Orange%
+ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: %NL%[#####%RUNENUM%-%NAME%#####]%NL%%NOTIFY-Orange%
+ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%[%PURPLE%#####%ORANGE%%RUNENUM%-%NAME%%PURPLE%#####%ORANGE%]%NL%%NOTIFY-Orange%
 
 // 頭盔
 ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
@@ -389,10 +390,9 @@ ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 // 普通 進階 菁英
 ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
-ItemDisplay[!ID]: %NAME%(未鑑定)%CONTINUE%
-ItemDisplay[NORM !rin !amu !aq2 !cq2 !aqv !cqv !box]: %NAME%【普通】%CONTINUE%
-ItemDisplay[EXC !rin !amu]: %NAME%【進階】%CONTINUE%
-ItemDisplay[ELT !rin !amu]: %NAME%【菁英】%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】%CONTINUE%
 
 ItemDisplay[CL1]: <德>%NAME%%CONTINUE%
 ItemDisplay[CL2]: <蠻>%NAME%%CONTINUE%
