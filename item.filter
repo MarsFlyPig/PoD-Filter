@@ -1,4 +1,4 @@
-// 2020/03/09 10:00
+// 2020/03/09 10:20
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -398,9 +398,9 @@ ItemDisplay[CL7]: <亞>%NAME%%CONTINUE%
 // 普通 進階 菁英
 ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】
-ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】
-ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】
+ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】%CONTINUE%
 
 // 戒指 項鍊 箭矢 十字箭
 ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】 //戒指 項鍊
