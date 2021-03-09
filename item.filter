@@ -130,9 +130,9 @@ ItemDisplay[cm2]: 《《[L%ILVL%]%NAME%》》
 ItemDisplay[cm3]: 《《《[L%ILVL%]%NAME%》》》
 
 // 符文
-ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [##%RUNENUM%-%NAME%##]%NOTIFY-Orange%
-ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: %NL%[#####%RUNENUM%-%NAME%#####]%NL%%NOTIFY-Orange%
-ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%[%PURPLE%#####%ORANGE%%RUNENUM%-%NAME%%PURPLE%#####%ORANGE%]%NL%%NOTIFY-Orange%
+ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [##%NAME%##]%NOTIFY-Orange%
+ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: %NL%[#####%NAME%#####]%NL%%NOTIFY-Orange%
+ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%[%PURPLE%#####%ORANGE%%NAME%%PURPLE%#####%ORANGE%]%NL%%NOTIFY-Orange%
 
 // 頭盔
 ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
