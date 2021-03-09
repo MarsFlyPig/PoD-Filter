@@ -1,4 +1,4 @@
-// 2020/03/09 12:40
+// 2020/03/09 14:15
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -25,7 +25,7 @@ ItemDisplay[bet]: %NAME% (A4) //燃燒的恐懼精華
 ItemDisplay[fed]: %NAME% (A5) //潰爛的毀滅精華
 ItemDisplay[std]: %NAME% //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
-ItemDisplay[leg]: %WHITE%※%NAME%※ //維特之腳
+ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※ //維特之腳
 ItemDisplay[cx5]: ※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY-ITEM% //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※ //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之鑰
@@ -55,11 +55,11 @@ ItemDisplay[ma10]: 『%NAME%』<T0-Lv86> //悅心農場 (Pleasant Pasture) BUG�
 ItemDisplay[maz]: 『%NAME%』//地獄審判
 
 // 捲 書
-ItemDisplay[(tsc OR isc) CLVL>19]: //20等後不顯示傳送鑑定卷軸
-ItemDisplay[tsc CLVL<20]: %BLUE%傳送%WHITE%卷軸
-ItemDisplay[isc CLVL<20]: %GREEN%鑑定%WHITE%卷軸
 ItemDisplay[tbk]: %GOLD%傳送之書
 ItemDisplay[ibk]: %GOLD%鑑定之書
+ItemDisplay[tsc]: %BLUE%傳送%WHITE%卷軸%CONTINUE%
+ItemDisplay[isc]: %GREEN%鑑定%WHITE%卷軸%CONTINUE%
+ItemDisplay[(tsc OR isc) DIFF>0]: //普通難度後不顯示傳送鑑定卷軸
 
 // 根據玩家等級隱藏金錢顯示
 ItemDisplay[CLVL>89 GOLD<8000]: //90等後不顯示8000元以下
@@ -106,14 +106,9 @@ ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>9]:
 ItemDisplay[(vps OR wms OR yps OR key) CLVL>9]:
 
 // 寶石
-ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美
-ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 無瑕疵
-ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku)]: ★%NAME%★%CONTINUE% // 一般
-ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf)]: ★%NAME%★%CONTINUE% // 缺陷
-ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc)]: ★%NAME%★%CONTINUE% // 碎裂
-ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku CLVL>16]: // 一般
-ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf CLVL>16]: // 缺陷
-ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc CLVL>16]: // 碎裂
+ItemDisplay[GEMLEVEL=0 OR GEMLEVEL=5]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美+無瑕疵
+ItemDisplay[GEMLEVEL<5 GEMLEVEL>0]: ★%NAME%★%CONTINUE% // 一般+缺陷+碎裂
+ItemDisplay[GEMLEVEL<5 GEMLEVEL>0 DIFF>0]: // 普通難度外隱藏
 
 // 珠寶
 ItemDisplay[jew UNI]: ●%NAME%【暗金】●
@@ -131,7 +126,7 @@ ItemDisplay[cm3]: 《《《[L%ILVL%]%NAME%》》》
 
 // 符文
 ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [##%NAME%##]%NOTIFY-Orange%
-ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: %NL%[#####%NAME%#####]%NL%%NOTIFY-Orange%
+ItemDisplay[r20 OR r21 OR r22 OR r23 OR r24 OR r25]: %NL%[#####%NAME%#####]%NL%%NOTIFY-Orange%
 ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%[%PURPLE%#####%ORANGE%%NAME%%PURPLE%#####%ORANGE%]%NL%%NOTIFY-Orange%
 
 // 頭盔
@@ -369,21 +364,23 @@ ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【擊
 ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【回魔:9歐特+紫+珠寶】 // 皮手套、魔皮手套、荊棘連指手套
 
 //聚氣
-ItemDisplay[CHSK91>0 !UNI !SET !RW]: %NAME%%RED%【聚氣-降低抵抗】
-ItemDisplay[CHSK82>0 !UNI !SET !RW]: %NAME%%RED%【聚氣-偷取生命】
-ItemDisplay[CHSK54>0 !UNI !SET !RW]: %NAME%%RED%【聚氣-傳送】
+ItemDisplay[CHSK91=1 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.1】
+ItemDisplay[CHSK91=2 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.2】
+ItemDisplay[CHSK91=3 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.3】
+ItemDisplay[CHSK82>0 !UNI !SET !RW]: %DARK_GREEN%【聚氣-偷取生命】
+ItemDisplay[CHSK53>0 !UNI !SET !RW]: %DARK_GREEN%【聚氣-傳送】
 
 // 過度
 ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 CLVL<60]: %NAME%【精神-劍】//60等前顯示 0s水晶劍
 ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】//50等前顯示 0s闊劍
 ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=4 ILVL>25 ILVL<41 CLVL<50]: %NAME%【精神-劍】(%SOCKETS%)//50等前顯示 4s闊劍
-ItemDisplay[WP8 NMAG !RW SOCK=4  CLVL<60]: %NAME%【眼光-長斧】(%SOCKETS%) //60等前顯示 4s長斧
-ItemDisplay[WP7 NMAG !RW SOCK=4  CLVL<60]: %NAME%【眼光-長槍】(%SOCKETS%) //60等前顯示 4s長槍
+ItemDisplay[WP8 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長斧】(%SOCKETS%) //60等前顯示 4s長斧
+ItemDisplay[WP7 NMAG !RW SOCK=4 CLVL<60]: %NAME%【眼光-長槍】(%SOCKETS%) //60等前顯示 4s長槍
 
 ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】(%SOCKETS%) //巨戰權杖、神屬權杖-5897
 
 // 缺錢
-ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW !uea !uui]: $%PRICE%$ // 顯示菁英盔甲賣錢
+ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW PRICE>34999]: $%PRICE%$ // 顯示菁英盔甲賣錢
 ItemDisplay[CL6 MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示法師寶珠賣錢
 ItemDisplay[WP12 MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示死靈魔杖賣錢
 ItemDisplay[CL6 MAG !RW ILVL>50]: $$$$ // 顯示法師寶珠賣錢
@@ -400,8 +397,8 @@ ItemDisplay[CL6]: <法>%NAME%%CONTINUE%
 ItemDisplay[CL7]: <亞>%NAME%%CONTINUE%
 
 // 普通 進階 菁英
-ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
-ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
+ItemDisplay[ETH]: ◎%NAME%%CONTINUE% // 無形
+ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE% // 有孔
 ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】%CONTINUE%
 ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】%CONTINUE%
 ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】%CONTINUE%
@@ -412,7 +409,7 @@ ItemDisplay[(rin OR amu) UNI]: [L%ILVL%]%NAME%【暗金】 //戒指 項鍊
 ItemDisplay[amu MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【飾品】 //項鍊 90LV +2技能
 ItemDisplay[amu RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【飾品】 //項鍊 90LV +2技能
 ItemDisplay[rin OR amu]: [L%ILVL%]%NAME%【飾品】 //戒指 項鍊
-ItemDisplay[aq2 OR cq2 OR aqv OR cqv]: %NAME%【箭袋】//箭矢 十字箭
+ItemDisplay[aq2 OR cq2 OR aqv OR cqv]: %NAME%【箭袋】%CONTINUE% //箭矢 十字箭
 
 // 刪除垃圾
 ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
@@ -421,11 +418,9 @@ ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
 ItemDisplay[NMAG (WP4 OR WP5 OR WP10 OR WP11) CLVL>9]: // 10等後刪除白色匕首、投擲武器、十字弓、長杖
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
 
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s進階白裝
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
-ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0]: // 20等後刪除0s普通白裝
+ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>59]: // 60等後刪除菁英白裝
+ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39]: // 40等後刪除進階白裝
 ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29]: // 30等後刪除普通白裝
-ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
+ItemDisplay[(aq2 OR cq2 OR aqv OR cqv) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
