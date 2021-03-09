@@ -1,4 +1,4 @@
-// 2020/03/09 14:45
+// 2020/03/09 22:00
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -233,6 +233,7 @@ ItemDisplay[(7h7 OR 7wc) NMAG !RW SOCK=6]: %NAME%【寂靜】(%SOCKETS%) //巨�
 // 武器-長槍
 ItemDisplay[7br ETH NMAG ED>10 SOCK=0]: ◎%NAME%%RED%(11%ED↑)%GRAY%【打5孔】 //刺人槍(無) - 打5孔
 ItemDisplay[7br ETH NMAG !SUP SOCK=0]: ◎%NAME%【打4-5孔】 //刺人槍(無) - 拼打孔
+ItemDisplay[7p7 ETH NMAG !SUP SOCK=0]: ◎%NAME%【打6孔】 //戰槍(無) - 打6孔
 ItemDisplay[7br ETH NMAG !RW SOCK=4]: ◎%NAME%【無限】(%SOCKETS%) //刺人槍(無)4 - 無限
 ItemDisplay[(7tr OR 7br OR 7st) ETH NMAG !RW SOCK=4]: ◎%NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛(無)4 - 眼光/無限/驕傲
 ItemDisplay[(7br OR 7st) ETH NMAG !RW SOCK=5]: ◎%NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛(無)5 - 遵從/末日
@@ -240,6 +241,8 @@ ItemDisplay[7st ETH NMAG !RW SOCK=6]: %NAME%【寂靜】(%SOCKETS%) //鬼魂之�
 ItemDisplay[(7tr OR 7br OR 7st) NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】(%SOCKETS%) //冥河之槍、刺人槍、鬼魂之矛4 - 眼光/無限/驕傲
 ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: %NAME%【遵從│末日】(%SOCKETS%) //刺人槍、鬼魂之矛5 - 遵從/末日
 ItemDisplay[7st NMAG !RW SOCK=6]: %NAME%【寂靜】(%SOCKETS%) //鬼魂之矛6 - 寂靜
+ItemDisplay[7p7 ETH NMAG !RW SOCK=6]: ◎%NAME%【死亡呼吸】(%SOCKETS%) //戰槍(無)6 - 死亡呼吸
+ItemDisplay[7p7 NMAG !RW SOCK=6]: %NAME%【死亡呼吸】(%SOCKETS%) //戰槍6 - 死亡呼吸
 
 // 武器-棍棒
 ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】(%SOCKETS%) //連枷4 - 橡樹之心
@@ -286,6 +289,7 @@ ItemDisplay[CL2 TABSK34>2 SK149>2]: %RED%<<<%NAME%【+6戰鬥體制】>>>
 ItemDisplay[CL2 CLSK4>1 SK149>2]: %RED%<<<%NAME%【+5戰鬥體制】>>>
 
 // 聖騎士
+ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=0]: <聖>◎%NAME%【菁英】%RED%(40抗↑)%WHITE% //聖騎盾(40抗以上)(無)
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=0]: <聖>%NAME%【菁英】%RED%(40抗↑)%WHITE% //聖騎盾(40抗以上)
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: <聖>%NAME%【聖堂│夢境│飛龍】%RED%(40抗↑)%GRAY%(%SOCKETS%) //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: <聖>%NAME%【精神】%RED%(40抗↑)%GRAY%(%SOCKETS%) //聖騎盾(40抗以上)4 - 精神
