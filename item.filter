@@ -387,13 +387,6 @@ ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 
 // ===>>> 裝備 <<<===
 
-// 普通 進階 菁英
-ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
-ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】%CONTINUE%
-
 ItemDisplay[CL1]: <德>%NAME%%CONTINUE%
 ItemDisplay[CL2]: <蠻>%NAME%%CONTINUE%
 ItemDisplay[CL3]: <聖>%NAME%%CONTINUE%
@@ -401,6 +394,13 @@ ItemDisplay[CL4]: <死>%NAME%%CONTINUE%
 ItemDisplay[CL5]: <刺>%NAME%%CONTINUE%
 ItemDisplay[CL6]: <法>%NAME%%CONTINUE%
 ItemDisplay[CL7]: <亞>%NAME%%CONTINUE%
+
+// 普通 進階 菁英
+ItemDisplay[ETH]: ◎%NAME%%CONTINUE%
+ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】
+ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】
+ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】
 
 // 戒指 項鍊 箭矢 十字箭
 ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】 //戒指 項鍊
