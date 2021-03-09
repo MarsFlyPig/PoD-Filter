@@ -1,4 +1,4 @@
-// 2020/03/09 02:55
+// 2020/03/09 09:15
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -682,7 +682,7 @@ ItemDisplay[fed]: %NAME% (A5) //潰爛的毀滅精華
 ItemDisplay[std]: %NAME% //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 ItemDisplay[leg]: %WHITE%※%NAME%※ //維特之腳
-ItemDisplay[cx5]: ※%NAME% (ooc)%WHITE%※ %MAP% //腐化寶珠
+ItemDisplay[cx5]: ※%PURPLE%%NAME% (ooc)%WHITE%※%MAP% //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※ //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之鑰
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
@@ -764,12 +764,12 @@ ItemDisplay[(vps OR wms OR yps OR key) CLVL>9]:
 // 寶石
 ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美
 ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 無瑕疵
-ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) CLVL<16]: ★%NAME%★ // 一般
-ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf) CLVL<16]: ★%NAME%★ // 缺陷
-ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc) CLVL<16]: ★%NAME%★ // 碎裂
-ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku]: // 一般
-ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf]: // 缺陷
-ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: // 碎裂
+ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku)]: ★%NAME%★ // 一般
+ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf)]: ★%NAME%★ // 缺陷
+ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc)]: ★%NAME%★ // 碎裂
+//ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku]: // 一般
+//ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf]: // 缺陷
+//ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: // 碎裂
 
 // 珠寶
 ItemDisplay[jew UNI]: ●%NAME%【暗金】●
@@ -786,9 +786,9 @@ ItemDisplay[cm2]: 《《[L%ILVL%]%NAME%》》
 ItemDisplay[cm3]: 《《《[L%ILVL%]%NAME%》》》
 
 // 符文
-ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [#%RUNENUM%-%NAME%#] %MAP%
-ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: [#####%RUNENUM%-%NAME%#####] %MAP%
-ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: [%PURPLE%##########%RUNENUM%-%ORANGE%%NAME%%PURPLE%##########%ORANGE%] %MAP%
+ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [##%RUNENUM%-%NAME%##]%MAP%
+ItemDisplay[r20r21 OR r22 OR r23 OR r24 OR r25]: %NL%[#####%RUNENUM%-%NAME%#####]%NL%%MAP%
+ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%[%PURPLE%#####%ORANGE%%RUNENUM%-%NAME%%PURPLE%#####%ORANGE%]%NL%%MAP%
 
 // 頭盔
 ItemDisplay[(uh9 OR usk) !ETH NMAG !RW SOCK=3]: %NAME%【夢境】(%SOCKETS%) //骸骨面罩、惡魔頭蓋骨面具3 - 夢境
@@ -1074,10 +1074,10 @@ ItemDisplay[NMAG (WP4 OR WP5 OR WP10 OR WP11) CLVL>9]: // 10等後刪除白色�
 ItemDisplay[NMAG (EQ4 OR EQ5 OR EQ6 OR aq2 OR cq2) CLVL>5]: // 6等後刪除手套、鞋子、腰帶、箭矢、十字箭白裝
 
 ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>39 SOCK=0]: // 40等後刪除0s進階白裝
-ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
-ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
+//ItemDisplay[(WEAPON OR ARMOR) EXC NMAG !RW CLVL>59]: // 60等後刪除進階白裝
+//ItemDisplay[(WEAPON OR ARMOR) ELT NMAG !RW CLVL>79]: // 80等後刪除菁英白裝
 ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>19 SOCK=0 !leg]: // 20等後刪除0s普通白裝
-ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29 !leg]: // 30等後刪除普通白裝
+//ItemDisplay[(WEAPON OR ARMOR) NORM NMAG !RW CLVL>29 !leg]: // 30等後刪除普通白裝
 ItemDisplay[(aq2 OR cq2) MAG CLVL>29]: // 30等後刪除箭矢十字箭藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外普通藍裝
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
