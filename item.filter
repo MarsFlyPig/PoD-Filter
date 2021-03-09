@@ -1,4 +1,4 @@
-// 2020/03/09 22:00
+// 2020/03/10 03:00
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -106,9 +106,14 @@ ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>9]:
 ItemDisplay[(vps OR wms OR yps OR key) CLVL>9]:
 
 // 寶石
-ItemDisplay[GEMLEVEL=0 OR GEMLEVEL=5]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美+無瑕疵
-ItemDisplay[GEMLEVEL<5 GEMLEVEL>0]: ★%NAME%★%CONTINUE% // 一般+缺陷+碎裂
-ItemDisplay[GEMLEVEL<5 GEMLEVEL>0 DIFF>0]: // 普通難度外隱藏
+ItemDisplay[gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 完美
+ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME%%RED%★%WHITE% // 無瑕疵
+ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku]: ★%NAME%★%CONTINUE% // 一般
+ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf]: ★%NAME%★%CONTINUE% // 缺陷
+ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: ★%NAME%★%CONTINUE% // 碎裂
+ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) DIFF>0]: // 一般
+ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf) DIFF>0]: // 缺陷
+ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc) DIFF>0]: // 碎裂
 
 // 珠寶
 ItemDisplay[jew UNI]: ●%NAME%【暗金】●
@@ -392,6 +397,13 @@ ItemDisplay[WP12 MAG !RW ILVL>50]: $$$$ // 顯示死靈魔杖賣錢
 
 // ===>>> 裝備 <<<===
 
+// 普通 進階 菁英
+ItemDisplay[ETH]: ◎%NAME%%CONTINUE% // 無形
+ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE% // 有孔
+ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】%CONTINUE%
+
 ItemDisplay[CL1]: <德>%NAME%%CONTINUE%
 ItemDisplay[CL2]: <蠻>%NAME%%CONTINUE%
 ItemDisplay[CL3]: <聖>%NAME%%CONTINUE%
@@ -399,13 +411,6 @@ ItemDisplay[CL4]: <死>%NAME%%CONTINUE%
 ItemDisplay[CL5]: <刺>%NAME%%CONTINUE%
 ItemDisplay[CL6]: <法>%NAME%%CONTINUE%
 ItemDisplay[CL7]: <亞>%NAME%%CONTINUE%
-
-// 普通 進階 菁英
-ItemDisplay[ETH]: ◎%NAME%%CONTINUE% // 無形
-ItemDisplay[SOCK>0]: %NAME%(%SOCKETS%)%CONTINUE% // 有孔
-ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】%CONTINUE%
-ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】%CONTINUE%
 
 // 暗金+套裝提示掉落
 ItemDisplay[(rin OR amu) RARE !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%//戒指+項鍊 稀有
