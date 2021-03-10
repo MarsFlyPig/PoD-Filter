@@ -1,4 +1,4 @@
-// 2020/03/10 21:00
+// 2020/03/10 23:40
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -69,34 +69,31 @@ ItemDisplay[CLVL>44 GOLD<1000]: //45等後不顯示1000元以下
 ItemDisplay[CLVL>24 GOLD<250]: //25等後不顯示250元以下
 ItemDisplay[GOLD<100]: //不顯示100元以下
 
-// 藥水
-ItemDisplay[hp1 CLVL<14]: %RED%[%GRAY%H%RED%]%WHITE%
-ItemDisplay[hp2 CLVL<14]: %RED%[%WHITE%H%RED%]%WHITE%
-ItemDisplay[mp1 CLVL<14]: %BLUE%[%GRAY%M%BLUE%]%WHITE%
-ItemDisplay[mp2 CLVL<14]: %BLUE%[%WHITE%M%BLUE%]%WHITE%
-ItemDisplay[hp1 OR mp1]:
+// 藥水:
+ItemDisplay[hp5]: %RED%[%WHITE%H%RED%]%WHITE%%CONTINUE%
+ItemDisplay[hp4]: %RED%[%WHITE%H%RED%]%WHITE%%CONTINUE%
+ItemDisplay[hp3]: %RED%[%WHITE%H%RED%]%WHITE%%CONTINUE%
+ItemDisplay[hp2]: %RED%[%WHITE%H%RED%]%WHITE%%CONTINUE%
+ItemDisplay[hp1]: %RED%[%GRAY%H%RED%]%WHITE%%CONTINUE%
+ItemDisplay[hp4 CLVL>39]: %RED%[%GRAY%H%RED%]%WHITE%%CONTINUE%
+ItemDisplay[hp3 CLVL>24]: %RED%[%GRAY%H%RED%]%WHITE%%CONTINUE%
+ItemDisplay[hp2 CLVL>14]: %RED%[%GRAY%H%RED%]%WHITE%%CONTINUE%
+ItemDisplay[mp5]: %BLUE%[%WHITE%M%BLUE%]%WHITE%%CONTINUE%
+ItemDisplay[mp4]: %BLUE%[%WHITE%M%BLUE%]%WHITE%%CONTINUE%
+ItemDisplay[mp3]: %BLUE%[%WHITE%M%BLUE%]%WHITE%%CONTINUE%
+ItemDisplay[mp2]: %BLUE%[%WHITE%M%BLUE%]%WHITE%%CONTINUE%
+ItemDisplay[mp1]: %BLUE%[%GRAY%M%BLUE%]%WHITE%%CONTINUE%
+ItemDisplay[mp4 CLVL>39]: %BLUE%[%GRAY%M%BLUE%]%WHITE%%CONTINUE%
+ItemDisplay[mp3 CLVL>24]: %BLUE%[%GRAY%M%BLUE%]%WHITE%%CONTINUE%
+ItemDisplay[mp2 CLVL>14]: %BLUE%[%GRAY%M%BLUE%]%WHITE%%CONTINUE%
 
-ItemDisplay[hp2 CLVL<24]: %RED%[%GRAY%H%RED%]%WHITE%
-ItemDisplay[hp3 CLVL<24]: %RED%[%WHITE%H%RED%]%WHITE%
-ItemDisplay[mp2 CLVL<24]: %BLUE%[%GRAY%M%BLUE%]%WHITE%
-ItemDisplay[mp3 CLVL<24]: %BLUE%[%WHITE%M%BLUE%]%WHITE%
-ItemDisplay[hp2 OR mp2]:
+ItemDisplay[hp4 OR mp4 CLVL>59]:
+ItemDisplay[hp3 OR mp3 CLVL>39]:
+ItemDisplay[hp2 OR mp2 CLVL>24]:
+ItemDisplay[hp1 OR mp1 CLVL>14]:
 
-ItemDisplay[hp3 CLVL<39]: %RED%[%GRAY%H%RED%]%WHITE%
-ItemDisplay[hp4 CLVL<39]: %RED%[%WHITE%H%RED%]%WHITE%
-ItemDisplay[mp3 CLVL<39]: %BLUE%[%GRAY%M%BLUE%]%WHITE%
-ItemDisplay[mp4 CLVL<39]: %BLUE%[%WHITE%M%BLUE%]%WHITE%
-ItemDisplay[hp3 OR mp3]:
-
-ItemDisplay[(hp4 OR mp4) CLVL>59]:
-
-ItemDisplay[hp4]: %RED%[%GRAY%H%RED%]%WHITE%
-ItemDisplay[hp5]: %RED%[%WHITE%H%RED%]%WHITE%
-ItemDisplay[mp4]: %BLUE%[%GRAY%M%BLUE%]%WHITE%
-ItemDisplay[mp5]: %BLUE%[%WHITE%M%BLUE%]%WHITE%
-
-ItemDisplay[rvs CLVL<70]: %RED%[%BLUE%[%GRAY%H+M%BLUE%]%RED%]%WHITE%
-ItemDisplay[rvl]: %RED%[%BLUE%[%WHITE%H+M%BLUE%]%RED%]%WHITE%
+ItemDisplay[rvl]: %PURPLE%[[%WHITE%R%PURPLE%]]%WHITE%%CONTINUE%
+ItemDisplay[rvs]: %PURPLE%[%GRAY%R%PURPLE%]%WHITE%%CONTINUE%
 ItemDisplay[rvs CLVL>69]:
 
 // 10等後沒用的藥水隱藏起來
