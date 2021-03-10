@@ -1,4 +1,4 @@
-// 2020/03/10 03:00
+// 2020/03/10 21:00
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -346,7 +346,7 @@ ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK64=3 SOCK>2]: <法>%NAME%%RED%【+3�
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK65=3 SOCK>2]: <法>%NAME%%RED%【+3支配冰冷】%GRAY%(%SOCKETS%)
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK58=3 SOCK>2]: <法>%NAME%%RED%【+3能量護盾】%GRAY%(%SOCKETS%)
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK49=3 SOCK>2]: <法>%NAME%%RED%【+3雷霆浪湧】%GRAY%(%SOCKETS%)
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK53=3 SOCK>2]: <法>%NAME%%RED%【+3連鎖閃電】%GRAY%(%SOCKETS%)
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK54=3 SOCK>2]: <法>%NAME%%RED%【+3連鎖閃電】%GRAY%(%SOCKETS%)
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK57=3 SOCK>2]: <法>%NAME%%RED%【+3雷雲風暴】%GRAY%(%SOCKETS%)
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK63=3 SOCK>2]: <法>%NAME%%RED%【+3支配閃電】%GRAY%(%SOCKETS%)
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK56=3 SOCK=0]: <法>%NAME%%RED%【+3隕石】%WHITE%
@@ -357,7 +357,7 @@ ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK64=3 SOCK=0]: <法>%NAME%%RED%【+3�
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK65=3 SOCK=0]: <法>%NAME%%RED%【+3支配冰冷】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK58=3 SOCK=0]: <法>%NAME%%RED%【+3能量護盾】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK49=3 SOCK=0]: <法>%NAME%%RED%【+3雷霆浪湧】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK53=3 SOCK=0]: <法>%NAME%%RED%【+3連鎖閃電】%WHITE%
+ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK54=3 SOCK=0]: <法>%NAME%%RED%【+3連鎖閃電】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK57=3 SOCK=0]: <法>%NAME%%RED%【+3雷雲風暴】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK63=3 SOCK=0]: <法>%NAME%%RED%【+3支配閃電】%WHITE%
 
