@@ -1,4 +1,4 @@
-// 2020/03/11 22:00
+// 2020/03/12 18:00
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -145,6 +145,7 @@ ItemDisplay[EQ7 RARE SOCK=0 ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【頭冠�
 
 // 盾牌
 ItemDisplay[ush !ETH NMAG !RW SOCK=3]: %NAME%【聖堂│夢境】{%ORANGE%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
+ItemDisplay[uit !ETH NMAG !RW (SOCK=0 OR SOCK=4) STAT91>0]: %NAME%%RED%(↓需求)%WHITE%【菁英】 //帶有減少需求的統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%RED%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=0]: %NAME%【打4孔】 //0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】{%ORANGE%鳳凰: 26＋26＋28＋31%NL%精神: 7＋10＋9＋11} //統治者大盾4 - 精神/鳳凰
@@ -295,11 +296,11 @@ ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手
 ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-回魔】{%ORANGE%歐特(9)+完美的紫寶石+任意珠寶} // 皮手套、魔皮手套、荊棘連指手套
 
 //聚氣
-ItemDisplay[CHSK91=1 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.1】
-ItemDisplay[CHSK91=2 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.2】
-ItemDisplay[CHSK91=3 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.3】
-ItemDisplay[CHSK82>0 !UNI !SET !RW]: %DARK_GREEN%【聚氣-偷取生命】
-ItemDisplay[CHSK53>0 !UNI !SET !RW]: %DARK_GREEN%【聚氣-傳送】
+ItemDisplay[CHSK91=1 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.1】
+ItemDisplay[CHSK91=2 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.2】
+ItemDisplay[CHSK91=3 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.3】
+ItemDisplay[CHSK82>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-偷取生命】
+ItemDisplay[CHSK53>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-傳送】
 
 // 過度
 ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 (CLVL<60 DIFF<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 0s水晶劍
@@ -308,7 +309,7 @@ ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=4 ILVL>25 ILVL<41 (CLVL<50 DIFF<2)]: %NA
 ItemDisplay[WP8 NMAG !RW SOCK=4 (CLVL<60 OR DIFF<2)]: %NAME%【眼光-長斧】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}  //60等前顯示 4s長斧
 ItemDisplay[WP7 NMAG !RW SOCK=4 (CLVL<60 OR DIFF<2)]: %NAME%【眼光-長槍】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 4s長槍
 
-ItemDisplay[(wsp OR 9ws) NMAG !RW SOCK=4]: %NAME%【神聖雷擊-單手傳送】{%ORANGE%神聖雷擊: 5＋8＋9＋7%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰權杖、神屬權杖-5897
+ItemDisplay[(wsp OR 9ws) NMAG !RW !ETH SOCK=4]: %NAME%【神聖雷擊-單手傳送】{%ORANGE%神聖雷擊: 5＋8＋9＋7%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰權杖、神屬權杖-5897
 
 // 缺錢
 ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW PRICE>34999]: $%PRICE%$ // 顯示菁英盔甲賣錢
