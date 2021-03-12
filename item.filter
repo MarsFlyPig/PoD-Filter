@@ -1,4 +1,4 @@
-// 2020/03/13 00:15
+// 2020/03/13 05:50
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -6,7 +6,13 @@
 
 //===================================
 
-// ItemDisplay[]: [L%ILVL%]%NAME%<$%PRICE%$>[%CODE%] // 查看代碼用
+// ItemDisplay[]: [L%ILVL%]%NAME%<$%PRICE%$>[%CODE%]%SOUND-16% // 查看代碼用
+//%SOUND-7% 燈
+//%SOUND-8% 督嚕
+//%SOUND-16% 號角
+//%SOUND-19% 蠻子
+//%SOUND-27% BOSS消失
+//%SOUND-34% 地域熔爐
 
 // 任務物品
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
@@ -52,11 +58,6 @@ ItemDisplay[ma9]: 『%NAME%』<T2-Lv87> //昏暗地窖 (Dim Cellar)
 ItemDisplay[ma10]: 『%NAME%』<T0-Lv86> //悅心農場 (Pleasant Pasture) BUG無法顯示
 ItemDisplay[maz]: 『%NAME%』//地獄審判
 
-// 捲 書
-ItemDisplay[tbk]: %GOLD%傳送之書
-ItemDisplay[ibk]: %GOLD%鑑定之書
-ItemDisplay[tsc]: %BLUE%傳送%WHITE%卷軸%CONTINUE%
-ItemDisplay[isc]: %GREEN%鑑定%WHITE%卷軸%CONTINUE%
 ItemDisplay[(tsc OR isc) DIFF>0]: //普通難度後不顯示傳送鑑定卷軸
 
 // 根據玩家等級隱藏金錢顯示
@@ -332,17 +333,17 @@ ItemDisplay[CL6]: <法>%NAME%%CONTINUE%
 ItemDisplay[CL7]: <亞>%NAME%%CONTINUE%
 
 // 暗金+套裝提示掉落
-ItemDisplay[(rin OR amu) RARE !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%// 戒指+項鍊 稀有
-ItemDisplay[(rin OR amu) UNI]: %NAME%%CONTINUE%%NOTIFY-ITEM%// 戒指+項鍊 暗金
-ItemDisplay[(WEAPON OR ARMOR) ELT (UNI OR SET) !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%// 套裝+暗金 菁英
-ItemDisplay[(WEAPON OR ARMOR) (NORM OR EXC) (UNI OR SET) DIFF<2 !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%// 套裝+暗金 其他難度
+ItemDisplay[(rin OR amu) RARE !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-15%// 戒指+項鍊 稀有
+ItemDisplay[(rin OR amu) UNI !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-34%// 戒指+項鍊 暗金
+ItemDisplay[(WEAPON OR ARMOR) ELT (UNI OR SET) !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-9%// 套裝+暗金 菁英
+ItemDisplay[(WEAPON OR ARMOR) (NORM OR EXC) (UNI OR SET) DIFF<2 !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-9%// 套裝+暗金 其他難度
 
 // 戒指 項鍊 箭矢 十字箭
-ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】 //戒指 項鍊
-ItemDisplay[(rin OR amu) UNI]: [L%ILVL%]%NAME%【暗金】 //戒指 項鍊
-ItemDisplay[amu MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【飾品】 //項鍊 90LV +2技能
-ItemDisplay[amu RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【飾品】 //項鍊 90LV +2技能
-ItemDisplay[rin OR amu]: [L%ILVL%]%NAME%【飾品】 //戒指 項鍊
+ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】//戒指 項鍊
+ItemDisplay[(rin OR amu) UNI]: [L%ILVL%]%NAME%【暗金】//戒指 項鍊
+ItemDisplay[amu MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【飾品】//項鍊 90LV +2技能
+ItemDisplay[amu RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【飾品】//項鍊 90LV +2技能
+ItemDisplay[rin OR amu]: [L%ILVL%]%NAME%【飾品】//戒指 項鍊
 ItemDisplay[aq2 OR cq2 OR aqv OR cqv]: %NAME%【箭袋】%CONTINUE% //箭矢 十字箭
 
 // 刪除垃圾
