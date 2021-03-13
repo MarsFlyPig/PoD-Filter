@@ -244,6 +244,7 @@ ItemDisplay[CL2 !ETH NMAG !RW SK142=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%�
 ItemDisplay[WEAPON !RW TABSK34>2]: %RED%<<<%NAME%【+3戰嚎武器】>>>
 
 // 聖騎士
+ItemDisplay[CL3 NORM NMAG !RW RES>34 SOCK=0]: %NAME%【普通】%RED%(35抗↑)%WHITE% //聖騎盾(35抗以上)
 ItemDisplay[CL3 EXC NMAG !RW RES>34 SOCK=0]: %NAME%【進階】%RED%(35抗↑)%WHITE% //聖騎盾(35抗以上)
 ItemDisplay[CL3 ELT NMAG !RW RES>34 SOCK=0]: %NAME%【菁英】%RED%(35抗↑)%WHITE% //聖騎盾(35抗以上)
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: %NAME%%RED%(40抗↑)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
