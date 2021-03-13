@@ -291,7 +291,7 @@ ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手
 ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-擊退】{%ORANGE%歐特(9)+完美的藍寶石+任意珠寶} // 鎖鍊手套、重型手鐲、吸血鬼手套
 ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-回魔】{%ORANGE%歐特(9)+完美的紫寶石+任意珠寶} // 皮手套、魔皮手套、荊棘連指手套
 ItemDisplay[(vbl OR zvb OR uvc) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-施法】{%ORANGE%伊司(6)+完美的紫寶石+任意珠寶} // 輕扣帶、鯊皮腰帶、吸血鬼燎牙腰帶
-ItemDisplay[rin ID MAG ILVL>79]: %NAME%{%ORANGE%拉爾(8)+完美的紫寶石+任意珠寶【手工-施法】}%CONTINUE% // 戒指
+ItemDisplay[rin ID MAG ILVL>79]: %NAME%{%ORANGE%【手工-施法】拉爾(8)+完美的紫寶石+任意珠寶}%CONTINUE% // 戒指
 
 //聚氣
 ItemDisplay[CHSK91=1 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.1】
