@@ -1,4 +1,4 @@
-// 2020/03/13 20:10
+// 2020/03/14 01:25
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -22,14 +22,14 @@ ItemDisplay[pk1]: %WHITE%※※%ORANGE%%NAME% (女伯爵)%WHITE%※※ //恐懼�
 ItemDisplay[pk2]: %WHITE%※※%ORANGE%%NAME% (召喚者)%WHITE%※※ //憎恨之鑰
 ItemDisplay[pk3]: %WHITE%※※%ORANGE%%NAME% (尼拉塞克)%WHITE%※※ //毀滅之鑰
 ItemDisplay[dhn OR bey OR mbr]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //暗黑破壞神之角 巴爾之眼 墨菲斯托之腦
-ItemDisplay[toa]: %NAME% //赦免徽章
-ItemDisplay[tes]: %NAME% (A1.A2) //扭曲的苦痛精華
-ItemDisplay[ceh]: %NAME% (A3) //充盈的憎恨精華
-ItemDisplay[bet]: %NAME% (A4) //燃燒的恐懼精華
-ItemDisplay[fed]: %NAME% (A5) //潰爛的毀滅精華
-ItemDisplay[std]: %NAME% //英雄旗幟
+ItemDisplay[toa]: %NAME% {使用後消耗並重置屬性與技能}//赦免徽章
+ItemDisplay[tes]: %NAME% (A1.A2){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //扭曲的苦痛精華
+ItemDisplay[ceh]: %NAME% (A3){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //充盈的憎恨精華
+ItemDisplay[bet]: %NAME% (A4){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //燃燒的恐懼精華
+ItemDisplay[fed]: %NAME% (A5){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //潰爛的毀滅精華
+ItemDisplay[std]: %NAME%{目前無作用} //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
-ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※ //維特之腳
+ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※{%RED%維特之腳＋傳送之書＝秘密乳牛關卡(打贏該難度巴爾後於蘿格營地內合成)} //維特之腳
 ItemDisplay[cx5]: ※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY-ITEM% //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※ //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之鑰
@@ -67,7 +67,7 @@ ItemDisplay[CLVL>24 GOLD<250]: //25等後不顯示250元以下
 ItemDisplay[GOLD<100]: //不顯示100元以下
 
 // 藥水:
-ItemDisplay[hp5]: %RED%[%WHITE%H%RED%]%WHITE%%CONTINUE%
+ItemDisplay[hp5]: %RED%[%WHITE%H%RED%]%WHITE%
 ItemDisplay[hp4]: %RED%[%WHITE%H%RED%]%WHITE%%CONTINUE%
 ItemDisplay[hp3]: %RED%[%WHITE%H%RED%]%WHITE%%CONTINUE%
 ItemDisplay[hp2]: %RED%[%WHITE%H%RED%]%WHITE%%CONTINUE%
@@ -75,7 +75,7 @@ ItemDisplay[hp1]: %RED%[%GRAY%H%RED%]%WHITE%%CONTINUE%
 ItemDisplay[hp4 CLVL>39]: %RED%[%GRAY%H%RED%]%WHITE%%CONTINUE%
 ItemDisplay[hp3 CLVL>24]: %RED%[%GRAY%H%RED%]%WHITE%%CONTINUE%
 ItemDisplay[hp2 CLVL>14]: %RED%[%GRAY%H%RED%]%WHITE%%CONTINUE%
-ItemDisplay[mp5]: %BLUE%[%WHITE%M%BLUE%]%WHITE%%CONTINUE%
+ItemDisplay[mp5]: %BLUE%[%WHITE%M%BLUE%]%WHITE%
 ItemDisplay[mp4]: %BLUE%[%WHITE%M%BLUE%]%WHITE%%CONTINUE%
 ItemDisplay[mp3]: %BLUE%[%WHITE%M%BLUE%]%WHITE%%CONTINUE%
 ItemDisplay[mp2]: %BLUE%[%WHITE%M%BLUE%]%WHITE%%CONTINUE%
@@ -89,7 +89,7 @@ ItemDisplay[hp3 OR mp3 CLVL>39]:
 ItemDisplay[hp2 OR mp2 CLVL>24]:
 ItemDisplay[hp1 OR mp1 CLVL>14]:
 
-ItemDisplay[rvl]: %PURPLE%[[%WHITE%R%PURPLE%]]%WHITE%%CONTINUE%
+ItemDisplay[rvl]: %PURPLE%[[%WHITE%R%PURPLE%]]%WHITE%
 ItemDisplay[rvs]: %PURPLE%[%GRAY%R%PURPLE%]%WHITE%%CONTINUE%
 ItemDisplay[rvs CLVL>69]:
 
@@ -231,9 +231,6 @@ ItemDisplay[CL1 !ETH NMAG !RW SK245=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%�
 ItemDisplay[CL1 !ETH NMAG !RW SK244=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%【+3火山】%WHITE%
 ItemDisplay[CL1 !ETH NMAG !RW SK229=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%【+3熔漿巨岩】%WHITE%
 ItemDisplay[CL1 !ETH NMAG !RW SK249=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%【+3毀天滅地】%WHITE%
-ItemDisplay[CL1 !ETH NMAG !RW SK238=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%【+3狂犬病】%WHITE%
-ItemDisplay[CL1 !ETH NMAG !RW SK243=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%【+3震波】%WHITE%
-ItemDisplay[CL1 !ETH NMAG !RW SK239=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%【+3焰爪】%WHITE%
 ItemDisplay[CL1 !ETH NMAG !RW SK247=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%【+3召喚灰熊】%WHITE%
 
 // 野蠻人 
@@ -330,10 +327,109 @@ ItemDisplay[CL6]: <法>%NAME%%CONTINUE%
 ItemDisplay[CL7]: <亞>%NAME%%CONTINUE%
 
 // 暗金+套裝提示掉落
-ItemDisplay[(rin OR amu) RARE !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-15%// 戒指+項鍊 稀有
-ItemDisplay[(rin OR amu) UNI !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-34%// 戒指+項鍊 暗金
-ItemDisplay[(WEAPON OR ARMOR) ELT (UNI OR SET) !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-9%// 套裝+暗金 菁英
-ItemDisplay[(WEAPON OR ARMOR) !ELT (UNI OR SET) DIFF<2 !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-9%// 套裝+暗金 其他難度
+//頭
+ItemDisplay[UNI !ID xh9]: %NAME%%NOTIFY-ITEM%%SOUND-9%//吸血鬼的凝視
+ItemDisplay[UNI !ID uap]: %NAME%%NOTIFY-ITEM%%SOUND-9%//諧角之冠
+ItemDisplay[UNI !ID ulm]: %NAME%%NOTIFY-ITEM%%SOUND-9%//鋼影
+ItemDisplay[UNI !ID uhm]: %NAME%%NOTIFY-ITEM%%SOUND-9%//鋼鐵面紗 夜翼面紗
+ItemDisplay[UNI !ID usk]: %NAME%%NOTIFY-ITEM%%SOUND-9%//安達利爾的面貌
+ItemDisplay[UNI !ID urn]: %NAME%%NOTIFY-ITEM%%SOUND-9%//年紀之冠
+ItemDisplay[UNI !ID ci3]: %NAME%%NOTIFY-ITEM%%SOUND-9%//獅鷲獸之眼
+ItemDisplay[UNI !ID ci2]: %NAME%%NOTIFY-ITEM%%SOUND-9%//奇拉的守護
+
+//衣服
+ItemDisplay[UNI !ID xea]: %NAME%%NOTIFY-ITEM%%SOUND-9%//蛇魔法師之皮
+ItemDisplay[UNI !ID xrs]: %NAME%%NOTIFY-ITEM%%SOUND-9%//都瑞爾的殼
+ItemDisplay[UNI !ID xhn]: %NAME%%NOTIFY-ITEM%%SOUND-9%//避矢
+ItemDisplay[UNI !ID xpl]: %NAME%%NOTIFY-ITEM%%SOUND-9%//詩寇蒂的憤怒
+ItemDisplay[UNI !ID uui]: %NAME%%NOTIFY-ITEM%%SOUND-9%//奧瑪斯的長袍
+ItemDisplay[UNI !ID upl]: %NAME%%NOTIFY-ITEM%%SOUND-9%//阿凱尼的榮耀
+ItemDisplay[UNI !ID uar]: %NAME%%NOTIFY-ITEM%%SOUND-9%//聖堂武士的力量 泰瑞爾的力量
+
+//盾
+ItemDisplay[UNI !ID uit]: %NAME%%NOTIFY-ITEM%%SOUND-9%//暴風之盾
+
+//手套
+ItemDisplay[UNI !ID mgl !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//運氣守護
+ItemDisplay[UNI !ID tgl !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//法師之拳
+ItemDisplay[UNI !ID hgl !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//霜燃
+ItemDisplay[UNI !ID uvg !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//卓古拉之握
+
+//腳
+ItemDisplay[UNI !ID xvb !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//水上飄
+ItemDisplay[UNI !ID xtb !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//戰爭旅者
+ItemDisplay[UNI !ID uvb]: %NAME%%NOTIFY-ITEM%%SOUND-9%//沙暴之旅
+
+//腰帶
+ItemDisplay[UNI !ID tbl !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//金色包袱
+ItemDisplay[UNI !ID zlb !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//長串之耳
+ItemDisplay[UNI !ID zvb !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//剃刀之尾
+ItemDisplay[UNI !ID ztb !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//雪之衝突
+ItemDisplay[UNI !ID zhb !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//雷神之力
+ItemDisplay[UNI !ID ulc]: %NAME%%NOTIFY-ITEM%%SOUND-9%//蜘蛛之網
+ItemDisplay[UNI !ID umc !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//維爾登戈的心結
+
+//弓
+ItemDisplay[UNI !ID 6lw]: %NAME%%NOTIFY-ITEM%%SOUND-9%//風之力
+
+//匕首
+ItemDisplay[UNI !ID 7kr !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//裂肉者
+
+///槌子
+//
+ItemDisplay[UNI !ID 7sp !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//惡魔爪牙
+ItemDisplay[UNI !ID 7m7 !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//風之鎚
+
+//長斧
+ItemDisplay[UNI !ID 7pa]: %NAME%%NOTIFY-ITEM%%SOUND-9%//盜墓者
+ItemDisplay[UNI !ID 7s8]: %NAME%%NOTIFY-ITEM%%SOUND-9%//死神的喪鐘
+
+//劍
+ItemDisplay[UNI !ID 9bs]: %NAME%%NOTIFY-ITEM%%SOUND-9%//擊頭者
+ItemDisplay[UNI !ID 7cr]: %NAME%%NOTIFY-ITEM%%SOUND-9%//光之軍刀 青色忿怒
+ItemDisplay[UNI !ID 7gd]: %NAME%%NOTIFY-ITEM%%SOUND-9%//祖父
+
+//魔杖
+ItemDisplay[UNI !ID 7gw]: %NAME%%NOTIFY-ITEM%%SOUND-9%//死亡之網
+
+//亞馬標槍
+ItemDisplay[UNI !ID ama]: %NAME%%NOTIFY-ITEM%%SOUND-9%//泰坦的復仇
+
+//死靈盾
+ItemDisplay[UNI !ID nea]: %NAME%%NOTIFY-ITEM%%SOUND-9%//侏儒
+ItemDisplay[UNI !ID nef]: %NAME%%NOTIFY-ITEM%%SOUND-9%//魔力肇生
+
+//蠻子頭
+ItemDisplay[UNI !ID baa !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//亞瑞特的面容
+ItemDisplay[UNI !ID bac !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//狼嚎
+
+//法師杖
+ItemDisplay[UNI !ID oba]: %NAME%%NOTIFY-ITEM%%SOUND-9%//眼球r
+ItemDisplay[UNI !ID obc]: %NAME%%NOTIFY-ITEM%%SOUND-9%//艾斯屈塔的脾氣
+ItemDisplay[UNI !ID obf]: %NAME%%NOTIFY-ITEM%%SOUND-9%//死亡深度
+
+//小德頭
+ItemDisplay[UNI !ID dra !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//加爾的長髮
+ItemDisplay[UNI !ID drb !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//地獄之吻
+ItemDisplay[UNI !ID dre !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//烏鴉之王
+
+//聖騎盾
+ItemDisplay[UNI !ID pa9 !ETH]: %NAME%%NOTIFY-ITEM%%SOUND-9%//撒卡蘭姆使者
+
+ItemDisplay[SET !ID xtb]: %NAME%%NOTIFY-ITEM%%SOUND-9%//艾爾多的成長
+ItemDisplay[SET !ID uar]: %NAME%%NOTIFY-ITEM%%SOUND-9%//不朽之王的靈魂牢籠
+ItemDisplay[SET !ID xmg]: %NAME%%NOTIFY-ITEM%%SOUND-9%//塔格奧之手
+ItemDisplay[SET !ID 7qr]: %NAME%%NOTIFY-ITEM%%SOUND-9%//娜塔亞的記號
+ItemDisplay[SET !ID ucl]: %NAME%%NOTIFY-ITEM%%SOUND-9%//娜塔亞的影子
+ItemDisplay[SET !ID xsk]: %NAME%%NOTIFY-ITEM%%SOUND-9%//塔-拉夏的赫拉迪克紋章
+ItemDisplay[SET !ID uth]: %NAME%%NOTIFY-ITEM%%SOUND-9%//塔-拉夏的守護
+ItemDisplay[SET !ID 7wd]: %NAME%%NOTIFY-ITEM%%SOUND-9%//布爾凱索的部族守護
+ItemDisplay[SET !ID ulg]: %NAME%%NOTIFY-ITEM%%SOUND-9%//手掌的安置
+ItemDisplay[SET !ID xhm]: %NAME%%NOTIFY-ITEM%%SOUND-9%//吉永之臉
+
+ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2 OR aqv OR cqv) !ELT (UNI OR SET) DIFF<2 !ID]: %NAME%%NOTIFY-ITEM%%SOUND-9%// 套裝+暗金 其他難度
+ItemDisplay[(rin OR amu) RARE !ID]: %NAME%%NOTIFY-ITEM%%SOUND-15%// 戒指+項鍊 稀有
+ItemDisplay[(rin OR amu OR jew OR cm1 OR cm2 OR cm3) UNI !ID]: %NAME%%NOTIFY-ITEM%%SOUND-34%// 戒指+項鍊+珠寶+護身符 暗金
 
 // 戒指 項鍊 箭矢 十字箭
 ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】//戒指 項鍊
