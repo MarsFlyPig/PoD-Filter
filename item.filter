@@ -1,4 +1,4 @@
-// 2020/03/13 05:50
+// 2020/03/13 20:10
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -57,8 +57,6 @@ ItemDisplay[ma8]: 『%NAME%』<T2-Lv87> //發霉地穴 (Musty Crypt)
 ItemDisplay[ma9]: 『%NAME%』<T2-Lv87> //昏暗地窖 (Dim Cellar)
 ItemDisplay[ma10]: 『%NAME%』<T0-Lv86> //悅心農場 (Pleasant Pasture) BUG無法顯示
 ItemDisplay[maz]: 『%NAME%』//地獄審判
-
-ItemDisplay[(tsc OR isc) DIFF>0]: //普通難度後不顯示傳送鑑定卷軸
 
 // 根據玩家等級隱藏金錢顯示
 ItemDisplay[CLVL>89 GOLD<8000]: //90等後不顯示8000元以下
@@ -223,9 +221,9 @@ ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】{%ORANGE%橡樹之心:
 ItemDisplay[7gm ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //雷鎚(無)6 - 死亡呼吸
 
 // 武器-弓
-ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 信心
-ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【寂靜│死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
-ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓4 - 信心
+ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 信心
+ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【寂靜│死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%基礎速度: %WPNSPD%} //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
+ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓4 - 信心
 
 // 德魯伊
 ItemDisplay[CL1 !ETH NMAG !RW SK250=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%【+3暴風】%WHITE%
@@ -246,7 +244,8 @@ ItemDisplay[CL2 !ETH NMAG !RW SK142=3 (SOCK=0 OR SOCK>1) ILVL>25]: %NAME%%RED%�
 ItemDisplay[WEAPON !RW TABSK34>2]: %RED%<<<%NAME%【+3戰嚎武器】>>>
 
 // 聖騎士
-ItemDisplay[CL3 ELT NMAG !RW RES>39 SOCK=0]: %NAME%【菁英】%RED%(40抗↑)%WHITE% //聖騎盾(40抗以上)
+ItemDisplay[CL3 EXC NMAG !RW RES>34 SOCK=0]: %NAME%【進階】%RED%(35抗↑)%WHITE% //聖騎盾(35抗以上)
+ItemDisplay[CL3 ELT NMAG !RW RES>34 SOCK=0]: %NAME%【菁英】%RED%(35抗↑)%WHITE% //聖騎盾(35抗以上)
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=3]: %NAME%%RED%(40抗↑)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
 ItemDisplay[CL3 ELT !ETH NMAG !RW RES>39 SOCK=4]: %NAME%%RED%(40抗↑)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(40抗以上)4 - 精神
 ItemDisplay[CL3 ELT ETH NMAG !RW RES>39 SOCK=4]: %NAME%%RED%(40抗↑)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(40抗以上)4(無) - 流亡
@@ -258,35 +257,27 @@ ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %NAME%
 ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆】%WHITE%
 
 // 刺客
-// ItemDisplay[CL5 NMAG !RW SK274>0 SK275>0 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│飛龍在天】%WHITE%
-// ItemDisplay[CL5 NMAG !RW SK274>0 SK278=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3毒牙】%WHITE%
-// ItemDisplay[CL5 NMAG !RW SK274>0 SK277=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: <刺>%NAME%%RED%【寒霜刀雨│+3刀刃之盾】%WHITE%
----
 // ItemDisplay[CL5 NMAG !RW SK253=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3心靈戰鎚】%WHITE%
 // ItemDisplay[CL5 NMAG !RW SK273=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3心靈爆震】%WHITE%
 // ItemDisplay[CL5 NMAG !RW SK278=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3毒牙】%WHITE%
-// ItemDisplay[CL5 NMAG !RW SK261=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3電能守衛】%WHITE%
-// ItemDisplay[CL5 NMAG !RW SK262=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3火焰復甦】%WHITE%
-// ItemDisplay[CL5 NMAG !RW SK271=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3雷光守衛】%WHITE%
-// ItemDisplay[CL5 NMAG !RW SK272=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3復甦獄火】%WHITE%
-// ItemDisplay[CL5 NMAG !RW SK276=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3亡者守衛】%WHITE%
-// ItemDisplay[CL5 NMAG !RW SK277=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3刀刃之盾】%WHITE%
+ItemDisplay[CL5 NMAG !RW SK261=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3電能守衛】%WHITE%
+ItemDisplay[CL5 NMAG !RW SK262=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3火焰復甦】%WHITE%
+ItemDisplay[CL5 NMAG !RW SK271=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3雷光守衛】%WHITE%
+ItemDisplay[CL5 NMAG !RW SK272=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3復甦獄火】%WHITE%
+ItemDisplay[CL5 NMAG !RW SK276=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3亡者守衛】%WHITE%
+ItemDisplay[CL5 NMAG !RW SK277=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs]: %NAME%%RED%【+3刀刃之盾】%WHITE%
 
 // 法師
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK56=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3隕石】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK62=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3九頭海蛇】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK61=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3支配火焰】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK59=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3暴風雪】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK64=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3冰封球】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK65=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3支配冰冷】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK58=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3能量護盾】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK49=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3雷霆浪湧】%WHITE%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK54=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3連鎖閃電】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK57=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3雷雲風暴】%WHITE%
-ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK63=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3支配閃電】%WHITE%
 
 // 亞馬遜
-ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: %NAME%%RED%(+3技)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //女族長之弓、大院長之弓(+3技)4 - 信心
+ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: %NAME%%RED%(+3技)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //女族長之弓、大院長之弓(+3技)4 - 信心
 ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0 !SUP]: %NAME%%RED%(+3技)%WHITE%【拚4孔】 //女族長之弓、大院長之弓(+3技) - 信心
 
 // ===>>> 其他 <<<===
@@ -295,11 +286,13 @@ ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0 !SUP]: %NAME%%RED%(+3技)%WHIT
 ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-壓碎】{%ORANGE%那夫(4)+完美的紅寶石+任意珠寶} // 重手套、鯊皮手套、吸血鬼骸骨手套
 ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-擊退】{%ORANGE%歐特(9)+完美的藍寶石+任意珠寶} // 鎖鍊手套、重型手鐲、吸血鬼手套
 ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-回魔】{%ORANGE%歐特(9)+完美的紫寶石+任意珠寶} // 皮手套、魔皮手套、荊棘連指手套
+ItemDisplay[(vbl OR zvb OR uvc) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-施法】{%ORANGE%伊司(6)+完美的紫寶石+任意珠寶} // 輕扣帶、鯊皮腰帶、吸血鬼燎牙腰帶
+ItemDisplay[rin ID MAG ILVL>79]: %NAME%{%ORANGE%拉爾(8)+完美的紫寶石+任意珠寶【手工-施法】}%CONTINUE% // 戒指
 
 //聚氣
 ItemDisplay[CHSK91=1 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.1】
 ItemDisplay[CHSK91=2 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.2】
-ItemDisplay[CHSK91=3 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.3】
+ItemDisplay[CHSK91>2 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.3】
 ItemDisplay[CHSK82>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-偷取生命】
 ItemDisplay[CHSK53>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-傳送】
 
@@ -336,7 +329,7 @@ ItemDisplay[CL7]: <亞>%NAME%%CONTINUE%
 ItemDisplay[(rin OR amu) RARE !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-15%// 戒指+項鍊 稀有
 ItemDisplay[(rin OR amu) UNI !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-34%// 戒指+項鍊 暗金
 ItemDisplay[(WEAPON OR ARMOR) ELT (UNI OR SET) !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-9%// 套裝+暗金 菁英
-ItemDisplay[(WEAPON OR ARMOR) (NORM OR EXC) (UNI OR SET) DIFF<2 !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-9%// 套裝+暗金 其他難度
+ItemDisplay[(WEAPON OR ARMOR) !ELT (UNI OR SET) DIFF<2 !ID]: %NAME%%CONTINUE%%NOTIFY-ITEM%%SOUND-9%// 套裝+暗金 其他難度
 
 // 戒指 項鍊 箭矢 十字箭
 ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】//戒指 項鍊
@@ -347,6 +340,7 @@ ItemDisplay[rin OR amu]: [L%ILVL%]%NAME%【飾品】//戒指 項鍊
 ItemDisplay[aq2 OR cq2 OR aqv OR cqv]: %NAME%【箭袋】%CONTINUE% //箭矢 十字箭
 
 // 刪除垃圾
+ItemDisplay[(tsc OR isc) DIFF>0]: //普通難度後不顯示傳送鑑定卷軸
 ItemDisplay[NMAG INF !RW]: // 刪除破碎等垃圾
 ItemDisplay[NMAG SOCK=1]: // 刪除白色1s裝備
 
