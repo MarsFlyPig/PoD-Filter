@@ -1,4 +1,4 @@
-// 2020/03/15 04:10
+// 2020/03/15 04:30
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -140,9 +140,9 @@ ItemDisplay[EQ7 MAG SOCK=0 ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【頭冠】
 ItemDisplay[EQ7 RARE SOCK=0 ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【頭冠】
 
 // 盾牌
-ItemDisplay[ush !ETH NMAG !RW SOCK=3 ED>10]: %NAME%(11%ED↑)【聖堂│夢境】{%ORANGE%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
-ItemDisplay[uit !ETH NMAG !RW (SOCK=0 OR SOCK=4) STAT91>0]: %NAME%%RED%(↓需求)%WHITE%【菁英】 //帶有減少需求的統治者大盾
-ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%RED%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
+ItemDisplay[ush !ETH NMAG !RW SOCK=3 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%WHITE%【聖堂│夢境】{%ORANGE%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
+ItemDisplay[uit !ETH NMAG !RW (SOCK=0 OR SOCK=4) STAT91>0]: %NAME%%DARK_GREEN%(↓需求)%WHITE%【菁英】 //帶有減少需求的統治者大盾
+ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%DARK_GREEN%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=0]: %NAME%【打4孔】 //0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】{%ORANGE%鳳凰: 26＋26＋28＋31%NL%精神: 7＋10＋9＋11} //統治者大盾4 - 精神/鳳凰
 
@@ -155,17 +155,17 @@ ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=13]: %NAME%%DARK_GREEN%(13%ED)%WHITE%【
 ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=14]: %NAME%%DARK_GREEN%(14%ED)%WHITE%【菁英】//14%ED
 ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=15]: %NAME%%DARK_GREEN%(15%ED)%WHITE%【菁英】//15%ED
 
-ItemDisplay[EQ2 ELT ETH DEF>749 NMAG !RW SOCK=0]: %NAME%%RED%(750防↑)%GRAY%【打孔】 //無形高防
+ItemDisplay[EQ2 ELT ETH DEF>749 NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【打孔】 //無形高防
 
-ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%%RED%(260防↑)%WHITE%【打孔】 //260防以上法師鎧甲
-ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=3]: %NAME%%RED%(260防↑)%GRAY%【謎團】{%ORANGE%謎團: 31＋6＋30} //260防以上法師鎧甲3 - 謎團
+ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(260防↑)%WHITE%【打孔】 //260防以上法師鎧甲
+ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(260防↑)%GRAY%【謎團】{%ORANGE%謎團: 31＋6＋30} //260防以上法師鎧甲3 - 謎團
 
 ItemDisplay[(uui OR uea OR ula OR utu OR urs OR utp) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】{%ORANGE%謎團: 31＋6＋30}//輕甲3 - 謎團
 ItemDisplay[utp !ETH NMAG !RW SOCK=4]: %NAME%【剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28} //執政官鎧甲4 - 剛毅/榮耀之鏈
-ItemDisplay[(uui OR uea OR ula OR utu OR urs) !ETH DEF>499 NMAG !RW SOCK=4]: %NAME%%RED%(500防↑)%GRAY%【剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28} //輕甲4 - 剛毅/榮耀之鏈
+ItemDisplay[(uui OR uea OR ula OR utu OR urs) !ETH DEF>499 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(500防↑)%GRAY%【剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28} //輕甲4 - 剛毅/榮耀之鏈
 
-ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%%RED%(550防↑)%GRAY%【強制】{%ORANGE%強制: 13＋22＋10} //550防以上3 - 強制
-ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%%RED%(550防↑)%GRAY%【石塊│剛毅】{%ORANGE%剛毅: 1＋12＋14＋28%NL%石塊: 13＋22＋21＋17} //550防以上4 - 石塊/剛毅
+ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【強制】{%ORANGE%強制: 13＋22＋10} //550防以上3 - 強制
+ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【石塊】{%ORANGE%石塊: 13＋22＋21＋17} //550防以上4 - 石塊
 
 // 武器-劍
 ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月】{%ORANGE%新月: 13＋22＋3%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍3 - 新月
@@ -182,7 +182,7 @@ ItemDisplay[7gd ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】{%ORANGE%死亡呼
 ItemDisplay[7gd NMAG !RW SOCK=6]: %NAME%【寂靜】{%ORANGE%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之刃6 - 寂靜
 
 // 武器-斧
-ItemDisplay[7wa ETH NMAG ED>10 SOCK=0]: %NAME%%RED%(11%ED↑)%GRAY%【打6孔】 //狂戰士斧(無) - 打6孔
+ItemDisplay[7wa ETH NMAG ED>10 SOCK=0]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【打6孔】 //狂戰士斧(無) - 打6孔
 ItemDisplay[7wa ETH NMAG !SUP SOCK=0]: %NAME%【拼4-6孔】 //狂戰士斧(無) - 拼打孔
 ItemDisplay[7wa !ETH NMAG !RW SOCK=4]: %NAME%【熱情】{%ORANGE%熱情: 14＋9＋2＋20%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧4 - 熱情
 ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸│悔恨】{%ORANGE%毀恨: 5＋3＋28＋23＋8%NL%野獸: 30＋3＋22＋23＋17%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧5 - 野獸/悔恨
@@ -193,7 +193,7 @@ ItemDisplay[7wa ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】{%ORANGE%死亡呼
 ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】{%ORANGE%末日: 15＋27＋22＋28＋32%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰斧5 - 末日
 
 // 武器-長斧
-ItemDisplay[7s8 ETH NMAG ED>10 SOCK=0]: %NAME%%RED%(11%ED↑)%GRAY%【打5孔】 //銳利之斧(無) - 打5孔
+ItemDisplay[7s8 ETH NMAG ED>10 SOCK=0]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【打5孔】 //銳利之斧(無) - 打5孔
 ItemDisplay[7s8 ETH NMAG !SUP SOCK=0]: %NAME%【打4-5孔】 //銳利之斧(無) - 拼打孔
 ItemDisplay[scy ETH NMAG !RW SOCK=4]: %NAME%【無限】{%ORANGE%無限: 30＋23＋30＋24%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //鐮刀(無)4 - 無限
 ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4]: %NAME%【眼光│無限│驕傲】{%ORANGE%驕傲: 32＋29＋16＋28%NL%無限: 30＋23＋30＋24%NL%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之斧、銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
@@ -201,7 +201,7 @@ ItemDisplay[(7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5]: %NAME%【遵從�
 ItemDisplay[(7h7 OR 7wc) NMAG !RW SOCK=6]: %NAME%【寂靜】{%ORANGE%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨長斧、鮫尾巨斧6 - 寂靜
 
 // 武器-長槍
-ItemDisplay[7br ETH NMAG ED>10 SOCK=0]: %NAME%%RED%(11%ED↑)%GRAY%【打5孔】 //刺人槍(無) - 打5孔
+ItemDisplay[7br ETH NMAG ED>10 SOCK=0]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【打5孔】 //刺人槍(無) - 打5孔
 ItemDisplay[7br ETH NMAG !SUP SOCK=0]: %NAME%【打4-5孔】 //刺人槍(無) - 拼打孔
 ItemDisplay[7p7 ETH NMAG SOCK=0]: %NAME%【打6孔】 //戰槍(無) - 打6孔
 ItemDisplay[7br ETH NMAG !RW SOCK=4]: %NAME%【無限】{%ORANGE%無限: 30＋23＋30＋24%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //刺人槍(無)4 - 無限
@@ -216,8 +216,8 @@ ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】{%ORANGE%橡樹之心:
 ItemDisplay[7gm ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //雷鎚(無)6 - 死亡呼吸
 
 // 武器-弓
-ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 信心
-ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%%RED%(11%ED↑)%GRAY%【寂靜│死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%基礎速度: %WPNSPD%} //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
+ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 信心
+ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【寂靜│死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%基礎速度: %WPNSPD%} //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
 ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓4 - 信心
 
 // 德魯伊
@@ -236,18 +236,18 @@ ItemDisplay[CL2 !ETH NMAG !RW SK142=3 !SOCK=1 ILVL>25]: %NAME%%RED%【+3找尋�
 ItemDisplay[WEAPON !RW TABSK34>2]: %RED%<<<%NAME%【+3戰嚎武器】>>>
 
 // 聖騎士
-ItemDisplay[CL3 NORM NMAG !RW RES=45 SOCK=0]: %NAME%【普通】%RED%(45抗)%WHITE% //聖騎盾(45抗)
-ItemDisplay[CL3 EXC NMAG !RW RES=45 SOCK=0]: %NAME%【進階】%RED%(45抗)%WHITE% //聖騎盾(45抗)
-ItemDisplay[CL3 ELT NMAG !RW RES=45 SOCK=0]: %NAME%【菁英】%RED%(45抗)%WHITE% //聖騎盾(45抗)
-ItemDisplay[CL3 NORM NMAG !RW RES>34 SOCK=0]: %NAME%【普通】%RED%(35抗↑)%WHITE% //聖騎盾(35抗以上)
-ItemDisplay[CL3 EXC NMAG !RW RES>34 SOCK=0]: %NAME%【進階】%RED%(35抗↑)%WHITE% //聖騎盾(35抗以上)
-ItemDisplay[CL3 ELT NMAG !RW RES>34 SOCK=0]: %NAME%【菁英】%RED%(35抗↑)%WHITE% //聖騎盾(35抗以上)
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES=45 SOCK=3]: %NAME%%RED%(45抗)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES=45 SOCK=4]: %NAME%%RED%(45抗)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(40抗以上)4 - 精神
-ItemDisplay[CL3 ELT ETH NMAG !RW RES=45 SOCK=4]: %NAME%%RED%(45抗)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(40抗以上)4(無) - 流亡
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>34 SOCK=3]: %NAME%%RED%(35抗↑)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(35抗以上)3 - 聖堂/夢境/飛龍
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>34 SOCK=4]: %NAME%%RED%(35抗↑)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(35抗以上)4 - 精神
-ItemDisplay[CL3 ELT ETH NMAG !RW RES>34 SOCK=4]: %NAME%%RED%(35抗↑)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(35抗以上)4(無) - 流亡
+ItemDisplay[CL3 NORM NMAG !RW RES=45 SOCK=0]: %NAME%【普通】%DARK_GREEN%(45抗)%WHITE% //聖騎盾(45抗)
+ItemDisplay[CL3 EXC NMAG !RW RES=45 SOCK=0]: %NAME%【進階】%DARK_GREEN%(45抗)%WHITE% //聖騎盾(45抗)
+ItemDisplay[CL3 ELT NMAG !RW RES=45 SOCK=0]: %NAME%【菁英】%DARK_GREEN%(45抗)%WHITE% //聖騎盾(45抗)
+ItemDisplay[CL3 NORM NMAG !RW RES>34 SOCK=0]: %NAME%【普通】%DARK_GREEN%(35抗↑)%WHITE% //聖騎盾(35抗以上)
+ItemDisplay[CL3 EXC NMAG !RW RES>34 SOCK=0]: %NAME%【進階】%DARK_GREEN%(35抗↑)%WHITE% //聖騎盾(35抗以上)
+ItemDisplay[CL3 ELT NMAG !RW RES>34 SOCK=0]: %NAME%【菁英】%DARK_GREEN%(35抗↑)%WHITE% //聖騎盾(35抗以上)
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES=45 SOCK=3]: %NAME%%DARK_GREEN%(45抗)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES=45 SOCK=4]: %NAME%%DARK_GREEN%(45抗)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(40抗以上)4 - 精神
+ItemDisplay[CL3 ELT ETH NMAG !RW RES=45 SOCK=4]: %NAME%%DARK_GREEN%(45抗)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(40抗以上)4(無) - 流亡
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>34 SOCK=3]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(35抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 ELT !ETH NMAG !RW RES>34 SOCK=4]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(35抗以上)4 - 精神
+ItemDisplay[CL3 ELT ETH NMAG !RW RES>34 SOCK=4]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(35抗以上)4(無) - 流亡
 
 // 死靈
 ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SOCK=0 OR SOCK=2) (SK68>0 OR SK74>0 OR SK79>0 OR SK83>0) !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛│白骨裝甲/屍體爆炸/號召/褻瀆】{%ORANGE%白色: 14＋16%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}// 骨矛84 白骨裝甲68 屍體爆炸74 號召79 褻瀆83
@@ -276,8 +276,8 @@ ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK49=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK54=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3連鎖閃電】
 
 // 亞馬遜
-ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: %NAME%%RED%(+3技)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //女族長之弓、大院長之弓(+3技)4 - 信心
-ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0 !SUP]: %NAME%%RED%(+3技)%WHITE%【拚4孔】 //女族長之弓、大院長之弓(+3技) - 信心
+ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: %NAME%%DARK_GREEN%(+3技)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //女族長之弓、大院長之弓(+3技)4 - 信心
+ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0 !SUP]: %NAME%%DARK_GREEN%(+3技)%WHITE%【拚4孔】 //女族長之弓、大院長之弓(+3技) - 信心
 
 // ===>>> 其他 <<<===
 
