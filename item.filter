@@ -277,7 +277,7 @@ ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK54=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%
 
 // 亞馬遜
 ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=4]: %NAME%%RED%(+3技)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //女族長之弓、大院長之弓(+3技)4 - 信心
-ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0 !SUP]: %NAME%%RED%(+3技)%WHITE%【拚4孔】{%YELLOW%基礎速度: %WPNSPD%} //女族長之弓、大院長之弓(+3技) - 信心
+ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0 !SUP]: %NAME%%RED%(+3技)%WHITE%【拚4孔】 //女族長之弓、大院長之弓(+3技) - 信心
 
 // ===>>> 其他 <<<===
 
@@ -437,7 +437,7 @@ ItemDisplay[(rin OR amu) RARE !ID]: %NAME%%NOTIFY-ITEM%%SOUND-15%// 戒指+項�
 ItemDisplay[(rin OR amu OR jew OR cm1 OR cm2 OR cm3) UNI !ID]: %NAME%%NOTIFY-ITEM%%SOUND-34%// 戒指+項鍊+珠寶+護身符 暗金
 
 // 刪除垃圾
-ItemDisplay[(tsc OR isc) DIFF>0]: //普通難度後不顯示傳送鑑定卷軸
+ItemDisplay[(tsc OR isc) DIFF>0]: // 普通難度後不顯示傳送鑑定卷軸
 ItemDisplay[NMAG INF !RW CLVL>5]: // 6等後刪除破碎等垃圾
 ItemDisplay[NMAG SOCK=1 CLVL>5]: // 6等後刪除白色1s裝備
 
