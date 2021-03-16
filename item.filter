@@ -1,4 +1,4 @@
-// 2020/03/17 04:35
+// 2020/03/17 06:00
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -147,13 +147,15 @@ ItemDisplay[uit !ETH NMAG !RW SOCK=0]: %NAME%【打4孔】 //0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】{%ORANGE%鳳凰: 26＋26＋28＋31%NL%精神: 7＋10＋9＋11} //統治者大盾4 - 精神/鳳凰
 
 // 衣服
-
 // 菁英 11~15%ED衣服
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=11]: %NAME%%DARK_GREEN%(11%ED)%WHITE%【菁英】//11%ED
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=12]: %NAME%%DARK_GREEN%(12%ED)%WHITE%【菁英】//12%ED
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=13]: %NAME%%DARK_GREEN%(13%ED)%WHITE%【菁英】//13%ED
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=14]: %NAME%%DARK_GREEN%(14%ED)%WHITE%【菁英】//14%ED
-ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=15]: %NAME%%DARK_GREEN%(15%ED)%WHITE%【菁英】//15%ED
+ItemDisplay[EQ2 ELT NMAG !SOCK=1 !SOCK=2 ED=11]: %NAME%%DARK_GREEN%(11%ED)%CONTINUE%//11%ED
+ItemDisplay[EQ2 ELT NMAG !SOCK=1 !SOCK=2 ED=12]: %NAME%%DARK_GREEN%(12%ED)%CONTINUE%//12%ED
+ItemDisplay[EQ2 ELT NMAG !SOCK=1 !SOCK=2 ED=13]: %NAME%%DARK_GREEN%(13%ED)%CONTINUE%//13%ED
+ItemDisplay[EQ2 ELT NMAG !SOCK=1 !SOCK=2 ED=14]: %NAME%%DARK_GREEN%(14%ED)%CONTINUE%//14%ED
+ItemDisplay[EQ2 ELT NMAG !SOCK=1 !SOCK=2 ED=15]: %NAME%%DARK_GREEN%(15%ED)%CONTINUE%//15%ED
+
+ItemDisplay[EQ2 ELT NMAG SOCK=0 ED>10]: %NAME%%WHITE%【菁英】//11~15%ED 白衣服
+ItemDisplay[EQ2 ELT NMAG DEF<550 (SOCK=3 OR SOCK=4)]: %NAME%%GRAY%【菁英】//3~4S白衣服
 
 ItemDisplay[EQ2 ELT ETH DEF>749 NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【打孔】 //無形高防
 ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(260防↑)%WHITE%【打3孔】 //260防以上法師鎧甲
@@ -305,7 +307,7 @@ ItemDisplay[WP7 NMAG !RW SOCK=4 (CLVL<60 OR DIFF<2)]: %NAME%【眼光-長槍】{
 ItemDisplay[(wsp OR 9ws) NMAG !RW !ETH SOCK=4]: %NAME%【神聖雷擊-單手傳送】{%ORANGE%神聖雷擊: 5＋8＋9＋7%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰權杖、神屬權杖-5897
 
 // 缺錢
-ItemDisplay[EQ2 ELT (NMAG OR MAG) !RW PRICE>34999]: $%PRICE%$ // 顯示菁英盔甲賣錢
+ItemDisplay[EQ2 (NMAG OR MAG) !RW PRICE>34999]: $%PRICE%$ // 顯示35000盔甲賣錢
 ItemDisplay[(CL6 OR WP12) MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示法師寶珠+死靈魔杖賣錢
 ItemDisplay[(CL6 OR WP12) MAG !RW !ID ILVL>50]: $$$$ // 顯示法師寶珠+死靈魔杖賣錢
 
