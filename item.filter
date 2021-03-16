@@ -1,4 +1,4 @@
-// 2020/03/17 01:10
+// 2020/03/17 04:35
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -156,14 +156,15 @@ ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=14]: %NAME%%DARK_GREEN%(14%ED)%WHITE%【
 ItemDisplay[EQ2 ELT !ETH NMAG SOCK=0 ED=15]: %NAME%%DARK_GREEN%(15%ED)%WHITE%【菁英】//15%ED
 
 ItemDisplay[EQ2 ELT ETH DEF>749 NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【打孔】 //無形高防
+ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(260防↑)%WHITE%【打3孔】 //260防以上法師鎧甲
 
-ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(260防↑)%WHITE%【打孔】 //260防以上法師鎧甲
 ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(260防↑)%GRAY%【謎團】{%ORANGE%謎團: 31＋6＋30} //260防以上法師鎧甲3 - 謎團
 
 ItemDisplay[(uui OR uea OR ula OR utu OR urs OR utp) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】{%ORANGE%謎團: 31＋6＋30}//輕甲3 - 謎團
 ItemDisplay[utp !ETH NMAG !RW SOCK=4]: %NAME%【剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28} //執政官鎧甲4 - 剛毅/榮耀之鏈
 ItemDisplay[(uui OR uea OR ula OR utu OR urs) !ETH DEF>499 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(500防↑)%GRAY%【剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28} //輕甲4 - 剛毅/榮耀之鏈
-
+ItemDisplay[EQ2 DEF>749 NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【強制】{%ORANGE%強制: 13＋22＋10} //550防以上3 - 強制
+ItemDisplay[EQ2 DEF>749 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【石塊│剛毅】{%ORANGE%剛毅: 1＋12＋14＋28%NL%石塊: 13＋22＋21＋17} //750防以上4 - 石塊/剛毅
 ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【強制】{%ORANGE%強制: 13＋22＋10} //550防以上3 - 強制
 ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【石塊】{%ORANGE%石塊: 13＋22＋21＋17} //550防以上4 - 石塊
 
@@ -289,11 +290,11 @@ ItemDisplay[(zvb OR uvc) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-施
 ItemDisplay[amu ID MAG ILVL>79]: %NAME%{%ORANGE%【手工-施法】拉爾(8)+完美的紫寶石+任意珠寶}%CONTINUE% // 項鍊
 
 //聚氣
-ItemDisplay[CHSK91=1 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.1】%CONTINUE%
-ItemDisplay[CHSK91=2 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.2】%CONTINUE%
-ItemDisplay[CHSK91>2 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.3】%CONTINUE%
-ItemDisplay[CHSK82>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-偷取生命】%CONTINUE%
-ItemDisplay[CHSK53>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-傳送】%CONTINUE%
+ItemDisplay[CHSK91=1 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-降低抵抗Lv.1】%CONTINUE%
+ItemDisplay[CHSK91=2 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-降低抵抗Lv.2】%CONTINUE%
+ItemDisplay[CHSK91>2 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-降低抵抗Lv.3】%CONTINUE%
+ItemDisplay[CHSK82>0 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-偷取生命】%CONTINUE%
+ItemDisplay[CHSK53>0 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-傳送】%CONTINUE%
 
 // 過度
 ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 (CLVL<60 DIFF<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 0s水晶劍
