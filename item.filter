@@ -162,11 +162,10 @@ ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(260防↑)%GRA
 
 ItemDisplay[(uui OR uea OR ula OR utu OR urs OR utp) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】{%ORANGE%謎團: 31＋6＋30}//輕甲3 - 謎團
 ItemDisplay[utp !ETH NMAG !RW SOCK=4]: %NAME%【剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28} //執政官鎧甲4 - 剛毅/榮耀之鏈
-ItemDisplay[(uui OR uea OR ula OR utu OR urs) !ETH DEF>499 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(500防↑)%GRAY%【剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28} //輕甲4 - 剛毅/榮耀之鏈
 ItemDisplay[EQ2 DEF>749 NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【強制】{%ORANGE%強制: 13＋22＋10} //550防以上3 - 強制
 ItemDisplay[EQ2 DEF>749 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【石塊│剛毅】{%ORANGE%剛毅: 1＋12＋14＋28%NL%石塊: 13＋22＋21＋17} //750防以上4 - 石塊/剛毅
 ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【強制】{%ORANGE%強制: 13＋22＋10} //550防以上3 - 強制
-ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【石塊】{%ORANGE%石塊: 13＋22＋21＋17} //550防以上4 - 石塊
+ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【石塊│剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28%NL%石塊: 13＋22＋21＋17} //550防以上4 - 石塊/剛毅/榮耀之鏈
 
 // 武器-劍
 ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月】{%ORANGE%新月: 13＋22＋3%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍3 - 新月
