@@ -1,4 +1,4 @@
-// 2020/03/15 04:30
+// 2020/03/17 01:10
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -30,7 +30,7 @@ ItemDisplay[fed]: %NAME% (A5){赦免徽章使用後可重置屬性與技能%NL%�
 ItemDisplay[std]: %NAME%{目前無作用} //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※{%RED%維特之腳＋傳送之書＝秘密乳牛關卡(打贏該難度巴爾後於蘿格營地內合成)} //維特之腳
-ItemDisplay[cx5]: ※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY-ITEM% //腐化寶珠
+ItemDisplay[cx5]: ※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY-ITEM%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※ //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※ //混沌之鑰
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
@@ -242,12 +242,12 @@ ItemDisplay[CL3 ELT NMAG !RW RES=45 SOCK=0]: %NAME%【菁英】%DARK_GREEN%(45�
 ItemDisplay[CL3 NORM NMAG !RW RES>34 SOCK=0]: %NAME%【普通】%DARK_GREEN%(35抗↑)%WHITE% //聖騎盾(35抗以上)
 ItemDisplay[CL3 EXC NMAG !RW RES>34 SOCK=0]: %NAME%【進階】%DARK_GREEN%(35抗↑)%WHITE% //聖騎盾(35抗以上)
 ItemDisplay[CL3 ELT NMAG !RW RES>34 SOCK=0]: %NAME%【菁英】%DARK_GREEN%(35抗↑)%WHITE% //聖騎盾(35抗以上)
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES=45 SOCK=3]: %NAME%%DARK_GREEN%(45抗)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES=45 SOCK=4]: %NAME%%DARK_GREEN%(45抗)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(40抗以上)4 - 精神
-ItemDisplay[CL3 ELT ETH NMAG !RW RES=45 SOCK=4]: %NAME%%DARK_GREEN%(45抗)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(40抗以上)4(無) - 流亡
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>34 SOCK=3]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(35抗以上)3 - 聖堂/夢境/飛龍
-ItemDisplay[CL3 ELT !ETH NMAG !RW RES>34 SOCK=4]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(35抗以上)4 - 精神
-ItemDisplay[CL3 ELT ETH NMAG !RW RES>34 SOCK=4]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(35抗以上)4(無) - 流亡
+ItemDisplay[CL3 !ETH NMAG !RW RES=45 SOCK=3]: %NAME%%DARK_GREEN%(45抗)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 !ETH NMAG !RW RES=45 SOCK=4]: %NAME%%DARK_GREEN%(45抗)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(40抗以上)4 - 精神
+ItemDisplay[CL3 ETH NMAG !RW RES=45 SOCK=4]: %NAME%%DARK_GREEN%(45抗)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(40抗以上)4(無) - 流亡
+ItemDisplay[CL3 !ETH NMAG !RW RES>34 SOCK=3]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(35抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 !ETH NMAG !RW RES>34 SOCK=4]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(35抗以上)4 - 精神
+ItemDisplay[CL3 ETH NMAG !RW RES>34 SOCK=4]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(35抗以上)4(無) - 流亡
 
 // 死靈
 ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SOCK=0 OR SOCK=2) (SK68>0 OR SK74>0 OR SK79>0 OR SK83>0) !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛│白骨裝甲/屍體爆炸/號召/褻瀆】{%ORANGE%白色: 14＋16%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}// 骨矛84 白骨裝甲68 屍體爆炸74 號召79 褻瀆83
@@ -286,14 +286,14 @@ ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手
 ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-擊退】{%ORANGE%歐特(9)+完美的藍寶石+任意珠寶} // 鎖鍊手套、重型手鐲、吸血鬼手套
 ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-回魔】{%ORANGE%歐特(9)+完美的紫寶石+任意珠寶} // 皮手套、魔皮手套、荊棘連指手套
 ItemDisplay[(zvb OR uvc) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-施法】{%ORANGE%伊司(6)+完美的紫寶石+任意珠寶} // 鯊皮腰帶、吸血鬼燎牙腰帶
-ItemDisplay[rin ID MAG ILVL>79]: %NAME%{%ORANGE%【手工-施法】安姆(11)+完美的紫寶石+任意珠寶}%CONTINUE% // 戒指
+ItemDisplay[amu ID MAG ILVL>79]: %NAME%{%ORANGE%【手工-施法】拉爾(8)+完美的紫寶石+任意珠寶}%CONTINUE% // 項鍊
 
 //聚氣
-ItemDisplay[CHSK91=1 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.1】
-ItemDisplay[CHSK91=2 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.2】
-ItemDisplay[CHSK91>2 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.3】
-ItemDisplay[CHSK82>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-偷取生命】
-ItemDisplay[CHSK53>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-傳送】
+ItemDisplay[CHSK91=1 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.1】%CONTINUE%
+ItemDisplay[CHSK91=2 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.2】%CONTINUE%
+ItemDisplay[CHSK91>2 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-降低抵抗Lv.3】%CONTINUE%
+ItemDisplay[CHSK82>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-偷取生命】%CONTINUE%
+ItemDisplay[CHSK53>0 !CL6 !UNI !SET !RW]: %DARK_GREEN%【聚氣-傳送】%CONTINUE%
 
 // 過度
 ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 (CLVL<60 DIFF<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 0s水晶劍
