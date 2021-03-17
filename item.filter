@@ -1,4 +1,4 @@
-// 2020/03/17 06:00
+// 2020/03/17 10:00
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -284,18 +284,18 @@ ItemDisplay[(amb OR amc) NMAG !RW TABSK0=3 SOCK=0 !SUP]: %NAME%%DARK_GREEN%(+3�
 // ===>>> 其他 <<<===
 
 // 手工基底
-ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-壓碎】{%ORANGE%那夫(4)+完美的紅寶石+任意珠寶} // 重手套、鯊皮手套、吸血鬼骸骨手套
-ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-擊退】{%ORANGE%歐特(9)+完美的藍寶石+任意珠寶} // 鎖鍊手套、重型手鐲、吸血鬼手套
-ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-回魔】{%ORANGE%歐特(9)+完美的紫寶石+任意珠寶} // 皮手套、魔皮手套、荊棘連指手套
-ItemDisplay[(zvb OR uvc) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-施法】{%ORANGE%伊司(6)+完美的紫寶石+任意珠寶} // 鯊皮腰帶、吸血鬼燎牙腰帶
-ItemDisplay[amu ID MAG ILVL>79]: %NAME%{%ORANGE%【手工-施法】拉爾(8)+完美的紫寶石+任意珠寶}%CONTINUE% // 項鍊
+ItemDisplay[(vgl OR xvg OR uvg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-壓碎】{%ORANGE%那夫(4)＋完美的紅寶石＋任意珠寶} // 重手套、鯊皮手套、吸血鬼骸骨手套
+ItemDisplay[(mgl OR xmg OR umg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-擊退】{%ORANGE%歐特(9)＋完美的藍寶石＋任意珠寶} // 鎖鍊手套、重型手鐲、吸血鬼手套
+ItemDisplay[(lgl OR xlg OR ulg) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-回魔】{%ORANGE%歐特(9)＋完美的紫寶石＋任意珠寶} // 皮手套、魔皮手套、荊棘連指手套
+ItemDisplay[(zvb OR uvc) !ETH MAG ILVL>79]: [L%ILVL%]%NAME%%ORANGE%【手工-施法】{%ORANGE%伊司(6)＋完美的紫寶石＋任意珠寶} // 鯊皮腰帶、吸血鬼燎牙腰帶
+ItemDisplay[amu ID MAG ILVL>84]: %NAME%{%YELLOW%+2全技能：需求玩家等級＋物品等級≧180%NL%%ORANGE%【手工-施法】拉爾(8)＋完美的紫寶石＋任意珠寶}%CONTINUE% // 項鍊
 
 //聚氣
-ItemDisplay[CHSK91=1 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-降低抵抗Lv.1】%CONTINUE%
-ItemDisplay[CHSK91=2 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-降低抵抗Lv.2】%CONTINUE%
-ItemDisplay[CHSK91>2 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-降低抵抗Lv.3】%CONTINUE%
-ItemDisplay[CHSK82>0 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-偷取生命】%CONTINUE%
-ItemDisplay[CHSK53>0 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-傳送】%CONTINUE%
+ItemDisplay[CHSK91=1 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-降低抵抗Lv.1】
+ItemDisplay[CHSK91=2 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-降低抵抗Lv.2】
+ItemDisplay[CHSK91>2 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-降低抵抗Lv.3】
+ItemDisplay[CHSK82>0 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-偷取生命】
+ItemDisplay[CHSK53>0 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-傳送】
 
 // 過度
 ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 (CLVL<60 DIFF<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 0s水晶劍
@@ -358,7 +358,6 @@ ItemDisplay[UNI !ID uar]: (聖堂武士的力量/泰瑞爾的力量)%NAME%%NOTIF
 ItemDisplay[UNI !ID uit]: (暴風之盾)%NAME%%NOTIFY-ITEM%%SOUND-9%//暴風之盾
 
 //手套
-ItemDisplay[UNI !ID mgl !ETH]: (運氣守護)%NAME%%NOTIFY-ITEM%%SOUND-9%//運氣守護
 ItemDisplay[UNI !ID tgl !ETH]: (法師之拳)%NAME%%NOTIFY-ITEM%%SOUND-9%//法師之拳
 ItemDisplay[UNI !ID hgl !ETH]: (霜燃)%NAME%%NOTIFY-ITEM%%SOUND-9%//霜燃
 ItemDisplay[UNI !ID uvg !ETH]: (卓古拉之握)%NAME%%NOTIFY-ITEM%%SOUND-9%//卓古拉之握
@@ -369,7 +368,6 @@ ItemDisplay[UNI !ID xtb !ETH]: (戰爭旅者)%NAME%%NOTIFY-ITEM%%SOUND-9%//戰�
 ItemDisplay[UNI !ID uvb]: (沙暴之旅)%NAME%%NOTIFY-ITEM%%SOUND-9%//沙暴之旅
 
 //腰帶
-ItemDisplay[UNI !ID tbl !ETH]: (金色包袱)%NAME%%NOTIFY-ITEM%%SOUND-9%//金色包袱
 ItemDisplay[UNI !ID zlb !ETH]: (長串之耳)%NAME%%NOTIFY-ITEM%%SOUND-9%//長串之耳
 ItemDisplay[UNI !ID zvb !ETH]: (剃刀之尾)%NAME%%NOTIFY-ITEM%%SOUND-9%//剃刀之尾
 ItemDisplay[UNI !ID ztb !ETH]: (雪之衝突)%NAME%%NOTIFY-ITEM%%SOUND-9%//雪之衝突
