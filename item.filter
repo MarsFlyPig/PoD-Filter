@@ -91,7 +91,7 @@ ItemDisplay[hp1 OR mp1 CLVL>14]:
 
 ItemDisplay[rvl]: %PURPLE%[[%WHITE%R%PURPLE%]]%WHITE%
 ItemDisplay[rvs]: %PURPLE%[%GRAY%R%PURPLE%]%WHITE%%CONTINUE%
-ItemDisplay[rvs CLVL>69]:
+// ItemDisplay[rvs CLVL>69]:
 
 // 10等後沒用的藥水隱藏起來
 ItemDisplay[gpm OR opm OR opl OR ops OR gps OR gpl AND CLVL>9]:
