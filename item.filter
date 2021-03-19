@@ -1,4 +1,4 @@
-// 2020/03/18 11:00
+// 2020/03/19 13:00
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -29,10 +29,10 @@ ItemDisplay[bet]: %NAME% (A4){赦免徽章使用後可重置屬性與技能%NL%�
 ItemDisplay[fed]: %NAME% (A5){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //潰爛的毀滅精華
 ItemDisplay[std]: %NAME%{目前無作用} //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
-ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※{%RED%維特之腳＋傳送之書＝秘密乳牛關卡(打贏該難度巴爾後於蘿格營地內合成)} //維特之腳
+ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※{%RED%維特之腳＋傳送之書＝秘密乳牛關卡(打贏對應難度巴爾後於蘿格營地內合成)} //維特之腳
 ItemDisplay[cx5]: ※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY-ITEM%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
-ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，進入後死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
-ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，進入後死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
+ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，進入後死亡便無法再挑戰，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
+ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，進入後死亡便無法再挑戰，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖(Relic)
@@ -154,10 +154,9 @@ ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=13]: %NAME%%DARK_GREEN%(13%ED)%C
 ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=14]: %NAME%%DARK_GREEN%(14%ED)%CONTINUE%//14%ED
 ItemDisplay[EQ2 ELT NMAG !RW !SOCK=1 !SOCK=2 ED=15]: %NAME%%DARK_GREEN%(15%ED)%CONTINUE%//15%ED
 
+ItemDisplay[EQ2 ELT ETH DEF>749 NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【打孔】 //無形高防
 ItemDisplay[EQ2 ELT NMAG !RW SOCK=0 ED>10]: %NAME%%WHITE%【菁英】//11~15%ED 白衣服
 ItemDisplay[EQ2 ELT NMAG !RW DEF<550 (SOCK=3 OR SOCK=4)]: %NAME%%GRAY%【菁英】//3~4S白衣服
-
-ItemDisplay[EQ2 ELT ETH DEF>749 NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【打孔】 //無形高防
 ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(260防↑)%WHITE%【打3孔】 //260防以上法師鎧甲
 
 ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(260防↑)%GRAY%【謎團】{%ORANGE%謎團: 31＋6＋30} //260防以上法師鎧甲3 - 謎團
