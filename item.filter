@@ -1,4 +1,4 @@
-// 2020/03/21 20:30
+// 2020/03/21 20:35
 // 版本: #20 Perlite(珍珠岩)
 // By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
@@ -17,11 +17,11 @@
 ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
 
 // 特殊物品
-ItemDisplay[pk1]: %WHITE%※※%ORANGE%%NAME% (女伯爵)%WHITE%※※%NOTIFY-ITEM% //恐懼之鑰
-ItemDisplay[pk2]: %WHITE%※※%ORANGE%%NAME% (召喚者)%WHITE%※※%NOTIFY-ITEM% //憎恨之鑰
-ItemDisplay[pk3]: %WHITE%※※%ORANGE%%NAME% (尼拉塞克)%WHITE%※※%NOTIFY-ITEM% //毀滅之鑰
+ItemDisplay[pk1]: %WHITE%※※%ORANGE%%NAME% (女伯爵)%WHITE%※※%NOTIFY-ORANGE%%SOUND-8% //恐懼之鑰
+ItemDisplay[pk2]: %WHITE%※※%ORANGE%%NAME% (召喚者)%WHITE%※※%NOTIFY-ORANGE%%SOUND-8% //憎恨之鑰
+ItemDisplay[pk3]: %WHITE%※※%ORANGE%%NAME% (尼拉塞克)%WHITE%※※%NOTIFY-ORANGE%%SOUND-8% //毀滅之鑰
 ItemDisplay[dhn OR bey OR mbr]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //暗黑破壞神之角 巴爾之眼 墨菲斯托之腦
-ItemDisplay[toa]: %NAME% {使用後消耗並重置屬性與技能}//赦免徽章
+ItemDisplay[toa]: %NAME% {使用後消耗並重置屬性與技能} //赦免徽章
 ItemDisplay[tes]: %NAME% (A1.A2){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //扭曲的苦痛精華
 ItemDisplay[ceh]: %NAME% (A3){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //充盈的憎恨精華
 ItemDisplay[bet]: %NAME% (A4){赦免徽章使用後可重置屬性與技能%NL%扭曲＋充盈＋燃燒＋潰爛毀滅精華＝赦免徽章(Token of Absolution)} //燃燒的恐懼精華
