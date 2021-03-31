@@ -37,7 +37,7 @@ ItemDisplay[DIFF=2 7wa !ETH NMAG !RW SOCK=6 ED<11]:
 ItemDisplay[DIFF=2 7wa ETH NMAG !RW SOCK=4 ED<11]:
 ItemDisplay[DIFF=2 7wa ETH NMAG !RW SOCK=5 ED<11]:
 ItemDisplay[DIFF=2 7wa ETH NMAG !RW SOCK=6 ED<11]:
-ItemDisplay[DIFF=2 wax NMAG !RW SOCK=5 ED<11]
+ItemDisplay[DIFF=2 wax NMAG !RW SOCK=5 ED<11]:
 
 // 武器-長斧
 ItemDisplay[DIFF=2 7s8 ETH NMAG ED>10 SOCK=0 ED<11]:
