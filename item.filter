@@ -360,8 +360,8 @@ ItemDisplay[UNI !ID uar]: (聖堂武士的力量/泰瑞爾的力量)%NAME%%NOTIF
 ItemDisplay[UNI !ID uit]: (暴風之盾)%NAME%%NOTIFY-ITEM%%SOUND-16%//暴風之盾
 
 //手套
-ItemDisplay[UNI !ID tgl !ETH]: (法師之拳)%NAME%%NOTIFY-ITEM%%SOUND-16%//法師之拳
-ItemDisplay[UNI !ID hgl !ETH]: (霜燃)%NAME%%NOTIFY-ITEM%%SOUND-16%//霜燃
+//ItemDisplay[UNI !ID tgl !ETH]: (法師之拳)%NAME%%NOTIFY-ITEM%%SOUND-16%//法師之拳
+//ItemDisplay[UNI !ID hgl !ETH]: (霜燃)%NAME%%NOTIFY-ITEM%%SOUND-16%//霜燃
 ItemDisplay[UNI !ID uvg !ETH]: (卓古拉之握)%NAME%%NOTIFY-ITEM%%SOUND-16%//卓古拉之握
 
 //腳
@@ -423,14 +423,14 @@ ItemDisplay[UNI !ID dre !ETH]: (烏鴉之王)%NAME%%NOTIFY-ITEM%%SOUND-16%//烏�
 //聖騎盾
 ItemDisplay[UNI !ID pa9 !ETH]: (撒卡蘭姆使者)%NAME%%NOTIFY-ITEM%%SOUND-16%//撒卡蘭姆使者
 
-ItemDisplay[SET !ID xtb]: (艾爾多的成長)%NAME%%NOTIFY-ITEM%%SOUND-16%//艾爾多的成長
-ItemDisplay[SET !ID uar]: (不朽之王的靈魂牢籠)%NAME%%NOTIFY-ITEM%%SOUND-16%//不朽之王的靈魂牢籠
-ItemDisplay[SET !ID xmg]: (塔格奧之手)%NAME%%NOTIFY-ITEM%%SOUND-16%//塔格奧之手
+//ItemDisplay[SET !ID xtb]: (艾爾多的成長)%NAME%%NOTIFY-ITEM%%SOUND-16%//艾爾多的成長
+//ItemDisplay[SET !ID uar]: (不朽之王的靈魂牢籠)%NAME%%NOTIFY-ITEM%%SOUND-16%//不朽之王的靈魂牢籠
+//ItemDisplay[SET !ID xmg]: (塔格奧之手)%NAME%%NOTIFY-ITEM%%SOUND-16%//塔格奧之手
 ItemDisplay[SET !ID 7qr]: (娜塔亞的記號)%NAME%%NOTIFY-ITEM%%SOUND-16%//娜塔亞的記號
 // ItemDisplay[SET !ID ucl]: (娜塔亞的影子)%NAME%%NOTIFY-ITEM%%SOUND-16%//娜塔亞的影子
 // ItemDisplay[SET !ID xsk]: (塔-拉夏的赫拉迪克紋章)%NAME%%NOTIFY-ITEM%%SOUND-16%//塔-拉夏的赫拉迪克紋章
 ItemDisplay[SET !ID uth]: (塔-拉夏的守護)%NAME%%NOTIFY-ITEM%%SOUND-16%//塔-拉夏的守護
-ItemDisplay[SET !ID 7wd]: (布爾凱索的部族守護)%NAME%%NOTIFY-ITEM%%SOUND-16%//布爾凱索的部族守護
+//ItemDisplay[SET !ID 7wd]: (布爾凱索的部族守護)%NAME%%NOTIFY-ITEM%%SOUND-16%//布爾凱索的部族守護
 // ItemDisplay[SET !ID ulg]: (手掌的安置)%NAME%%NOTIFY-ITEM%%SOUND-16%//手掌的安置
 // ItemDisplay[SET !ID xhm]: (吉永之臉)%NAME%%NOTIFY-ITEM%%SOUND-16%//吉永之臉
 
