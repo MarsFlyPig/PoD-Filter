@@ -160,7 +160,7 @@ ItemDisplay[WEAPON !WP9 !WP10]: %NAME%{%YELLOW%範圍: %RANGE%，基礎速度: %
 ItemDisplay[(WP9 OR WP10)]: %NAME%{%YELLOW%基礎速度: %WPNSPD%}%CONTINUE%
 
 // 頭冠
-ItemDisplay[EQ7 !ETH]: [L%ILVL%]%NAME%【頭冠】
+ItemDisplay[EQ7 !ETH (MAG OR RARE]: [L%ILVL%]%NAME%【頭冠】
 ItemDisplay[EQ7 !ETH MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【頭冠】
 ItemDisplay[EQ7 !ETH RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【頭冠】
 
