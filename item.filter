@@ -1,12 +1,19 @@
-// 2021/04/11 13:00
-// 版本: #20 Perlite(珍珠岩)
-// By: MarsFlyPig
 // 過濾器說明 http://pathofdiablo.com/wiki/index.php/Loot_Filtration
 // 過濾器代碼 https://pathofdiablo.com/wiki/index.php?title=Loot_Filtration_Codes
 
+Attribute[Author]: MarsFlyPig
+Attribute[Name]: Pod 過濾器
+Attribute[Version]: 版本: #21 Shungite(次石墨)
+Attribute[Date]: 2024/03/10 21:20
+
+FilterLevel[1]: 基本版
+FilterLevel[2]: 遺物版(還沒弄)
+
+//FILTERLVL=1
+
 //===================================
 
-//ItemDisplay[]: [L%ILVL%]%NAME%<$%PRICE%$>[%CODE%]%SOUND-418% // 查看代碼用
+//ItemDisplay[]: [L%ILVL%]%NAME%<$%PRICE%$>[%CODE%] // 查看代碼用
 //%SOUND-7% 燈
 //%SOUND-8% 督嚕
 //%SOUND-16% 號角
@@ -17,7 +24,7 @@
 //%SOUND-4629% 安姊叫你去死
 
 // 任務物品
-ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33]: %NAME%【任務】
+ItemDisplay[vip OR bks OR bkd OR j34 OR g34 OR bbb OR tr1 OR mss OR ass OR qey OR qhr OR qbr OR qf1 OR qf2 OR tr2 OR xyz OR hdm OR hfh OR hst OR msf OR ice OR g33 OR box]: %NAME%【任務】
 
 // 特殊物品
 ItemDisplay[pk1]: %WHITE%※※%ORANGE%%NAME% (女伯爵)%WHITE%※※%NOTIFY-ORANGE%%SOUND-8%{%WHITE%紅門掉落器官為%GOLD%《煉獄火炬 中護身符》%WHITE%跟%GOLD%《毀滅 小護身符》%WHITE%門票%NL%恐懼之鑰+憎恨之鑰+毀滅之鑰=隨機一種紅門，共三種} //恐懼之鑰
@@ -32,41 +39,42 @@ ItemDisplay[fed]: %NAME% (A5){赦免徽章使用後可重置屬性與技能%NL%�
 ItemDisplay[std]: %NAME%{目前無作用} //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※{%RED%維特之腳＋傳送之書＝秘密乳牛關卡(打贏對應難度巴爾後於蘿格營地內合成)} //維特之腳
-ItemDisplay[cx5]: ※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY-ITEM%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
+ItemDisplay[cx5]: ※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY(ITEM)%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
-ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※%NOTIFY-ITEM%%SOUND-9%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
+ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※%NOTIFY(ITEM)%%SOUND-9%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖(Relic)
-ItemDisplay[ma1 !ID]: <T1>『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY-ITEM% //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2 !ID]: <T3>『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY-ITEM% //蜃景荒漠 (Forgotten Desert)
-ItemDisplay[ma3 !ID]: <T?>『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY-ITEM% //遺棄之地 (Abandoned Precinct)
-ItemDisplay[ma4 !ID]: <T2>『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY-ITEM% //褻瀆教堂 (Desecrated Temple)
-ItemDisplay[ma5 !ID]: <T1>『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY-ITEM% //凜冬高原 (Frigid Plateau)
-ItemDisplay[ma6 !ID]: <T3>『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY-ITEM% //崩壞堡壘 (Ruined Citadel)
-ItemDisplay[ma7 !ID]: <T3>『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY-ITEM% //焚燒森林 (Burnt Forest)
-ItemDisplay[ma8 !ID]: <T2>『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY-ITEM% //發霉地穴 (Musty Crypt)
-ItemDisplay[ma9 !ID]: <T2>『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY-ITEM% //昏暗地窖 (Dim Cellar)
-// ItemDisplay[ma10 !ID]: <T0>『%NAME%』%GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture) BUG無法顯示
-ItemDisplay[ma1]: <T1>『%NAME%』 //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2]: <T3>『%NAME%』 //蜃景荒漠 (Forgotten Desert)
-ItemDisplay[ma3]: <T?>『%NAME%』 //遺棄之地 (Abandoned Precinct)
-ItemDisplay[ma4]: <T2>『%NAME%』 //褻瀆教堂 (Desecrated Temple)
-ItemDisplay[ma5]: <T1>『%NAME%』 //凜冬高原 (Frigid Plateau)
-ItemDisplay[ma6]: <T3>『%NAME%』 //崩壞堡壘 (Ruined Citadel)
-ItemDisplay[ma7]: <T3>『%NAME%』 //焚燒森林 (Burnt Forest)
-ItemDisplay[ma8]: <T2>『%NAME%』 //發霉地穴 (Musty Crypt)
-ItemDisplay[ma9]: <T2>『%NAME%』 //昏暗地窖 (Dim Cellar)
-ItemDisplay[ma10]: <T0>『%NAME%』//悅心農場 (Pleasant Pasture) BUG無法顯示
+ItemDisplay[ma1 !ID]: -T1-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma3 !ID]: -T?-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //遺棄之地 (Abandoned Precinct)
+ItemDisplay[ma4 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5 !ID]: -T1-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //崩壞堡壘 (Ruined Citadel)
+ItemDisplay[ma7 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //發霉地穴 (Musty Crypt)
+ItemDisplay[ma9 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //昏暗地窖 (Dim Cellar)
+// ItemDisplay[ma10 !ID]: -T0-『%NAME%』%GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture) BUG無法顯示
+ItemDisplay[ma1]: -T1-『%NAME%』 //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2]: -T3-『%NAME%』 //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma3]: -T?-『%NAME%』 //遺棄之地 (Abandoned Precinct)
+ItemDisplay[ma4]: -T2-『%NAME%』 //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5]: -T1-『%NAME%』 //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6]: -T3-『%NAME%』 //崩壞堡壘 (Ruined Citadel)
+ItemDisplay[ma7]: -T3-『%NAME%』 //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8]: -T2-『%NAME%』 //發霉地穴 (Musty Crypt)
+ItemDisplay[ma9]: -T2-『%NAME%』 //昏暗地窖 (Dim Cellar)
+ItemDisplay[ma10]: -T0-『%NAME%』//悅心農場 (Pleasant Pasture) BUG無法顯示
 ItemDisplay[maz]: <<毀滅>>『%NAME%』 //地獄審判
 
 // 根據玩家等級隱藏金錢顯示
-ItemDisplay[CLVL>89 GOLD<6000]: //90等後不顯示6000元以下
-ItemDisplay[CLVL>79 GOLD<4000]: //80等後不顯示4000元以下
-ItemDisplay[CLVL>59 GOLD<2500]: //60等後不顯示2500元以下
-ItemDisplay[CLVL>44 GOLD<1000]: //45等後不顯示1000元以下
-ItemDisplay[CLVL>24 GOLD<250]: //25等後不顯示250元以下
-ItemDisplay[CLVL>6 GOLD<100]: //5等後不顯示100元以下
+ItemDisplay[CLVL>89 GOLD<3000]: //90等後不顯示3000元以下
+ItemDisplay[CLVL>79 GOLD<1500]: //80等後不顯示1500元以下
+ItemDisplay[CLVL>59 GOLD<1000]: //60等後不顯示1000元以下
+ItemDisplay[CLVL>44 GOLD<500]: //45等後不顯示500元以下
+ItemDisplay[CLVL>24 GOLD<200]: //25等後不顯示200元以下
+ItemDisplay[CLVL>6 GOLD<50]: //5等後不顯示50元以下
+ItemDisplay[GOLD>9]:%NAME%
 
 // 藥水:
 ItemDisplay[hp5]: %RED%[%WHITE%H%RED%]%WHITE%
@@ -107,9 +115,9 @@ ItemDisplay[gzv OR gly OR glb OR glg OR glr OR glw OR skl]: %RED%★%WHITE%%NAME
 ItemDisplay[gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku]: ★%NAME%★%CONTINUE% // 一般
 ItemDisplay[gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf]: ★%NAME%★%CONTINUE% // 缺陷
 ItemDisplay[gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc]: ★%NAME%★%CONTINUE% // 碎裂
-ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) DIFF>0]: // 一般
-ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf) DIFF>0]: // 缺陷
-ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc) DIFF>0]: // 碎裂
+ItemDisplay[(gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) DIFFICULTY>0]: // 一般
+ItemDisplay[(gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf) DIFFICULTY>0]: // 缺陷
+ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc) DIFFICULTY>0]: // 碎裂
 
 // 珠寶
 ItemDisplay[jew UNI]: ●%NAME%【暗金】●
@@ -134,11 +142,12 @@ ItemDisplay[cm2 UNI ID CLSK5>0]: %NAME% {%YELLOW%硬直恢復<狼>(FHR)：(13F)0
 ItemDisplay[cm2 UNI ID CLSK6>0]: %NAME% {%YELLOW%硬直恢復(FHR)：(9F)0／7／15／27／48／86／200(3F)%NL%施法速度(FCR)：(16F)0／8／16／27／42／65／102／174(9F)}
 
 // 符文
+
 ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10]: [#%NAME%#]%CONTINUE%
 ItemDisplay[r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19]: [##%NAME%##]%CONTINUE%
-ItemDisplay[(r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19) DIFF<2]: %NAME%%NOTIFY-ITEM%
-ItemDisplay[r20 OR r21 OR r22 OR r23 OR r24 OR r25]: %NL%[####%NAME%####]%NL%%NOTIFY-Orange%
-ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%[%PURPLE%######%ORANGE%%NAME%%PURPLE%######%ORANGE%]%NL%%NOTIFY-Orange%
+ItemDisplay[(r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19) DIFFICULTY<2]: %NAME%%NOTIFY(ITEM)%
+ItemDisplay[r20 OR r21 OR r22 OR r23 OR r24 OR r25]: %NL%%ORANGE%[####%NAME%%PURPLE%####]%NL%%NL%%NOTIFY(ITEM)%
+ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%%ORANGE%[%PURPLE%######%ORANGE%%NAME%%PURPLE%######%ORANGE%]%NL%%NL%%NOTIFY(ITEM)%
 
 ItemDisplay[r25]: {%ORANGE%2021/04/07 - 0.25HR}
 ItemDisplay[r26]: {%ORANGE%2021/04/07 - 0.5HR}
@@ -165,11 +174,11 @@ ItemDisplay[EQ7 !ETH MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【頭冠】
 ItemDisplay[EQ7 !ETH RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【頭冠】
 
 // 盾牌
-ItemDisplay[ush !ETH NMAG !RW SOCK=3 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%WHITE%【聖堂│夢境】{%ORANGE%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
+ItemDisplay[ush !ETH NMAG !RW SOCK=3 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%WHITE%【聖堂＼夢境】{%ORANGE%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //洞穴巨魔巢穴骨盾3 - 聖堂/夢境
 ItemDisplay[uit !ETH NMAG !RW (SOCK=0 OR SOCK=4) STAT91>0]: %NAME%%DARK_GREEN%(%STAT91%%需求)%WHITE%【菁英】 //帶有減少需求的統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=0 DEF>144]: %NAME%%DARK_GREEN%(145防↑)%WHITE%【菁英】 //145防以上0s統治者大盾
 ItemDisplay[uit !ETH NMAG !RW SOCK=0]: %NAME%【打4孔】 //0s統治者大盾
-ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神│鳳凰】{%ORANGE%鳳凰: 26＋26＋28＋31%NL%精神: 7＋10＋9＋11} //統治者大盾4 - 精神/鳳凰
+ItemDisplay[uit !ETH NMAG !RW SOCK=4]: %NAME%【精神＼鳳凰】{%ORANGE%鳳凰: 26＋26＋28＋31%NL%精神: 7＋10＋9＋11} //統治者大盾4 - 精神/鳳凰
 
 // 衣服
 // 菁英 11~15%ED衣服
@@ -187,14 +196,14 @@ ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=0]: %NAME%%DARK_GREEN%(260防↑)%WHI
 ItemDisplay[xtp DEF>259 !ETH NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(260防↑)%GRAY%【謎團】{%ORANGE%謎團: 31＋6＋30} //260防以上法師鎧甲3 - 謎團
 
 ItemDisplay[(uui OR uea OR ula OR utu OR urs OR utp) !ETH NMAG !RW SOCK=3]: %NAME%【謎團】{%ORANGE%謎團: 31＋6＋30}//輕甲3 - 謎團
-ItemDisplay[utp !ETH NMAG !RW SOCK=4]: %NAME%【剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28} //執政官鎧甲4 - 剛毅/榮耀之鏈
+ItemDisplay[utp !ETH NMAG !RW SOCK=4]: %NAME%【剛毅＼榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28} //執政官鎧甲4 - 剛毅/榮耀之鏈
 ItemDisplay[EQ2 DEF>749 NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【強制】{%ORANGE%強制: 13＋22＋10} //550防以上3 - 強制
-ItemDisplay[EQ2 DEF>749 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【石塊│剛毅】{%ORANGE%剛毅: 1＋12＋14＋28%NL%石塊: 13＋22＋21＋17} //750防以上4 - 石塊/剛毅
+ItemDisplay[EQ2 DEF>749 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(750防↑)%GRAY%【石塊＼剛毅】{%ORANGE%剛毅: 1＋12＋14＋28%NL%石塊: 13＋22＋21＋17} //750防以上4 - 石塊/剛毅
 ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=3]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【強制】{%ORANGE%強制: 13＋22＋10} //550防以上3 - 強制
-ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【石塊│剛毅│榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28%NL%石塊: 13＋22＋21＋17} //550防以上4 - 石塊/剛毅/榮耀之鏈
+ItemDisplay[EQ2 !ETH DEF>549 NMAG !RW SOCK=4]: %NAME%%DARK_GREEN%(550防↑)%GRAY%【石塊＼剛毅＼榮耀之鏈】{%ORANGE%榮耀之鍊: 14＋22＋30＋24%NL%剛毅: 1＋12＋14＋28%NL%石塊: 13＋22＋21＋17} //550防以上4 - 石塊/剛毅/榮耀之鏈
 
 // 武器-劍
-ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月│執法者】{%ORANGE%執法者: 11＋20＋18%NL%新月: 13＋22＋3%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍3 - 新月
+ItemDisplay[crs NMAG !RW !INF SOCK=3]: %NAME%【新月＼執法者】{%ORANGE%執法者: 11＋20＋18%NL%新月: 13＋22＋3%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍3 - 新月
 ItemDisplay[crs NMAG !RW !ETH SOCK=4]: %NAME%【精神】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍4 - 精神
 ItemDisplay[crs NMAG !RW SOCK=5]: %NAME%【戰爭召喚】{%ORANGE%戰爭招喚: 11＋8＋23＋24＋27%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //水晶劍5 - 戰爭召喚
 ItemDisplay[crs NMAG !RW SOCK=6]: %NAME%【特殊用】//水晶劍6
@@ -204,18 +213,18 @@ ItemDisplay[7cr NMAG !RW SOCK=5]: %NAME%【悔恨】{%ORANGE%毀恨: 5＋3＋28�
 ItemDisplay[7cr NMAG !RW SOCK=6 ED>10]: %NAME%【最後希望】{%ORANGE%最後希望: 31＋23＋31＋29＋31＋30%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //幻化之刃6 - 最後希望
 ItemDisplay[(7gd OR 7gs OR 7cm) NMAG !RW SOCK=3]: %NAME%【執法者】{%ORANGE%執法者: 11＋20＋18%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之刃、炎魔之刃、高地之劍3 - 執法者
 ItemDisplay[(7gd OR 7gs OR 7cm) ETH NMAG !RW SOCK=4]: %NAME%【誓約】{%ORANGE%誓約: 13＋21＋23＋17%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之刃、炎魔之刃、高地之劍(無)4 - 誓約
-ItemDisplay[7gd ETH NMAG !RW SOCK=5]: %NAME%【永恆│死神】{%ORANGE%死神: 15＋1＋26＋9＋25%NL%永恆: 11＋30＋24＋12＋29%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之刃(無)5 - 永恒/死神
-ItemDisplay[7gd ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸│寂靜】{%ORANGE%寂靜: 14＋2＋15＋24＋3＋26%NL%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之刃(無)6 - 死亡呼吸
+ItemDisplay[7gd ETH NMAG !RW SOCK=5]: %NAME%【永恆＼死神】{%ORANGE%死神: 15＋1＋26＋9＋25%NL%永恆: 11＋30＋24＋12＋29%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之刃(無)5 - 永恒/死神
+ItemDisplay[7gd ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸＼寂靜】{%ORANGE%寂靜: 14＋2＋15＋24＋3＋26%NL%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之刃(無)6 - 死亡呼吸
 ItemDisplay[7gd NMAG !RW SOCK=6]: %NAME%【寂靜】{%ORANGE%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨神之刃6 - 寂靜
 
 // 武器-斧
 ItemDisplay[7wa ETH NMAG ED>10 SOCK=0]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【打6孔】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無) - 打6孔
 ItemDisplay[7wa ETH NMAG !SUP SOCK=0]: %NAME%【拼4-6孔】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%ORANGE%死神: 15＋1＋26＋9＋25%NL%永恆: 11＋30＋24＋12＋29%NL%%ORANGE%誓約: 13＋21＋23＋17%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無) - 拼打孔
 ItemDisplay[7wa !ETH NMAG !RW SOCK=4]: %NAME%【熱情】{%ORANGE%熱情: 14＋9＋2＋20%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧4 - 熱情
-ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸│悔恨】{%ORANGE%毀恨: 5＋3＋28＋23＋8%NL%野獸: 30＋3＋22＋23＋17%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧5 - 野獸/悔恨
+ItemDisplay[7wa !ETH NMAG !RW SOCK=5]: %NAME%【野獸＼悔恨】{%ORANGE%毀恨: 5＋3＋28＋23＋8%NL%野獸: 30＋3＋22＋23＋17%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧5 - 野獸/悔恨
 ItemDisplay[7wa !ETH NMAG !RW SOCK=6]: %NAME%【最後希望】{%ORANGE%最後希望: 31＋23＋31＋29＋31＋30%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧6 - 最後希望
 ItemDisplay[7wa ETH NMAG !RW SOCK=4]: %NAME%【誓约】{%ORANGE%誓約: 13＋21＋23＋17%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無)4 - 誓约
-ItemDisplay[7wa ETH NMAG !RW SOCK=5]: %NAME%【永恆│死神】{%ORANGE%死神: 15＋1＋26＋9＋25%NL%永恆: 11＋30＋24＋12＋29%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無)5 - 永恒/死神
+ItemDisplay[7wa ETH NMAG !RW SOCK=5]: %NAME%【永恆＼死神】{%ORANGE%死神: 15＋1＋26＋9＋25%NL%永恆: 11＋30＋24＋12＋29%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無)5 - 永恒/死神
 ItemDisplay[7wa ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //狂戰士斧(無)6 - 死亡呼吸
 ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】{%ORANGE%末日: 15＋27＋22＋28＋32%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰斧5 - 末日
 
@@ -223,8 +232,8 @@ ItemDisplay[wax NMAG !RW SOCK=5]: %NAME%【末日】{%ORANGE%末日: 15＋27＋2
 ItemDisplay[7s8 ETH NMAG ED>10 SOCK=0]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【打5孔】{%ORANGE%末日: 15＋27＋22＋28＋32%NL%遵從: 15＋18＋10＋5＋19%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //銳利之斧(無) - 打5孔
 ItemDisplay[7s8 ETH NMAG !SUP SOCK=0]: %NAME%【拼4-5孔】{%ORANGE%末日: 15＋27＋22＋28＋32%NL%遵從: 15＋18＋10＋5＋19%NL%無限: 30＋23＋30＋24%NL%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //銳利之斧(無) - 拼打孔
 ItemDisplay[scy ETH NMAG !RW SOCK=4]: %NAME%【無限】{%ORANGE%無限: 30＋23＋30＋24%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //鐮刀(無)4 - 無限
-ItemDisplay[(7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4]: %NAME%【眼光│無限】{%ORANGE%無限: 30＋23＋30＋24%NL%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
-ItemDisplay[(7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5]: %NAME%【遵從│末日】{%ORANGE%末日: 15＋27＋22＋28＋32%NL%遵從: 15＋18＋10＋5＋19%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從/末日
+ItemDisplay[(7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=4]: %NAME%【眼光＼無限】{%ORANGE%無限: 30＋23＋30＋24%NL%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //銳利之斧、神秘之斧、巨長斧、鮫尾巨斧4 - 眼光/無限/驕傲
+ItemDisplay[(7s8 OR 7pa OR 7h7 OR 7wc) NMAG !RW SOCK=5]: %NAME%【遵從＼末日】{%ORANGE%末日: 15＋27＋22＋28＋32%NL%遵從: 15＋18＋10＋5＋19%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //銳利之斧、神秘之斧、巨長斧、鮫尾巨斧5 - 遵從/末日
 ItemDisplay[(7h7 OR 7wc) NMAG !RW SOCK=6]: %NAME%【寂靜】{%ORANGE%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨長斧、鮫尾巨斧6 - 寂靜
 
 // 武器-長槍
@@ -233,8 +242,8 @@ ItemDisplay[7br ETH NMAG !SUP SOCK=0]: %NAME%【打4-5孔】{%ORANGE%末日: 15�
 ItemDisplay[7p7 ETH NMAG SOCK=0]: %NAME%【打6孔】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //戰槍(無) - 打6孔
 ItemDisplay[7br ETH NMAG !RW SOCK=4]: %NAME%【無限】{%ORANGE%無限: 30＋23＋30＋24%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //刺人槍(無)4 - 無限
 ItemDisplay[7p7 NMAG !RW SOCK=6]: %NAME%【死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //戰槍6 - 死亡呼吸
-ItemDisplay[(7tr OR 7br OR 7st) NMAG !RW SOCK=4]: %NAME%【眼光│無限】{%ORANGE%無限: 30＋23＋30＋24%NL%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //冥河之槍、刺人槍、鬼魂之矛4 - 眼光/無限/驕傲
-ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: %NAME%【遵從│末日】{%ORANGE%末日: 15＋27＋22＋28＋32%NL%遵從: 15＋18＋10＋5＋19%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //刺人槍、鬼魂之矛5 - 遵從/末日
+ItemDisplay[(7tr OR 7br OR 7st) NMAG !RW SOCK=4]: %NAME%【眼光＼無限】{%ORANGE%無限: 30＋23＋30＋24%NL%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //冥河之槍、刺人槍、鬼魂之矛4 - 眼光/無限/驕傲
+ItemDisplay[(7br OR 7st) NMAG !RW SOCK=5]: %NAME%【遵從＼末日】{%ORANGE%末日: 15＋27＋22＋28＋32%NL%遵從: 15＋18＋10＋5＋19%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //刺人槍、鬼魂之矛5 - 遵從/末日
 ItemDisplay[7st NMAG !RW SOCK=6]: %NAME%【寂靜】{%ORANGE%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //鬼魂之矛6 - 寂靜
 
 // 武器-棍棒
@@ -244,7 +253,7 @@ ItemDisplay[7gm ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】{%ORANGE%死亡呼
 
 // 武器-弓
 ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 信心
-ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【寂靜│死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%基礎速度: %WPNSPD%} //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
+ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【寂靜＼死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%基礎速度: %WPNSPD%} //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
 ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓4 - 信心
 
 // 德魯伊
@@ -256,12 +265,12 @@ ItemDisplay[CL1 !ETH NMAG !RW SK249=3 (SOCK=0 OR SOCK=3) ILVL>25]: %NAME%%RED%�
 ItemDisplay[CL1 !ETH NMAG !RW SK247=3 (SOCK=0 OR SOCK=3) ILVL>25]: %NAME%%RED%【+3召喚灰熊】%WHITE%{%ORANGE%需要搭配其他召喚技能}
 
 // 實際上用不到 //
-ItemDisplay[CL1 !ETH TABSK42=3 SK250=3]: %NAME%%RED%【+3自然元素│+3暴風】
-ItemDisplay[CL1 !ETH TABSK42=3 SK245=3]: %NAME%%RED%【+3自然元素│+3龍捲風】
-ItemDisplay[CL1 !ETH TABSK42=3 SK244=3]: %NAME%%RED%【+3自然元素│+3火山】
-ItemDisplay[CL1 !ETH TABSK42=3 SK229=3]: %NAME%%RED%【+3自然元素│+3熔漿巨岩】
-ItemDisplay[CL1 !ETH TABSK42=3 SK249=3]: %NAME%%RED%【+3自然元素│+3毀天滅地】
-ItemDisplay[CL1 !ETH TABSK40=3 SK247=3]: %NAME%%RED%【+3野性召喚│+3召喚灰熊】
+ItemDisplay[CL1 !ETH TABSK42=3 SK250=3]: %NAME%%RED%【+3自然元素＼+3暴風】
+ItemDisplay[CL1 !ETH TABSK42=3 SK245=3]: %NAME%%RED%【+3自然元素＼+3龍捲風】
+ItemDisplay[CL1 !ETH TABSK42=3 SK244=3]: %NAME%%RED%【+3自然元素＼+3火山】
+ItemDisplay[CL1 !ETH TABSK42=3 SK229=3]: %NAME%%RED%【+3自然元素＼+3熔漿巨岩】
+ItemDisplay[CL1 !ETH TABSK42=3 SK249=3]: %NAME%%RED%【+3自然元素＼+3毀天滅地】
+ItemDisplay[CL1 !ETH TABSK40=3 SK247=3]: %NAME%%RED%【+3野性召喚＼+3召喚灰熊】
 // 實際上用不到 //
 
 // 野蠻人
@@ -270,8 +279,8 @@ ItemDisplay[CL2 !ETH NMAG !RW SK154=3 (SOCK=0 OR SOCK=3) ILVL>25]: %NAME%%RED%�
 ItemDisplay[WEAPON !RW TABSK34>2]: %RED%<<<%NAME%【+3戰嚎武器】>>>{%ORANGE%三吼武器，非實戰用}
 
 // 實際上用不到 //
-ItemDisplay[CL2 TABSK34=3 SK149=3]: %NAME%%RED%【+3戰嚎│+3戰鬥體制】
-ItemDisplay[CL2 !ETH TABSK34=3 SK154=3]: %NAME%%RED%【+3戰嚎│+3戰鬥狂嗥】
+ItemDisplay[CL2 TABSK34=3 SK149=3]: %NAME%%RED%【+3戰嚎＼+3戰鬥體制】
+ItemDisplay[CL2 !ETH TABSK34=3 SK154=3]: %NAME%%RED%【+3戰嚎＼+3戰鬥狂嗥】
 // 實際上用不到 //
 
 // 聖騎士
@@ -281,20 +290,20 @@ ItemDisplay[CL3 ELT NMAG !RW RES=45 SOCK=0]: %NAME%【菁英】%DARK_GREEN%(45�
 ItemDisplay[CL3 !ETH NORM NMAG !RW RES>34 SOCK=0]: %NAME%【普通】%DARK_GREEN%(35抗↑)%WHITE% //聖騎盾(35抗以上)
 ItemDisplay[CL3 !ETH EXC NMAG !RW RES>34 SOCK=0]: %NAME%【進階】%DARK_GREEN%(35抗↑)%WHITE% //聖騎盾(35抗以上)
 ItemDisplay[CL3 ELT NMAG !RW RES>34 SOCK=0]: %NAME%【菁英】%DARK_GREEN%(35抗↑)%WHITE% //聖騎盾(35抗以上)
-ItemDisplay[CL3 !ETH NMAG !RW RES=45 SOCK=3]: %NAME%%DARK_GREEN%(45抗)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 !ETH NMAG !RW RES=45 SOCK=3]: %NAME%%DARK_GREEN%(45抗)%GRAY%【聖堂＼夢境＼飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(40抗以上)3 - 聖堂/夢境/飛龍
 ItemDisplay[CL3 !ETH NMAG !RW RES=45 SOCK=4]: %NAME%%DARK_GREEN%(45抗)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(40抗以上)4 - 精神
 ItemDisplay[CL3 ETH ELT NMAG !RW RES=45 SOCK=4]: %NAME%%DARK_GREEN%(45抗)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(40抗以上)4(無) - 流亡
-ItemDisplay[CL3 !ETH NMAG !RW RES>34 SOCK=3]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【聖堂│夢境│飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(35抗以上)3 - 聖堂/夢境/飛龍
+ItemDisplay[CL3 !ETH NMAG !RW RES>34 SOCK=3]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【聖堂＼夢境＼飛龍】{%ORANGE%飛龍: 29＋28＋12%NL%夢境: 16＋31＋21%NL%聖堂: 18＋18＋23} //聖騎盾(35抗以上)3 - 聖堂/夢境/飛龍
 ItemDisplay[CL3 !ETH NMAG !RW RES>34 SOCK=4]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【精神】{%ORANGE%精神: 7＋10＋9＋11} //聖騎盾(35抗以上)4 - 精神
 ItemDisplay[CL3 ETH ELT NMAG !RW RES>34 SOCK=4]: %NAME%%DARK_GREEN%(35抗↑)%GRAY%【流亡】{%ORANGE%流亡: 26＋27＋24＋14} //聖騎盾(35抗以上)4(無) - 流亡
 
-ItemDisplay[WP13 TABSK24=3 SK101=3]: %NAME%%RED%【+3懲戒│+3聖光彈】
-ItemDisplay[WP13 TABSK24=3 SK112=3]: %NAME%%RED%【+3懲戒│+3祝福之鎚】
-ItemDisplay[WP13 TABSK24=3 SK121=3]: %NAME%%RED%【+3懲戒│+3天堂之拳】
+ItemDisplay[WP13 TABSK24=3 SK101=3]: %NAME%%RED%【+3懲戒＼+3聖光彈】
+ItemDisplay[WP13 TABSK24=3 SK112=3]: %NAME%%RED%【+3懲戒＼+3祝福之鎚】
+ItemDisplay[WP13 TABSK24=3 SK121=3]: %NAME%%RED%【+3懲戒＼+3天堂之拳】
 
 // 死靈
-ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SOCK=0 OR SOCK=2) (SK68>0 OR SK74>0 OR SK79>0 OR SK83>0) !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛│白骨裝甲/屍體爆炸/號召/褻瀆】{%ORANGE%白色: 14＋16%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}// 骨矛84 白骨裝甲68 屍體爆炸74 號召79 褻瀆83
-ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SOCK=0 OR SOCK=2) (SK68>0 OR SK74>0 OR SK79>0) !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆│白骨裝甲/屍體爆炸/號召】{%ORANGE%白色: 14＋16%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}// 褻瀆83 白骨裝甲68 屍體爆炸74 號召79
+ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SOCK=0 OR SOCK=2) (SK68>0 OR SK74>0 OR SK79>0 OR SK83>0) !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛＼白骨裝甲/屍體爆炸/號召/褻瀆】{%ORANGE%白色: 14＋16%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}// 骨矛84 白骨裝甲68 屍體爆炸74 號召79 褻瀆83
+ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SOCK=0 OR SOCK=2) (SK68>0 OR SK74>0 OR SK79>0) !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆＼白骨裝甲/屍體爆炸/號召】{%ORANGE%白色: 14＋16%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}// 褻瀆83 白骨裝甲68 屍體爆炸74 號召79
 ItemDisplay[WP12 !ETH NMAG !RW SK84=3 (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %NAME%%RED%【+3骨矛】{%ORANGE%白色: 14＋16%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}
 ItemDisplay[WP12 !ETH NMAG !RW SK83=3 (SOCK=0 OR SOCK=2) !wnd !ywn !9wn]: %NAME%%RED%【+3褻瀆】{%ORANGE%白色: 14＋16%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}
 
@@ -307,13 +316,13 @@ ItemDisplay[CL5 NMAG !RW SK271=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs !axf !9xf !7x
 ItemDisplay[CL5 NMAG !RW SK276=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs !axf !9xf !7xf !ces !9cs !7cs]: %NAME%%RED%【+3亡者陷阱】{%ORANGE%渾沌: 19＋27＋22%NL%瘟疫: 32＋19＋22%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}
 ItemDisplay[CL5 NMAG !RW SK277=3 (SOCK=0 OR SOCK>2) !9cs !7xf !7cs !axf !9xf !7xf !ces !9cs !7cs]: %NAME%%RED%【+3刀刃之盾】{%ORANGE%渾沌: 19＋27＋22%NL%瘟疫: 32＋19＋22%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}
 
-ItemDisplay[CL5 TABSK49=3 SK253=3]:%NAME%%RED%【+3影子訓練│+3心靈戰鎚】
-ItemDisplay[CL5 TABSK49=3 SK273=3]:%NAME%%RED%【+3影子訓練│+3心靈戰鎚】
-ItemDisplay[CL5 !ETH TABSK48=3 SK274=3]:%NAME%%RED%【+3陷阱│+3寒冰刃】
-ItemDisplay[CL5 TABSK48=3 SK262=3]:%NAME%%RED%【+3陷阱│+3火浪陷阱】
-ItemDisplay[CL5 TABSK48=3 SK271=3]:%NAME%%RED%【+3陷阱│+3雷光陷阱】
-ItemDisplay[CL5 TABSK48=3 SK276=3]:%NAME%%RED%【+3陷阱│+3亡者陷阱】
-ItemDisplay[CL5 TABSK48=3 SK277=3]:%NAME%%RED%【+3陷阱│+3刀刃之盾】
+ItemDisplay[CL5 TABSK49=3 SK253=3]:%NAME%%RED%【+3影子訓練＼+3心靈戰鎚】
+ItemDisplay[CL5 TABSK49=3 SK273=3]:%NAME%%RED%【+3影子訓練＼+3心靈戰鎚】
+ItemDisplay[CL5 !ETH TABSK48=3 SK274=3]:%NAME%%RED%【+3陷阱＼+3寒冰刃】
+ItemDisplay[CL5 TABSK48=3 SK262=3]:%NAME%%RED%【+3陷阱＼+3火浪陷阱】
+ItemDisplay[CL5 TABSK48=3 SK271=3]:%NAME%%RED%【+3陷阱＼+3雷光陷阱】
+ItemDisplay[CL5 TABSK48=3 SK276=3]:%NAME%%RED%【+3陷阱＼+3亡者陷阱】
+ItemDisplay[CL5 TABSK48=3 SK277=3]:%NAME%%RED%【+3陷阱＼+3刀刃之盾】
 
 // 法師
 ItemDisplay[(ob5 OR oba OR obf) NMAG !RW SK56=3 (SOCK=0 OR SOCK>2)]: %NAME%%RED%【+3隕石】
@@ -328,13 +337,13 @@ ItemDisplay[(cst OR 8cs OR 6cs OR bst OR 8bs OR 6bs) NMAG !RW SK58=3 SOCK=0]: %N
 ItemDisplay[(cst OR 8cs OR 6cs OR bst OR 8bs OR 6bs OR wst OR 8ws OR 6ws) NMAG !RW SK58=3 SOCK=4]: %NAME%%RED%【+3能量護盾】{%ORANGE%記憶: 17＋16＋12＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}
 
 // 實際上用不到 //
-ItemDisplay[CL6 TABSK8=3 SK56=3]:%NAME%%RED%【+3火焰│+3隕石】
-ItemDisplay[CL6 TABSK8=3 SK62=3]:%NAME%%RED%【+3火焰│+3九頭火蛇】
-ItemDisplay[CL6 TABSK10=3 SK59=3]:%NAME%%RED%【+3冰冷│+3暴風雪】
-ItemDisplay[CL6 TABSK10=3 SK64=3]:%NAME%%RED%【+3冰冷│+3冰封球】
-ItemDisplay[CL6 TABSK9=3 SK48=3]:%NAME%%RED%【+3閃電│+3閃電新星】
-ItemDisplay[CL6 TABSK9=3 SK49=3]:%NAME%%RED%【+3閃電│+3雷霆浪湧】
-ItemDisplay[CL6 TABSK9=3 SK54=3]:%NAME%%RED%【+3閃電│+3連鎖閃電】
+ItemDisplay[CL6 TABSK8=3 SK56=3]:%NAME%%RED%【+3火焰＼+3隕石】
+ItemDisplay[CL6 TABSK8=3 SK62=3]:%NAME%%RED%【+3火焰＼+3九頭火蛇】
+ItemDisplay[CL6 TABSK10=3 SK59=3]:%NAME%%RED%【+3冰冷＼+3暴風雪】
+ItemDisplay[CL6 TABSK10=3 SK64=3]:%NAME%%RED%【+3冰冷＼+3冰封球】
+ItemDisplay[CL6 TABSK9=3 SK48=3]:%NAME%%RED%【+3閃電＼+3閃電新星】
+ItemDisplay[CL6 TABSK9=3 SK49=3]:%NAME%%RED%【+3閃電＼+3雷霆浪湧】
+ItemDisplay[CL6 TABSK9=3 SK54=3]:%NAME%%RED%【+3閃電＼+3連鎖閃電】
 // 實際上用不到 //
 
 // 亞馬遜]:
@@ -361,14 +370,16 @@ ItemDisplay[CHSK83>0 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-褻瀆】
 ItemDisplay[CHSK53>0 !CL6 !UNI !SET !RW]: %NAME%%DARK_GREEN%【聚氣-傳送】
 
 // 過度
-ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 (CLVL<60 DIFF<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 0s水晶劍
-ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 (CLVL<50 DIFF<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //50等前顯示 0s闊劍
-ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=4 ILVL>25 ILVL<41 (CLVL<50 DIFF<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //50等前顯示 4s闊劍
-ItemDisplay[WP8 NMAG !RW !CL7 SOCK=4 (CLVL<60 OR DIFF<2)]: %NAME%【眼光-長斧】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}  //60等前顯示 4s長斧
-ItemDisplay[WP7 NMAG !RW !CL7 SOCK=4 (CLVL<60 OR DIFF<2)]: %NAME%【眼光-長槍】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 4s長槍
+ItemDisplay[crs NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 (CLVL<60 DIFFICULTY<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 0s水晶劍
+ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=0 ILVL>25 ILVL<41 (CLVL<50 DIFFICULTY<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //50等前顯示 0s闊劍
+ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=4 ILVL>25 ILVL<41 (CLVL<50 DIFFICULTY<2)]: %NAME%【精神-劍】{%ORANGE%精神: 7＋10＋9＋11%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //50等前顯示 4s闊劍
+
+ItemDisplay[!bar !9b7 !7o7 WP8 NMAG !RW !CL7 SOCK=0 ILVL>25 ILVL<41 (CLVL<60 DIFFICULTY<2)]: %NAME%【眼光-長斧】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}  //60等前顯示 0s長斧
+ItemDisplay[WP8 NMAG !RW !CL7 SOCK=4 (CLVL<60 OR DIFFICULTY<2)]: %NAME%【眼光-長斧】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}  //60等前顯示 4s長斧
+ItemDisplay[WP7 NMAG !RW !CL7 SOCK=4 (CLVL<60 OR DIFFICULTY<2)]: %NAME%【眼光-長槍】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 4s長槍
 
 ItemDisplay[(wsp OR 9ws) NMAG !RW !ETH SOCK=4]: %NAME%【神聖雷擊-單手傳送】{%ORANGE%神聖雷擊: 5＋8＋9＋7%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰權杖、神屬權杖
-ItemDisplay[sbw NMAG !RW SOCK=3 DIFF<2 CLVL>19]: %NAME%【邊緣-商店打折】{%ORANGE%邊緣: 3＋7＋11%NL%%YELLOW%基礎速度: %WPNSPD%} //短弓
+ItemDisplay[sbw NMAG !RW SOCK=3 DIFFICULTY<2 CLVL>19]: %NAME%【邊緣-商店打折】{%ORANGE%邊緣: 3＋7＋11%NL%%YELLOW%基礎速度: %WPNSPD%} //短弓
 
 // 缺錢
 ItemDisplay[EQ2 (NMAG OR MAG) !RW PRICE>34999]: $%PRICE%$ // 顯示35000盔甲賣錢
@@ -377,19 +388,19 @@ ItemDisplay[(CL6 OR WP12) MAG !RW ID ILVL>50]: $%PRICE%$ // 顯示法師寶珠+�
 ItemDisplay[(CL6 OR WP12) MAG !RW !ID ILVL>50]: $$$$ // 顯示法師寶珠+死靈魔杖賣錢
 
 // ===>>> 裝備 <<<===
-
 // 普通 進階 菁英
 ItemDisplay[(WEAPON OR ARMOR) NORM]: %NAME%【普通】%CONTINUE%
 ItemDisplay[(WEAPON OR ARMOR) EXC]: %NAME%【進階】%CONTINUE%
 ItemDisplay[(WEAPON OR ARMOR) ELT]: %NAME%【菁英】%CONTINUE%
 
-ItemDisplay[CL1]: <德>%NAME%%CONTINUE%
-ItemDisplay[CL2]: <蠻>%NAME%%CONTINUE%
-ItemDisplay[CL3]: <聖>%NAME%%CONTINUE%
-ItemDisplay[CL4]: <死>%NAME%%CONTINUE%
-ItemDisplay[CL5]: <刺>%NAME%%CONTINUE%
-ItemDisplay[CL6]: <法>%NAME%%CONTINUE%
-ItemDisplay[CL7]: <亞>%NAME%%CONTINUE%
+ItemDisplay[CL1]: [德]%NAME%%CONTINUE%
+ItemDisplay[CL2]: [蠻]%NAME%%CONTINUE%
+ItemDisplay[CL3]: [聖]%NAME%%CONTINUE%
+ItemDisplay[CL4]: [死]%NAME%%CONTINUE%
+ItemDisplay[CL5]: [刺]%NAME%%CONTINUE%
+ItemDisplay[CL6]: [法]%NAME%%CONTINUE%
+ItemDisplay[CL7]: [亞]%NAME%%CONTINUE%
+
 
 // 戒指 項鍊 箭矢 十字箭
 ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】//戒指 項鍊
@@ -401,108 +412,109 @@ ItemDisplay[aq2 OR cq2 OR aqv OR cqv]: %NAME%【箭袋】%CONTINUE% //箭矢 十
 
 // 暗金+套裝提示掉落
 //頭
-ItemDisplay[UNI !ID xh9]: (吸血鬼的凝視)%NAME%%NOTIFY-ITEM%%SOUND-418%//吸血鬼的凝視
-ItemDisplay[UNI !ID uap]: (諧角之冠)%NAME%%NOTIFY-ITEM%%SOUND-418%//諧角之冠
-ItemDisplay[UNI !ID ulm]: (鋼影)%NAME%%NOTIFY-ITEM%%SOUND-418%//鋼影
-ItemDisplay[UNI !ID uhm]: (鋼鐵面紗/夜翼面紗)%NAME%%NOTIFY-ITEM%%SOUND-418%//鋼鐵面紗 夜翼面紗
-ItemDisplay[UNI !ID usk]: (安達利爾的面貌)%NAME%%NOTIFY-ITEM%%SOUND-418%//安達利爾的面貌
-// ItemDisplay[UNI !ID urn]: (年紀之冠)%NAME%%NOTIFY-ITEM%%SOUND-418%//年紀之冠
-ItemDisplay[UNI !ID ci3]: (獅鷲獸之眼)%NAME%%NOTIFY-ITEM%%SOUND-418%//獅鷲獸之眼
-ItemDisplay[UNI !ID ci2]: (奇拉的守護)%NAME%%NOTIFY-ITEM%%SOUND-418%//奇拉的守護
+ItemDisplay[UNI !ID xh9]: (吸血鬼的凝視)%NAME%%NOTIFY(ITEM)%%SOUND-418%//吸血鬼的凝視
+ItemDisplay[UNI !ID uap]: (諧角之冠)%NAME%%NOTIFY(ITEM)%%SOUND-418%//諧角之冠
+ItemDisplay[UNI !ID ulm]: (鋼影)%NAME%%NOTIFY(ITEM)%%SOUND-418%//鋼影
+ItemDisplay[UNI !ID uhm]: (鋼鐵面紗/夜翼面紗)%NAME%%NOTIFY(ITEM)%%SOUND-418%//鋼鐵面紗 夜翼面紗
+ItemDisplay[UNI !ID usk]: (安達利爾的面貌)%NAME%%NOTIFY(ITEM)%%SOUND-418%//安達利爾的面貌
+ItemDisplay[UNI !ID urn FILTERLVL=0]: (年紀之冠)%NAME%%NOTIFY(ITEM)%%SOUND-418%//年紀之冠
+ItemDisplay[UNI !ID ci3]: (獅鷲獸之眼)%NAME%%NOTIFY(ITEM)%%SOUND-418%//獅鷲獸之眼
+ItemDisplay[UNI !ID ci2]: (奇拉的守護)%NAME%%NOTIFY(ITEM)%%SOUND-418%//奇拉的守護
 
 //衣服
-ItemDisplay[UNI !ID xea]: (蛇魔法師之皮)%NAME%%NOTIFY-ITEM%%SOUND-418%//蛇魔法師之皮
-// ItemDisplay[UNI !ID xrs]: (都瑞爾的殼)%NAME%%NOTIFY-ITEM%%SOUND-418%//都瑞爾的殼
-ItemDisplay[UNI !ID xhn]: (避矢)%NAME%%NOTIFY-ITEM%%SOUND-418%//避矢
-ItemDisplay[UNI !ID xpl]: (詩寇蒂的憤怒)%NAME%%NOTIFY-ITEM%%SOUND-418%//詩寇蒂的憤怒
-ItemDisplay[UNI !ID uui]: (奧瑪斯的長袍)%NAME%%NOTIFY-ITEM%%SOUND-418%//奧瑪斯的長袍
-ItemDisplay[UNI !ID upl]: (阿凱尼的榮耀)%NAME%%NOTIFY-ITEM%%SOUND-418%//阿凱尼的榮耀
-ItemDisplay[UNI !ID uar]: (聖堂武士的力量/泰瑞爾的力量)%NAME%%NOTIFY-ITEM%%SOUND-418%//聖堂武士的力量 泰瑞爾的力量
+ItemDisplay[UNI !ID xea]: (蛇魔法師之皮)%NAME%%NOTIFY(ITEM)%%SOUND-418%//蛇魔法師之皮
+ItemDisplay[UNI !ID xrs FILTERLVL=0]: (都瑞爾的殼)%NAME%%NOTIFY(ITEM)%%SOUND-418%//都瑞爾的殼
+ItemDisplay[UNI !ID xhn]: (避矢)%NAME%%NOTIFY(ITEM)%%SOUND-418%//避矢
+ItemDisplay[UNI !ID xpl]: (詩寇蒂的憤怒)%NAME%%NOTIFY(ITEM)%%SOUND-418%//詩寇蒂的憤怒
+ItemDisplay[UNI !ID uui]: (奧瑪斯的長袍)%NAME%%NOTIFY(ITEM)%%SOUND-418%//奧瑪斯的長袍
+ItemDisplay[UNI !ID upl]: (阿凱尼的榮耀)%NAME%%NOTIFY(ITEM)%%SOUND-418%//阿凱尼的榮耀
+ItemDisplay[UNI !ID uar]: (聖堂武士的力量/泰瑞爾的力量)%NAME%%NOTIFY(ITEM)%%SOUND-418%//聖堂武士的力量 泰瑞爾的力量
 
 //盾
-ItemDisplay[UNI !ID uit]: (暴風之盾)%NAME%%NOTIFY-ITEM%%SOUND-418%//暴風之盾
+ItemDisplay[UNI !ID uit]: (暴風之盾)%NAME%%NOTIFY(ITEM)%%SOUND-418%//暴風之盾
 
 //手套
-//ItemDisplay[UNI !ID tgl !ETH]: (法師之拳)%NAME%%NOTIFY-ITEM%%SOUND-418%//法師之拳
-//ItemDisplay[UNI !ID hgl !ETH]: (霜燃)%NAME%%NOTIFY-ITEM%%SOUND-418%//霜燃
-ItemDisplay[UNI !ID uvg !ETH]: (卓古拉之握)%NAME%%NOTIFY-ITEM%%SOUND-418%//卓古拉之握
+ItemDisplay[UNI !ID tgl !ETH FILTERLVL=0]: (法師之拳)%NAME%%NOTIFY(ITEM)%%SOUND-418%//法師之拳
+ItemDisplay[UNI !ID hgl !ETH FILTERLVL=0]: (霜燃)%NAME%%NOTIFY(ITEM)%%SOUND-418%//霜燃
+ItemDisplay[UNI !ID uvg !ETH]: (卓古拉之握)%NAME%%NOTIFY(ITEM)%%SOUND-418%//卓古拉之握
 
 //腳
-ItemDisplay[UNI !ID xvb !ETH]: (水上飄)%NAME%%NOTIFY-ITEM%%SOUND-418%//水上飄
-ItemDisplay[UNI !ID xtb !ETH]: (戰爭旅者)%NAME%%NOTIFY-ITEM%%SOUND-418%//戰爭旅者
-ItemDisplay[UNI !ID uvb]: (沙暴之旅)%NAME%%NOTIFY-ITEM%%SOUND-418%//沙暴之旅
+ItemDisplay[UNI !ID xvb !ETH]: (水上飄)%NAME%%NOTIFY(ITEM)%%SOUND-418%//水上飄
+ItemDisplay[UNI !ID xtb !ETH]: (戰爭旅者)%NAME%%NOTIFY(ITEM)%%SOUND-418%//戰爭旅者
+ItemDisplay[UNI !ID uvb]: (沙暴之旅)%NAME%%NOTIFY(ITEM)%%SOUND-418%//沙暴之旅
 
 //腰帶
-ItemDisplay[UNI !ID zlb !ETH]: (長串之耳)%NAME%%NOTIFY-ITEM%%SOUND-418%//長串之耳
-ItemDisplay[UNI !ID zvb !ETH]: (剃刀之尾)%NAME%%NOTIFY-ITEM%%SOUND-418%//剃刀之尾
-ItemDisplay[UNI !ID ztb !ETH]: (雪之衝突)%NAME%%NOTIFY-ITEM%%SOUND-418%//雪之衝突
-ItemDisplay[UNI !ID zhb !ETH]: (雷神之力)%NAME%%NOTIFY-ITEM%%SOUND-418%//雷神之力
-ItemDisplay[UNI !ID ulc]: (蜘蛛之網)%NAME%%NOTIFY-ITEM%%SOUND-418%//蜘蛛之網
-ItemDisplay[UNI !ID umc !ETH]: (維爾登戈的心結)%NAME%%NOTIFY-ITEM%%SOUND-418%//維爾登戈的心結
+ItemDisplay[UNI !ID zlb !ETH]: (長串之耳)%NAME%%NOTIFY(ITEM)%%SOUND-418%//長串之耳
+ItemDisplay[UNI !ID zvb !ETH]: (剃刀之尾)%NAME%%NOTIFY(ITEM)%%SOUND-418%//剃刀之尾
+ItemDisplay[UNI !ID ztb !ETH]: (雪之衝突)%NAME%%NOTIFY(ITEM)%%SOUND-418%//雪之衝突
+ItemDisplay[UNI !ID zhb !ETH]: (雷神之力)%NAME%%NOTIFY(ITEM)%%SOUND-418%//雷神之力
+ItemDisplay[UNI !ID ulc]: (蜘蛛之網)%NAME%%NOTIFY(ITEM)%%SOUND-418%//蜘蛛之網
+ItemDisplay[UNI !ID umc !ETH]: (維爾登戈的心結)%NAME%%NOTIFY(ITEM)%%SOUND-418%//維爾登戈的心結
 
 //弓
-ItemDisplay[UNI !ID 6lw]: (風之力)%NAME%%NOTIFY-ITEM%%SOUND-418%//風之力
+ItemDisplay[UNI !ID 6lw]: (風之力)%NAME%%NOTIFY(ITEM)%%SOUND-418%//風之力
 
 //匕首
-ItemDisplay[UNI !ID 7kr !ETH]: (裂肉者)%NAME%%NOTIFY-ITEM%%SOUND-418%//裂肉者
+ItemDisplay[UNI !ID 7kr !ETH]: (裂肉者)%NAME%%NOTIFY(ITEM)%%SOUND-418%//裂肉者
 
 ///槌子
-ItemDisplay[UNI !ID 7sp !ETH]: (惡魔爪牙)%NAME%%NOTIFY-ITEM%%SOUND-418%//惡魔爪牙
-ItemDisplay[UNI !ID 7m7 !ETH]: (風之鎚)%NAME%%NOTIFY-ITEM%%SOUND-418%//風之鎚
+ItemDisplay[UNI !ID 7sp !ETH]: (惡魔爪牙)%NAME%%NOTIFY(ITEM)%%SOUND-418%//惡魔爪牙
+ItemDisplay[UNI !ID 7m7 !ETH]: (風之鎚)%NAME%%NOTIFY(ITEM)%%SOUND-418%//風之鎚
 
 //長斧
-// ItemDisplay[UNI !ID 7pa]: (盜墓者)%NAME%%NOTIFY-ITEM%%SOUND-418%//盜墓者
-// ItemDisplay[UNI !ID 7s8]: (死神的喪鐘)%NAME%%NOTIFY-ITEM%%SOUND-418%//死神的喪鐘
+ItemDisplay[UNI !ID 7pa FILTERLVL=0]: (盜墓者)%NAME%%NOTIFY(ITEM)%%SOUND-418%//盜墓者
+ItemDisplay[UNI !ID 7s8 FILTERLVL=0]: (死神的喪鐘)%NAME%%NOTIFY(ITEM)%%SOUND-418%//死神的喪鐘
 
 //劍
-ItemDisplay[UNI !ID 9bs]: (擊頭者)%NAME%%NOTIFY-ITEM%%SOUND-418%//擊頭者
-ItemDisplay[UNI !ID 7cr]: (光之軍刀/青色忿怒)%NAME%%NOTIFY-ITEM%%SOUND-418%//光之軍刀 青色忿怒
-// ItemDisplay[UNI !ID 7gd]: (祖父)%NAME%%NOTIFY-ITEM%%SOUND-418%//祖父
+ItemDisplay[UNI !ID 9bs]: (擊頭者)%NAME%%NOTIFY(ITEM)%%SOUND-418%//擊頭者
+ItemDisplay[UNI !ID 7cr]: (光之軍刀/青色忿怒)%NAME%%NOTIFY(ITEM)%%SOUND-418%//光之軍刀 青色忿怒
+ItemDisplay[UNI !ID 7gd FILTERLVL=0]: (祖父)%NAME%%NOTIFY(ITEM)%%SOUND-418%//祖父
 
 //魔杖
-ItemDisplay[UNI !ID 7gw]: (死亡之網)%NAME%%NOTIFY-ITEM%%SOUND-418%//死亡之網
+ItemDisplay[UNI !ID 7gw]: (死亡之網)%NAME%%NOTIFY(ITEM)%%SOUND-418%//死亡之網
 
 //亞馬標槍
-ItemDisplay[UNI !ID ama]: (泰坦的復仇)%NAME%%NOTIFY-ITEM%%SOUND-418%//泰坦的復仇
+ItemDisplay[UNI !ID ama]: (泰坦的復仇)%NAME%%NOTIFY(ITEM)%%SOUND-418%//泰坦的復仇
 
 //死靈盾
-ItemDisplay[UNI !ID nea]: (侏儒)%NAME%%NOTIFY-ITEM%%SOUND-418%//侏儒
-ItemDisplay[UNI !ID nef]: (魔力肇生)%NAME%%NOTIFY-ITEM%%SOUND-418%//魔力肇生
+ItemDisplay[UNI !ID nea]: (侏儒)%NAME%%NOTIFY(ITEM)%%SOUND-418%//侏儒
+ItemDisplay[UNI !ID nef]: (魔力肇生)%NAME%%NOTIFY(ITEM)%%SOUND-418%//魔力肇生
 
 //蠻子頭
-ItemDisplay[UNI !ID baa !ETH]: (亞瑞特的面容)%NAME%%NOTIFY-ITEM%%SOUND-418%//亞瑞特的面容
-// ItemDisplay[UNI !ID bac !ETH]: (狼嚎)%NAME%%NOTIFY-ITEM%%SOUND-418%//狼嚎
+ItemDisplay[UNI !ID baa !ETH]: (亞瑞特的面容)%NAME%%NOTIFY(ITEM)%%SOUND-418%//亞瑞特的面容
+ItemDisplay[UNI !ID bac !ETH FILTERLVL=0]: (狼嚎)%NAME%%NOTIFY(ITEM)%%SOUND-418%//狼嚎
 
 //法師杖
-// ItemDisplay[UNI !ID oba]: (眼球)%NAME%%NOTIFY-ITEM%%SOUND-418%//眼球
-ItemDisplay[UNI !ID obc]: (艾斯屈塔的脾氣)%NAME%%NOTIFY-ITEM%%SOUND-418%//艾斯屈塔的脾氣
-// ItemDisplay[UNI !ID obf]: (死亡深度)%NAME%%NOTIFY-ITEM%%SOUND-418%//死亡深度
+ItemDisplay[UNI !ID oba FILTERLVL=0]: (眼球)%NAME%%NOTIFY(ITEM)%%SOUND-418%//眼球
+ItemDisplay[UNI !ID obc]: (艾斯屈塔的脾氣)%NAME%%NOTIFY(ITEM)%%SOUND-418%//艾斯屈塔的脾氣
+ItemDisplay[UNI !ID obf FILTERLVL=0]: (死亡深度)%NAME%%NOTIFY(ITEM)%%SOUND-418%//死亡深度
 
 //小德頭
-ItemDisplay[UNI !ID dra !ETH]: (加爾的長髮)%NAME%%NOTIFY-ITEM%%SOUND-418%//加爾的長髮
-// ItemDisplay[UNI !ID drb !ETH]: (地獄之吻)%NAME%%NOTIFY-ITEM%%SOUND-418%//地獄之吻
-ItemDisplay[UNI !ID dre !ETH]: (烏鴉之王)%NAME%%NOTIFY-ITEM%%SOUND-418%//烏鴉之王
+ItemDisplay[UNI !ID dra !ETH]: (加爾的長髮)%NAME%%NOTIFY(ITEM)%%SOUND-418%//加爾的長髮
+ItemDisplay[UNI !ID drb !ETH FILTERLVL=0]: (地獄之吻)%NAME%%NOTIFY(ITEM)%%SOUND-418%//地獄之吻
+ItemDisplay[UNI !ID dre !ETH]: (烏鴉之王)%NAME%%NOTIFY(ITEM)%%SOUND-418%//烏鴉之王
 
 //聖騎盾
-ItemDisplay[UNI !ID pa9 !ETH]: (撒卡蘭姆使者)%NAME%%NOTIFY-ITEM%%SOUND-418%//撒卡蘭姆使者
+ItemDisplay[UNI !ID pa9 !ETH]: (撒卡蘭姆使者)%NAME%%NOTIFY(ITEM)%%SOUND-418%//撒卡蘭姆使者
 
-//ItemDisplay[SET !ID xtb]: (艾爾多的成長)%NAME%%NOTIFY-ITEM%%SOUND-418%//艾爾多的成長
-//ItemDisplay[SET !ID uar]: (不朽之王的靈魂牢籠)%NAME%%NOTIFY-ITEM%%SOUND-418%//不朽之王的靈魂牢籠
-//ItemDisplay[SET !ID xmg]: (塔格奧之手)%NAME%%NOTIFY-ITEM%%SOUND-418%//塔格奧之手
-ItemDisplay[SET !ID 7qr]: (娜塔亞的記號)%NAME%%NOTIFY-ITEM%%SOUND-418%//娜塔亞的記號
-// ItemDisplay[SET !ID ucl]: (娜塔亞的影子)%NAME%%NOTIFY-ITEM%%SOUND-418%//娜塔亞的影子
-// ItemDisplay[SET !ID xsk]: (塔-拉夏的赫拉迪克紋章)%NAME%%NOTIFY-ITEM%%SOUND-418%//塔-拉夏的赫拉迪克紋章
-ItemDisplay[SET !ID uth]: (塔-拉夏的守護)%NAME%%NOTIFY-ITEM%%SOUND-418%//塔-拉夏的守護
-//ItemDisplay[SET !ID 7wd]: (布爾凱索的部族守護)%NAME%%NOTIFY-ITEM%%SOUND-418%//布爾凱索的部族守護
-// ItemDisplay[SET !ID ulg]: (手掌的安置)%NAME%%NOTIFY-ITEM%%SOUND-418%//手掌的安置
-// ItemDisplay[SET !ID xhm]: (吉永之臉)%NAME%%NOTIFY-ITEM%%SOUND-418%//吉永之臉
+ItemDisplay[SET !ID xtb FILTERLVL=0]: (艾爾多的成長)%NAME%%NOTIFY(ITEM)%%SOUND-418%//艾爾多的成長
+ItemDisplay[SET !ID uar FILTERLVL=0]: (不朽之王的靈魂牢籠)%NAME%%NOTIFY(ITEM)%%SOUND-418%//不朽之王的靈魂牢籠
+ItemDisplay[SET !ID xmg FILTERLVL=0]: (塔格奧之手)%NAME%%NOTIFY(ITEM)%%SOUND-418%//塔格奧之手
+ItemDisplay[SET !ID 7qr]: (娜塔亞的記號)%NAME%%NOTIFY(ITEM)%%SOUND-418%//娜塔亞的記號
+ItemDisplay[SET !ID ucl FILTERLVL=0]: (娜塔亞的影子)%NAME%%NOTIFY(ITEM)%%SOUND-418%//娜塔亞的影子
+ItemDisplay[SET !ID xsk FILTERLVL=0]: (塔-拉夏的赫拉迪克紋章)%NAME%%NOTIFY(ITEM)%%SOUND-418%//塔-拉夏的赫拉迪克紋章
+ItemDisplay[SET !ID uth]: (塔-拉夏的守護)%NAME%%NOTIFY(ITEM)%%SOUND-418%//塔-拉夏的守護
+temDisplay[SET !ID 7wd FILTERLVL=0]: (布爾凱索的部族守護)%NAME%%NOTIFY(ITEM)%%SOUND-418%//布爾凱索的部族守護
+ItemDisplay[SET !ID ulg FILTERLVL=0]: (手掌的安置)%NAME%%NOTIFY(ITEM)%%SOUND-418%//手掌的安置
+ItemDisplay[SET !ID xhm FILTERLVL=0]: (吉永之臉)%NAME%%NOTIFY(ITEM)%%SOUND-418%//吉永之臉
 
-ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2 OR aqv OR cqv) (UNI OR SET) DIFF<2 !ID]: %NAME%%NOTIFY-ITEM%// 套裝+暗金 其他難度
-ItemDisplay[(rin OR amu) RARE !ID]: %NAME%%NOTIFY-ITEM%%SOUND-15%// 戒指+項鍊 稀有
-ItemDisplay[(rin OR amu OR jew OR cm1 OR cm2 OR cm3) UNI !ID]: %NAME%%NOTIFY-ITEM%%SOUND-2594%// 戒指+項鍊+珠寶+護身符 暗金
+ItemDisplay[(WEAPON OR ARMOR OR aq2 OR cq2 OR aqv OR cqv) (UNI OR SET) !ID]: %NAME%%NOTIFY(ITEM)%// 套裝+暗金 其他難度
+ItemDisplay[(rin OR amu) RARE !ID]: %NAME%%NOTIFY(ITEM)%%SOUND-15%// 戒指+項鍊 稀有
+ItemDisplay[(rin OR amu OR jew OR cm1 OR cm2 OR cm3) UNI !ID]: %NAME%%NOTIFY(ITEM)%%SOUND-2594%// 戒指+項鍊+珠寶+護身符 暗金
 
 // 刪除垃圾
-ItemDisplay[(tsc OR isc) DIFF>0]: // 普通難度後不顯示傳送鑑定卷軸
+ItemDisplay[(tsc OR isc) DIFFICULTY=0]: %NAME% // 普通難度顯示傳送鑑定卷軸
+ItemDisplay[(tsc OR isc) DIFFICULTY>0]: // 普通難度後不顯示傳送鑑定卷軸
 ItemDisplay[NMAG INF !RW CLVL>5]: // 6等後刪除破碎等垃圾
 ItemDisplay[NMAG SOCK=1 CLVL>5]: // 6等後刪除白色1s裝備
 
@@ -517,5 +529,5 @@ ItemDisplay[(WEAPON OR ARMOR) !EQ7 NORM MAG CLVL>29]: // 30等後刪除頭冠外
 ItemDisplay[(WEAPON OR ARMOR) !EQ7 MAG CLVL>49]: // 50等後刪除頭冠以外所有藍裝
 ItemDisplay[EQ7 ETH !UNI !ID]: // 刪除無形頭冠
 
-ItemDisplay[(WEAPON OR EQ1 OR EQ2 OR EQ3 OR CL3 OR CL4 OR CL6 OR CL7) !CL5 !WP6 !amb !am5 !ama !amf DIFF=2 RARE !ID CLVL>79]: // 地獄難度80等後刪除標槍、爪子、女族長之弓以外武器、頭、衣服、盾牌金裝
-ItemDisplay[(EQ4 OR EQ5 OR EQ6 OR EQ7 OR CL1 OR CL2) ETH DIFF=2 RARE !ID CLVL>79]: // 地獄難度80等後刪除手套、鞋子、腰帶、頭冠金裝(無形)
+ItemDisplay[(WEAPON OR EQ1 OR EQ2 OR EQ3 OR CL3 OR CL4 OR CL6 OR CL7) !CL5 !WP6 !amb !am5 !ama !amf DIFFICULTY=2 RARE !ID CLVL>79]: // 地獄難度80等後刪除標槍、爪子、女族長之弓以外武器、頭、衣服、盾牌金裝
+ItemDisplay[(EQ4 OR EQ5 OR EQ6 OR EQ7 OR CL1 OR CL2) ETH DIFFICULTY=2 RARE !ID CLVL>79]: // 地獄難度80等後刪除手套、鞋子、腰帶、頭冠金裝(無形)
