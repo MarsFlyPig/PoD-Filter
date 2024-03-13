@@ -4,7 +4,7 @@
 Attribute[Author]: MarsFlyPig
 Attribute[Name]: Pod 過濾器
 Attribute[Version]: 版本: #21 Shungite(次石墨)
-Attribute[Date]: 2024/03/13 11:10
+Attribute[Date]: 2024/03/13 16:15
 
 FilterLevel[1]: 基本版
 FilterLevel[2]: 遺物版(有問題群裡喊)
@@ -45,7 +45,6 @@ ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※%NOTIFY(ITEM)
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖(Relic)
-ItemDisplay[ma1 !ID]: -T1-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火103％%YELLOW%電103％%GREEN%毒120％%GRAY%物100％} //寒霜洞窟 (Icy Cavern)
 ItemDisplay[ma2 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火113％%BLUE%冰143％%GREEN%毒120％%GRAY%物100％} //蜃景荒漠 (Forgotten Desert)
 ItemDisplay[ma3 !ID]: -T?-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //遺棄之地 (Abandoned Precinct)
 ItemDisplay[ma4 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火123％%BLUE%冰173％%GREEN%毒120％} //褻瀆教堂 (Desecrated Temple)
@@ -54,8 +53,10 @@ ItemDisplay[ma6 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{�
 ItemDisplay[ma7 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火128％%BLUE%冰123％%YELLOW%電103％%GREEN%毒140％%WHITE%魔100％} //焚燒森林 (Burnt Forest)
 ItemDisplay[ma8 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火103％%BLUE%冰173％%YELLOW%電103％%GREEN%毒100％%GRAY%物100％} //發霉地穴 (Musty Crypt)
 ItemDisplay[ma9 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火103％%BLUE%冰133％%GREEN%毒120％} //昏暗地窖 (Dim Cellar)
-// ItemDisplay[ma10 !ID]: -T0-『%NAME%』%GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture) BUG無法顯示
-ItemDisplay[ma1]: -T1-『%NAME%』{免疫：%RED%火103％%YELLOW%電103％%GREEN%毒120％%GRAY%物100％} //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma10 !ID]: -T1-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火103％%YELLOW%電103％%GREEN%毒120％%GRAY%物100％} //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma11 !ID]: -T0-『%NAME%』%GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture)
+ItemDisplay[ma12 !ID]: -T?-『%NAME%』%GRAY%(未鑑定)%YELLOW% //惡毒宮殿 (Baleful Alcazar)
+
 ItemDisplay[ma2]: -T3-『%NAME%』{免疫：%RED%火113％%BLUE%冰143％%GREEN%毒120％%GRAY%物100％} //蜃景荒漠 (Forgotten Desert)
 ItemDisplay[ma3]: -T?-『%NAME%』 //遺棄之地 (Abandoned Precinct)
 ItemDisplay[ma4]: -T2-『%NAME%』{免疫：%RED%火123％%BLUE%冰173％%GREEN%毒120％} //褻瀆教堂 (Desecrated Temple)
@@ -64,16 +65,19 @@ ItemDisplay[ma6]: -T3-『%NAME%』{免疫：%BLUE%冰143％%YELLOW%電103％%GRE
 ItemDisplay[ma7]: -T3-『%NAME%』{免疫：%RED%火128％%BLUE%冰123％%YELLOW%電103％%GREEN%毒140％%WHITE%魔100％} //焚燒森林 (Burnt Forest)
 ItemDisplay[ma8]: -T2-『%NAME%』{免疫：%RED%火103％%BLUE%冰173％%YELLOW%電103％%GREEN%毒100％%GRAY%物100％} //發霉地穴 (Musty Crypt)
 ItemDisplay[ma9]: -T2-『%NAME%』{免疫：%RED%火103％%BLUE%冰133％%GREEN%毒120％} //昏暗地窖 (Dim Cellar)
-ItemDisplay[ma10]: -T0-『%NAME%』//悅心農場 (Pleasant Pasture) BUG無法顯示
+ItemDisplay[ma10]: -T1-『%NAME%』{免疫：%RED%火103％%YELLOW%電103％%GREEN%毒120％%GRAY%物100％} //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma11]: -T0-『%NAME%』//悅心農場 (Pleasant Pasture)
+ItemDisplay[ma12]: -T?-『%NAME%』//惡毒宮殿 (Baleful Alcazar)
+
 ItemDisplay[maz]: <<毀滅>>『%NAME%』{沒做好準備請不要隨意挑戰} //地獄審判
 
 // 根據玩家等級隱藏金錢顯示
-ItemDisplay[CLVL>89 GOLD<3000]: //90等後不顯示3000元以下
-ItemDisplay[CLVL>79 GOLD<1500]: //80等後不顯示1500元以下
+ItemDisplay[CLVL>89 GOLD<4000]: //90等後不顯示4000元以下
+ItemDisplay[CLVL>79 GOLD<2000]: //80等後不顯示2000元以下
 ItemDisplay[CLVL>59 GOLD<1000]: //60等後不顯示1000元以下
 ItemDisplay[CLVL>44 GOLD<500]: //45等後不顯示500元以下
-ItemDisplay[CLVL>24 GOLD<200]: //25等後不顯示200元以下
-ItemDisplay[CLVL>6 GOLD<50]: //5等後不顯示50元以下
+ItemDisplay[CLVL>24 GOLD<250]: //25等後不顯示250元以下
+ItemDisplay[CLVL>6 GOLD<100]: //5等後不顯示100元以下
 ItemDisplay[GOLD>9]:%NAME%
 
 // 藥水:
