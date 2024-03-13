@@ -4,10 +4,10 @@
 Attribute[Author]: MarsFlyPig
 Attribute[Name]: Pod 過濾器
 Attribute[Version]: 版本: #21 Shungite(次石墨)
-Attribute[Date]: 2024/03/10 21:20
+Attribute[Date]: 2024/03/13 00:15
 
 FilterLevel[1]: 基本版
-FilterLevel[2]: 遺物版(還沒弄)
+FilterLevel[2]: 遺物版(弄一半)
 
 //FILTERLVL=1
 
@@ -39,33 +39,33 @@ ItemDisplay[fed]: %NAME% (A5){赦免徽章使用後可重置屬性與技能%NL%�
 ItemDisplay[std]: %NAME%{目前無作用} //英雄旗幟
 ItemDisplay[cm4]: %NAME% //Grand Charm (超大護身符?)
 ItemDisplay[leg]: %WHITE%※%NAME%%WHITE%※{%RED%維特之腳＋傳送之書＝秘密乳牛關卡(打贏對應難度巴爾後於蘿格營地內合成)} //維特之腳
-ItemDisplay[cx5]: ※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY(ITEM)%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
+ItemDisplay[cx5]: %WHITE%※%PURPLE%%NAME% (ooc)%WHITE%※%NOTIFY(ITEM)%{傳送之書、鑑定之書有腐化說明%NL%與裝備放入赫拉迪克方塊合成可腐化裝備} //腐化寶珠
 ItemDisplay[cx6]: %WHITE%※※%DGREEN%%NAME% (三王)%WHITE%※※{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //暗黑破壞神的靈魂石
 ItemDisplay[cx7]: %WHITE%※※%DGREEN%%NAME% (遺物)%WHITE%※※%NOTIFY(ITEM)%%SOUND-9%{%WHITE%於哈洛加斯上方古代人的聖殿內開啟，死亡便無法再進入，打贏後掉落%GOLD%《毀滅 小護身符》%NL%%WHITE%暗黑破壞神之角＋巴爾之眼＋墨菲斯托之腦＋暗黑破壞神的靈魂石＋混沌之鑰＝地獄審判} //混沌之鑰
 ItemDisplay[cx8]: %WHITE%※※%DGREEN%%NAME%%WHITE%※※ //附魔寶珠
 
 // 遺物地圖(Relic)
-ItemDisplay[ma1 !ID]: -T1-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma1 !ID]: -T1-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火103％%YELLOW%電103％%GREEN%毒120％%GRAY%物100％} //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火113％%BLUE%冰143％%GREEN%毒120％%GRAY%物100％} //蜃景荒漠 (Forgotten Desert)
 ItemDisplay[ma3 !ID]: -T?-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //遺棄之地 (Abandoned Precinct)
-ItemDisplay[ma4 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //褻瀆教堂 (Desecrated Temple)
-ItemDisplay[ma5 !ID]: -T1-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //凜冬高原 (Frigid Plateau)
-ItemDisplay[ma6 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //崩壞堡壘 (Ruined Citadel)
-ItemDisplay[ma7 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //焚燒森林 (Burnt Forest)
-ItemDisplay[ma8 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //發霉地穴 (Musty Crypt)
-ItemDisplay[ma9 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)% //昏暗地窖 (Dim Cellar)
+ItemDisplay[ma4 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火123％%BLUE%冰173％%GREEN%毒120％} //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5 !ID]: -T1-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火123％%BLUE%冰128％%GREEN%毒140％} //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%BLUE%冰143％%YELLOW%電103％%GREEN%毒120％%GRAY%物100％} //崩壞堡壘 (Ruined Citadel)
+ItemDisplay[ma7 !ID]: -T3-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火128％%BLUE%冰123％%YELLOW%電103％%GREEN%毒140％%WHITE%魔100％} //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火103％%BLUE%冰173％%YELLOW%電103％%GREEN%毒100％%GRAY%物100％} //發霉地穴 (Musty Crypt)
+ItemDisplay[ma9 !ID]: -T2-『%NAME%』%GRAY%(未鑑定)%YELLOW%%NOTIFY(ITEM)%{免疫：%RED%火103％%BLUE%冰133％%GREEN%毒120％} //昏暗地窖 (Dim Cellar)
 // ItemDisplay[ma10 !ID]: -T0-『%NAME%』%GRAY%(未鑑定)%YELLOW% //悅心農場 (Pleasant Pasture) BUG無法顯示
-ItemDisplay[ma1]: -T1-『%NAME%』 //寒霜洞窟 (Icy Cavern)
-ItemDisplay[ma2]: -T3-『%NAME%』 //蜃景荒漠 (Forgotten Desert)
+ItemDisplay[ma1]: -T1-『%NAME%』{免疫：%RED%火103％%YELLOW%電103％%GREEN%毒120％%GRAY%物100％} //寒霜洞窟 (Icy Cavern)
+ItemDisplay[ma2]: -T3-『%NAME%』{免疫：%RED%火113％%BLUE%冰143％%GREEN%毒120％%GRAY%物100％} //蜃景荒漠 (Forgotten Desert)
 ItemDisplay[ma3]: -T?-『%NAME%』 //遺棄之地 (Abandoned Precinct)
-ItemDisplay[ma4]: -T2-『%NAME%』 //褻瀆教堂 (Desecrated Temple)
-ItemDisplay[ma5]: -T1-『%NAME%』 //凜冬高原 (Frigid Plateau)
-ItemDisplay[ma6]: -T3-『%NAME%』 //崩壞堡壘 (Ruined Citadel)
-ItemDisplay[ma7]: -T3-『%NAME%』 //焚燒森林 (Burnt Forest)
-ItemDisplay[ma8]: -T2-『%NAME%』 //發霉地穴 (Musty Crypt)
-ItemDisplay[ma9]: -T2-『%NAME%』 //昏暗地窖 (Dim Cellar)
+ItemDisplay[ma4]: -T2-『%NAME%』{免疫：%RED%火123％%BLUE%冰173％%GREEN%毒120％} //褻瀆教堂 (Desecrated Temple)
+ItemDisplay[ma5]: -T1-『%NAME%』{免疫：%RED%火123％%BLUE%冰128％%GREEN%毒140％} //凜冬高原 (Frigid Plateau)
+ItemDisplay[ma6]: -T3-『%NAME%』{免疫：%BLUE%冰143％%YELLOW%電103％%GREEN%毒120％%GRAY%物100％} //崩壞堡壘 (Ruined Citadel)
+ItemDisplay[ma7]: -T3-『%NAME%』{免疫：%RED%火128％%BLUE%冰123％%YELLOW%電103％%GREEN%毒140％%WHITE%魔100％} //焚燒森林 (Burnt Forest)
+ItemDisplay[ma8]: -T2-『%NAME%』{免疫：%RED%火103％%BLUE%冰173％%YELLOW%電103％%GREEN%毒100％%GRAY%物100％} //發霉地穴 (Musty Crypt)
+ItemDisplay[ma9]: -T2-『%NAME%』{免疫：%RED%火103％%BLUE%冰133％%GREEN%毒120％} //昏暗地窖 (Dim Cellar)
 ItemDisplay[ma10]: -T0-『%NAME%』//悅心農場 (Pleasant Pasture) BUG無法顯示
-ItemDisplay[maz]: <<毀滅>>『%NAME%』 //地獄審判
+ItemDisplay[maz]: <<毀滅>>『%NAME%』{沒做好準備請不要隨意挑戰} //地獄審判
 
 // 根據玩家等級隱藏金錢顯示
 ItemDisplay[CLVL>89 GOLD<3000]: //90等後不顯示3000元以下
@@ -252,9 +252,9 @@ ItemDisplay[fla NMAG !RW SOCK=4]: %NAME%【橡樹之心】{%ORANGE%橡樹之心:
 ItemDisplay[7gm ETH NMAG !RW SOCK=6]: %NAME%【死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //雷鎚(無)6 - 死亡呼吸
 
 // 武器-弓
-ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 信心
+ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【眼光＼信心】{%ORANGE%信心: 27＋31＋20＋2%NL%眼光: 8＋3＋7＋12%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓(11%ED以上)4 - 眼光/信心
 ItemDisplay[(6l7 OR 6lw) NMAG !RW SOCK=6 ED>10]: %NAME%%DARK_GREEN%(11%ED↑)%GRAY%【寂靜＼死亡呼吸】{%ORANGE%死亡呼吸: 26＋15＋1＋2＋33＋5%NL%寂靜: 14＋2＋15＋24＋3＋26%NL%%YELLOW%基礎速度: %WPNSPD%} //十字軍之弓、九頭蛇弓(11%ED以上)6 - 寂靜/死亡呼吸
-ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【信心】{%ORANGE%信心: 27＋31＋20＋2%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓4 - 信心
+ItemDisplay[(6hb OR 6cb OR 6s7) NMAG !RW SOCK=4]: %NAME%【眼光＼信心】{%ORANGE%信心: 27＋31＋20＋2%NL%眼光: 8＋3＋7＋12%NL%%YELLOW%基礎速度: %WPNSPD%} //刀鋒弓、巨弓、鑽石弓4 - 眼光/信心
 
 // 德魯伊
 ItemDisplay[CL1 !ETH NMAG !RW SK250=3 (SOCK=0 OR SOCK=3) ILVL>25]: %NAME%%RED%【+3暴風】%WHITE%{%ORANGE%需要搭配其他風系技能}
@@ -377,6 +377,7 @@ ItemDisplay[bsd NMAG !RW !INF !ETH SOCK=4 ILVL>25 ILVL<41 (CLVL<50 DIFFICULTY<2)
 ItemDisplay[!bar !9b7 !7o7 WP8 NMAG !RW !CL7 SOCK=0 ILVL>25 ILVL<41 (CLVL<60 DIFFICULTY<2)]: %NAME%【眼光-長斧】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}  //60等前顯示 0s長斧
 ItemDisplay[WP8 NMAG !RW !CL7 SOCK=4 (CLVL<60 OR DIFFICULTY<2)]: %NAME%【眼光-長斧】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%}  //60等前顯示 4s長斧
 ItemDisplay[WP7 NMAG !RW !CL7 SOCK=4 (CLVL<60 OR DIFFICULTY<2)]: %NAME%【眼光-長槍】{%ORANGE%眼光: 8＋3＋7＋12%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //60等前顯示 4s長槍
+ItemDisplay[WP9 NMAG !RW !CL7 SOCK=4 (CLVL<60 OR DIFFICULTY<2)]: %NAME%【眼光-弓】{%ORANGE%眼光: 8＋3＋7＋12%NL%YELLOW%基礎速度: %WPNSPD%}  //60等前顯示 4s弓
 
 ItemDisplay[(wsp OR 9ws) NMAG !RW !ETH SOCK=4]: %NAME%【神聖雷擊-單手傳送】{%ORANGE%神聖雷擊: 5＋8＋9＋7%NL%%YELLOW%範圍: %RANGE%，基礎速度: %WPNSPD%} //巨戰權杖、神屬權杖
 ItemDisplay[sbw NMAG !RW SOCK=3 DIFFICULTY<2 CLVL>19]: %NAME%【邊緣-商店打折】{%ORANGE%邊緣: 3＋7＋11%NL%%YELLOW%基礎速度: %WPNSPD%} //短弓
@@ -404,7 +405,7 @@ ItemDisplay[CL7]: [亞]%NAME%%CONTINUE%
 
 // 戒指 項鍊 箭矢 十字箭
 ItemDisplay[(rin OR amu) SET]: [L%ILVL%]%NAME%【套裝】//戒指 項鍊
-ItemDisplay[(rin OR amu) UNI]: [L%ILVL%]%NAME%【暗金】//戒指 項鍊
+ItemDisplay[(rin OR amu) UNI]: [L%ILVL%]%NAME%【暗金】%NOTIFY(ITEM)%//戒指 項鍊
 ItemDisplay[amu MAG ILVL>89]: %ORANGE%[L%ILVL%]%BLUE%%NAME%【飾品】//項鍊 90LV +2技能
 ItemDisplay[amu RARE ILVL>89]: %ORANGE%[L%ILVL%]%YELLOW%%NAME%【飾品】//項鍊 90LV +2技能
 ItemDisplay[rin OR amu]: [L%ILVL%]%NAME%【飾品】//戒指 項鍊
