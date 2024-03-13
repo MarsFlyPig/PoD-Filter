@@ -4,10 +4,10 @@
 Attribute[Author]: MarsFlyPig
 Attribute[Name]: Pod 過濾器
 Attribute[Version]: 版本: #21 Shungite(次石墨)
-Attribute[Date]: 2024/03/13 00:15
+Attribute[Date]: 2024/03/13 11:10
 
 FilterLevel[1]: 基本版
-FilterLevel[2]: 遺物版(弄一半)
+FilterLevel[2]: 遺物版(有問題群裡喊)
 
 //FILTERLVL=1
 
@@ -149,15 +149,15 @@ ItemDisplay[(r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 
 ItemDisplay[r20 OR r21 OR r22 OR r23 OR r24 OR r25]: %NL%%ORANGE%[####%NAME%%PURPLE%####]%NL%%NL%%NOTIFY(ITEM)%
 ItemDisplay[r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33]: %NL%%ORANGE%[%PURPLE%######%ORANGE%%NAME%%PURPLE%######%ORANGE%]%NL%%NL%%NOTIFY(ITEM)%
 
-ItemDisplay[r25]: {%ORANGE%2021/04/07 - 0.25HR}
-ItemDisplay[r26]: {%ORANGE%2021/04/07 - 0.5HR}
-ItemDisplay[r27]: {%ORANGE%2021/04/07 - 0.75HR}
-ItemDisplay[r28]: {%ORANGE%2021/04/07 - 1.5HR}
-ItemDisplay[r29]: {%ORANGE%2021/04/07 - 1HR}
-ItemDisplay[r30]: {%ORANGE%2021/04/07 - 2HR}
-ItemDisplay[r31]: {%ORANGE%2021/04/07 - 3HR}
-ItemDisplay[r32]: {%ORANGE%2021/04/07 - 0.5HR}
-ItemDisplay[r33]: {%ORANGE%2021/04/07 - 0.75~1HR}
+//ItemDisplay[r25]: {%ORANGE%2021/04/07 - 0.25HR}
+//ItemDisplay[r26]: {%ORANGE%2021/04/07 - 0.5HR}
+//ItemDisplay[r27]: {%ORANGE%2021/04/07 - 0.75HR}
+//ItemDisplay[r28]: {%ORANGE%2021/04/07 - 1.5HR}
+//ItemDisplay[r29]: {%ORANGE%2021/04/07 - 1HR}
+//ItemDisplay[r30]: {%ORANGE%2021/04/07 - 2HR}
+//ItemDisplay[r31]: {%ORANGE%2021/04/07 - 3HR}
+//ItemDisplay[r32]: {%ORANGE%2021/04/07 - 0.5HR}
+//ItemDisplay[r33]: {%ORANGE%2021/04/07 - 0.75~1HR}
 
 // 裝備名字加註記
 ItemDisplay[ETH]: ◎%NAME%%CONTINUE% // 無形
